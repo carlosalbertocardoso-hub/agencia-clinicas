@@ -76,7 +76,7 @@ export default function TerminosLegalesPage() {
                 <p>Estos términos se rigen por la legislación española. Jurisdicción: juzgados de Sevilla.</p>
               </div>
 
-              <div className="bg-secondary p-6 rounded-lg mt-8">
+              <div className="bg-secondary p-6 rounded mt-8">
                 <p className="text-sm">
                   <strong>Última actualización:</strong> Abril 2024
                 </p>

@@ -11,18 +11,21 @@ const config: Config = {
       colors: {
         primary: {
           DEFAULT: '#0A6B5E',
-          light: '#0E8C7A',
-          dark: '#055147',
+          light: '#2BB5A0',
+          lighter: '#4CC9B5',
         },
-        secondary: '#F5F0E8',
-        accent: '#E8A030',
+        secondary: '#E8A030',
+        'secondary-dark': '#5C3D00',
+        tertiary: '#1D1D1B',
+        neutral: {
+          DEFAULT: '#F4F1EA',
+          dark: '#E8E5DC',
+          darker: '#D4D0C3',
+        },
         text: {
-          DEFAULT: '#1A1F2E',
-          muted: '#6B7280',
-        },
-        bg: {
           light: '#FFFFFF',
-          lighter: '#F9FAFB',
+          DEFAULT: '#1D1D1B',
+          muted: '#6B7280',
         },
       },
       fontFamily: {

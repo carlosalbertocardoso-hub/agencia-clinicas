@@ -90,7 +90,7 @@ export default function PoliticaPrivacidadPage() {
                 <p>Podemos actualizar esta política en cualquier momento. Cambios significativos serán notificados.</p>
               </div>
 
-              <div className="bg-secondary p-6 rounded-lg mt-8">
+              <div className="bg-secondary p-6 rounded mt-8">
                 <p className="text-sm">
                   <strong>Última actualización:</strong> Abril 2024
                 </p>

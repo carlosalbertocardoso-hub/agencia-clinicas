@@ -46,7 +46,7 @@ export default function CasosExitoPage() {
           <div className="container-custom">
             <div className="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
               {casos.map((caso) => (
-                <div key={caso.id} className="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                <div key={caso.id} className="bg-neutral border border-neutral-dark rounded overflow-hidden shadow-lg hover:shadow-xl transition">
                   <div className="h-64 bg-gradient-to-br from-primary to-primary-light opacity-80" />
 
                   <div className="p-8">
@@ -58,7 +58,7 @@ export default function CasosExitoPage() {
 
                     <h2 className="text-h2 font-heading text-primary mb-4">{caso.titulo}</h2>
 
-                    <div className="grid grid-cols-2 gap-4 mb-6 p-6 bg-secondary rounded-lg">
+                    <div className="grid grid-cols-2 gap-4 mb-6 p-6 bg-secondary rounded">
                       <div>
                         <p className="text-sm text-text-muted mb-1">Resultado</p>
                         <p className="text-2xl font-bold text-primary">{caso.resultadoValue}{caso.resultadoUnit}</p>
@@ -85,7 +85,7 @@ export default function CasosExitoPage() {
             </p>
             <Link
               href="/contacto"
-              className="inline-block bg-primary text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold"
+              className="inline-block bg-primary text-white px-8 py-4 rounded hover:opacity-90 transition font-semibold"
             >
               Solicitar auditoría gratis
             </Link>

@@ -5,12 +5,29 @@
 @tailwind utilities;
 
 :root {
+  /* Primary - Verde oscuro */
   --color-primary: #0A6B5E;
-  --color-primary-light: #0E8C7A;
-  --color-secondary: #F5F0E8;
-  --color-accent: #E8A030;
-  --color-text: #1A1F2E;
+  --color-primary-light: #2BB5A0;
+  --color-primary-lighter: #4CC9B5;
+
+  /* Secondary - Ámbar/Naranja dorado */
+  --color-secondary: #E8A030;
+  --color-secondary-dark: #5C3D00;
+
+  /* Tertiary - Carbón/Gris oscuro */
+  --color-tertiary: #1D1D1B;
+
+  /* Neutral - Gris claro/Crema */
+  --color-neutral: #F4F1EA;
+  --color-neutral-dark: #E8E5DC;
+  --color-neutral-darker: #D4D0C3;
+
+  /* Text colors */
+  --color-text-light: #FFFFFF;
+  --color-text-dark: #1D1D1B;
   --color-text-muted: #6B7280;
+
+  /* Fonts */
   --font-heading: 'DM Serif Display', serif;
   --font-body: 'DM Sans', sans-serif;
 }
@@ -27,8 +44,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text);
-  background-color: #ffffff;
+  color: var(--color-text-dark);
+  background-color: var(--color-neutral);
   line-height: 1.6;
 }
 
@@ -76,4 +93,71 @@ a {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: opacity 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  background-color: var(--color-primary-light);
+}
+
+.btn-secondary {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--color-neutral);
+  border: 1px solid var(--color-neutral-dark);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: var(--color-primary);
+}
+
+/* Section with Primary Background */
+.section-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+.section-primary h2,
+.section-primary h3 {
+  color: var(--color-text-light);
 }

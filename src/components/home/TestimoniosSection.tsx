@@ -15,7 +15,7 @@ export default function TestimoniosSection() {
           {testimonios.map((testimonio) => (
             <div
               key={testimonio.id}
-              className="bg-white border border-gray-100 rounded-lg p-8 hover:shadow-lg transition"
+              className="bg-neutral border border-neutral-dark rounded p-8 hover:shadow-lg transition"
             >
               {/* Rating */}
               <div className="flex gap-1 mb-4">
@@ -30,7 +30,7 @@ export default function TestimoniosSection() {
               <p className="text-text mb-6 leading-relaxed italic">"{testimonio.texto}"</p>
 
               {/* Autor */}
-              <div className="border-t border-gray-100 pt-4">
+              <div className="border-t border-neutral-dark pt-4">
                 <p className="font-semibold text-text">{testimonio.nombre}</p>
                 <p className="text-sm text-text-muted">{testimonio.cargo}</p>
                 <p className="text-sm text-primary font-medium">{testimonio.clinica}</p>

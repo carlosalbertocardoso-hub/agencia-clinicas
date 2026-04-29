@@ -119,7 +119,7 @@ export default function BlogPostPage({ params }: Props) {
               }}
             />
 
-            <div className="bg-secondary p-8 rounded-lg border border-gray-100 mb-12">
+            <div className="bg-secondary p-8 rounded border border-neutral-dark mb-12">
               <h2 className="text-h3 font-heading text-text mb-4">¿Necesitas ayuda con tu estrategia?</h2>
               <p className="text-text-muted mb-6">
                 Este artículo es una guía general. Tu clínica merece estrategia personalizada. Solicita auditoría gratis.
@@ -137,7 +137,7 @@ export default function BlogPostPage({ params }: Props) {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {relatedPosts.map((relPost) => (
                   <Link key={relPost.id} href={`/blog/${relPost.slug}`}>
-                    <article className="bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
+                    <article className="bg-neutral border border-neutral-dark rounded overflow-hidden hover:shadow-lg transition h-full group">
                       <div className="h-40 bg-gradient-to-br from-primary to-primary-light opacity-80" />
                       <div className="p-6">
                         <span className="text-xs font-semibold text-white bg-primary px-2 py-1 rounded">{relPost.categoria}</span>

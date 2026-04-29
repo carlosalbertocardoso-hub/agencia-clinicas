@@ -42,7 +42,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
 
   if (submitted) {
     return (
-      <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+      <div className="p-4 bg-green-50 border border-green-200 rounded">
         <p className="text-green-800 font-semibold">✓ ¡Gracias! Hemos recibido tu solicitud.</p>
         <p className="text-green-700 text-sm mt-2">Te contactaremos en las próximas 24 horas.</p>
       </div>
@@ -61,7 +61,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="nombre"
           placeholder="Tu nombre"
           maxLength={100}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
 
@@ -75,7 +75,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="email"
           placeholder="tu@email.com"
           maxLength={255}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
 
@@ -89,7 +89,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="telefono"
           placeholder="+34 600 00 00 00"
           maxLength={20}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
 
@@ -103,7 +103,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="clinica"
           placeholder="Clínica Dental ejemplo"
           maxLength={100}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
 
@@ -115,7 +115,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           <select
             {...register('especialidad')}
             id="especialidad"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
           >
             <option value="">Selecciona una especialidad</option>
             <option value="Clínicas Dentales">Clínicas Dentales</option>
@@ -139,12 +139,12 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           placeholder="Cuéntanos tu situación..."
           rows={4}
           maxLength={5000}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
 
       {error && (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+        <div className="p-4 bg-red-50 border border-red-200 rounded">
           <p className="text-red-800 text-sm">{error}</p>
         </div>
       )}
@@ -152,7 +152,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-primary text-white py-3 rounded-lg hover:opacity-90 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-primary text-white py-3 rounded hover:opacity-90 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isSubmitting ? 'Enviando...' : buttonText}
       </button>

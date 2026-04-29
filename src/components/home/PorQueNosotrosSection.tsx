@@ -50,7 +50,7 @@ export default function PorQueNosotrosSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {razones.map((razon, idx) => (
-            <div key={idx} className="bg-white border border-gray-100 rounded-lg p-8 hover:shadow-lg transition hover:border-primary">
+            <div key={idx} className="bg-neutral border border-neutral-dark rounded p-8 hover:shadow-lg transition hover:border-primary">
               <div className="text-4xl mb-4">{razon.icono}</div>
               <h3 className="font-heading text-h4 mb-3 text-text">{razon.titulo}</h3>
               <p className="text-text-muted text-sm leading-relaxed">{razon.descripcion}</p>

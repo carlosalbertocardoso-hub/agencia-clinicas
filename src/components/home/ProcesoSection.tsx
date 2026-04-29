@@ -38,7 +38,7 @@ export default function ProcesoSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pasos.map((paso, idx) => (
-            <div key={idx} className="bg-white border border-gray-100 rounded-lg p-8 relative">
+            <div key={idx} className="bg-neutral border border-neutral-dark rounded p-8 relative">
               {/* Número grande de fondo */}
               <div className="absolute -top-4 -left-4 text-6xl font-bold text-gray-100 opacity-50">
                 {paso.numero}

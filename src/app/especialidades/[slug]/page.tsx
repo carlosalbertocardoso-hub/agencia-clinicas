@@ -253,7 +253,7 @@ export default function EspecialidadPage({ params }: Props) {
                 <h1 className="text-h1 font-heading text-primary mb-6">{especialidad.nombre}</h1>
                 <p className="text-lg text-text-muted mb-8">{especialidad.descripcionLarga}</p>
 
-                <div className="bg-white border-l-4 p-6 rounded" style={{ borderColor: especialidad.color }}>
+                <div className="bg-neutral border-l-4 p-6 rounded" style={{ borderColor: especialidad.color }}>
                   <p className="font-semibold text-text mb-2">Resultado promedio:</p>
                   <p className="text-2xl font-bold" style={{ color: especialidad.color }}>
                     {especialidad.resultados}
@@ -261,7 +261,7 @@ export default function EspecialidadPage({ params }: Props) {
                 </div>
               </div>
 
-              <div className="bg-white border border-gray-100 rounded-lg p-8 shadow-lg">
+              <div className="bg-neutral border border-neutral-dark rounded p-8 shadow-lg">
                 <h2 className="text-h3 font-heading text-text mb-6">Solicita auditoría gratis</h2>
                 <ContactForm especialidad={especialidad.nombre} buttonText="Solicitar auditoría" />
               </div>
@@ -276,7 +276,7 @@ export default function EspecialidadPage({ params }: Props) {
 
             <div className="space-y-4">
               {especialidad.servicios.map((servicio, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-lg border border-gray-100 hover:border-primary transition">
+                <div key={idx} className="bg-neutral p-6 rounded border border-neutral-dark hover:border-primary transition">
                   <h3 className="font-semibold text-text mb-2">
                     {idx + 1}. {servicio.charAt(0).toUpperCase() + servicio.slice(1)}
                   </h3>
@@ -347,7 +347,7 @@ export default function EspecialidadPage({ params }: Props) {
             </p>
             <a
               href="#contacto"
-              className="inline-block bg-accent text-text px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg font-semibold"
+              className="inline-block bg-accent text-text px-8 py-4 rounded hover:bg-opacity-90 transition text-lg font-semibold"
             >
               Solicitar auditoría gratis
             </a>

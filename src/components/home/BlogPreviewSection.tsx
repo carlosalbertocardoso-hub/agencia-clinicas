@@ -47,7 +47,7 @@ export default function BlogPreviewSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {articulosRecientes.map((articulo) => (
             <Link key={articulo.id} href={`/blog/${articulo.slug}`}>
-              <article className="bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
+              <article className="bg-neutral border border-neutral-dark rounded overflow-hidden hover:shadow-lg transition h-full group">
                 {/* Imagen placeholder */}
                 <div className="h-48 bg-gradient-to-br from-primary to-primary-light opacity-80 group-hover:opacity-100 transition" />
 
@@ -79,7 +79,7 @@ export default function BlogPreviewSection() {
         <div className="text-center">
           <Link
             href="/blog"
-            className="inline-block border-2 border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition font-semibold"
+            className="inline-block border-2 border-primary text-primary px-8 py-3 rounded hover:bg-primary hover:text-white transition font-semibold"
           >
             Ver todos los artículos
           </Link>

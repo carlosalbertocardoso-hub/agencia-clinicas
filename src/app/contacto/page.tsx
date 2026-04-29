@@ -43,7 +43,7 @@ export default function ContactoPage() {
 
         <section className="section-padding bg-secondary">
           <div className="container-custom max-w-2xl">
-            <div className="bg-white p-12 rounded-lg border border-gray-100 shadow-lg">
+            <div className="bg-neutral p-12 rounded border border-neutral-dark shadow-lg">
               <h2 className="text-h3 font-heading text-text mb-8">Cuéntanos sobre tu clínica</h2>
               <ContactForm buttonText="Enviar solicitud" />
             </div>
@@ -76,7 +76,7 @@ export default function ContactoPage() {
               </div>
             </div>
 
-            <div className="bg-secondary p-8 rounded-lg border border-gray-100">
+            <div className="bg-secondary p-8 rounded border border-neutral-dark">
               <h3 className="font-semibold text-text mb-4">¿Tienes prisa?</h3>
               <p className="text-text-muted mb-6">
                 Responde el formulario arriba y te contactaremos en las próximas 24 horas con tu auditoría personalizada.

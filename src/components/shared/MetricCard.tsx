@@ -15,7 +15,7 @@ export default function MetricCard({
   const textColor = 'text-white'
 
   return (
-    <div className={`${bgColor} ${textColor} rounded-lg p-6 text-center`}>
+    <div className={`${bgColor} ${textColor} rounded p-6 text-center`}>
       {icon && <div className="text-3xl mb-2">{icon}</div>}
       <div className="text-4xl font-bold mb-1">{valor}</div>
       <p className="text-sm opacity-90">{label}</p>

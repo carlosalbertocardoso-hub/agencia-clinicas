@@ -70,7 +70,7 @@ export default function NosotrosPage() {
             <h2 className="text-h2 font-heading mb-12 text-center">Nuestros valores</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-8 rounded-lg border border-gray-100">
+              <div className="bg-neutral p-8 rounded border border-neutral-dark">
                 <div className="text-4xl mb-4">🎯</div>
                 <h3 className="font-heading text-h4 mb-3 text-text">Resultados sobre promesas</h3>
                 <p className="text-text-muted text-sm">
@@ -78,7 +78,7 @@ export default function NosotrosPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg border border-gray-100">
+              <div className="bg-neutral p-8 rounded border border-neutral-dark">
                 <div className="text-4xl mb-4">🔒</div>
                 <h3 className="font-heading text-h4 mb-3 text-text">Privacidad y ética</h3>
                 <p className="text-text-muted text-sm">
@@ -86,7 +86,7 @@ export default function NosotrosPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg border border-gray-100">
+              <div className="bg-neutral p-8 rounded border border-neutral-dark">
                 <div className="text-4xl mb-4">💡</div>
                 <h3 className="font-heading text-h4 mb-3 text-text">Innovación continua</h3>
                 <p className="text-text-muted text-sm">
@@ -105,14 +105,14 @@ export default function NosotrosPage() {
               hay inexpertos en tu cuenta.
             </p>
 
-            <div className="bg-secondary p-8 rounded-lg border border-gray-100">
+            <div className="bg-secondary p-8 rounded border border-neutral-dark">
               <p className="text-text font-semibold mb-2">¿Preguntas sobre nosotros?</p>
               <p className="text-text-muted mb-6">
                 Llámanos, escríbenos o agenda una videollamada. Nos encanta hablar sobre marketing y clínicas.
               </p>
               <a
                 href="/contacto"
-                className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:opacity-90 transition font-semibold"
+                className="inline-block bg-primary text-white px-8 py-3 rounded hover:opacity-90 transition font-semibold"
               >
                 Contáctanos
               </a>

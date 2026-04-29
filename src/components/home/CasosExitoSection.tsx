@@ -14,8 +14,8 @@ export default function CasosExitoSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {casos.map((caso) => (
-            <div key={caso.id} className="bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition">
-              <div className="h-48 bg-gray-200 relative">
+            <div key={caso.id} className="bg-neutral border border-neutral-dark rounded overflow-hidden hover:shadow-lg transition">
+              <div className="h-48 bg-neutral-darker relative">
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary to-primary-light">
                   <div className="text-center">
                     <div className="text-4xl font-bold text-white">{caso.resultado}</div>
@@ -37,7 +37,7 @@ export default function CasosExitoSection() {
         <div className="text-center">
           <Link
             href="/casos-de-exito"
-            className="inline-block bg-accent text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg font-semibold"
+            className="inline-block bg-accent text-white px-8 py-4 rounded hover:bg-opacity-90 transition text-lg font-semibold"
           >
             Ver todos los casos →
           </Link>

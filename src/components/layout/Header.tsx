@@ -10,7 +10,7 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-neutral border-b border-neutral-dark">
       <div className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -30,7 +30,7 @@ export default function Header() {
               A quién ayudamos
             </button>
             {openDropdown === 'especialidades' && (
-              <div className="absolute left-0 mt-0 w-56 bg-white border border-gray-100 rounded-lg shadow-lg py-4 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-neutral border border-neutral-dark rounded shadow-lg py-4 z-50">
                 {especialidades.map((esp) => (
                   <Link
                     key={esp.id}
@@ -54,7 +54,7 @@ export default function Header() {
               Servicios
             </button>
             {openDropdown === 'servicios' && (
-              <div className="absolute left-0 mt-0 w-56 bg-white border border-gray-100 rounded-lg shadow-lg py-4 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-neutral border border-neutral-dark rounded shadow-lg py-4 z-50">
                 {servicios.map((srv) => (
                   <Link
                     key={srv.id}
@@ -82,7 +82,7 @@ export default function Header() {
         {/* CTA Button */}
         <Link
           href="/contacto"
-          className="hidden md:block bg-accent text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition font-semibold"
+          className="hidden md:block bg-accent text-white px-6 py-2 rounded hover:bg-opacity-90 transition font-semibold"
         >
           Hablemos
         </Link>
@@ -98,7 +98,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-100 bg-white">
+        <div className="lg:hidden border-t border-neutral-dark bg-neutral">
           <nav className="container-custom py-4 space-y-2">
             <Link href="/especialidades" className="block py-2 text-text hover:text-primary">
               A quién ayudamos
@@ -118,7 +118,7 @@ export default function Header() {
             <div className="pt-4">
               <Link
                 href="/contacto"
-                className="block bg-accent text-white px-4 py-2 rounded-lg text-center hover:bg-opacity-90"
+                className="block bg-accent text-white px-4 py-2 rounded text-center hover:bg-opacity-90"
               >
                 Hablemos
               </Link>

@@ -15,7 +15,7 @@ export default function ServiciosSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {servicios.map((servicio) => (
             <Link key={servicio.id} href={`/servicios/${servicio.slug}`}>
-              <div className="h-full bg-white border border-gray-100 rounded-lg p-8 hover:shadow-lg hover:border-primary transition cursor-pointer group">
+              <div className="h-full bg-neutral border border-neutral-dark rounded p-8 hover:shadow-lg hover:border-primary transition cursor-pointer group">
                 <h3 className="text-h4 font-heading mb-3 text-text group-hover:text-primary transition">
                   {servicio.nombre}
                 </h3>

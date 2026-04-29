@@ -96,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="font-body text-text bg-white">{children}</body>
+      <body className="font-body text-text bg-neutral">{children}</body>
     </html>
   )
 }

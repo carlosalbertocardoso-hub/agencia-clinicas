@@ -117,7 +117,7 @@ export default function ServicioPage({ params }: Props) {
                 </div>
               </div>
 
-              <div className="bg-white border border-gray-100 rounded-lg p-8 shadow-lg">
+              <div className="bg-neutral border border-neutral-dark rounded p-8 shadow-lg">
                 <h2 className="text-h3 font-heading text-text mb-6">Solicita una consulta gratuita</h2>
                 <ContactForm especialidad={servicio.nombre} buttonText="Solicitar consulta" />
               </div>
@@ -174,7 +174,7 @@ export default function ServicioPage({ params }: Props) {
             </p>
             <a
               href="#contacto"
-              className="inline-block bg-accent text-text px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg font-semibold"
+              className="inline-block bg-accent text-text px-8 py-4 rounded hover:bg-opacity-90 transition text-lg font-semibold"
             >
               Solicitar auditoría gratis
             </a>

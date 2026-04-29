@@ -33,11 +33,11 @@ export default function FaqSection({ faqs, title = 'Preguntas Frecuentes' }: Faq
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className="border border-gray-200 rounded-lg overflow-hidden bg-white"
+              className="border border-neutral-darker rounded overflow-hidden bg-neutral"
             >
               <button
                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                className="w-full px-6 py-4 text-left font-semibold text-text hover:bg-gray-50 transition flex justify-between items-center"
+                className="w-full px-6 py-4 text-left font-semibold text-text hover:bg-neutral-dark transition flex justify-between items-center"
               >
                 <span>{faq.pregunta}</span>
                 <span className={`transform transition ${openId === faq.id ? 'rotate-180' : ''}`}>
@@ -45,7 +45,7 @@ export default function FaqSection({ faqs, title = 'Preguntas Frecuentes' }: Faq
                 </span>
               </button>
               {openId === faq.id && (
-                <div className="px-6 py-4 border-t border-gray-200 text-text-muted bg-gray-50">
+                <div className="px-6 py-4 border-t border-neutral-darker text-text-muted bg-neutral-dark">
                   {faq.respuesta}
                 </div>
               )}

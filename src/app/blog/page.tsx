@@ -47,7 +47,7 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {blogPosts.map((post) => (
                 <Link key={post.id} href={`/blog/${post.slug}`}>
-                  <article className="bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
+                  <article className="bg-neutral border border-neutral-dark rounded overflow-hidden hover:shadow-lg transition h-full group">
                     <div className="h-48 bg-gradient-to-br from-primary to-primary-light opacity-80 group-hover:opacity-100 transition" />
 
                     <div className="p-6">
@@ -84,7 +84,7 @@ export default function BlogPage() {
             </p>
             <Link
               href="/contacto"
-              className="inline-block bg-primary text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold"
+              className="inline-block bg-primary text-white px-8 py-4 rounded hover:opacity-90 transition font-semibold"
             >
               Solicitar auditoría gratis
             </Link>

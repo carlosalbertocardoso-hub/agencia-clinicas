@@ -19,7 +19,7 @@ export default function EspecialidadCard({
 }: EspecialidadCardProps) {
   return (
     <Link href={`/especialidades/${slug}`}>
-      <div className="h-full bg-white border border-gray-100 rounded-lg p-6 hover:shadow-lg hover:border-gray-200 transition-all cursor-pointer group">
+      <div className="h-full bg-neutral border border-neutral-dark rounded p-6 hover:shadow-lg hover:border-neutral-darker transition-all cursor-pointer group">
         <div className="text-5xl mb-4">{icono}</div>
         <h3 className="font-heading text-h4 mb-3 text-text group-hover:text-primary transition">
           {nombre}

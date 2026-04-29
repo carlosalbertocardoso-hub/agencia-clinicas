@@ -13,13 +13,13 @@ export default function CtaFinal() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contacto"
-            className="inline-block bg-accent text-text px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg font-semibold"
+            className="inline-block bg-accent text-text px-8 py-4 rounded hover:bg-opacity-90 transition text-lg font-semibold"
           >
             Solicitar auditoría gratis
           </Link>
           <a
             href="tel:+34XXX"
-            className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition text-lg font-semibold"
+            className="inline-block border-2 border-white text-white px-8 py-4 rounded hover:bg-neutral hover:text-primary transition text-lg font-semibold"
           >
             Llamar ahora
           </a>
