@@ -1,0 +1,156 @@
+'use client'
+
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { sendContactEmail } from '@/app/actions/sendEmail'
+
+interface ContactFormProps {
+  especialidad?: string
+  buttonText?: string
+}
+
+export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje' }: ContactFormProps) {
+  const { register, handleSubmit, formState: { isSubmitting }, reset } = useForm({
+    defaultValues: {
+      nombre: '',
+      email: '',
+      telefono: '',
+      clinica: '',
+      especialidad: especialidad || '',
+      mensaje: '',
+    },
+  })
+  const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  async function onSubmit(data: any) {
+    try {
+      setError(null)
+      const result = await sendContactEmail(data)
+
+      if (result.success) {
+        setSubmitted(true)
+        reset()
+        setTimeout(() => setSubmitted(false), 5000)
+      } else {
+        setError(result.error || 'Error al enviar. Intenta de nuevo.')
+      }
+    } catch (err) {
+      setError('Error al enviar. Intenta de nuevo.')
+    }
+  }
+
+  if (submitted) {
+    return (
+      <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+        <p className="text-green-800 font-semibold">✓ ¡Gracias! Hemos recibido tu solicitud.</p>
+        <p className="text-green-700 text-sm mt-2">Te contactaremos en las próximas 24 horas.</p>
+      </div>
+    )
+  }
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <div>
+        <label htmlFor="nombre" className="block text-sm font-semibold text-text mb-2">
+          Nombre *
+        </label>
+        <input
+          {...register('nombre', { required: true })}
+          type="text"
+          id="nombre"
+          placeholder="Tu nombre"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="email" className="block text-sm font-semibold text-text mb-2">
+          Email *
+        </label>
+        <input
+          {...register('email', { required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ })}
+          type="email"
+          id="email"
+          placeholder="tu@email.com"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="telefono" className="block text-sm font-semibold text-text mb-2">
+          Teléfono *
+        </label>
+        <input
+          {...register('telefono', { required: true })}
+          type="tel"
+          id="telefono"
+          placeholder="+34 600 00 00 00"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="clinica" className="block text-sm font-semibold text-text mb-2">
+          Nombre de tu clínica
+        </label>
+        <input
+          {...register('clinica')}
+          type="text"
+          id="clinica"
+          placeholder="Clínica Dental ejemplo"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+      </div>
+
+      {!especialidad && (
+        <div>
+          <label htmlFor="especialidad" className="block text-sm font-semibold text-text mb-2">
+            Especialidad
+          </label>
+          <select
+            {...register('especialidad')}
+            id="especialidad"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          >
+            <option value="">Selecciona una especialidad</option>
+            <option value="Clínicas Dentales">Clínicas Dentales</option>
+            <option value="Psicólogos">Psicólogos</option>
+            <option value="Medicina Estética">Medicina Estética</option>
+            <option value="Fisioterapia">Fisioterapia</option>
+            <option value="Nutrición">Nutrición</option>
+            <option value="Pediatría">Pediatría</option>
+            <option value="Cirugía">Cirugía</option>
+          </select>
+        </div>
+      )}
+
+      <div>
+        <label htmlFor="mensaje" className="block text-sm font-semibold text-text mb-2">
+          Mensaje (opcional)
+        </label>
+        <textarea
+          {...register('mensaje')}
+          id="mensaje"
+          placeholder="Cuéntanos tu situación..."
+          rows={4}
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+      </div>
+
+      {error && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+          <p className="text-red-800 text-sm">{error}</p>
+        </div>
+      )}
+
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full bg-primary text-white py-3 rounded-lg hover:opacity-90 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {isSubmitting ? 'Enviando...' : buttonText}
+      </button>
+    </form>
+  )
+}
