@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://pacientessevilla.com/servicios/${params.slug}`,
       images: [
         {
-          url: '/images/og-default.jpg',
+          url: '/images/og-default.svg',
           width: 1200,
           height: 630,
         },

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="100" fill="white" rx="8"/>
+
+  <!-- Icon: Medical Cross with gradient -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A6B5E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0E8C7A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Medical icon -->
+  <g transform="translate(20, 25)">
+    <!-- Cross -->
+    <rect x="20" y="8" width="10" height="34" fill="url(#gradient)" rx="2"/>
+    <rect x="8" y="20" width="34" height="10" fill="url(#gradient)" rx="2"/>
+    <!-- Circle around -->
+    <circle cx="25" cy="25" r="23" fill="none" stroke="url(#gradient)" stroke-width="2"/>
+  </g>
+
+  <!-- Text: Pacientes -->
+  <text x="70" y="45" font-family="'DM Serif Display', serif" font-size="28" font-weight="400" fill="#0A6B5E">
+    Pacientes
+  </text>
+
+  <!-- Text: Sevilla with accent color -->
+  <text x="70" y="70" font-family="'DM Sans', sans-serif" font-size="16" font-weight="600" fill="#E8A030" letter-spacing="1">
+    SEVILLA
+  </text>
+</svg>

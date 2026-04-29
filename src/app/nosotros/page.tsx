@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: 'https://pacientessevilla.com/nosotros',
     images: [
       {
-        url: '/images/og-default.jpg',
+        url: '/images/og-default.svg',
         width: 1200,
         height: 630,
       },

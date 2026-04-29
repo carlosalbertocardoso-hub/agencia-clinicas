@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.fecha,
       images: [
         {
-          url: '/images/og-default.jpg',
+          url: '/images/og-default.svg',
           width: 1200,
           height: 630,
         },

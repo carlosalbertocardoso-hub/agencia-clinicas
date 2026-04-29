@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       'Consigue más pacientes en Sevilla. Especialistas en marketing digital para clínicas y profesionales sanitarios.',
     images: [
       {
-        url: '/images/og-default.jpg',
+        url: '/images/og-default.svg',
         width: 1200,
         height: 630,
         alt: 'Pacientes Sevilla - Marketing Digital para Clínicas',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: 'Pacientes Sevilla | Marketing Digital para Clínicas',
     description:
       'Consigue más pacientes en Sevilla con nuestro marketing digital especializado.',
-    images: ['/images/og-default.jpg'],
+    images: ['/images/og-default.svg'],
   },
   robots: {
     index: true,
