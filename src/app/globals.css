@@ -47,29 +47,91 @@ body {
   color: var(--color-text-dark);
   background-color: var(--color-neutral);
   line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .text-label {
+    font-size: 1rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 h3 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.875rem;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.5rem;
+  }
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-secondary);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -80,12 +142,24 @@ a {
 }
 
 .section-padding {
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
 }
 
 @media (min-width: 768px) {
   .section-padding {
-    padding: 6rem 2rem;
+    padding: 7rem 2rem;
+  }
+}
+
+.py-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .py-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 }
 
@@ -104,14 +178,21 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  transition: opacity 0.2s ease;
+  transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  font-size: 0.875rem;
 }
 
 .btn-primary:hover {
   opacity: 0.9;
   background-color: var(--color-primary-light);
+  box-shadow: 0 4px 12px rgba(10, 107, 94, 0.15);
+}
+
+.btn-primary-lg {
+  padding: 1rem 3rem;
+  font-size: 1rem;
 }
 
 .btn-secondary {
@@ -123,19 +204,15 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
+  font-size: 0.875rem;
 }
 
 .btn-secondary:hover {
   background-color: var(--color-primary);
   color: var(--color-text-light);
-}
-
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  box-shadow: 0 4px 12px rgba(10, 107, 94, 0.15);
 }
 
 /* Card Styles */
@@ -149,15 +226,45 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-color: var(--color-primary);
+  transform: translateY(-4px);
 }
+
+.card-service {
+  border-top: 4px solid var(--color-secondary);
+}
+
+.card-service:hover {
+  border-top-color: var(--color-primary);
+}
+
+.card-testimonial {
+  border-left: 4px solid var(--color-neutral-dark);
+}
+
+.card-testimonial:hover {
+  border-left-color: var(--color-secondary);
+}
+
 
 /* Section with Primary Background */
 .section-primary {
   background-color: var(--color-primary);
   color: var(--color-text-light);
+  border-top: 4px solid var(--color-secondary);
 }
 
+.section-primary h1,
 .section-primary h2,
-.section-primary h3 {
+.section-primary h3,
+.section-primary h4 {
   color: var(--color-text-light);
+}
+
+/* Input focus states */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--color-primary);
 }
