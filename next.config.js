@@ -4,7 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'pacientessevilla.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.pacientessevilla.com',
       },
     ],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -14,6 +18,31 @@ const nextConfig = {
     tsconfigPath: './tsconfig.json',
   },
   swcMinify: true,
+  headers: async () => {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+        ],
+      },
+    ]
+  },
 };
 
 module.exports = nextConfig;

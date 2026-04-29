@@ -56,10 +56,11 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           Nombre *
         </label>
         <input
-          {...register('nombre', { required: true })}
+          {...register('nombre', { required: true, maxLength: 100 })}
           type="text"
           id="nombre"
           placeholder="Tu nombre"
+          maxLength={100}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
@@ -69,10 +70,11 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           Email *
         </label>
         <input
-          {...register('email', { required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ })}
+          {...register('email', { required: true, maxLength: 255, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ })}
           type="email"
           id="email"
           placeholder="tu@email.com"
+          maxLength={255}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
@@ -82,10 +84,11 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           Teléfono *
         </label>
         <input
-          {...register('telefono', { required: true })}
+          {...register('telefono', { required: true, maxLength: 20 })}
           type="tel"
           id="telefono"
           placeholder="+34 600 00 00 00"
+          maxLength={20}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
@@ -95,10 +98,11 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           Nombre de tu clínica
         </label>
         <input
-          {...register('clinica')}
+          {...register('clinica', { maxLength: 100 })}
           type="text"
           id="clinica"
           placeholder="Clínica Dental ejemplo"
+          maxLength={100}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
@@ -130,10 +134,11 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           Mensaje (opcional)
         </label>
         <textarea
-          {...register('mensaje')}
+          {...register('mensaje', { maxLength: 5000 })}
           id="mensaje"
           placeholder="Cuéntanos tu situación..."
           rows={4}
+          maxLength={5000}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>

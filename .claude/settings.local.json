@@ -12,7 +12,9 @@
       "Skill(update-config)",
       "Skill(update-config:*)",
       "Bash(npm run *)",
-      "mcp__claude_ai_Hugging_Face__dynamic_space"
+      "mcp__claude_ai_Hugging_Face__dynamic_space",
+      "Bash(git remote *)",
+      "Bash(git push *)"
     ]
   }
 }
