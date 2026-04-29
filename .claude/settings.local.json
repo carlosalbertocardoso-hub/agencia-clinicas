@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.conseguirpacientes.com)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Read(//c/c/Users/ccard/Proyectos/Agencia Clinicas/src/app/blog/**)",
+      "Read(//c/c/Users/ccard/Proyectos/Agencia Clinicas/src/app/**)",
+      "Bash(npm install *)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(npm run *)"
+    ]
+  }
+}
