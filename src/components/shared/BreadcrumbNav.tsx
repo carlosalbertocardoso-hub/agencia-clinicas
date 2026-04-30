@@ -28,15 +28,15 @@ export default function BreadcrumbNav({ items }: BreadcrumbNavProps) {
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
-      <nav className="flex flex-wrap gap-2 text-sm mb-6 text-text-muted">
+      <nav className="flex flex-wrap gap-2 text-sm mb-8 text-text-muted font-body">
         <Link href="/" className="hover:text-primary transition">
-          Inicio
+          Home
         </Link>
         {items.map((item, index) => (
           <div key={item.href} className="flex items-center gap-2">
-            <span>/</span>
+            <span className="text-slate-300">/</span>
             {index === items.length - 1 ? (
-              <span className="text-text font-medium">{item.label}</span>
+              <span className="text-text font-semibold">{item.label}</span>
             ) : (
               <Link href={item.href} className="hover:text-primary transition">
                 {item.label}

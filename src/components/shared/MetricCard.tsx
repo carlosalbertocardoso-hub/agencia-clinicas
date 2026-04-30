@@ -12,13 +12,12 @@ export default function MetricCard({
   color = 'primary',
 }: MetricCardProps) {
   const bgColor = color === 'primary' ? 'bg-primary' : 'bg-accent'
-  const textColor = 'text-white'
 
   return (
-    <div className={`${bgColor} ${textColor} rounded p-6 text-center`}>
-      {icon && <div className="text-3xl mb-2">{icon}</div>}
-      <div className="text-4xl font-bold mb-1">{valor}</div>
-      <p className="text-sm opacity-90">{label}</p>
+    <div className={`${bgColor} text-white rounded-lg p-8 text-center`}>
+      {icon && <div className="text-4xl mb-3">{icon}</div>}
+      <div className="text-5xl font-bold mb-2">{valor}</div>
+      <p className="text-sm font-medium opacity-90">{label}</p>
     </div>
   )
 }

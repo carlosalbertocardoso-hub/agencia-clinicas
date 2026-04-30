@@ -20,32 +20,32 @@ export default function FaqSection({ faqs, title = 'Preguntas Frecuentes' }: Faq
   )
 
   return (
-    <section className="section-padding bg-secondary">
+    <section className="section-padding bg-surface">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqSchema),
         }}
       />
-      <div className="container-custom max-w-2xl">
-        <h2 className="text-h2 font-heading text-center mb-12">{title}</h2>
-        <div className="space-y-4">
+      <div className="container-custom max-w-3xl">
+        <h2 className="text-4xl md:text-5xl font-heading font-semibold text-center mb-12 text-text">{title}</h2>
+        <div className="space-y-3">
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className="border border-neutral-darker rounded overflow-hidden bg-neutral"
+              className="border border-border rounded-lg overflow-hidden bg-white hover:shadow-sm transition"
             >
               <button
                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                className="w-full px-6 py-4 text-left font-semibold text-text hover:bg-neutral-dark transition flex justify-between items-center"
+                className="w-full px-6 py-4 text-left font-semibold text-text hover:bg-slate-50 transition flex justify-between items-center"
               >
-                <span>{faq.pregunta}</span>
-                <span className={`transform transition ${openId === faq.id ? 'rotate-180' : ''}`}>
+                <span className="text-base">{faq.pregunta}</span>
+                <span className={`transform transition text-accent ${openId === faq.id ? 'rotate-180' : ''}`}>
                   ▼
                 </span>
               </button>
               {openId === faq.id && (
-                <div className="px-6 py-4 border-t border-neutral-darker text-text-muted bg-neutral-dark">
+                <div className="px-6 py-4 border-t border-border text-text-muted bg-slate-50 text-sm leading-relaxed">
                   {faq.respuesta}
                 </div>
               )}
