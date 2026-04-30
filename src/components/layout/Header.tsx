@@ -10,57 +10,33 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
   return (
-    <header className="sticky top-0 z-50 bg-neutral border-b border-neutral-darker">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-100">
       <div className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="text-xl font-serif font-light text-primary">
-            Pacientes Sevilla
+          <div className="text-2xl font-heading font-semibold text-primary">
+            MedMark
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex gap-8 items-center">
-          {/* A quién ayudamos */}
-          <div
-            className="relative group"
-            onMouseEnter={() => setOpenDropdown('especialidades')}
-            onMouseLeave={() => setOpenDropdown(null)}
-          >
-            <button className="text-text hover:text-primary transition font-medium">
-              A quién ayudamos
-            </button>
-            {openDropdown === 'especialidades' && (
-              <div className="absolute left-0 mt-0 w-56 bg-neutral border border-neutral-darker rounded shadow-md py-2 z-50">
-                {especialidades.map((esp) => (
-                  <Link
-                    key={esp.id}
-                    href={`/especialidades/${esp.slug}`}
-                    className="block px-4 py-2 text-text hover:bg-secondary hover:text-primary transition text-sm"
-                  >
-                    {esp.icono} {esp.nombre}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Servicios */}
+        <nav className="hidden lg:flex gap-10 items-center">
+          {/* Products Dropdown */}
           <div
             className="relative group"
             onMouseEnter={() => setOpenDropdown('servicios')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="text-text hover:text-primary transition font-medium">
-              Servicios
+            <button className="text-text hover:text-primary transition font-medium text-sm">
+              Products
             </button>
             {openDropdown === 'servicios' && (
-              <div className="absolute left-0 mt-0 w-56 bg-neutral border border-neutral-darker rounded shadow-md py-2 z-50">
-                {servicios.map((srv) => (
+              <div className="absolute left-0 mt-1 w-48 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
+                {servicios.slice(0, 4).map((srv) => (
                   <Link
                     key={srv.id}
                     href={`/servicios/${srv.slug}`}
-                    className="block px-4 py-2 text-text hover:bg-secondary hover:text-primary transition text-sm"
+                    className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
                   >
                     {srv.nombre}
                   </Link>
@@ -69,29 +45,48 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/casos-de-exito" className="text-text hover:text-primary transition font-medium">
-            Casos de éxito
-          </Link>
-          <Link href="/nosotros" className="text-text hover:text-primary transition font-medium">
-            Nosotros
-          </Link>
-          <Link href="/contacto" className="text-text hover:text-primary transition font-medium">
-            Contacto
+          {/* Insights Dropdown */}
+          <div
+            className="relative group"
+            onMouseEnter={() => setOpenDropdown('especialidades')}
+            onMouseLeave={() => setOpenDropdown(null)}
+          >
+            <button className="text-text hover:text-primary transition font-medium text-sm">
+              Insights
+            </button>
+            {openDropdown === 'especialidades' && (
+              <div className="absolute left-0 mt-1 w-48 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
+                {especialidades.slice(0, 4).map((esp) => (
+                  <Link
+                    key={esp.id}
+                    href={`/especialidades/${esp.slug}`}
+                    className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
+                  >
+                    {esp.nombre}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link href="/contacto" className="text-text hover:text-primary transition font-medium text-sm">
+            Contact Us
           </Link>
         </nav>
 
-        {/* CTA Button */}
+        {/* CTA Button - Right Side */}
         <Link
           href="/contacto"
-          className="hidden md:block btn-primary text-xs md:text-sm"
+          className="hidden md:block btn-cta text-sm"
         >
-          AGENDAR CITA
+          SCHEDULE AUDIT
         </Link>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="lg:hidden p-2 text-text"
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? '✕' : '☰'}
         </button>
@@ -99,29 +94,23 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden border-t border-neutral-darker bg-neutral">
-          <nav className="container-custom py-4 space-y-2">
-            <Link href="/especialidades" className="block py-2 text-text hover:text-primary">
-              A quién ayudamos
+        <div className="lg:hidden border-t border-slate-100 bg-white">
+          <nav className="container-custom py-4 space-y-3">
+            <Link href="/servicios" className="block py-2 text-text hover:text-primary font-medium">
+              Products
             </Link>
-            <Link href="/servicios" className="block py-2 text-text hover:text-primary">
-              Servicios
+            <Link href="/especialidades" className="block py-2 text-text hover:text-primary font-medium">
+              Insights
             </Link>
-            <Link href="/casos-de-exito" className="block py-2 text-text hover:text-primary">
-              Casos de éxito
-            </Link>
-            <Link href="/nosotros" className="block py-2 text-text hover:text-primary">
-              Nosotros
-            </Link>
-            <Link href="/contacto" className="block py-2 text-text hover:text-primary">
-              Contacto
+            <Link href="/contacto" className="block py-2 text-text hover:text-primary font-medium">
+              Contact Us
             </Link>
             <div className="pt-4">
               <Link
                 href="/contacto"
-                className="block btn-primary text-center text-xs"
+                className="block btn-cta text-center text-sm"
               >
-                AGENDAR CITA
+                SCHEDULE AUDIT
               </Link>
             </div>
           </nav>
