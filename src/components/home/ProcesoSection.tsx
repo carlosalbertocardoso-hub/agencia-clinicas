@@ -27,10 +27,10 @@ export default function ProcesoSection() {
   ]
 
   return (
-    <section className="section-padding bg-secondary">
+    <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-h2 font-heading mb-4">Nuestro proceso</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Nuestro proceso</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
             4 pasos simples para aumentar tus pacientes en Sevilla
           </p>
@@ -38,15 +38,15 @@ export default function ProcesoSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pasos.map((paso, idx) => (
-            <div key={idx} className="bg-neutral border border-neutral-dark rounded p-8 relative">
+            <div key={idx} className="bg-white border border-slate-200 rounded-lg p-8 relative">
               {/* Número grande de fondo */}
-              <div className="absolute -top-4 -left-4 text-6xl font-bold text-gray-100 opacity-50">
+              <div className="absolute -top-4 -left-4 text-6xl font-bold text-slate-100 opacity-50">
                 {paso.numero}
               </div>
 
               <div className="relative">
-                <div className="text-4xl font-bold text-primary mb-4">{paso.numero}</div>
-                <h3 className="font-heading text-h4 mb-3 text-text">{paso.titulo}</h3>
+                <div className="text-5xl font-bold text-primary mb-4">{paso.numero}</div>
+                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">{paso.titulo}</h3>
                 <p className="text-text-muted text-sm">{paso.descripcion}</p>
               </div>
 
