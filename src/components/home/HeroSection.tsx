@@ -3,7 +3,7 @@ import TrustBadges from '@/components/shared/TrustBadges'
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-b from-secondary to-white py-16 md:py-24">
+    <section className="py-section md:py-32 bg-gradient-to-br from-primary/5 to-secondary/5">
       <div className="container-custom text-center">
         <h1 className="text-h1 font-heading mb-6 text-primary leading-tight">
           Consigue más pacientes en Sevilla
@@ -16,13 +16,13 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Link
             href="/contacto"
-            className="inline-block bg-primary text-white px-8 py-4 rounded hover:bg-primary-light transition text-lg font-semibold"
+            className="btn-primary btn-primary-lg inline-flex items-center justify-center gap-2"
           >
             Reservar auditoría gratis
           </Link>
           <Link
             href="/casos-de-exito"
-            className="inline-block border-2 border-primary text-primary px-8 py-4 rounded hover:bg-primary hover:text-white transition text-lg font-semibold"
+            className="btn-secondary inline-flex items-center justify-center gap-2"
           >
             Ver casos de éxito
           </Link>
@@ -39,7 +39,7 @@ export default function HeroSection() {
             <p className="text-text-muted">Aumento medio en captación</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-accent mb-2">500+</div>
+            <div className="text-4xl font-bold text-secondary mb-2">500+</div>
             <p className="text-text-muted">Clínicas asesoradas</p>
           </div>
           <div>
