@@ -9,28 +9,40 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        /* Clinical Eminence Palette */
         primary: {
-          DEFAULT: '#0A6B5E',
-          light: '#2BB5A0',
-          lighter: '#4CC9B5',
+          DEFAULT: '#0A6B5E',    /* Deep Emerald */
+          dark: '#085249',       /* Hover state */
+          light: '#0E8C7A',      /* Light variant */
+          lighter: '#11A894',    /* Lighter variant */
         },
-        secondary: '#E8A030',
-        'secondary-dark': '#5C3D00',
-        tertiary: '#1D1D1B',
+        accent: {
+          DEFAULT: '#8B6D11',    /* Oro Viejo */
+          dark: '#6E560D',       /* Hover state */
+        },
+        secondary: '#8B6D11',    /* Para backward compatibility */
+        'secondary-dark': '#6E560D',
+        tertiary: '#1A1A1A',
+        /* Backgrounds */
+        bg: '#FCF9F2',          /* Cream White */
+        surface: '#F4F1EA',     /* Dim - secciones alternas */
+        /* Neutrals */
         neutral: {
           DEFAULT: '#F4F1EA',
-          dark: '#E8E5DC',
+          dark: '#E5E1D8',
           darker: '#D4D0C3',
         },
+        /* Text */
         text: {
           light: '#FFFFFF',
-          DEFAULT: '#1D1D1B',
-          muted: '#6B7280',
+          DEFAULT: '#1A1A1A',
+          muted: '#5A5A5A',
         },
+        border: '#E5E1D8',
       },
       fontFamily: {
-        heading: ['DM Serif Display', 'serif'],
-        body: ['DM Sans', 'sans-serif'],
+        heading: ['Newsreader', 'Georgia', 'serif'],
+        body: ['Inter', 'Geist', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'xs': ['0.75rem', { lineHeight: '1rem' }],
@@ -40,13 +52,13 @@ const config: Config = {
         'xl': ['1.25rem', { lineHeight: '1.75rem' }],
         '2xl': ['1.5rem', { lineHeight: '2rem' }],
         '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
-        '4xl': ['2rem', { lineHeight: '2.5rem' }],
+        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
         '5xl': ['3rem', { lineHeight: '1.1' }],
         '6xl': ['3.75rem', { lineHeight: '1.1' }],
-        'h1': ['3rem', { lineHeight: '1.1', fontWeight: '400' }],
-        'h2': ['2rem', { lineHeight: '1.1', fontWeight: '400' }],
-        'h3': ['1.5rem', { lineHeight: '1.1', fontWeight: '400' }],
-        'h4': ['1.25rem', { lineHeight: '1.1', fontWeight: '400' }],
+        'h1': ['3rem', { lineHeight: '1.2', fontWeight: '600', fontFamily: 'Newsreader' }],
+        'h2': ['2rem', { lineHeight: '1.2', fontWeight: '600', fontFamily: 'Newsreader' }],
+        'h3': ['1.5rem', { lineHeight: '1.2', fontWeight: '600', fontFamily: 'Newsreader' }],
+        'h4': ['1.25rem', { lineHeight: '1.2', fontWeight: '600', fontFamily: 'Newsreader' }],
       },
       boxShadow: {
         'none': 'none',
