@@ -15,12 +15,12 @@ export default function TestimoniosSection() {
           {testimonios.map((testimonio) => (
             <div
               key={testimonio.id}
-              className="bg-neutral border border-neutral-dark rounded p-8 hover:shadow-lg transition"
+              className="card card-testimonial p-8"
             >
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonio.rating }).map((_, i) => (
-                  <span key={i} className="text-accent text-lg">
+                  <span key={i} className="text-secondary text-lg">
                     ★
                   </span>
                 ))}
@@ -30,10 +30,15 @@ export default function TestimoniosSection() {
               <p className="text-text mb-6 leading-relaxed italic">"{testimonio.texto}"</p>
 
               {/* Autor */}
-              <div className="border-t border-neutral-dark pt-4">
-                <p className="font-semibold text-text">{testimonio.nombre}</p>
-                <p className="text-sm text-text-muted">{testimonio.cargo}</p>
-                <p className="text-sm text-primary font-medium">{testimonio.clinica}</p>
+              <div className="flex items-center gap-3 mt-6">
+                <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold flex-shrink-0">
+                  {testimonio.nombre.split(' ').map((n: string) => n[0]).slice(0, 2).join('')}
+                </div>
+                <div>
+                  <p className="font-semibold text-text">{testimonio.nombre}</p>
+                  <p className="text-sm text-text-muted">{testimonio.cargo}</p>
+                  <p className="text-sm text-primary font-medium">{testimonio.clinica}</p>
+                </div>
               </div>
             </div>
           ))}
