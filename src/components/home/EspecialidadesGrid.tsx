@@ -6,7 +6,7 @@ export default function EspecialidadesGrid() {
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-h2 font-heading mb-4">A quién ayudamos</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">A quién ayudamos</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
             Trabajamos con profesionales sanitarios de todas las especialidades en Sevilla
           </p>
