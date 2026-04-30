@@ -2,10 +2,10 @@ import { testimonios } from '@/data/testimonios'
 
 export default function TestimoniosSection() {
   return (
-    <section className="section-padding bg-secondary">
+    <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-h2 font-heading mb-4">Lo que dicen nuestros clientes</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Lo que dicen nuestros clientes</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
             Opiniones reales de clínicas y profesionales sanitarios que han aumentado sus pacientes
           </p>
@@ -20,7 +20,7 @@ export default function TestimoniosSection() {
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonio.rating }).map((_, i) => (
-                  <span key={i} className="text-secondary text-lg">
+                  <span key={i} className="text-accent text-lg">
                     ★
                   </span>
                 ))}
