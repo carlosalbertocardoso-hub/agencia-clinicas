@@ -85,7 +85,7 @@ export default function BlogPostPage({ params }: Props) {
           }}
         />
 
-        <section className="bg-gradient-to-b from-secondary to-white py-16">
+        <section className="py-section">
           <div className="container-custom">
             <BreadcrumbNav
               items={[
@@ -96,7 +96,7 @@ export default function BlogPostPage({ params }: Props) {
 
             <div className="max-w-3xl mx-auto my-12">
               <div className="flex gap-4 mb-6 items-center">
-                <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full">
+                <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase tracking-wide">
                   {post.categoria}
                 </span>
                 <span className="text-sm text-text-muted">{post.tiempoLectura} lectura</span>
@@ -104,7 +104,7 @@ export default function BlogPostPage({ params }: Props) {
                 <span className="text-sm text-text-muted">{post.fecha}</span>
               </div>
 
-              <h1 className="text-h1 font-heading text-primary mb-6">{post.titulo}</h1>
+              <h1 className="text-4xl md:text-5xl font-heading font-light text-primary mb-4">{post.titulo}</h1>
               <p className="text-xl text-text-muted">{post.excerpt}</p>
             </div>
           </div>

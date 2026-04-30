@@ -238,7 +238,7 @@ export default function EspecialidadPage({ params }: Props) {
         />
 
         {/* Hero */}
-        <section className="bg-gradient-to-b from-secondary to-white py-16">
+        <section className="py-section">
           <div className="container-custom">
             <BreadcrumbNav
               items={[
@@ -250,7 +250,7 @@ export default function EspecialidadPage({ params }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="text-6xl mb-6">{especialidad.icono}</div>
-                <h1 className="text-h1 font-heading text-primary mb-6">{especialidad.nombre}</h1>
+                <h1 className="text-4xl md:text-5xl font-heading font-light text-primary mb-4">{especialidad.nombre}</h1>
                 <p className="text-lg text-text-muted mb-8">{especialidad.descripcionLarga}</p>
 
                 <div className="bg-neutral border-l-4 p-6 rounded" style={{ borderColor: especialidad.color }}>
@@ -338,16 +338,16 @@ export default function EspecialidadPage({ params }: Props) {
         {faqs.length > 0 && <FaqSection faqs={faqs} title={`Preguntas sobre marketing para ${especialidad.nombre}`} />}
 
         {/* CTA Final */}
-        <section className="section-padding bg-gradient-to-r from-primary to-primary-light text-white">
+        <section className="section-padding section-primary">
           <div className="container-custom text-center">
             <h2 className="text-h2 font-heading mb-6">Listo para crecer tu consulta?</h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
               Auditoría gratuita, sin compromiso. Descubre cómo otros {especialidad.nombre.toLowerCase()} están
               captando más pacientes en Sevilla.
             </p>
             <a
               href="#contacto"
-              className="inline-block bg-accent text-text px-8 py-4 rounded hover:bg-opacity-90 transition text-lg font-semibold"
+              className="inline-block bg-secondary text-tertiary px-8 py-4 rounded font-semibold uppercase tracking-wide hover:opacity-90 transition"
             >
               Solicitar auditoría gratis
             </a>
