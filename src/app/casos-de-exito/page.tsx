@@ -29,7 +29,7 @@ export default function CasosExitoPage() {
       <Header />
 
       <main className="flex-grow">
-        <section className="bg-gradient-to-b from-secondary to-white py-16">
+        <section className="py-section">
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Casos de Éxito', href: '/casos-de-exito' }]} />
 
@@ -51,7 +51,7 @@ export default function CasosExitoPage() {
 
                   <div className="p-8">
                     <div className="mb-6">
-                      <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full">
+                      <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase tracking-wide">
                         {caso.especialidad}
                       </span>
                     </div>
@@ -85,7 +85,7 @@ export default function CasosExitoPage() {
             </p>
             <Link
               href="/contacto"
-              className="inline-block bg-primary text-white px-8 py-4 rounded hover:opacity-90 transition font-semibold"
+              className="btn-primary btn-primary-lg"
             >
               Solicitar auditoría gratis
             </Link>

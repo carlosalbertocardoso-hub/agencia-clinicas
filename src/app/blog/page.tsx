@@ -29,7 +29,7 @@ export default function BlogPage() {
       <Header />
 
       <main className="flex-grow">
-        <section className="bg-gradient-to-b from-secondary to-white py-16">
+        <section className="py-section">
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Blog', href: '/blog' }]} />
 
@@ -52,7 +52,7 @@ export default function BlogPage() {
 
                     <div className="p-6">
                       <div className="flex gap-2 mb-3">
-                        <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full">
+                        <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase tracking-wide">
                           {post.categoria}
                         </span>
                         <span className="text-xs text-text-muted">{post.tiempoLectura} lectura</span>
@@ -84,7 +84,7 @@ export default function BlogPage() {
             </p>
             <Link
               href="/contacto"
-              className="inline-block bg-primary text-white px-8 py-4 rounded hover:opacity-90 transition font-semibold"
+              className="btn-primary btn-primary-lg"
             >
               Solicitar auditoría gratis
             </Link>
