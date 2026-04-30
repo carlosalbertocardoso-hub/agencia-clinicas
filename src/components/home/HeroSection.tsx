@@ -3,9 +3,9 @@ import TrustBadges from '@/components/shared/TrustBadges'
 
 export default function HeroSection() {
   return (
-    <section className="py-section md:py-32 bg-gradient-to-br from-primary/5 to-secondary/5">
+    <section className="py-section md:py-32 bg-gradient-to-br from-bg to-surface">
       <div className="container-custom text-center">
-        <h1 className="text-h1 font-heading mb-6 text-primary leading-tight">
+        <h1 className="text-5xl md:text-6xl font-heading font-semibold mb-6 text-primary leading-tight">
           Consigue más pacientes en Sevilla
         </h1>
         <p className="text-lg md:text-xl text-text-muted mb-8 max-w-3xl mx-auto">
@@ -33,18 +33,18 @@ export default function HeroSection() {
         </div>
 
         {/* Stat Highlights */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 bg-neutral border border-neutral-dark rounded p-8 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 bg-white border border-slate-200 rounded-lg p-8 mt-12 shadow-sm">
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">+300%</div>
-            <p className="text-text-muted">Aumento medio en captación</p>
+            <div className="text-5xl font-bold text-primary mb-2">+300%</div>
+            <p className="text-sm text-text-muted">Aumento medio en captación</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-secondary mb-2">500+</div>
-            <p className="text-text-muted">Clínicas asesoradas</p>
+            <div className="text-5xl font-bold text-accent mb-2">500+</div>
+            <p className="text-sm text-text-muted">Clínicas asesoradas</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">10+</div>
-            <p className="text-text-muted">Años de experiencia</p>
+            <div className="text-5xl font-bold text-primary mb-2">10+</div>
+            <p className="text-sm text-text-muted">Años de experiencia</p>
           </div>
         </div>
       </div>
