@@ -28,7 +28,7 @@ export default function ContactoPage() {
       <Header />
 
       <main className="flex-grow">
-        <section className="bg-gradient-to-b from-secondary to-white py-16">
+        <section className="py-section">
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Contacto', href: '/contacto' }]} />
 

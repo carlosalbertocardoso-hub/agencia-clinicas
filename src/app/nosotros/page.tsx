@@ -27,7 +27,7 @@ export default function NosotrosPage() {
       <Header />
 
       <main className="flex-grow">
-        <section className="bg-gradient-to-b from-secondary to-white py-16">
+        <section className="py-section">
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Sobre nosotros', href: '/nosotros' }]} />
 
@@ -70,7 +70,7 @@ export default function NosotrosPage() {
             <h2 className="text-h2 font-heading mb-12 text-center">Nuestros valores</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="bg-neutral p-8 rounded border border-neutral-dark">
+              <div className="card card-service p-8">
                 <div className="text-4xl mb-4">🎯</div>
                 <h3 className="font-heading text-h4 mb-3 text-text">Resultados sobre promesas</h3>
                 <p className="text-text-muted text-sm">
@@ -78,7 +78,7 @@ export default function NosotrosPage() {
                 </p>
               </div>
 
-              <div className="bg-neutral p-8 rounded border border-neutral-dark">
+              <div className="card card-service p-8">
                 <div className="text-4xl mb-4">🔒</div>
                 <h3 className="font-heading text-h4 mb-3 text-text">Privacidad y ética</h3>
                 <p className="text-text-muted text-sm">
@@ -86,7 +86,7 @@ export default function NosotrosPage() {
                 </p>
               </div>
 
-              <div className="bg-neutral p-8 rounded border border-neutral-dark">
+              <div className="card card-service p-8">
                 <div className="text-4xl mb-4">💡</div>
                 <h3 className="font-heading text-h4 mb-3 text-text">Innovación continua</h3>
                 <p className="text-text-muted text-sm">
@@ -112,7 +112,7 @@ export default function NosotrosPage() {
               </p>
               <a
                 href="/contacto"
-                className="inline-block bg-primary text-white px-8 py-3 rounded hover:opacity-90 transition font-semibold"
+                className="btn-primary"
               >
                 Contáctanos
               </a>
