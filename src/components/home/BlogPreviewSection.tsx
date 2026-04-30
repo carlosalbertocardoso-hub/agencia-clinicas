@@ -35,10 +35,10 @@ export default function BlogPreviewSection() {
   ]
 
   return (
-    <section className="section-padding bg-secondary">
+    <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-h2 font-heading mb-4">Blog: Marketing para clínicas</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Blog: Marketing para clínicas</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
             Tips, estrategias y casos de estudio sobre marketing digital sanitario
           </p>
@@ -47,20 +47,20 @@ export default function BlogPreviewSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {articulosRecientes.map((articulo) => (
             <Link key={articulo.id} href={`/blog/${articulo.slug}`}>
-              <article className="bg-neutral border border-neutral-dark rounded overflow-hidden hover:shadow-lg transition h-full group">
+              <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                 {/* Imagen placeholder */}
                 <div className="h-48 bg-gradient-to-br from-primary to-primary-light opacity-80 group-hover:opacity-100 transition" />
 
                 {/* Contenido */}
                 <div className="p-6">
                   <div className="flex gap-2 mb-3">
-                    <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full">
+                    <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase">
                       {articulo.categoria}
                     </span>
                     <span className="text-xs text-text-muted">{articulo.tiempo_lectura} lectura</span>
                   </div>
 
-                  <h3 className="font-heading text-h4 mb-3 text-text group-hover:text-primary transition line-clamp-2">
+                  <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text group-hover:text-primary transition line-clamp-2">
                     {articulo.titulo}
                   </h3>
 
