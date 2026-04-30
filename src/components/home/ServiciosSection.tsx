@@ -3,10 +3,10 @@ import { servicios } from '@/data/servicios'
 
 export default function ServiciosSection() {
   return (
-    <section className="section-padding bg-secondary">
+    <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-h2 font-heading mb-4">Nuestros servicios</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Nuestros servicios</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
             Soluciones completas de marketing digital para clínicas y profesionales sanitarios
           </p>
@@ -21,7 +21,7 @@ export default function ServiciosSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-h4 font-heading mb-3 text-text group-hover:text-primary transition">
+                <h3 className="text-xl md:text-2xl font-heading font-semibold mb-3 text-text group-hover:text-primary transition">
                   {servicio.nombre}
                 </h3>
                 <p className="text-text-muted mb-6">{servicio.descripcion}</p>
