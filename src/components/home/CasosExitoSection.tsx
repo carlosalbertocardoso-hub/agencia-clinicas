@@ -37,7 +37,7 @@ export default function CasosExitoSection() {
         <div className="text-center">
           <Link
             href="/casos-de-exito"
-            className="inline-block bg-accent text-white px-8 py-4 rounded hover:bg-opacity-90 transition text-lg font-semibold"
+            className="btn-primary btn-primary-lg"
           >
             Ver todos los casos →
           </Link>

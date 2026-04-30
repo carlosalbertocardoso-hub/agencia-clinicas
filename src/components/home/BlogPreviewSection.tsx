@@ -79,7 +79,7 @@ export default function BlogPreviewSection() {
         <div className="text-center">
           <Link
             href="/blog"
-            className="inline-block border-2 border-primary text-primary px-8 py-3 rounded hover:bg-primary hover:text-white transition font-semibold"
+            className="btn-secondary"
           >
             Ver todos los artículos
           </Link>
