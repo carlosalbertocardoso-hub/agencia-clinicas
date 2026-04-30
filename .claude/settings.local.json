@@ -14,7 +14,9 @@
       "Bash(npm run *)",
       "mcp__claude_ai_Hugging_Face__dynamic_space",
       "Bash(git remote *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Read(//c/Users/ccard/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python3 scripts/search.py \"medical clinic healthcare agency professional elegant service\" --design-system -p \"PacientesSevilla\" -f markdown)"
     ]
   }
 }
