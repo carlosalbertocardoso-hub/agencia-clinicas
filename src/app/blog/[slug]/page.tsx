@@ -104,7 +104,7 @@ export default function BlogPostPage({ params }: Props) {
                 <span className="text-sm text-text-muted">{post.fecha}</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-heading font-light text-primary mb-4">{post.titulo}</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{post.titulo}</h1>
               <p className="text-xl text-text-muted">{post.excerpt}</p>
             </div>
           </div>
@@ -119,8 +119,8 @@ export default function BlogPostPage({ params }: Props) {
               }}
             />
 
-            <div className="bg-secondary p-8 rounded border border-neutral-dark mb-12">
-              <h2 className="text-h3 font-heading text-text mb-4">¿Necesitas ayuda con tu estrategia?</h2>
+            <div className="bg-white p-8 rounded-lg border border-slate-200 mb-12">
+              <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-4">¿Necesitas ayuda con tu estrategia?</h2>
               <p className="text-text-muted mb-6">
                 Este artículo es una guía general. Tu clínica merece estrategia personalizada. Solicita auditoría gratis.
               </p>
@@ -130,18 +130,18 @@ export default function BlogPostPage({ params }: Props) {
         </section>
 
         {relatedPosts.length > 0 && (
-          <section className="section-padding bg-secondary">
+          <section className="section-padding bg-surface">
             <div className="container-custom">
-              <h2 className="text-h2 font-heading mb-8 text-center">Artículos relacionados</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">Artículos relacionados</h2>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {relatedPosts.map((relPost) => (
                   <Link key={relPost.id} href={`/blog/${relPost.slug}`}>
-                    <article className="bg-neutral border border-neutral-dark rounded overflow-hidden hover:shadow-lg transition h-full group">
+                    <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                       <div className="h-40 bg-gradient-to-br from-primary to-primary-light opacity-80" />
                       <div className="p-6">
-                        <span className="text-xs font-semibold text-white bg-primary px-2 py-1 rounded">{relPost.categoria}</span>
-                        <h3 className="font-heading text-h4 mb-3 mt-3 text-text group-hover:text-primary line-clamp-2">
+                        <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase">{relPost.categoria}</span>
+                        <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 mt-3 text-text group-hover:text-primary line-clamp-2">
                           {relPost.titulo}
                         </h3>
                         <p className="text-text-muted text-sm line-clamp-2">{relPost.excerpt}</p>
