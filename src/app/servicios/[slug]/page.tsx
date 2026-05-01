@@ -104,7 +104,7 @@ export default function ServicioPage({ params }: Props) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center my-8">
               <div>
-                <h1 className="text-4xl md:text-5xl font-heading font-light text-primary mb-4">{servicio.nombre}</h1>
+                <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{servicio.nombre}</h1>
                 <p className="text-lg text-text-muted mb-8">{servicio.descripcion}</p>
 
                 <div className="space-y-4">
@@ -117,17 +117,17 @@ export default function ServicioPage({ params }: Props) {
                 </div>
               </div>
 
-              <div className="bg-neutral border border-neutral-dark rounded p-8 shadow-lg">
-                <h2 className="text-h3 font-heading text-text mb-6">Solicita una consulta gratuita</h2>
+              <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+                <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-6">Solicita una consulta gratuita</h2>
                 <ContactForm especialidad={servicio.nombre} buttonText="Solicitar consulta" />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-surface">
           <div className="container-custom max-w-3xl">
-            <h2 className="text-h2 font-heading mb-8 text-center">¿Por qué contratar {servicio.nombre}?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">¿Por qué contratar {servicio.nombre}?</h2>
 
             <div className="space-y-6">
               <div className="flex gap-4">
@@ -167,14 +167,14 @@ export default function ServicioPage({ params }: Props) {
 
         <section className="section-padding section-primary">
           <div className="container-custom text-center">
-            <h2 className="text-h2 font-heading mb-6">Listo para llevar tu clínica al siguiente nivel?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">Listo para llevar tu clínica al siguiente nivel?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
               Auditoría gratuita. Propuesta personalizada. Sin compromiso. Descubre cómo {servicio.nombre.toLowerCase()} puede
               transformar tu práctica médica.
             </p>
             <a
               href="#contacto"
-              className="inline-block bg-secondary text-tertiary px-8 py-4 rounded font-semibold uppercase tracking-wide hover:opacity-90 transition"
+              className="inline-block bg-accent text-primary px-8 py-4 rounded-lg font-semibold uppercase tracking-wide hover:opacity-90 transition"
             >
               Solicitar auditoría gratis
             </a>
