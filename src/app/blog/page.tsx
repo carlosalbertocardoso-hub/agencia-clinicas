@@ -34,7 +34,7 @@ export default function BlogPage() {
             <BreadcrumbNav items={[{ label: 'Blog', href: '/blog' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-12">
-              <h1 className="text-h1 font-heading text-primary mb-6">Marketing Digital para Clínicas</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Marketing Digital para Clínicas</h1>
               <p className="text-xl text-text-muted">
                 Tips, estrategias y casos de estudio sobre SEO, Google Ads, diseño web y redes sociales para profesionales sanitarios.
               </p>
@@ -47,7 +47,7 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {blogPosts.map((post) => (
                 <Link key={post.id} href={`/blog/${post.slug}`}>
-                  <article className="bg-neutral border border-neutral-dark rounded overflow-hidden hover:shadow-lg transition h-full group">
+                  <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                     <div className="h-48 bg-gradient-to-br from-primary to-primary-light opacity-80 group-hover:opacity-100 transition" />
 
                     <div className="p-6">
@@ -58,7 +58,7 @@ export default function BlogPage() {
                         <span className="text-xs text-text-muted">{post.tiempoLectura} lectura</span>
                       </div>
 
-                      <h3 className="font-heading text-h4 mb-3 text-text group-hover:text-primary transition line-clamp-2">
+                      <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text group-hover:text-primary transition line-clamp-2">
                         {post.titulo}
                       </h3>
 
@@ -76,9 +76,9 @@ export default function BlogPage() {
           </div>
         </section>
 
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-surface">
           <div className="container-custom text-center max-w-2xl mx-auto">
-            <h2 className="text-h2 font-heading mb-6">¿Necesitas estrategia personalizada?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">¿Necesitas estrategia personalizada?</h2>
             <p className="text-text-muted mb-8">
               Los artículos son guías generales. Tu clínica necesita estrategia a medida. Solicita auditoría gratis.
             </p>
