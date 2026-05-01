@@ -33,7 +33,7 @@ export default function ContactoPage() {
             <BreadcrumbNav items={[{ label: 'Contacto', href: '/contacto' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-12">
-              <h1 className="text-h1 font-heading text-primary mb-6">Hablemos sobre tu clínica</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Hablemos sobre tu clínica</h1>
               <p className="text-xl text-text-muted">
                 Auditoría gratuita, propuesta personalizada, sin compromiso. Cuéntanos tu situación y te proponemos estrategia.
               </p>
@@ -41,10 +41,10 @@ export default function ContactoPage() {
           </div>
         </section>
 
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-surface">
           <div className="container-custom max-w-2xl">
-            <div className="bg-neutral p-12 rounded border border-neutral-dark shadow-lg">
-              <h2 className="text-h3 font-heading text-text mb-8">Cuéntanos sobre tu clínica</h2>
+            <div className="bg-white p-12 rounded-lg border border-slate-200 shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-8">Cuéntanos sobre tu clínica</h2>
               <ContactForm buttonText="Enviar solicitud" />
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function ContactoPage() {
               </div>
             </div>
 
-            <div className="bg-secondary p-8 rounded border border-neutral-dark">
+            <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="font-semibold text-text mb-4">¿Tienes prisa?</h3>
               <p className="text-text-muted mb-6">
                 Responde el formulario arriba y te contactaremos en las próximas 24 horas con tu auditoría personalizada.
