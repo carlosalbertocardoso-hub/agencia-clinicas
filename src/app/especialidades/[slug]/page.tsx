@@ -250,19 +250,19 @@ export default function EspecialidadPage({ params }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="text-6xl mb-6">{especialidad.icono}</div>
-                <h1 className="text-4xl md:text-5xl font-heading font-light text-primary mb-4">{especialidad.nombre}</h1>
+                <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{especialidad.nombre}</h1>
                 <p className="text-lg text-text-muted mb-8">{especialidad.descripcionLarga}</p>
 
-                <div className="bg-neutral border-l-4 p-6 rounded" style={{ borderColor: especialidad.color }}>
+                <div className="bg-white border-l-4 p-6 rounded-lg border border-slate-200" style={{ borderLeftColor: especialidad.color, borderLeftWidth: '4px' }}>
                   <p className="font-semibold text-text mb-2">Resultado promedio:</p>
-                  <p className="text-2xl font-bold" style={{ color: especialidad.color }}>
+                  <p className="text-3xl font-bold" style={{ color: especialidad.color }}>
                     {especialidad.resultados}
                   </p>
                 </div>
               </div>
 
-              <div className="bg-neutral border border-neutral-dark rounded p-8 shadow-lg">
-                <h2 className="text-h3 font-heading text-text mb-6">Solicita auditoría gratis</h2>
+              <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+                <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-6">Solicita auditoría gratis</h2>
                 <ContactForm especialidad={especialidad.nombre} buttonText="Solicitar auditoría" />
               </div>
             </div>
@@ -270,13 +270,13 @@ export default function EspecialidadPage({ params }: Props) {
         </section>
 
         {/* Servicios relacionados */}
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-surface">
           <div className="container-custom max-w-3xl">
-            <h2 className="text-h2 font-heading mb-8 text-center">Servicios para {especialidad.nombre}</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">Servicios para {especialidad.nombre}</h2>
 
             <div className="space-y-4">
               {especialidad.servicios.map((servicio, idx) => (
-                <div key={idx} className="bg-neutral p-6 rounded border border-neutral-dark hover:border-primary transition">
+                <div key={idx} className="bg-white p-6 rounded-lg border border-slate-200 hover:border-primary transition">
                   <h3 className="font-semibold text-text mb-2">
                     {idx + 1}. {servicio.charAt(0).toUpperCase() + servicio.slice(1)}
                   </h3>
@@ -293,7 +293,7 @@ export default function EspecialidadPage({ params }: Props) {
         {/* Por qué es importante */}
         <section className="section-padding">
           <div className="container-custom max-w-3xl">
-            <h2 className="text-h2 font-heading mb-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">
               ¿Por qué marketing digital para {especialidad.nombre.toLowerCase()}?
             </h2>
 
@@ -340,14 +340,14 @@ export default function EspecialidadPage({ params }: Props) {
         {/* CTA Final */}
         <section className="section-padding section-primary">
           <div className="container-custom text-center">
-            <h2 className="text-h2 font-heading mb-6">Listo para crecer tu consulta?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">Listo para crecer tu consulta?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
               Auditoría gratuita, sin compromiso. Descubre cómo otros {especialidad.nombre.toLowerCase()} están
               captando más pacientes en Sevilla.
             </p>
             <a
               href="#contacto"
-              className="inline-block bg-secondary text-tertiary px-8 py-4 rounded font-semibold uppercase tracking-wide hover:opacity-90 transition"
+              className="inline-block bg-accent text-primary px-8 py-4 rounded-lg font-semibold uppercase tracking-wide hover:opacity-90 transition"
             >
               Solicitar auditoría gratis
             </a>
