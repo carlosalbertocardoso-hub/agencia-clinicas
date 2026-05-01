@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Smartphone, Target, TrendingUp } from 'lucide-react'
 import { especialidades, getEspecialidadBySlug } from '@/data/especialidades'
 import { buildBreadcrumbSchema, buildServiceSchema } from '@/lib/schemas'
 import Header from '@/components/layout/Header'
@@ -127,7 +128,7 @@ const faqsPorEspecialidad: Record<string, Array<{ id: string; pregunta: string; 
         'Entre €300-1.200/mes según competencia local. Ofrecemos auditoría gratuita para proponer estrategia y presupuesto personalizado.',
     },
   ],
-  'nutricion-sevilla': [
+  'nutricionistas-sevilla': [
     {
       id: '1',
       pregunta: '¿Es legal hacer publicidad siendo nutricionista?',
@@ -167,7 +168,7 @@ const faqsPorEspecialidad: Record<string, Array<{ id: string; pregunta: string; 
         'Alto. Pacientes pediátricos generan relaciones largo plazo. Con marketing efectivo, aumentas consultas en 250-300%.',
     },
   ],
-  'cirugia-sevilla': [
+  'clinicas-cirugia-sevilla': [
     {
       id: '1',
       pregunta: '¿Puedo hacer publicidad siendo cirujano?',
@@ -299,7 +300,7 @@ export default function EspecialidadPage({ params }: Props) {
 
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="text-4xl flex-shrink-0">📱</div>
+                <Smartphone size={32} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Tu público está en internet</h3>
                   <p className="text-text-muted">
@@ -310,7 +311,7 @@ export default function EspecialidadPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <div className="text-4xl flex-shrink-0">🎯</div>
+                <Target size={32} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Captación precisa</h3>
                   <p className="text-text-muted">
@@ -321,7 +322,7 @@ export default function EspecialidadPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <div className="text-4xl flex-shrink-0">💼</div>
+                <TrendingUp size={32} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Crecimiento escalable</h3>
                   <p className="text-text-muted">

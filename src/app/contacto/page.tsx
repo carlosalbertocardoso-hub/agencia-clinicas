@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Mail, MessageCircle, MapPin } from 'lucide-react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
@@ -54,7 +55,9 @@ export default function ContactoPage() {
           <div className="container-custom max-w-3xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="text-4xl mb-4">📧</div>
+                <div className="flex justify-center mb-4">
+                  <Mail size={40} className="text-primary" />
+                </div>
                 <h3 className="font-semibold text-text mb-2">Email</h3>
                 <a href="mailto:hola@pacientessevilla.com" className="text-primary hover:underline">
                   hola@pacientessevilla.com
@@ -62,7 +65,9 @@ export default function ContactoPage() {
               </div>
 
               <div className="text-center">
-                <div className="text-4xl mb-4">📱</div>
+                <div className="flex justify-center mb-4">
+                  <MessageCircle size={40} className="text-primary" />
+                </div>
                 <h3 className="font-semibold text-text mb-2">WhatsApp</h3>
                 <a href="https://wa.me/34600000000" className="text-primary hover:underline">
                   +34 600 00 00 00
@@ -70,10 +75,25 @@ export default function ContactoPage() {
               </div>
 
               <div className="text-center">
-                <div className="text-4xl mb-4">📍</div>
+                <div className="flex justify-center mb-4">
+                  <MapPin size={40} className="text-primary" />
+                </div>
                 <h3 className="font-semibold text-text mb-2">Ubicación</h3>
                 <p className="text-text-muted">Sevilla, España</p>
               </div>
+            </div>
+
+            {/* Google Maps */}
+            <div className="rounded-lg overflow-hidden border border-slate-200 shadow-md mb-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102760.24063387158!2d-6.0376!3d37.3891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1114be1469%3A0x9c26aace7c8d6a93!2sSevilla!5e0!3m2!1ses!2ses!4v1"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
 
             <div className="bg-white p-8 rounded-lg border border-slate-200">

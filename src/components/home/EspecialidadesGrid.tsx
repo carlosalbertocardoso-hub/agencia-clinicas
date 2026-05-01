@@ -1,4 +1,4 @@
-import { especialidades } from '@/data/especialidades'
+import { especialidades, iconosEspecialidades } from '@/data/especialidades'
 import EspecialidadCard from '@/components/shared/EspecialidadCard'
 
 export default function EspecialidadesGrid() {
@@ -19,7 +19,7 @@ export default function EspecialidadesGrid() {
               nombre={esp.nombre}
               slug={esp.slug}
               descripcionCorta={esp.descripcionCorta}
-              icono={esp.icono}
+              icono={iconosEspecialidades[esp.slug] || esp.icono}
               resultados={esp.resultados}
               color={esp.color}
             />

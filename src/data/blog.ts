@@ -16,6 +16,7 @@ export const blogPosts: BlogPost[] = [
     titulo: '10 errores SEO que cometen los dentistas en Sevilla',
     slug: 'errores-seo-dentistas',
     excerpt: 'Descubre los errores más comunes en SEO que reducen tu visibilidad en Google. Cómo evitarlos y posicionar tu clínica dental.',
+    imagen: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80',
     contenido: `
 # 10 errores SEO que cometen los dentistas en Sevilla
 
@@ -64,6 +65,7 @@ Evita estos 10 errores y ya estás por encima del 90% de dentistas en Sevilla.
     titulo: 'Google Ads para psicólogos: Guía completa 2024',
     slug: 'google-ads-psicologos',
     excerpt: 'Cómo configurar campañas de Google Ads efectivas si eres psicólogo en Sevilla. Palabras clave, presupuesto y conversión.',
+    imagen: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80',
     contenido: `
 # Google Ads para Psicólogos: Guía Completa 2024
 
@@ -102,6 +104,7 @@ Mínimo €300/mes para resultados. Ideal €800-1.200/mes para campañas combin
     titulo: 'Diseño web para clínicas: qué convierte pacientes',
     slug: 'diseno-web-clinicas',
     excerpt: 'Elementos clave en una web médica que convierte visitantes en pacientes. Ejemplos de clínicas que crecieron 3x.',
+    imagen: 'https://images.unsplash.com/photo-1611162617263-4ec3d744e2f6?w=800&q=80',
     contenido: `
 # Diseño Web para Clínicas: Qué Convierte Pacientes
 

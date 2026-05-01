@@ -7,6 +7,7 @@ export const servicios: Servicio[] = [
     slug: 'seo-medico',
     descripcion:
       'Posicionamiento en Google para clínicas y profesionales sanitarios. Aparecer primero cuando busquen tu especialidad en Sevilla.',
+    imagen: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80',
     caracteristicas: [
       'Auditoría SEO completa',
       'Posicionamiento en palabras clave médicas',
@@ -23,6 +24,7 @@ export const servicios: Servicio[] = [
     slug: 'google-ads',
     descripcion:
       'Campañas de Google Ads especializadas para captar pacientes. Pagos solo por clics reales en tu página.',
+    imagen: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80',
     caracteristicas: [
       'Auditoría de palabras clave médicas',
       'Configuración de campañas segmentadas',
@@ -31,7 +33,7 @@ export const servicios: Servicio[] = [
       'Optimización de ROI',
       'Reportes de resultados semanales',
     ],
-    especialidades: ['clinicas-dentales-sevilla', 'medicina-estetica-sevilla', 'cirugias-sevilla'],
+    especialidades: ['clinicas-dentales-sevilla', 'medicina-estetica-sevilla', 'clinicas-cirugia-sevilla'],
   },
   {
     id: '3',
@@ -39,6 +41,7 @@ export const servicios: Servicio[] = [
     slug: 'diseno-web',
     descripcion:
       'Sitios web modernos, rápidos y optimizados para clínicas. Diseño que convierte visitantes en pacientes.',
+    imagen: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80',
     caracteristicas: [
       'Diseño responsive y moderno',
       'Velocidad de carga optimizada',
@@ -55,6 +58,7 @@ export const servicios: Servicio[] = [
     nombre: 'Redes Sociales',
     slug: 'redes-sociales',
     descripcion: 'Presencia profesional en redes sociales. Contenido, engagement y conversión de seguidores en pacientes.',
+    imagen: 'https://images.unsplash.com/photo-1611162617263-4ec3d744e2f6?w=700&q=80',
     caracteristicas: [
       'Planificación de contenido',
       'Creación de posts e imágenes',

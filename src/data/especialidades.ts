@@ -1,5 +1,16 @@
 import type { Especialidad } from '@/types'
 
+// Mapa de iconos Lucide para especialidades
+export const iconosEspecialidades: Record<string, string> = {
+  'clinicas-dentales-sevilla': 'Tooth',
+  'psicologos-sevilla': 'Brain',
+  'medicina-estetica-sevilla': 'Sparkles',
+  'fisioterapia-sevilla': 'Activity',
+  'nutricionistas-sevilla': 'Apple',
+  'pediatria-sevilla': 'Baby',
+  'clinicas-cirugia-sevilla': 'Hospital',
+}
+
 export const especialidades: Especialidad[] = [
   {
     id: '1',

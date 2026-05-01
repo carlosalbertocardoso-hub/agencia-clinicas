@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { testimonios } from '@/data/testimonios'
 
 export default function TestimoniosSection() {
@@ -31,9 +32,19 @@ export default function TestimoniosSection() {
 
               {/* Autor */}
               <div className="flex items-center gap-3 mt-6">
-                <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold flex-shrink-0">
-                  {testimonio.nombre.split(' ').map((n: string) => n[0]).slice(0, 2).join('')}
-                </div>
+                {testimonio.imagen ? (
+                  <Image
+                    src={testimonio.imagen}
+                    alt={testimonio.nombre}
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold flex-shrink-0">
+                    {testimonio.nombre.split(' ').map((n: string) => n[0]).slice(0, 2).join('')}
+                  </div>
+                )}
                 <div>
                   <p className="font-semibold text-text">{testimonio.nombre}</p>
                   <p className="text-sm text-text-muted">{testimonio.cargo}</p>

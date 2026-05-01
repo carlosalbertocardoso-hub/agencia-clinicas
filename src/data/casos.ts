@@ -9,7 +9,7 @@ export const casos: CasoExito[] = [
     resultado: '+280%',
     resultadoValue: 280,
     resultadoUnit: '%',
-    imagen: '/images/casos/caso-dental.jpg',
+    imagen: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80',
     descripcion:
       'Estrategia SEO + Google Ads para una clínica dental en Sevilla. En 6 meses pasaron de 15 pacientes nuevos/mes a más de 50 consultas mensuales.',
   },
@@ -21,7 +21,7 @@ export const casos: CasoExito[] = [
     resultado: '+320%',
     resultadoValue: 320,
     resultadoUnit: '%',
-    imagen: '/images/casos/caso-psicologia.jpg',
+    imagen: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80',
     descripcion:
       'Marketing digital enfocado en psicología clínica y terapia. Con un plan de Google Ads + redes sociales consiguieron ocupar todas las franjas horarias disponibles.',
   },
@@ -33,7 +33,7 @@ export const casos: CasoExito[] = [
     resultado: '+350%',
     resultadoValue: 350,
     resultadoUnit: '%',
-    imagen: '/images/casos/caso-estetica.jpg',
+    imagen: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800&q=80',
     descripcion:
       'Diseño web + Google Ads + redes sociales estratégica para clínica estética. Lograron un aumento exponencial en consultas de nuevos tratamientos.',
   },

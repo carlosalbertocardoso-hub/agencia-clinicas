@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
+import { BarChart3, Target, Rocket } from 'lucide-react'
 import { servicios, faqsPorServicio } from '@/data/servicios'
 import { buildBreadcrumbSchema, buildServiceSchema } from '@/lib/schemas'
 import Header from '@/components/layout/Header'
@@ -102,8 +104,20 @@ export default function ServicioPage({ params }: Props) {
               ]}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center my-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start my-8">
               <div>
+                {/* Imagen del servicio */}
+                {servicio.imagen && (
+                  <div className="mb-8 rounded-lg overflow-hidden shadow-md h-48 md:h-56 relative">
+                    <Image
+                      src={servicio.imagen}
+                      alt={servicio.nombre}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+
                 <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{servicio.nombre}</h1>
                 <p className="text-lg text-text-muted mb-8">{servicio.descripcion}</p>
 
@@ -117,7 +131,7 @@ export default function ServicioPage({ params }: Props) {
                 </div>
               </div>
 
-              <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+              <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm sticky top-24">
                 <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-6">Solicita una consulta gratuita</h2>
                 <ContactForm especialidad={servicio.nombre} buttonText="Solicitar consulta" />
               </div>
@@ -131,7 +145,7 @@ export default function ServicioPage({ params }: Props) {
 
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="text-4xl flex-shrink-0">📈</div>
+                <BarChart3 size={32} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Resultados medibles</h3>
                   <p className="text-text-muted">
@@ -141,7 +155,7 @@ export default function ServicioPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <div className="text-4xl flex-shrink-0">🎯</div>
+                <Target size={32} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Especialización sanitaria</h3>
                   <p className="text-text-muted">
@@ -151,7 +165,7 @@ export default function ServicioPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <div className="text-4xl flex-shrink-0">👥</div>
+                <Rocket size={32} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Atención dedicada</h3>
                   <p className="text-text-muted">

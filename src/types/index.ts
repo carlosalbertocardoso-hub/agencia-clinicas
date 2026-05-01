@@ -18,6 +18,7 @@ export interface Servicio {
   caracteristicas: string[]
   precio?: string
   especialidades: string[]
+  imagen?: string
 }
 
 export interface CasoExito {

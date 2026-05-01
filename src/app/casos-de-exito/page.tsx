@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { casos } from '@/data/casos'
 import Header from '@/components/layout/Header'
@@ -47,7 +48,16 @@ export default function CasosExitoPage() {
             <div className="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
               {casos.map((caso) => (
                 <div key={caso.id} className="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                  <div className="h-64 bg-gradient-to-br from-primary to-primary-light opacity-80" />
+                  {caso.imagen && (
+                    <div className="h-64 relative bg-gray-200">
+                      <Image
+                        src={caso.imagen}
+                        alt={caso.titulo}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
 
                   <div className="p-8">
                     <div className="mb-6">
@@ -58,7 +68,7 @@ export default function CasosExitoPage() {
 
                     <h2 className="text-3xl md:text-4xl font-heading font-semibold text-primary mb-4">{caso.titulo}</h2>
 
-                    <div className="grid grid-cols-2 gap-4 mb-6 p-6 bg-surface rounded-lg border border-slate-200">
+                    <div className="grid grid-cols-2 gap-4 mb-8 p-6 bg-surface rounded-lg border border-slate-200">
                       <div>
                         <p className="text-sm text-text-muted mb-1">Resultado</p>
                         <p className="text-3xl font-bold text-primary">{caso.resultadoValue}{caso.resultadoUnit}</p>
@@ -69,7 +79,37 @@ export default function CasosExitoPage() {
                       </div>
                     </div>
 
-                    <p className="text-text-muted leading-relaxed">{caso.descripcion}</p>
+                    <p className="text-text-muted leading-relaxed mb-8">{caso.descripcion}</p>
+
+                    {/* Tabla Antes/Después */}
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm border border-slate-200 rounded-lg">
+                        <thead>
+                          <tr className="bg-surface border-b border-slate-200">
+                            <th className="px-4 py-3 text-left font-semibold text-text">Métrica</th>
+                            <th className="px-4 py-3 text-left font-semibold text-text-muted">Antes</th>
+                            <th className="px-4 py-3 text-left font-semibold text-primary">Después</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b border-slate-200">
+                            <td className="px-4 py-3 font-medium text-text">Pacientes/mes</td>
+                            <td className="px-4 py-3 text-text-muted">15</td>
+                            <td className="px-4 py-3 text-primary font-semibold">{Math.round(15 * (1 + caso.resultadoValue / 100))}</td>
+                          </tr>
+                          <tr className="border-b border-slate-200">
+                            <td className="px-4 py-3 font-medium text-text">Posición Google</td>
+                            <td className="px-4 py-3 text-text-muted">#8</td>
+                            <td className="px-4 py-3 text-primary font-semibold">#1</td>
+                          </tr>
+                          <tr>
+                            <td className="px-4 py-3 font-medium text-text">Plazo</td>
+                            <td className="px-4 py-3 text-text-muted">—</td>
+                            <td className="px-4 py-3 text-primary font-semibold">6 meses</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               ))}

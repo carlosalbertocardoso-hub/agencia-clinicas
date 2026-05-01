@@ -1,38 +1,9 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import { blogPosts } from '@/data/blog'
 
 export default function BlogPreviewSection() {
-  const articulosRecientes = [
-    {
-      id: '1',
-      titulo: '10 errores SEO que cometen los dentistas en Sevilla',
-      excerpt:
-        'Descubre los errores más comunes en SEO que reducen tu visibilidad en Google. Cómo evitarlos y posicionar tu clínica dental.',
-      slug: 'errores-seo-dentistas',
-      fecha: '28 de abril, 2024',
-      categoria: 'SEO',
-      tiempo_lectura: '8 min',
-    },
-    {
-      id: '2',
-      titulo: 'Google Ads para psicólogos: Guía completa 2024',
-      excerpt:
-        'Cómo configurar campañas de Google Ads efectivas si eres psicólogo en Sevilla. Palabras clave, presupuesto y conversión.',
-      slug: 'google-ads-psicologos',
-      fecha: '25 de abril, 2024',
-      categoria: 'Google Ads',
-      tiempo_lectura: '12 min',
-    },
-    {
-      id: '3',
-      titulo: 'Diseño web para clínicas: qué convierte pacientes',
-      excerpt:
-        'Elementos clave en una web médica que convierte visitantes en pacientes. Ejemplos de clínicas que crecieron 3x.',
-      slug: 'diseno-web-clinicas',
-      fecha: '22 de abril, 2024',
-      categoria: 'Diseño Web',
-      tiempo_lectura: '10 min',
-    },
-  ]
+  const articulosRecientes = blogPosts.slice(0, 3)
 
   return (
     <section className="section-padding bg-surface">
@@ -48,16 +19,23 @@ export default function BlogPreviewSection() {
           {articulosRecientes.map((articulo) => (
             <Link key={articulo.id} href={`/blog/${articulo.slug}`}>
               <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
-                {/* Imagen placeholder */}
-                <div className="h-48 bg-gradient-to-br from-primary to-primary-light opacity-80 group-hover:opacity-100 transition" />
+                <div className="h-48 bg-gray-200 relative overflow-hidden">
+                  {articulo.imagen && (
+                    <Image
+                      src={articulo.imagen}
+                      alt={articulo.titulo}
+                      fill
+                      className="object-cover group-hover:scale-105 transition"
+                    />
+                  )}
+                </div>
 
-                {/* Contenido */}
                 <div className="p-6">
                   <div className="flex gap-2 mb-3">
                     <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase">
                       {articulo.categoria}
                     </span>
-                    <span className="text-xs text-text-muted">{articulo.tiempo_lectura} lectura</span>
+                    <span className="text-xs text-text-muted">{articulo.tiempoLectura} lectura</span>
                   </div>
 
                   <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text group-hover:text-primary transition line-clamp-2">

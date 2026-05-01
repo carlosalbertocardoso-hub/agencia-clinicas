@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { casos } from '@/data/casos'
 
 export default function CasosExitoSection() {
@@ -15,8 +16,16 @@ export default function CasosExitoSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {casos.map((caso) => (
             <div key={caso.id} className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition">
-              <div className="h-48 bg-gradient-to-br from-primary to-primary-light relative">
-                <div className="absolute inset-0 flex items-center justify-center">
+              <div className="h-48 relative bg-gray-200">
+                {caso.imagen && (
+                  <Image
+                    src={caso.imagen}
+                    alt={caso.titulo}
+                    fill
+                    className="object-cover"
+                  />
+                )}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40">
                   <div className="text-center">
                     <div className="text-5xl font-bold text-white">{caso.resultado}</div>
                     <p className="text-white text-sm mt-2 font-medium">Aumento en captación</p>
