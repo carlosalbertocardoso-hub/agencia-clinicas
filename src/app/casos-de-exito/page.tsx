@@ -34,7 +34,7 @@ export default function CasosExitoPage() {
             <BreadcrumbNav items={[{ label: 'Casos de Éxito', href: '/casos-de-exito' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-12">
-              <h1 className="text-h1 font-heading text-primary mb-6">Resultados reales de clínicas que crecieron</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Resultados reales de clínicas que crecieron</h1>
               <p className="text-xl text-text-muted">
                 +500 clínicas en Sevilla han aumentado sus pacientes entre 200% y 400%. Aquí algunos casos documentados.
               </p>
@@ -46,7 +46,7 @@ export default function CasosExitoPage() {
           <div className="container-custom">
             <div className="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
               {casos.map((caso) => (
-                <div key={caso.id} className="bg-neutral border border-neutral-dark rounded overflow-hidden shadow-lg hover:shadow-xl transition">
+                <div key={caso.id} className="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
                   <div className="h-64 bg-gradient-to-br from-primary to-primary-light opacity-80" />
 
                   <div className="p-8">
@@ -56,12 +56,12 @@ export default function CasosExitoPage() {
                       </span>
                     </div>
 
-                    <h2 className="text-h2 font-heading text-primary mb-4">{caso.titulo}</h2>
+                    <h2 className="text-3xl md:text-4xl font-heading font-semibold text-primary mb-4">{caso.titulo}</h2>
 
-                    <div className="grid grid-cols-2 gap-4 mb-6 p-6 bg-secondary rounded">
+                    <div className="grid grid-cols-2 gap-4 mb-6 p-6 bg-surface rounded-lg border border-slate-200">
                       <div>
                         <p className="text-sm text-text-muted mb-1">Resultado</p>
-                        <p className="text-2xl font-bold text-primary">{caso.resultadoValue}{caso.resultadoUnit}</p>
+                        <p className="text-3xl font-bold text-primary">{caso.resultadoValue}{caso.resultadoUnit}</p>
                       </div>
                       <div>
                         <p className="text-sm text-text-muted mb-1">Clínica</p>
@@ -77,9 +77,9 @@ export default function CasosExitoPage() {
           </div>
         </section>
 
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-surface">
           <div className="container-custom text-center max-w-2xl mx-auto">
-            <h2 className="text-h2 font-heading mb-6">¿Quieres resultados similares?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">¿Quieres resultados similares?</h2>
             <p className="text-text-muted mb-8">
               Auditoría gratuita. Propuesta personalizada. Sin compromiso. Descubre cómo podemos ayudarte.
             </p>
