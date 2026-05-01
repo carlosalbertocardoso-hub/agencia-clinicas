@@ -15,20 +15,20 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="text-2xl font-heading font-semibold text-primary">
-            MedMark
+            Pacientes Sevilla
           </div>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-10 items-center">
-          {/* Products Dropdown */}
+          {/* Servicios Dropdown */}
           <div
             className="relative group"
             onMouseEnter={() => setOpenDropdown('servicios')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
             <button className="text-text hover:text-primary transition font-medium text-sm">
-              Products
+              Servicios
             </button>
             {openDropdown === 'servicios' && (
               <div className="absolute left-0 mt-1 w-48 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
@@ -45,14 +45,14 @@ export default function Header() {
             )}
           </div>
 
-          {/* Insights Dropdown */}
+          {/* Especialidades Dropdown */}
           <div
             className="relative group"
             onMouseEnter={() => setOpenDropdown('especialidades')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
             <button className="text-text hover:text-primary transition font-medium text-sm">
-              Insights
+              Especialidades
             </button>
             {openDropdown === 'especialidades' && (
               <div className="absolute left-0 mt-1 w-48 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
@@ -70,7 +70,7 @@ export default function Header() {
           </div>
 
           <Link href="/contacto" className="text-text hover:text-primary transition font-medium text-sm">
-            Contact Us
+            Contacto
           </Link>
         </nav>
 
@@ -79,7 +79,7 @@ export default function Header() {
           href="/contacto"
           className="hidden md:block btn-cta text-sm"
         >
-          SCHEDULE AUDIT
+          SOLICITAR AUDITORÍA
         </Link>
 
         {/* Mobile Menu Button */}
@@ -97,20 +97,20 @@ export default function Header() {
         <div className="lg:hidden border-t border-slate-100 bg-white">
           <nav className="container-custom py-4 space-y-3">
             <Link href="/servicios" className="block py-2 text-text hover:text-primary font-medium">
-              Products
+              Servicios
             </Link>
             <Link href="/especialidades" className="block py-2 text-text hover:text-primary font-medium">
-              Insights
+              Especialidades
             </Link>
             <Link href="/contacto" className="block py-2 text-text hover:text-primary font-medium">
-              Contact Us
+              Contacto
             </Link>
             <div className="pt-4">
               <Link
                 href="/contacto"
                 className="block btn-cta text-center text-sm"
               >
-                SCHEDULE AUDIT
+                SOLICITAR AUDITORÍA
               </Link>
             </div>
           </nav>
