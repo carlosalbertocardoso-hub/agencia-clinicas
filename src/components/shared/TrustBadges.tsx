@@ -1,9 +1,9 @@
 export default function TrustBadges() {
   const badges = [
-    { icon: '✓', label: 'Expert Medical Marketing' },
-    { icon: '⭐', label: '4.9/5 Satisfaction' },
-    { icon: '📊', label: '500+ Clinics Served' },
-    { icon: '🎯', label: '10+ Years Experience' },
+    { icon: '✓', label: 'Marketing Médico Especializado' },
+    { icon: '⭐', label: '4.9/5 Satisfacción' },
+    { icon: '📊', label: '500+ Clínicas Atendidas' },
+    { icon: '🎯', label: '10+ Años de Experiencia' },
   ]
 
   return (

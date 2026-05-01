@@ -30,7 +30,7 @@ export default function BreadcrumbNav({ items }: BreadcrumbNavProps) {
       />
       <nav className="flex flex-wrap gap-2 text-sm mb-8 text-text-muted font-body">
         <Link href="/" className="hover:text-primary transition">
-          Home
+          Inicio
         </Link>
         {items.map((item, index) => (
           <div key={item.href} className="flex items-center gap-2">
