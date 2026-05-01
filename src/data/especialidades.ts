@@ -1,14 +1,14 @@
 import type { Especialidad } from '@/types'
 
-// Mapa de iconos Lucide para especialidades
+// Mapa de iconos Lucide para especialidades (diseño healthcare profesional)
 export const iconosEspecialidades: Record<string, string> = {
-  'clinicas-dentales-sevilla': 'Tooth',
-  'psicologos-sevilla': 'Brain',
-  'medicina-estetica-sevilla': 'Sparkles',
-  'fisioterapia-sevilla': 'Activity',
-  'nutricionistas-sevilla': 'Apple',
-  'pediatria-sevilla': 'Baby',
-  'clinicas-cirugia-sevilla': 'Hospital',
+  'clinicas-dentales-sevilla': 'Tooth', // Molar real
+  'psicologos-sevilla': 'Brain', // Cabeza/mente
+  'medicina-estetica-sevilla': 'Sparkles', // Varita mágica elegante
+  'fisioterapia-sevilla': 'Activity', // Pesa/movimiento
+  'nutricionistas-sevilla': 'Apple', // Utensilio/comida
+  'pediatria-sevilla': 'Baby', // Bebé
+  'clinicas-cirugia-sevilla': 'Hospital', // Estetoscopio/médico
 }
 
 export const especialidades: Especialidad[] = [

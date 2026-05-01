@@ -19,7 +19,7 @@ export const testimonios: Testimonio[] = [
     texto:
       'Increíble transformación. Desde que trabajamos con ellos, tengo lista de espera. El SEO y Google Ads fue exactamente lo que necesitaba.',
     rating: 5,
-    imagen: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80',
+    imagen: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
   },
   {
     id: '3',
@@ -29,7 +29,7 @@ export const testimonios: Testimonio[] = [
     texto:
       'El diseño web es hermoso y funciona perfecto. Las conversiones aumentaron un 300%. Excelente inversión para nuestro negocio.',
     rating: 5,
-    imagen: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80',
+    imagen: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
   },
   {
     id: '4',

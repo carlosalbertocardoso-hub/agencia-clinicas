@@ -18,7 +18,7 @@ export default function CtaFinal() {
             Solicitar auditoría gratis
           </Link>
           <a
-            href="tel:+34XXX"
+            href="tel:+34600258938"
             className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition font-semibold uppercase tracking-wide"
           >
             Llamar ahora

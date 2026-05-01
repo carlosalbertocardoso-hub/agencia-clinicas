@@ -2,11 +2,11 @@ import Link from 'next/link'
 import {
   Smile,
   Brain,
-  Sparkles,
-  Activity,
-  Apple,
+  Wand2,
+  Dumbbell,
+  UtensilsCrossed,
   Baby,
-  Hospital,
+  Stethoscope,
 } from 'lucide-react'
 
 interface EspecialidadCardProps {
@@ -21,11 +21,11 @@ interface EspecialidadCardProps {
 const iconMap: Record<string, React.ReactNode> = {
   Tooth: <Smile size={32} />,
   Brain: <Brain size={32} />,
-  Sparkles: <Sparkles size={32} />,
-  Activity: <Activity size={32} />,
-  Apple: <Apple size={32} />,
+  Sparkles: <Wand2 size={32} />,
+  Activity: <Dumbbell size={32} />,
+  Apple: <UtensilsCrossed size={32} />,
   Baby: <Baby size={32} />,
-  Hospital: <Hospital size={32} />,
+  Hospital: <Stethoscope size={32} />,
 }
 
 export default function EspecialidadCard({
