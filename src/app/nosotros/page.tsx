@@ -32,7 +32,7 @@ export default function NosotrosPage() {
             <BreadcrumbNav items={[{ label: 'Sobre nosotros', href: '/nosotros' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-12">
-              <h1 className="text-h1 font-heading text-primary mb-6">Somos especialistas en marketing para clínicas</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Somos especialistas en marketing para clínicas</h1>
               <p className="text-xl text-text-muted mb-8">
                 10+ años ayudando a profesionales sanitarios en Sevilla a atraer más pacientes a través de estrategias digitales
                 efectivas.
@@ -43,7 +43,7 @@ export default function NosotrosPage() {
 
         <section className="section-padding">
           <div className="container-custom max-w-3xl">
-            <h2 className="text-h2 font-heading mb-8">Nuestra historia</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8">Nuestra historia</h2>
 
             <div className="space-y-6 text-text-muted leading-relaxed">
               <p>
@@ -65,30 +65,30 @@ export default function NosotrosPage() {
           </div>
         </section>
 
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-surface">
           <div className="container-custom">
-            <h2 className="text-h2 font-heading mb-12 text-center">Nuestros valores</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-12 text-center">Nuestros valores</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="card card-service p-8">
-                <div className="text-4xl mb-4">🎯</div>
-                <h3 className="font-heading text-h4 mb-3 text-text">Resultados sobre promesas</h3>
+                <div className="text-5xl mb-4">🎯</div>
+                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Resultados sobre promesas</h3>
                 <p className="text-text-muted text-sm">
                   No nos importan las vanity metrics. Medimos pacientes generados, ingresos aumentados, ROI comprobado.
                 </p>
               </div>
 
               <div className="card card-service p-8">
-                <div className="text-4xl mb-4">🔒</div>
-                <h3 className="font-heading text-h4 mb-3 text-text">Privacidad y ética</h3>
+                <div className="text-5xl mb-4">🔒</div>
+                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Privacidad y ética</h3>
                 <p className="text-text-muted text-sm">
                   Cumplimos GDPR, regulación sanitaria y código de ética. Nunca exponemos datos de pacientes.
                 </p>
               </div>
 
               <div className="card card-service p-8">
-                <div className="text-4xl mb-4">💡</div>
-                <h3 className="font-heading text-h4 mb-3 text-text">Innovación continua</h3>
+                <div className="text-5xl mb-4">💡</div>
+                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Innovación continua</h3>
                 <p className="text-text-muted text-sm">
                   Algoritmos de Google cambian cada mes. Nosotros nos mantenemos adelante. Tu estrategia nunca queda obsoleta.
                 </p>
@@ -99,13 +99,13 @@ export default function NosotrosPage() {
 
         <section className="section-padding">
           <div className="container-custom max-w-3xl text-center">
-            <h2 className="text-h2 font-heading mb-6">Nuestro equipo</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">Nuestro equipo</h2>
             <p className="text-text-muted mb-8">
               Especialistas en SEO médico, Google Ads, diseño web y redes sociales. Cada miembro aporta 10+ años en el sector. No
               hay inexpertos en tu cuenta.
             </p>
 
-            <div className="bg-secondary p-8 rounded border border-neutral-dark">
+            <div className="bg-white p-8 rounded-lg border border-slate-200">
               <p className="text-text font-semibold mb-2">¿Preguntas sobre nosotros?</p>
               <p className="text-text-muted mb-6">
                 Llámanos, escríbenos o agenda una videollamada. Nos encanta hablar sobre marketing y clínicas.
