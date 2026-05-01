@@ -61,7 +61,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="nombre"
           placeholder="Tu nombre"
           maxLength={100}
-          className="w-full px-4 py-2 border border-neutral-dark bg-white rounded focus:border-primary transition focus:outline-none"
+          className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
         />
       </div>
 
@@ -75,7 +75,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="email"
           placeholder="tu@email.com"
           maxLength={255}
-          className="w-full px-4 py-2 border border-neutral-dark bg-white rounded focus:border-primary transition focus:outline-none"
+          className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
         />
       </div>
 
@@ -89,7 +89,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="telefono"
           placeholder="+34 600 00 00 00"
           maxLength={20}
-          className="w-full px-4 py-2 border border-neutral-dark bg-white rounded focus:border-primary transition focus:outline-none"
+          className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
         />
       </div>
 
@@ -103,7 +103,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           id="clinica"
           placeholder="Clínica Dental ejemplo"
           maxLength={100}
-          className="w-full px-4 py-2 border border-neutral-dark bg-white rounded focus:border-primary transition focus:outline-none"
+          className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
         />
       </div>
 
@@ -115,7 +115,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           <select
             {...register('especialidad')}
             id="especialidad"
-            className="w-full px-4 py-2 border border-neutral-dark bg-white rounded focus:border-primary transition focus:outline-none"
+            className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
           >
             <option value="">Selecciona una especialidad</option>
             <option value="Clínicas Dentales">Clínicas Dentales</option>
@@ -139,7 +139,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           placeholder="Cuéntanos tu situación..."
           rows={4}
           maxLength={5000}
-          className="w-full px-4 py-2 border border-neutral-dark bg-white rounded focus:border-primary transition focus:outline-none"
+          className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
         />
       </div>
 
