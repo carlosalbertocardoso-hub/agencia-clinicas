@@ -10,9 +10,9 @@ export default function BlogPreviewSection() {
     <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Blog: Marketing para clínicas</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Ideas para mejorar tu clínica online</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Tips, estrategias y casos de estudio sobre marketing digital sanitario
+            Consejos claros para que más pacientes te encuentren, confíen en ti y pidan cita.
           </p>
         </div>
 

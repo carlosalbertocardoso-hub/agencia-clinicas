@@ -10,10 +10,10 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 export const metadata: Metadata = {
   title: 'Blog | Pacientes Sevilla - Marketing para Clínicas',
   description:
-    'Tips, estrategias y casos de estudio sobre marketing digital para profesionales sanitarios en Sevilla. SEO, Google Ads, diseño web.',
+    'Consejos claros para clínicas y profesionales sanitarios que quieren mejorar su presencia online y recibir más solicitudes.',
   openGraph: {
     title: 'Blog - Pacientes Sevilla',
-    description: 'Artículos sobre marketing digital especializado en sector sanitario',
+    description: 'Artículos para mejorar la presencia online de clínicas y consultas sanitarias',
     url: 'https://pacientessevilla.com/blog',
     images: [
       {
@@ -36,9 +36,9 @@ export default function BlogPage() {
             <BreadcrumbNav items={[{ label: 'Blog', href: '/blog' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-8">
-              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Marketing Digital para Clínicas</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Ideas para que más pacientes encuentren tu clínica</h1>
               <p className="text-xl text-text-muted">
-                Tips, estrategias y casos de estudio sobre SEO, Google Ads, diseño web y redes sociales para profesionales sanitarios.
+                Explicaciones sencillas sobre Google, web, anuncios y presencia online para clínicas y consultas privadas.
               </p>
             </div>
           </div>
@@ -93,13 +93,13 @@ export default function BlogPage() {
           <div className="container-custom text-center max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">¿Necesitas estrategia personalizada?</h2>
             <p className="text-text-muted mb-8">
-              Los artículos son guías generales. Tu clínica necesita estrategia a medida. Solicita auditoría gratis.
+              Los artículos son guías generales. Si quieres revisar tu caso, podemos ver qué está frenando más solicitudes de cita.
             </p>
             <Link
               href="/contacto"
               className="btn-primary btn-primary-lg"
             >
-              Solicitar auditoría gratis
+              Revisar mi presencia online gratis
             </Link>
           </div>
         </section>

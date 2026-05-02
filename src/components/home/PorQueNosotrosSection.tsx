@@ -4,39 +4,39 @@ export default function PorQueNosotrosSection() {
   const razones = [
     {
       icono: Target,
-      titulo: 'Especialización médica',
+      titulo: 'Entendemos cómo decide un paciente',
       descripcion:
-        'Entendemos el sector sanitario. Sabemos qué buscan los pacientes, cómo deciden y cómo convertir visitantes en consultas.',
+        'Una persona no elige una clínica como compra cualquier producto. Necesita claridad, confianza y facilidad para pedir cita.',
     },
     {
       icono: BarChart3,
-      titulo: 'Resultados probados',
+      titulo: 'Nos centramos en contactos útiles',
       descripcion:
-        'Más de 500 clínicas han aumentado sus pacientes con nosotros. Datos reales, casos documentados, métricas transparentes.',
+        'No buscamos visitas por buscar visitas. Trabajamos para que lleguen personas interesadas en tus servicios.',
     },
     {
       icono: Workflow,
-      titulo: 'Estrategia integral',
+      titulo: 'Miramos todo el recorrido',
       descripcion:
-        'No hacemos una sola cosa. Combinamos SEO, Google Ads, diseño web y redes sociales para máximo impacto.',
+        'Desde que alguien te encuentra en Google hasta que llama, escribe o pide cita desde el móvil.',
     },
     {
       icono: MessageCircle,
-      titulo: 'Atención personalizada',
+      titulo: 'Te lo explicamos en lenguaje claro',
       descripcion:
-        'Tu asesor es un especialista dedicado a tu caso. Respuestas rápidas, estrategia adaptada, revisiones mensuales.',
+        'Sabrás qué estamos haciendo, por qué lo hacemos y qué resultado esperamos, sin informes imposibles de leer.',
     },
     {
       icono: CircleDollarSign,
-      titulo: 'ROI garantizado',
+      titulo: 'Cuidamos tu inversión',
       descripcion:
-        'Nos importa tu inversión. Trabajamos con modelos de pago por resultados cuando es posible. Transparencia total.',
+        'Priorizamos acciones que puedan traducirse en más contactos, más citas y mejor presencia local.',
     },
     {
       icono: MapPin,
-      titulo: 'Experiencia local',
+      titulo: 'Conocemos el mercado local',
       descripcion:
-        'Conocemos Sevilla, Andalucía y el mercado sanitario local. Estrategias geo-segmentadas que funcionan en tu zona.',
+        'Trabajamos pensando en Sevilla, sus barrios y cómo buscan los pacientes una clínica privada cercana.',
     },
   ]
 
@@ -44,9 +44,9 @@ export default function PorQueNosotrosSection() {
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">¿Por qué confían en nosotros?</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué tiene sentido para tu clínica</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Lo que nos diferencia de otras agencias de marketing
+            No necesitas aprender marketing. Necesitas que tu presencia online ayude a llenar mejor la agenda.
           </p>
         </div>
 

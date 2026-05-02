@@ -5,37 +5,37 @@ export const faqsGeneral: FAQ[] = [
     id: '1',
     pregunta: '¿Cuánto tiempo tardamos en ver resultados?',
     respuesta:
-      'Los primeros resultados con SEO se ven entre 3-6 meses. Con Google Ads, los resultados son inmediatos (días). Cada estrategia es diferente según tu situación actual.',
+      'Depende de tu situación actual. Algunas mejoras, como ordenar la web o activar anuncios bien orientados, pueden notarse antes. Aparecer mejor en Google suele requerir varios meses de trabajo constante.',
   },
   {
     id: '2',
     pregunta: '¿Cuáles son vuestros precios?',
     respuesta:
-      'No tenemos precios cerrados. Cada clínica tiene necesidades diferentes. Ofrecemos una auditoría gratuita para proponer un plan personalizado y presupuesto adaptado a tu negocio.',
+      'No usamos un precio único para todas las clínicas. Primero revisamos qué necesitas mejorar y después proponemos un plan ajustado a tu situación y presupuesto.',
   },
   {
     id: '3',
     pregunta: '¿Trabajáis solo con clínicas grandes?',
     respuesta:
-      'No. Trabajamos con consultorios pequeños, clínicas medianas y grandes cadenas. Nuestras estrategias se adaptan a presupuestos y objetivos de cada tamaño de negocio.',
+      'No. Trabajamos con consultas pequeñas, clínicas medianas y centros con varias especialidades. Adaptamos el trabajo a la realidad de cada negocio.',
   },
   {
     id: '4',
-    pregunta: '¿Qué incluye la auditoría gratis?',
+    pregunta: '¿Qué incluye la revisión gratuita?',
     respuesta:
-      'Analizamos tu web, posicionamiento SEO actual, presencia en redes, Google Ads de competencia y oportunidades. Recibirás un informe detallado con recomendaciones sin coste.',
+      'Revisamos cómo aparece tu clínica online, si tu web transmite confianza, si es fácil pedir cita y qué mejoras podrían ayudarte a recibir más solicitudes.',
   },
   {
     id: '5',
     pregunta: '¿Garantizáis resultados?',
     respuesta:
-      'Garantizamos esfuerzo y estrategia de calidad. Los resultados dependen de varios factores (competencia, presupuesto, especialidad). Trabajamos bajo modelos de pago por resultados cuando es posible.',
+      'No prometemos resultados imposibles. Sí prometemos claridad, seguimiento y un plan de mejora pensado para que tu clínica tenga más oportunidades de contacto.',
   },
   {
     id: '6',
     pregunta: '¿Puedo contratar solo un servicio?',
     respuesta:
-      'Sí. Puedes contratar SEO, Google Ads, diseño web o redes sociales por separado. Aunque recomendamos una estrategia integrada para mejores resultados.',
+      'Sí. Podemos empezar por lo más urgente: mejorar la web, aparecer mejor en Google, ordenar redes o activar anuncios. No siempre hace falta hacerlo todo a la vez.',
   },
 ]
 

@@ -7,9 +7,9 @@ export default function ServiciosSection() {
     <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Nuestros servicios</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Cómo ayudamos a tu clínica</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Soluciones completas de marketing digital para clínicas y profesionales sanitarios
+            Mejoramos los puntos que hacen que un paciente te encuentre, confíe en ti y contacte.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function ServiciosSection() {
                 </ul>
 
                 <span className="inline-flex items-center gap-1 text-primary font-semibold transition">
-                  Ver detalles <ChevronRight size={16} strokeWidth={1.8} />
+                  Ver cómo funciona <ChevronRight size={16} strokeWidth={1.8} />
                 </span>
               </div>
             </Link>

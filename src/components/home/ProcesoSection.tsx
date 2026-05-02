@@ -2,27 +2,27 @@ export default function ProcesoSection() {
   const pasos = [
     {
       numero: '01',
-      titulo: 'Auditoría inicial',
+      titulo: 'Revisamos tu situación',
       descripcion:
-        'Analizamos tu presencia digital actual, competencia y oportunidades de mejora sin costo.',
+        'Vemos cómo aparece tu clínica en Google, cómo se entiende tu web y qué puede estar frenando nuevas solicitudes.',
     },
     {
       numero: '02',
-      titulo: 'Estrategia personalizada',
+      titulo: 'Priorizamos mejoras',
       descripcion:
-        'Diseñamos una estrategia de marketing digital específica para tu especialidad en Sevilla.',
+        'Te explicamos qué conviene mejorar primero para que más personas te encuentren y contacten.',
     },
     {
       numero: '03',
-      titulo: 'Implementación',
+      titulo: 'Nos ponemos en marcha',
       descripcion:
-        'Ejecutamos las acciones: SEO, Google Ads, diseño web, redes sociales, según el plan.',
+        'Trabajamos tu web, Google, anuncios o redes según lo que realmente necesita tu clínica.',
     },
     {
       numero: '04',
-      titulo: 'Resultados y optimización',
+      titulo: 'Medimos y ajustamos',
       descripcion:
-        'Monitoreamos los resultados y optimizamos la estrategia para maximizar tu ROI mensualmente.',
+        'Revisamos contactos, llamadas y solicitudes para seguir mejorando mes a mes.',
     },
   ]
 
@@ -30,9 +30,9 @@ export default function ProcesoSection() {
     <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Nuestro proceso</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Un proceso claro, sin complicarte</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            4 pasos simples para aumentar tus pacientes en Sevilla
+            Tú sigues gestionando tu clínica. Nosotros te ayudamos a mejorar cómo te encuentran y cómo contactan contigo.
           </p>
         </div>
 

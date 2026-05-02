@@ -5,9 +5,9 @@ import ServiciosSection from '@/components/home/ServiciosSection'
 import CtaFinal from '@/components/home/CtaFinal'
 
 export const metadata: Metadata = {
-  title: 'Servicios de Marketing para Clínicas | Pacientes Sevilla',
+  title: 'Servicios para mejorar tu clínica online | Pacientes Sevilla',
   description:
-    'SEO médico, Google Ads, diseño web y redes sociales para clínicas y profesionales sanitarios en Sevilla.',
+    'Ayudamos a clínicas y profesionales sanitarios en Sevilla a aparecer mejor en Google, transmitir confianza y recibir más solicitudes.',
 }
 
 export default function ServiciosPage() {
@@ -19,10 +19,10 @@ export default function ServiciosPage() {
           <div className="container-custom text-center max-w-3xl">
             <p className="text-label text-accent mb-4">Servicios</p>
             <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">
-              Marketing digital para captar pacientes
+              Mejoras online para que más pacientes contacten contigo
             </h1>
             <p className="text-lg text-text-muted">
-              Combinamos posicionamiento, campañas, web y contenido para convertir búsquedas locales en consultas reales.
+              Revisamos cómo te encuentran, cómo se entiende tu clínica y qué cambios pueden ayudarte a recibir más solicitudes de cita.
             </p>
           </div>
         </section>

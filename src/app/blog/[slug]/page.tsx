@@ -183,9 +183,9 @@ export default function BlogPostPage({ params }: Props) {
             <div className="bg-white p-8 rounded-lg border border-slate-200 mb-12">
               <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-4">¿Necesitas ayuda con tu estrategia?</h2>
               <p className="text-text-muted mb-6">
-                Este artículo es una guía general. Tu clínica merece estrategia personalizada. Solicita auditoría gratis.
+                Este artículo es una guía general. Si quieres, revisamos tu caso y te explicamos qué podrías mejorar primero.
               </p>
-              <ContactForm buttonText="Solicitar auditoría" />
+              <ContactForm buttonText="Revisar mi presencia online" />
             </div>
           </div>
         </section>

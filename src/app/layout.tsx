@@ -3,38 +3,40 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://pacientessevilla.com'),
-  title: 'Pacientes Sevilla | Marketing Digital para Clínicas y Sanitarios',
+  title: 'Pacientes Sevilla | Más pacientes para clínicas en Sevilla',
   description:
-    'Consigue más pacientes en Sevilla. Somos especialistas en marketing digital para clínicas, dentistas, psicólogos y profesionales sanitarios. +300% resultados garantizados.',
+    'Ayudamos a clínicas y profesionales sanitarios en Sevilla a mejorar su presencia online, aparecer mejor en Google y recibir más solicitudes de cita.',
   keywords: [
     'marketing clínicas Sevilla',
     'conseguir pacientes Sevilla',
     'marketing dentistas',
     'marketing psicólogos',
     'agencia marketing sanitario',
+    'aparecer en Google clínicas Sevilla',
+    'más citas clínica Sevilla',
   ],
   openGraph: {
     type: 'website',
     locale: 'es_ES',
     url: 'https://pacientessevilla.com',
-    title: 'Pacientes Sevilla | Marketing Digital para Clínicas',
+    title: 'Pacientes Sevilla | Más pacientes para clínicas',
     description:
-      'Consigue más pacientes en Sevilla. Especialistas en marketing digital para clínicas y profesionales sanitarios.',
+      'Mejora la presencia online de tu clínica en Sevilla y facilita que más pacientes contacten contigo.',
     images: [
       {
         url: '/images/og-default.svg',
         width: 1200,
         height: 630,
-        alt: 'Pacientes Sevilla - Marketing Digital para Clínicas',
+        alt: 'Pacientes Sevilla - Ayuda online para clínicas',
       },
     ],
     siteName: 'Pacientes Sevilla',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pacientes Sevilla | Marketing Digital para Clínicas',
+    title: 'Pacientes Sevilla | Más pacientes para clínicas',
     description:
-      'Consigue más pacientes en Sevilla con nuestro marketing digital especializado.',
+      'Ayudamos a clínicas de Sevilla a recibir más solicitudes de cita.',
     images: ['/images/og-default.svg'],
   },
   robots: {
@@ -51,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@id': 'https://pacientessevilla.com',
     name: 'Pacientes Sevilla',
     description:
-      'Agencia de marketing digital especializada en clínicas y profesionales sanitarios en Sevilla',
+      'Agencia que ayuda a clínicas y profesionales sanitarios en Sevilla a mejorar su presencia online y recibir más solicitudes',
     url: 'https://pacientessevilla.com',
     telephone: '+34 XXX XXX XXX',
     email: 'hola@pacientessevilla.com',
@@ -74,11 +76,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       'https://www.linkedin.com/company/pacientessevilla',
     ],
     knowsAbout: [
-      'Marketing Digital',
-      'SEO Médico',
-      'Google Ads Clínicas',
-      'Diseño Web Médico',
-      'Redes Sociales Sanitarias',
+      'Presencia online para clínicas',
+      'Google para clínicas',
+      'Anuncios para clínicas',
+      'Web para clínicas',
+      'Comunicación sanitaria',
     ],
   }
 

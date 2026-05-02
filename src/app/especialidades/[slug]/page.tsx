@@ -262,8 +262,8 @@ export default function EspecialidadPage({ params }: Props) {
               </div>
 
               <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
-                <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-6">Solicita auditoría gratis</h2>
-                <ContactForm especialidad={especialidad.nombre} buttonText="Solicitar auditoría" />
+                <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-6">Revisamos tu presencia online</h2>
+                <ContactForm especialidad={especialidad.nombre} buttonText="Enviar solicitud" />
               </div>
             </div>
           </div>
@@ -294,17 +294,16 @@ export default function EspecialidadPage({ params }: Props) {
         <section className="section-padding">
           <div className="container-custom max-w-3xl">
             <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">
-              ¿Por qué marketing digital para {especialidad.nombre.toLowerCase()}?
+              ¿Por qué cuidar la presencia online de tu clínica?
             </h2>
 
             <div className="space-y-6">
               <div className="flex gap-4">
                 <Smartphone size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-text mb-2">Tu público está en internet</h3>
+                  <h3 className="font-semibold text-text mb-2">Tus pacientes te buscan antes de llamar</h3>
                   <p className="text-text-muted">
-                    Pacientes buscan {especialidad.nombre.toLowerCase()} en Google y redes sociales antes de
-                    contactar. Si no apareces, tus competidores los captan.
+                    Muchas personas comparan opciones en Google antes de pedir cita. Si no transmites confianza, pasan a otra clínica.
                   </p>
                 </div>
               </div>
@@ -312,10 +311,9 @@ export default function EspecialidadPage({ params }: Props) {
               <div className="flex gap-4">
                 <Target size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-text mb-2">Captación precisa</h3>
+                  <h3 className="font-semibold text-text mb-2">Mejor calidad de contactos</h3>
                   <p className="text-text-muted">
-                    Marketing digital permite atraer solo personas interesadas en tu especialidad, no público aleatorio.
-                    Menos presupuesto, más pacientes.
+                    El objetivo no es que te escriba cualquiera, sino personas que realmente necesitan tus servicios.
                   </p>
                 </div>
               </div>
@@ -323,10 +321,9 @@ export default function EspecialidadPage({ params }: Props) {
               <div className="flex gap-4">
                 <TrendingUp size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-text mb-2">Crecimiento escalable</h3>
+                  <h3 className="font-semibold text-text mb-2">Mejoras que puedes medir</h3>
                   <p className="text-text-muted">
-                    A diferencia de publicidad tradicional, el marketing digital permite crecer gradualmente según tus
-                    resultados. Aumentas presupuesto cuando ves ROI.
+                    Puedes ver qué cambios generan más llamadas, formularios o solicitudes de información.
                   </p>
                 </div>
               </div>
@@ -342,14 +339,13 @@ export default function EspecialidadPage({ params }: Props) {
           <div className="container-custom text-center">
             <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">¿Listo para crecer tu consulta?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
-              Auditoría gratuita, sin compromiso. Descubre cómo otros {especialidad.nombre.toLowerCase()} están
-              captando más pacientes en Sevilla.
+              Revisamos tu presencia online y te contamos qué podrías mejorar para recibir más solicitudes.
             </p>
             <a
               href="/contacto"
               className="inline-block bg-[#FFD166] text-[#073F38] px-8 py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
             >
-              Solicitar auditoría gratis
+              Revisar mi presencia online gratis
             </a>
           </div>
         </section>

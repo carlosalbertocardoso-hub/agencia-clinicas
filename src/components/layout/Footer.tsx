@@ -14,7 +14,7 @@ export default function Footer() {
               Pacientes Sevilla
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Agencia de marketing digital especializada en clínicas y profesionales sanitarios en Sevilla.
+              Ayudamos a clínicas y profesionales sanitarios en Sevilla a mejorar su presencia online y recibir más solicitudes.
             </p>
 
             {/* Social Icons */}
@@ -40,10 +40,10 @@ export default function Footer() {
               Servicios
             </h4>
             <ul className="space-y-2">
-              <li><a href="/servicios/seo-medico" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">SEO Médico</a></li>
-              <li><a href="/servicios/google-ads" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Google Ads</a></li>
-              <li><a href="/servicios/diseno-web" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Diseño Web</a></li>
-              <li><a href="/servicios/redes-sociales" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Redes Sociales</a></li>
+              <li><a href="/servicios/seo-medico" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Aparecer mejor en Google</a></li>
+              <li><a href="/servicios/google-ads" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Anuncios para recibir solicitudes</a></li>
+              <li><a href="/servicios/diseno-web" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Web que transmite confianza</a></li>
+              <li><a href="/servicios/redes-sociales" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Presencia cuidada en redes</a></li>
             </ul>
           </div>
 

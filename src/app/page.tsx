@@ -12,12 +12,12 @@ import ProcesoSection from '@/components/home/ProcesoSection'
 import CtaFinal from '@/components/home/CtaFinal'
 
 export const metadata: Metadata = {
-  title: 'Pacientes Sevilla | Marketing Digital para Clínicas en Sevilla',
+  title: 'Pacientes Sevilla | Más solicitudes para clínicas en Sevilla',
   description:
-    'Consigue más pacientes en Sevilla. Marketing especializado para clínicas, dentistas, psicólogos y profesionales sanitarios. +300% resultados.',
+    'Ayudamos a clínicas, dentistas, psicólogos y profesionales sanitarios en Sevilla a mejorar su presencia online y recibir más solicitudes de cita.',
   openGraph: {
-    title: 'Pacientes Sevilla | Marketing Digital para Clínicas',
-    description: 'Consigue más pacientes en Sevilla con marketing digital especializado',
+    title: 'Pacientes Sevilla | Más solicitudes para clínicas',
+    description: 'Mejora la presencia online de tu clínica en Sevilla y facilita que más pacientes contacten contigo.',
     url: 'https://pacientessevilla.com',
     images: [
       {

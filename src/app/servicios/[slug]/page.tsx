@@ -132,8 +132,8 @@ export default function ServicioPage({ params }: Props) {
               </div>
 
               <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm sticky top-24">
-                <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-6">Solicita una consulta gratuita</h2>
-                <ContactForm especialidad={servicio.nombre} buttonText="Solicitar consulta" />
+                <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-6">Cuéntanos qué quieres mejorar</h2>
+                <ContactForm especialidad={servicio.nombre} buttonText="Enviar solicitud" />
               </div>
             </div>
           </div>
@@ -141,15 +141,15 @@ export default function ServicioPage({ params }: Props) {
 
         <section className="section-padding bg-surface">
           <div className="container-custom max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">¿Por qué contratar {servicio.nombre}?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">Qué puede aportar a tu clínica</h2>
 
             <div className="space-y-6">
               <div className="flex gap-4">
                 <BarChart3 size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-text mb-2">Resultados medibles</h3>
+                  <h3 className="font-semibold text-text mb-2">Más claridad sobre lo que funciona</h3>
                   <p className="text-text-muted">
-                    No creemos en vanity metrics. Medimos lo que importa: pacientes generados y ROI de tu inversión.
+                    Revisamos contactos, llamadas y solicitudes para saber qué acciones ayudan de verdad a tu clínica.
                   </p>
                 </div>
               </div>
@@ -157,9 +157,9 @@ export default function ServicioPage({ params }: Props) {
               <div className="flex gap-4">
                 <Target size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-text mb-2">Especialización sanitaria</h3>
+                  <h3 className="font-semibold text-text mb-2">Enfoque sanitario</h3>
                   <p className="text-text-muted">
-                    Entendemos el sector médico. No somos agencia genérica. Cada estrategia es especializada para tu tipo de clínica.
+                    Adaptamos los textos y acciones a cómo una persona elige una clínica o profesional sanitario.
                   </p>
                 </div>
               </div>
@@ -167,9 +167,9 @@ export default function ServicioPage({ params }: Props) {
               <div className="flex gap-4">
                 <Rocket size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-text mb-2">Atención dedicada</h3>
+                  <h3 className="font-semibold text-text mb-2">Acompañamiento sencillo</h3>
                   <p className="text-text-muted">
-                    Un asesor especializado responsable de tu cuenta. Reportes mensuales, estrategia personalizada, optimización continua.
+                    Te explicamos los avances con claridad, sin informes llenos de términos técnicos.
                   </p>
                 </div>
               </div>
@@ -183,14 +183,13 @@ export default function ServicioPage({ params }: Props) {
           <div className="container-custom text-center">
             <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">¿Listo para llevar tu clínica al siguiente nivel?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
-              Auditoría gratuita. Propuesta personalizada. Sin compromiso. Descubre cómo {servicio.nombre.toLowerCase()} puede
-              transformar tu práctica médica.
+              Revisamos tu situación actual y te explicamos qué pasos pueden ayudarte a recibir más solicitudes.
             </p>
             <a
               href="/contacto"
               className="inline-block bg-[#FFD166] text-[#073F38] px-8 py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
             >
-              Solicitar auditoría gratis
+              Revisar mi presencia online gratis
             </a>
           </div>
         </section>

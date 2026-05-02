@@ -18,6 +18,8 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
       telefono: '',
       clinica: '',
       especialidad: especialidad || '',
+      zona: '',
+      objetivo: '',
       mensaje: '',
       privacidad: false,
     },
@@ -106,7 +108,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           {...register('clinica', { maxLength: 100 })}
           type="text"
           id="clinica"
-          placeholder="Clínica Dental ejemplo"
+          placeholder="Nombre de la clínica o consulta"
           maxLength={100}
           className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
         />
@@ -135,13 +137,45 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
       )}
 
       <div>
+        <label htmlFor="zona" className="block text-sm font-semibold text-text mb-2">
+          Zona donde trabajas
+        </label>
+        <input
+          {...register('zona', { maxLength: 100 })}
+          type="text"
+          id="zona"
+          placeholder="Sevilla centro, Nervión, Triana, Aljarafe..."
+          maxLength={100}
+          className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="objetivo" className="block text-sm font-semibold text-text mb-2">
+          ¿Qué quieres mejorar?
+        </label>
+        <select
+          {...register('objetivo')}
+          id="objetivo"
+          className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
+        >
+          <option value="">Selecciona una opción</option>
+          <option value="Recibir más solicitudes de cita">Recibir más solicitudes de cita</option>
+          <option value="Aparecer mejor en Google">Aparecer mejor en Google</option>
+          <option value="Mejorar mi web">Mejorar mi web</option>
+          <option value="Ordenar mi presencia online">Ordenar mi presencia online</option>
+          <option value="No lo tengo claro todavía">No lo tengo claro todavía</option>
+        </select>
+      </div>
+
+      <div>
         <label htmlFor="mensaje" className="block text-sm font-semibold text-text mb-2">
           Mensaje (opcional)
         </label>
         <textarea
           {...register('mensaje', { maxLength: 5000 })}
           id="mensaje"
-          placeholder="Cuéntanos tu situación..."
+          placeholder="Cuéntanos brevemente qué te preocupa o qué te gustaría mejorar..."
           rows={4}
           maxLength={5000}
           className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"

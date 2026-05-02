@@ -12,6 +12,8 @@ export interface ContactFormData {
   telefono: string
   clinica?: string
   especialidad?: string
+  zona?: string
+  objetivo?: string
   mensaje?: string
 }
 
@@ -47,6 +49,8 @@ export async function sendContactEmail(data: ContactFormData) {
     const sanitizedNombre = sanitizeHtml(data.nombre)
     const sanitizedClinica = sanitizeHtml(data.clinica || '')
     const sanitizedEspecialidad = sanitizeHtml(data.especialidad || '')
+    const sanitizedZona = sanitizeHtml(data.zona || '')
+    const sanitizedObjetivo = sanitizeHtml(data.objetivo || '')
     const sanitizedMensaje = sanitizeHtml(data.mensaje || '')
 
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pacientessevilla.com'
@@ -64,6 +68,8 @@ export async function sendContactEmail(data: ContactFormData) {
         <p><strong>Teléfono:</strong> ${data.telefono}</p>
         <p><strong>Clínica:</strong> ${sanitizedClinica || 'No especificada'}</p>
         <p><strong>Especialidad:</strong> ${sanitizedEspecialidad || 'No especificada'}</p>
+        <p><strong>Zona:</strong> ${sanitizedZona || 'No especificada'}</p>
+        <p><strong>Qué quiere mejorar:</strong> ${sanitizedObjetivo || 'No especificado'}</p>
         <p><strong>Mensaje:</strong></p>
         <p>${sanitizedMensaje || 'Sin mensaje'}</p>
       `,
@@ -77,7 +83,7 @@ export async function sendContactEmail(data: ContactFormData) {
       html: `
         <h2>¡Hola ${sanitizedNombre}!</h2>
         <p>Gracias por contactar con Pacientes Sevilla.</p>
-        <p>Hemos recibido tu solicitud de auditoría. Un especialista se pondrá en contacto contigo en las próximas 24 horas.</p>
+        <p>Hemos recibido tu solicitud. Revisaremos tu caso y nos pondremos en contacto contigo en las próximas 24 horas.</p>
         <p>Mientras tanto, puedes seguir explorando nuestros servicios en <a href="${siteUrl}">${siteUrl}</a></p>
         <p>Saludos,<br/>Equipo Pacientes Sevilla</p>
       `,

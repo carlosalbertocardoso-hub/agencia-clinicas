@@ -6,12 +6,12 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contacto | Pacientes Sevilla - Consulta Gratis',
+  title: 'Contacto | Pacientes Sevilla - Revisión gratuita',
   description:
-    'Contacta con Pacientes Sevilla. Auditoría gratuita para tu clínica. Marketing digital especializado en sector sanitario en Sevilla.',
+    'Contacta con Pacientes Sevilla. Revisamos gratis la presencia online de tu clínica y te contamos cómo mejorarla.',
   openGraph: {
     title: 'Contacto - Pacientes Sevilla',
-    description: 'Solicita tu auditoría gratuita de marketing para clínicas',
+    description: 'Solicita una revisión gratuita de la presencia online de tu clínica',
     url: 'https://pacientessevilla.com/contacto',
     images: [
       {
@@ -34,9 +34,9 @@ export default function ContactoPage() {
             <BreadcrumbNav items={[{ label: 'Contacto', href: '/contacto' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-8">
-              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Hablemos sobre tu clínica</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Cuéntanos qué quieres mejorar</h1>
               <p className="text-xl text-text-muted">
-                Auditoría gratuita, propuesta personalizada, sin compromiso. Cuéntanos tu situación y te proponemos estrategia.
+                Revisamos cómo te encuentran hoy los pacientes y te explicamos qué pasos pueden ayudarte a recibir más solicitudes.
               </p>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function ContactoPage() {
         <section className="section-padding bg-surface">
           <div className="container-custom max-w-2xl">
             <div className="bg-white p-12 rounded-lg border border-slate-200 shadow-sm">
-              <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-8">Cuéntanos sobre tu clínica</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-8">Revisar mi presencia online</h2>
               <ContactForm buttonText="Enviar solicitud" />
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function ContactoPage() {
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="font-semibold text-text mb-4">¿Tienes prisa?</h3>
               <p className="text-text-muted mb-6">
-                Responde el formulario arriba y te contactaremos en las próximas 24 horas con tu auditoría personalizada.
+                Responde el formulario y te contactaremos en las próximas 24 horas para entender tu caso.
               </p>
               <p className="text-text-muted text-sm">
                 Horario de atención: Lunes a viernes 9am-7pm. Sábados bajo demanda.
