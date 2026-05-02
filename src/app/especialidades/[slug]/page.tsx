@@ -248,11 +248,10 @@ export default function EspecialidadPage({ params }: Props) {
               ]}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="text-6xl mb-6">{especialidad.icono}</div>
                 <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{especialidad.nombre}</h1>
-                <p className="text-lg text-text-muted mb-8">{especialidad.descripcionLarga}</p>
+                <p className="text-lg text-text-muted mb-6">{especialidad.descripcionLarga}</p>
 
                 <div className="bg-white border-l-4 p-6 rounded-lg border border-slate-200" style={{ borderLeftColor: especialidad.color, borderLeftWidth: '4px' }}>
                   <p className="font-semibold text-text mb-2">Resultado promedio:</p>
@@ -300,7 +299,7 @@ export default function EspecialidadPage({ params }: Props) {
 
             <div className="space-y-6">
               <div className="flex gap-4">
-                <Smartphone size={32} className="text-primary flex-shrink-0 mt-1" />
+                <Smartphone size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Tu público está en internet</h3>
                   <p className="text-text-muted">
@@ -311,7 +310,7 @@ export default function EspecialidadPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <Target size={32} className="text-primary flex-shrink-0 mt-1" />
+                <Target size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Captación precisa</h3>
                   <p className="text-text-muted">
@@ -322,7 +321,7 @@ export default function EspecialidadPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <TrendingUp size={32} className="text-primary flex-shrink-0 mt-1" />
+                <TrendingUp size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Crecimiento escalable</h3>
                   <p className="text-text-muted">
@@ -341,14 +340,14 @@ export default function EspecialidadPage({ params }: Props) {
         {/* CTA Final */}
         <section className="section-padding section-primary">
           <div className="container-custom text-center">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">Listo para crecer tu consulta?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">¿Listo para crecer tu consulta?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
               Auditoría gratuita, sin compromiso. Descubre cómo otros {especialidad.nombre.toLowerCase()} están
               captando más pacientes en Sevilla.
             </p>
             <a
-              href="#contacto"
-              className="inline-block bg-accent text-primary px-8 py-4 rounded-lg font-semibold uppercase tracking-wide hover:opacity-90 transition"
+              href="/contacto"
+              className="inline-block bg-[#FFD166] text-[#073F38] px-8 py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
             >
               Solicitar auditoría gratis
             </a>

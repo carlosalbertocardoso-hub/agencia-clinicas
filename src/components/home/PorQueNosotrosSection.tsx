@@ -1,37 +1,39 @@
+import { BarChart3, CircleDollarSign, MapPin, MessageCircle, Target, Workflow } from 'lucide-react'
+
 export default function PorQueNosotrosSection() {
   const razones = [
     {
-      icono: '🎯',
+      icono: Target,
       titulo: 'Especialización médica',
       descripcion:
         'Entendemos el sector sanitario. Sabemos qué buscan los pacientes, cómo deciden y cómo convertir visitantes en consultas.',
     },
     {
-      icono: '📊',
+      icono: BarChart3,
       titulo: 'Resultados probados',
       descripcion:
         'Más de 500 clínicas han aumentado sus pacientes con nosotros. Datos reales, casos documentados, métricas transparentes.',
     },
     {
-      icono: '🚀',
+      icono: Workflow,
       titulo: 'Estrategia integral',
       descripcion:
         'No hacemos una sola cosa. Combinamos SEO, Google Ads, diseño web y redes sociales para máximo impacto.',
     },
     {
-      icono: '💬',
+      icono: MessageCircle,
       titulo: 'Atención personalizada',
       descripcion:
         'Tu asesor es un especialista dedicado a tu caso. Respuestas rápidas, estrategia adaptada, revisiones mensuales.',
     },
     {
-      icono: '💰',
+      icono: CircleDollarSign,
       titulo: 'ROI garantizado',
       descripcion:
         'Nos importa tu inversión. Trabajamos con modelos de pago por resultados cuando es posible. Transparencia total.',
     },
     {
-      icono: '🏆',
+      icono: MapPin,
       titulo: 'Experiencia local',
       descripcion:
         'Conocemos Sevilla, Andalucía y el mercado sanitario local. Estrategias geo-segmentadas que funcionan en tu zona.',
@@ -51,7 +53,9 @@ export default function PorQueNosotrosSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {razones.map((razon, idx) => (
             <div key={idx} className="bg-white border border-slate-200 rounded-lg p-8 hover:shadow-lg transition hover:border-primary">
-              <div className="text-5xl mb-4">{razon.icono}</div>
+              <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
+                <razon.icono size={22} strokeWidth={1.6} />
+              </div>
               <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">{razon.titulo}</h3>
               <p className="text-text-muted text-sm leading-relaxed">{razon.descripcion}</p>
             </div>

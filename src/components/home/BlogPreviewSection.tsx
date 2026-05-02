@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { ArrowRight } from 'lucide-react'
 import { blogPosts } from '@/data/blog'
 
 export default function BlogPreviewSection() {
@@ -46,7 +47,9 @@ export default function BlogPreviewSection() {
 
                   <div className="flex justify-between items-center text-xs text-text-muted">
                     <span>{articulo.fecha}</span>
-                    <span className="text-primary font-semibold">Leer →</span>
+                    <span className="text-primary font-semibold inline-flex items-center gap-1">
+                      Leer <ArrowRight size={14} strokeWidth={1.8} />
+                    </span>
                   </div>
                 </div>
               </article>

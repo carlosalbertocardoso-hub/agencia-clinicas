@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Star } from 'lucide-react'
 import { testimonios } from '@/data/testimonios'
 
 export default function TestimoniosSection() {
@@ -21,9 +22,7 @@ export default function TestimoniosSection() {
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonio.rating }).map((_, i) => (
-                  <span key={i} className="text-accent text-lg">
-                    ★
-                  </span>
+                  <Star key={i} size={16} strokeWidth={1.7} className="text-accent" />
                 ))}
               </div>
 

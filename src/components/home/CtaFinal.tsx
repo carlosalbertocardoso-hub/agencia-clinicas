@@ -13,7 +13,7 @@ export default function CtaFinal() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contacto"
-            className="inline-block bg-accent text-primary px-8 py-4 rounded-lg font-semibold uppercase tracking-wide hover:opacity-90 transition"
+            className="inline-block bg-[#FFD166] text-[#073F38] px-8 py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
           >
             Solicitar auditoría gratis
           </Link>

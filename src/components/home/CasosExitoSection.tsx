@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { ChevronRight } from 'lucide-react'
 import { casos } from '@/data/casos'
 
 export default function CasosExitoSection() {
@@ -46,9 +47,9 @@ export default function CasosExitoSection() {
         <div className="text-center">
           <Link
             href="/casos-de-exito"
-            className="btn-primary btn-primary-lg"
+            className="btn-primary btn-primary-lg inline-flex items-center gap-2"
           >
-            Ver todos los casos →
+            Ver todos los casos <ChevronRight size={18} strokeWidth={1.8} />
           </Link>
         </div>
       </div>

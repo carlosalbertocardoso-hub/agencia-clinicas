@@ -28,7 +28,7 @@ export default function BreadcrumbNav({ items }: BreadcrumbNavProps) {
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
-      <nav className="flex flex-wrap gap-2 text-sm mb-8 text-text-muted font-body">
+      <nav className="flex flex-wrap gap-2 text-sm mb-6 text-text-muted font-body">
         <Link href="/" className="hover:text-primary transition">
           Inicio
         </Link>

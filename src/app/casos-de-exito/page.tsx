@@ -34,7 +34,7 @@ export default function CasosExitoPage() {
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Casos de Éxito', href: '/casos-de-exito' }]} />
 
-            <div className="max-w-3xl mx-auto text-center my-12">
+            <div className="max-w-3xl mx-auto text-center my-8">
               <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Resultados reales de clínicas que crecieron</h1>
               <p className="text-xl text-text-muted">
                 +500 clínicas en Sevilla han aumentado sus pacientes entre 200% y 400%. Aquí algunos casos documentados.
@@ -45,7 +45,7 @@ export default function CasosExitoPage() {
 
         <section className="section-padding">
           <div className="container-custom">
-            <div className="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
               {casos.map((caso) => (
                 <div key={caso.id} className="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
                   {caso.imagen && (

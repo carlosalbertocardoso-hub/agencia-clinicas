@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { CheckCircle2 } from 'lucide-react'
 import { sendContactEmail } from '@/app/actions/sendEmail'
 
 interface ContactFormProps {
@@ -18,6 +19,7 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
       clinica: '',
       especialidad: especialidad || '',
       mensaje: '',
+      privacidad: false,
     },
   })
   const [submitted, setSubmitted] = useState(false)
@@ -43,7 +45,10 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
   if (submitted) {
     return (
       <div className="p-4 bg-green-50 border border-green-200 rounded">
-        <p className="text-green-800 font-semibold">✓ ¡Gracias! Hemos recibido tu solicitud.</p>
+        <p className="text-green-800 font-semibold flex items-center gap-2">
+          <CheckCircle2 size={18} strokeWidth={1.7} />
+          ¡Gracias! Hemos recibido tu solicitud.
+        </p>
         <p className="text-green-700 text-sm mt-2">Te contactaremos en las próximas 24 horas.</p>
       </div>
     )
@@ -142,6 +147,21 @@ export default function ContactForm({ especialidad, buttonText = 'Enviar mensaje
           className="w-full px-4 py-2 border border-slate-200 bg-white rounded focus:border-primary transition focus:outline-none"
         />
       </div>
+
+      <label className="flex gap-3 text-sm text-text-muted leading-relaxed">
+        <input
+          {...register('privacidad', { required: true })}
+          type="checkbox"
+          className="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary"
+        />
+        <span>
+          Acepto la{' '}
+          <a href="/politica-privacidad" className="text-primary font-medium hover:underline">
+            política de privacidad
+          </a>{' '}
+          y autorizo el contacto para responder a mi solicitud.
+        </span>
+      </label>
 
       {error && (
         <div className="p-4 bg-red-50 border border-red-200 rounded">

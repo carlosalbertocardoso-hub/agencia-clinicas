@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
 import { especialidades } from '@/data/especialidades'
 import { servicios } from '@/data/servicios'
 
@@ -61,7 +62,7 @@ export default function Header() {
             </button>
             {openDropdown === 'especialidades' && (
               <div className="absolute left-0 mt-1 w-48 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
-                {especialidades.slice(0, 4).map((esp) => (
+                {especialidades.map((esp) => (
                   <Link
                     key={esp.id}
                     href={`/especialidades/${esp.slug}`}
@@ -91,9 +92,9 @@ export default function Header() {
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="lg:hidden p-2 text-text"
-          aria-label="Toggle menu"
+          aria-label={isMobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
         >
-          {isMobileMenuOpen ? '✕' : '☰'}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 

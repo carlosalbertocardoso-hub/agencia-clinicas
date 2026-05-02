@@ -1,3 +1,5 @@
+import { ExternalLink, Globe2, Send } from 'lucide-react'
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-white border-t-4 border-t-accent py-16 md:py-20">
@@ -19,21 +21,15 @@ export default function Footer() {
             <div className="flex gap-3 mt-6">
               <a href="#" className="w-10 h-10 rounded-full bg-primary-light flex items-center
                                      justify-center hover:bg-accent transition-colors duration-200">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M8.29 20v-7.21H5.73V9.25h2.56V7.07c0-2.54 1.55-3.93 3.83-3.93 1.09 0 2.02.08 2.29.12v2.65h-1.57c-1.23 0-1.47.59-1.47 1.45v1.9h2.93l-.39 3.54h-2.54V20" />
-                </svg>
+                <Globe2 size={18} strokeWidth={1.6} className="text-white" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-primary-light flex items-center
                                      justify-center hover:bg-accent transition-colors duration-200">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M19 3.8a8.4 8.4 0 01-2.4.66A4.2 4.2 0 0018.5 3c-.9.54-1.9.92-2.95 1.13A4.18 4.18 0 0014.3 2c-2.3 0-4.17 1.87-4.17 4.17 0 .33.04.65.13.95A11.86 11.86 0 012.4 2.84a4.15 4.15 0 001.3 5.57A4.17 4.17 0 012.6 8.1v.05a4.17 4.17 0 003.35 4.09 4.2 4.2 0 01-1.89.07 4.17 4.17 0 003.89 2.9A8.37 8.37 0 011 17.54a11.84 11.84 0 006.29 1.84c7.55 0 11.67-6.25 11.67-11.67 0-.18 0-.35-.01-.53A8.32 8.32 0 0019 3.8" />
-                </svg>
+                <Send size={18} strokeWidth={1.6} className="text-white" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-primary-light flex items-center
                                      justify-center hover:bg-accent transition-colors duration-200">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM7.5 10.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm4.5 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
-                </svg>
+                <ExternalLink size={18} strokeWidth={1.6} className="text-white" />
               </a>
             </div>
           </div>
@@ -61,6 +57,9 @@ export default function Footer() {
               <li><a href="/especialidades/psicologos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Psicólogos</a></li>
               <li><a href="/especialidades/medicina-estetica-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Medicina Estética</a></li>
               <li><a href="/especialidades/fisioterapia-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Fisioterapia</a></li>
+              <li><a href="/especialidades/nutricionistas-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Nutrición</a></li>
+              <li><a href="/especialidades/pediatria-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Pediatría</a></li>
+              <li><a href="/especialidades/clinicas-cirugia-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Cirugía</a></li>
             </ul>
           </div>
 

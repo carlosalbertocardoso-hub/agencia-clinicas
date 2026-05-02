@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import { blogPosts } from '@/data/blog'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -33,7 +35,7 @@ export default function BlogPage() {
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Blog', href: '/blog' }]} />
 
-            <div className="max-w-3xl mx-auto text-center my-12">
+            <div className="max-w-3xl mx-auto text-center my-8">
               <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Marketing Digital para Clínicas</h1>
               <p className="text-xl text-text-muted">
                 Tips, estrategias y casos de estudio sobre SEO, Google Ads, diseño web y redes sociales para profesionales sanitarios.
@@ -48,7 +50,16 @@ export default function BlogPage() {
               {blogPosts.map((post) => (
                 <Link key={post.id} href={`/blog/${post.slug}`}>
                   <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
-                    <div className="h-48 bg-gradient-to-br from-primary to-primary-light opacity-80 group-hover:opacity-100 transition" />
+                    <div className="h-48 bg-surface relative overflow-hidden">
+                      {post.imagen && (
+                        <Image
+                          src={post.imagen}
+                          alt={post.titulo}
+                          fill
+                          className="object-cover transition duration-300 group-hover:scale-105"
+                        />
+                      )}
+                    </div>
 
                     <div className="p-6">
                       <div className="flex gap-2 mb-3">
@@ -66,7 +77,9 @@ export default function BlogPage() {
 
                       <div className="flex justify-between items-center text-xs text-text-muted">
                         <span>{post.fecha}</span>
-                        <span className="text-primary font-semibold">Leer →</span>
+                        <span className="text-primary font-semibold inline-flex items-center gap-1">
+                          Leer <ArrowRight size={14} strokeWidth={1.8} />
+                        </span>
                       </div>
                     </div>
                   </article>

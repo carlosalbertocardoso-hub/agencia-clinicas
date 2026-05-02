@@ -67,7 +67,7 @@ export default function TerminosLegalesPage() {
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">6. Aceptación de términos</h2>
                 <p>
-                  Al hacer clic en "Enviar" en cualquier formulario, aceptas estos términos y nuestra política de privacidad.
+                  Al enviar cualquier formulario, confirmas que has leído y aceptas nuestra política de privacidad.
                 </p>
               </div>
 
@@ -78,7 +78,7 @@ export default function TerminosLegalesPage() {
 
               <div className="bg-secondary p-6 rounded mt-8">
                 <p className="text-sm">
-                  <strong>Última actualización:</strong> Abril 2024
+                  <strong>Última actualización:</strong> Mayo 2026
                 </p>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Check, ChevronRight, MousePointerClick } from 'lucide-react'
 import { servicios } from '@/data/servicios'
 
 export default function ServiciosSection() {
@@ -16,10 +17,8 @@ export default function ServiciosSection() {
           {servicios.map((servicio) => (
             <Link key={servicio.id} href={`/servicios/${servicio.slug}`}>
               <div className="card card-service h-full p-8 cursor-pointer group">
-                <div className="w-12 h-12 rounded bg-primary bg-opacity-10 flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+                <div className="w-12 h-12 rounded-md border border-primary/20 bg-white flex items-center justify-center mb-4">
+                  <MousePointerClick size={22} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-semibold mb-3 text-text group-hover:text-primary transition">
                   {servicio.nombre}
@@ -29,14 +28,14 @@ export default function ServiciosSection() {
                 <ul className="space-y-2 mb-6">
                   {servicio.caracteristicas.slice(0, 3).map((car, idx) => (
                     <li key={idx} className="text-sm text-text-muted flex gap-2">
-                      <span className="text-primary font-bold">✓</span>
+                      <Check size={16} strokeWidth={1.8} className="text-primary flex-shrink-0 mt-0.5" />
                       <span>{car}</span>
                     </li>
                   ))}
                 </ul>
 
-                <span className="inline-block text-primary font-semibold group-hover:gap-2 transition">
-                  Ver detalles →
+                <span className="inline-flex items-center gap-1 text-primary font-semibold transition">
+                  Ver detalles <ChevronRight size={16} strokeWidth={1.8} />
                 </span>
               </div>
             </Link>

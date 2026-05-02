@@ -1,9 +1,11 @@
+import { BadgeCheck, BarChart3, Star, Target } from 'lucide-react'
+
 export default function TrustBadges() {
   const badges = [
-    { icon: '✓', label: 'Marketing Médico Especializado' },
-    { icon: '⭐', label: '4.9/5 Satisfacción' },
-    { icon: '📊', label: '500+ Clínicas Atendidas' },
-    { icon: '🎯', label: '10+ Años de Experiencia' },
+    { icon: BadgeCheck, label: 'Marketing Médico Especializado' },
+    { icon: Star, label: '4.9/5 Satisfacción' },
+    { icon: BarChart3, label: '500+ Clínicas Atendidas' },
+    { icon: Target, label: '10+ Años de Experiencia' },
   ]
 
   return (
@@ -11,9 +13,9 @@ export default function TrustBadges() {
       {badges.map((badge, index) => (
         <div
           key={index}
-          className="flex items-center gap-2 px-4 py-2.5 bg-white border border-accent rounded-lg text-sm text-text font-medium shadow-sm hover:shadow-md transition"
+          className="flex items-center gap-2 px-4 py-2.5 bg-white/95 border border-accent rounded-lg text-sm text-text font-medium shadow-sm backdrop-blur transition"
         >
-          <span className="text-base">{badge.icon}</span>
+          <badge.icon size={16} strokeWidth={1.7} className="text-primary flex-shrink-0" />
           <span>{badge.label}</span>
         </div>
       ))}

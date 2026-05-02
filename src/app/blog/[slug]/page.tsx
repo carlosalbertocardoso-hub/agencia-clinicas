@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { blogPosts, getBlogPostBySlug } from '@/data/blog'
 import { buildBreadcrumbSchema } from '@/lib/schemas'
@@ -11,6 +12,57 @@ interface Props {
   params: {
     slug: string
   }
+}
+
+function renderMarkdown(content: string) {
+  return content
+    .trim()
+    .split('\n')
+    .map((line, index) => {
+      const trimmed = line.trim()
+
+      if (!trimmed) {
+        return null
+      }
+
+      if (trimmed.startsWith('# ')) {
+        return (
+          <h2 key={index} className="text-3xl md:text-4xl font-heading font-semibold text-primary mt-10 mb-4">
+            {trimmed.replace('# ', '')}
+          </h2>
+        )
+      }
+
+      if (trimmed.startsWith('## ')) {
+        return (
+          <h3 key={index} className="text-2xl md:text-3xl font-heading font-semibold text-text mt-8 mb-3">
+            {trimmed.replace('## ', '')}
+          </h3>
+        )
+      }
+
+      if (trimmed.startsWith('### ')) {
+        return (
+          <h4 key={index} className="text-xl font-heading font-semibold text-text mt-6 mb-2">
+            {trimmed.replace('### ', '')}
+          </h4>
+        )
+      }
+
+      if (trimmed.startsWith('- ')) {
+        return (
+          <li key={index} className="ml-5 list-disc text-text-muted leading-relaxed">
+            {trimmed.replace('- ', '')}
+          </li>
+        )
+      }
+
+      return (
+        <p key={index} className="text-text-muted leading-relaxed mb-4">
+          {trimmed}
+        </p>
+      )
+    })
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -33,7 +85,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.fecha,
       images: [
         {
-          url: '/images/og-default.svg',
+          url: post.imagen || '/images/og-default.svg',
           width: 1200,
           height: 630,
         },
@@ -85,7 +137,7 @@ export default function BlogPostPage({ params }: Props) {
           }}
         />
 
-        <section className="py-section">
+        <section className="py-section pb-8 md:pb-10">
           <div className="container-custom">
             <BreadcrumbNav
               items={[
@@ -94,7 +146,7 @@ export default function BlogPostPage({ params }: Props) {
               ]}
             />
 
-            <div className="max-w-3xl mx-auto my-12">
+            <div className="max-w-3xl mx-auto my-8">
               <div className="flex gap-4 mb-6 items-center">
                 <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase tracking-wide">
                   {post.categoria}
@@ -107,17 +159,26 @@ export default function BlogPostPage({ params }: Props) {
               <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{post.titulo}</h1>
               <p className="text-xl text-text-muted">{post.excerpt}</p>
             </div>
+
+            {post.imagen && (
+              <div className="max-w-5xl mx-auto rounded-lg overflow-hidden border border-slate-200 shadow-sm relative aspect-[16/7] bg-surface">
+                <Image
+                  src={post.imagen}
+                  alt={post.titulo}
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            )}
           </div>
         </section>
 
-        <section className="section-padding">
+        <section className="pt-6 pb-12 md:pt-8 md:pb-16 px-4 md:px-8">
           <div className="container-custom max-w-3xl">
-            <article
-              className="prose prose-sm max-w-none mb-12 text-text whitespace-pre-wrap"
-              dangerouslySetInnerHTML={{
-                __html: post.contenido,
-              }}
-            />
+            <article className="mb-12 text-text">
+              {renderMarkdown(post.contenido)}
+            </article>
 
             <div className="bg-white p-8 rounded-lg border border-slate-200 mb-12">
               <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-4">¿Necesitas ayuda con tu estrategia?</h2>
@@ -138,7 +199,16 @@ export default function BlogPostPage({ params }: Props) {
                 {relatedPosts.map((relPost) => (
                   <Link key={relPost.id} href={`/blog/${relPost.slug}`}>
                     <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
-                      <div className="h-40 bg-gradient-to-br from-primary to-primary-light opacity-80" />
+                      <div className="h-40 bg-surface relative overflow-hidden">
+                        {relPost.imagen && (
+                          <Image
+                            src={relPost.imagen}
+                            alt={relPost.titulo}
+                            fill
+                            className="object-cover transition duration-300 group-hover:scale-105"
+                          />
+                        )}
+                      </div>
                       <div className="p-6">
                         <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase">{relPost.categoria}</span>
                         <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 mt-3 text-text group-hover:text-primary line-clamp-2">

@@ -33,7 +33,7 @@ export default function ContactoPage() {
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Contacto', href: '/contacto' }]} />
 
-            <div className="max-w-3xl mx-auto text-center my-12">
+            <div className="max-w-3xl mx-auto text-center my-8">
               <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Hablemos sobre tu clínica</h1>
               <p className="text-xl text-text-muted">
                 Auditoría gratuita, propuesta personalizada, sin compromiso. Cuéntanos tu situación y te proponemos estrategia.
@@ -55,8 +55,8 @@ export default function ContactoPage() {
           <div className="container-custom max-w-3xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Mail size={40} className="text-primary" />
+                <div className="w-12 h-12 mx-auto rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
+                  <Mail size={28} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-text mb-2">Email</h3>
                 <a href="mailto:hola@pacientessevilla.com" className="text-primary hover:underline">
@@ -65,8 +65,8 @@ export default function ContactoPage() {
               </div>
 
               <div className="text-center">
-                <div className="flex justify-center mb-4">
-                  <MessageCircle size={40} className="text-primary" />
+                <div className="w-12 h-12 mx-auto rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
+                  <MessageCircle size={28} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-text mb-2">WhatsApp</h3>
                 <a href="https://wa.me/34600000000" className="text-primary hover:underline">
@@ -75,8 +75,8 @@ export default function ContactoPage() {
               </div>
 
               <div className="text-center">
-                <div className="flex justify-center mb-4">
-                  <MapPin size={40} className="text-primary" />
+                <div className="w-12 h-12 mx-auto rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
+                  <MapPin size={28} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-text mb-2">Ubicación</h3>
                 <p className="text-text-muted">Sevilla, España</p>

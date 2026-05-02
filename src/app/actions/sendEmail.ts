@@ -3,6 +3,8 @@
 import { Resend } from 'resend'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
+const contactToEmail = process.env.CONTACT_TO_EMAIL || 'ccardoso19@hotmail.com'
+const fromEmail = process.env.RESEND_FROM_EMAIL || 'noreply@pacientessevilla.com'
 
 export interface ContactFormData {
   nombre: string
@@ -24,6 +26,10 @@ function sanitizeHtml(text: string): string {
 
 export async function sendContactEmail(data: ContactFormData) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return { success: false, error: 'El envío de emails no está configurado.' }
+    }
+
     // Validate and sanitize inputs
     if (!data.nombre?.trim() || data.nombre.length > 100) {
       return { success: false, error: 'Nombre inválido' }
@@ -47,8 +53,9 @@ export async function sendContactEmail(data: ContactFormData) {
 
     // Email to admin
     await resend.emails.send({
-      from: 'noreply@pacientessevilla.com',
-      to: 'hola@pacientessevilla.com',
+      from: fromEmail,
+      to: contactToEmail,
+      replyTo: data.email,
       subject: `Nueva consulta de ${sanitizedNombre} - ${sanitizedClinica || 'Sin clínica'}`,
       html: `
         <h2>Nueva consulta de contacto</h2>
@@ -64,7 +71,7 @@ export async function sendContactEmail(data: ContactFormData) {
 
     // Confirmation email to user
     await resend.emails.send({
-      from: 'noreply@pacientessevilla.com',
+      from: fromEmail,
       to: data.email,
       subject: 'Hemos recibido tu solicitud - Pacientes Sevilla',
       html: `

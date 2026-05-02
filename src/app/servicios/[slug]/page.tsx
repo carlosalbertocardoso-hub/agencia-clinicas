@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { BarChart3, Target, Rocket } from 'lucide-react'
+import { BarChart3, Check, Rocket, Target } from 'lucide-react'
 import { servicios, faqsPorServicio } from '@/data/servicios'
 import { buildBreadcrumbSchema, buildServiceSchema } from '@/lib/schemas'
 import Header from '@/components/layout/Header'
@@ -104,11 +104,11 @@ export default function ServicioPage({ params }: Props) {
               ]}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start my-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start my-6">
               <div>
                 {/* Imagen del servicio */}
                 {servicio.imagen && (
-                  <div className="mb-8 rounded-lg overflow-hidden shadow-md h-48 md:h-56 relative">
+                  <div className="mb-6 rounded-lg overflow-hidden shadow-md h-48 md:h-56 relative">
                     <Image
                       src={servicio.imagen}
                       alt={servicio.nombre}
@@ -119,12 +119,12 @@ export default function ServicioPage({ params }: Props) {
                 )}
 
                 <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{servicio.nombre}</h1>
-                <p className="text-lg text-text-muted mb-8">{servicio.descripcion}</p>
+                <p className="text-lg text-text-muted mb-6">{servicio.descripcion}</p>
 
                 <div className="space-y-4">
                   {servicio.caracteristicas.map((caracteristica, idx) => (
                     <div key={idx} className="flex gap-3 items-start">
-                      <span className="text-primary font-bold text-xl">✓</span>
+                      <Check size={18} strokeWidth={1.8} className="text-primary flex-shrink-0 mt-1" />
                       <span className="text-text">{caracteristica}</span>
                     </div>
                   ))}
@@ -145,7 +145,7 @@ export default function ServicioPage({ params }: Props) {
 
             <div className="space-y-6">
               <div className="flex gap-4">
-                <BarChart3 size={32} className="text-primary flex-shrink-0 mt-1" />
+                <BarChart3 size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Resultados medibles</h3>
                   <p className="text-text-muted">
@@ -155,7 +155,7 @@ export default function ServicioPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <Target size={32} className="text-primary flex-shrink-0 mt-1" />
+                <Target size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Especialización sanitaria</h3>
                   <p className="text-text-muted">
@@ -165,7 +165,7 @@ export default function ServicioPage({ params }: Props) {
               </div>
 
               <div className="flex gap-4">
-                <Rocket size={32} className="text-primary flex-shrink-0 mt-1" />
+                <Rocket size={26} strokeWidth={1.6} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-text mb-2">Atención dedicada</h3>
                   <p className="text-text-muted">
@@ -181,14 +181,14 @@ export default function ServicioPage({ params }: Props) {
 
         <section className="section-padding section-primary">
           <div className="container-custom text-center">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">Listo para llevar tu clínica al siguiente nivel?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">¿Listo para llevar tu clínica al siguiente nivel?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
               Auditoría gratuita. Propuesta personalizada. Sin compromiso. Descubre cómo {servicio.nombre.toLowerCase()} puede
               transformar tu práctica médica.
             </p>
             <a
-              href="#contacto"
-              className="inline-block bg-accent text-primary px-8 py-4 rounded-lg font-semibold uppercase tracking-wide hover:opacity-90 transition"
+              href="/contacto"
+              className="inline-block bg-[#FFD166] text-[#073F38] px-8 py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
             >
               Solicitar auditoría gratis
             </a>

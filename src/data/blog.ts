@@ -104,48 +104,21 @@ Mínimo €300/mes para resultados. Ideal €800-1.200/mes para campañas combin
     titulo: 'Diseño web para clínicas: qué convierte pacientes',
     slug: 'diseno-web-clinicas',
     excerpt: 'Elementos clave en una web médica que convierte visitantes en pacientes. Ejemplos de clínicas que crecieron 3x.',
-    imagen: 'https://images.unsplash.com/photo-1611162617263-4ec3d744e2f6?w=800&q=80',
+    imagen: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80',
     contenido: `
-# Diseño Web para Clínicas: Qué Convierte Pacientes
+La web de una clínica no tiene que impresionar por complicada. Tiene que hacer algo mucho más importante: dar confianza rápido y facilitar que una persona pida cita sin pensárselo demasiado.
 
-## Introducción
-Tu web es el primer contacto con pacientes potenciales. Un mal diseño pierde 70% de visitantes.
+Cuando alguien entra en tu web, normalmente llega con una duda concreta: necesita un dentista, un psicólogo, una revisión, un tratamiento o una segunda opinión. Si en pocos segundos no entiende qué haces, dónde estás y cómo contactar, se irá a otra clínica.
 
-## Elemento 1: Hero claro
-- H1 con especialidad + ciudad
-- Foto confiable (médico, consultorio, staff)
-- CTA visible: "Pedir cita", "Llamar", "Auditoría gratis"
+Lo primero es un mensaje claro. Una frase sencilla como "Clínica dental en Sevilla especializada en implantes y estética" funciona mejor que un texto muy creativo pero ambiguo. El paciente no quiere descifrar la web; quiere saber si puedes ayudarle.
 
-## Elemento 2: Trust signals
-- Logo de colegio profesional
-- Años de experiencia
-- Número de pacientes atendidos
-- Reviews de pacientes reales
+Después viene la confianza. Fotos reales del equipo o del centro, opiniones visibles, años de experiencia, tratamientos explicados con palabras normales y una sensación general de orden. No hace falta prometer demasiado. De hecho, en salud suele funcionar mejor un tono tranquilo, profesional y humano.
 
-## Elemento 3: Servicio/Especialidades
-Lista clara y visual. No párrafos largos.
+También es clave que contactar sea fácil. En móvil, el teléfono y WhatsApp deben estar a mano. El formulario debe pedir solo lo necesario. Si la persona tiene que rellenar demasiados campos, probablemente lo deje para luego. Y "luego" casi nunca llega.
 
-## Elemento 4: Testimonios
-Fotos + nombre + especialidad que trataba + resultado.
+Una buena web también ayuda al equipo de recepción. Si explica bien los servicios, precios orientativos, horarios, ubicación y preguntas frecuentes, llegan menos llamadas repetitivas y más consultas realmente interesadas.
 
-## Elemento 5: Contacto múltiple
-- Teléfono (click-to-call en mobile)
-- WhatsApp
-- Email
-- Formulario
-
-## Elemento 6: FAQ section
-Responde preguntas frecuentes. Ayuda SEO + conversión.
-
-## Elemento 7: Velocidad
-PageSpeed > 90. Optimiza imágenes, minifica código.
-
-## Casos de éxito
-Clínica dental Sevilla: 0 a 500 pacientes/mes con web optimizada.
-Psicología: rediseño aumentó conversiones 380%.
-
-## Conclusión
-Web bien diseñada = máquina de generación de pacientes.
+El objetivo no es tener una web bonita sin más. El objetivo es que la web trabaje cada día para la clínica: que transmita confianza, filtre mejor los contactos y convierta visitas en primeras citas.
     `,
     fecha: '22 de abril, 2024',
     categoria: 'Diseño Web',

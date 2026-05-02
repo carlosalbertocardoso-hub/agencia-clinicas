@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Lightbulb, ShieldCheck, Target } from 'lucide-react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
@@ -31,7 +32,7 @@ export default function NosotrosPage() {
           <div className="container-custom">
             <BreadcrumbNav items={[{ label: 'Sobre nosotros', href: '/nosotros' }]} />
 
-            <div className="max-w-3xl mx-auto text-center my-12">
+            <div className="max-w-3xl mx-auto text-center my-8">
               <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Somos especialistas en marketing para clínicas</h1>
               <p className="text-xl text-text-muted mb-8">
                 10+ años ayudando a profesionales sanitarios en Sevilla a atraer más pacientes a través de estrategias digitales
@@ -70,24 +71,30 @@ export default function NosotrosPage() {
             <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-12 text-center">Nuestros valores</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="card card-service p-8">
-                <div className="text-5xl mb-4">🎯</div>
+              <div className="card p-8">
+                <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
+                  <Target size={22} strokeWidth={1.6} />
+                </div>
                 <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Resultados sobre promesas</h3>
                 <p className="text-text-muted text-sm">
                   No nos importan las vanity metrics. Medimos pacientes generados, ingresos aumentados, ROI comprobado.
                 </p>
               </div>
 
-              <div className="card card-service p-8">
-                <div className="text-5xl mb-4">🔒</div>
+              <div className="card p-8">
+                <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
+                  <ShieldCheck size={22} strokeWidth={1.6} />
+                </div>
                 <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Privacidad y ética</h3>
                 <p className="text-text-muted text-sm">
                   Cumplimos GDPR, regulación sanitaria y código de ética. Nunca exponemos datos de pacientes.
                 </p>
               </div>
 
-              <div className="card card-service p-8">
-                <div className="text-5xl mb-4">💡</div>
+              <div className="card p-8">
+                <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
+                  <Lightbulb size={22} strokeWidth={1.6} />
+                </div>
                 <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Innovación continua</h3>
                 <p className="text-text-muted text-sm">
                   Algoritmos de Google cambian cada mes. Nosotros nos mantenemos adelante. Tu estrategia nunca queda obsoleta.

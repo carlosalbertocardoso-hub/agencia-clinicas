@@ -24,8 +24,8 @@ export default function PoliticaPrivacidadPage() {
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">1. Responsable del tratamiento</h2>
                 <p>
-                  Pacientes Sevilla S.L. (en adelante "Responsable") es responsable del tratamiento de tus datos personales. Nos
-                  comprometemos a proteger tu privacidad conforme a GDPR.
+                  Pacientes Sevilla es responsable del tratamiento de los datos personales recibidos a través de esta web. Nos
+                  comprometemos a proteger tu privacidad conforme al RGPD y la LOPDGDD.
                 </p>
               </div>
 
@@ -54,7 +54,10 @@ export default function PoliticaPrivacidadPage() {
 
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">4. Base legal</h2>
-                <p>El tratamiento de tus datos se basa en tu consentimiento expresado en el formulario de contacto.</p>
+                <p>
+                  El tratamiento de tus datos se basa en tu consentimiento al enviar el formulario y en nuestro interés legítimo para
+                  responder a tu solicitud comercial o informativa.
+                </p>
               </div>
 
               <div>
@@ -69,7 +72,7 @@ export default function PoliticaPrivacidadPage() {
                   <li>Acceder a tus datos personales</li>
                   <li>Solicitar la rectificación de datos inexactos</li>
                   <li>Solicitar la supresión de tus datos</li>
-                  <li>Oponerme al tratamiento de tus datos</li>
+                  <li>Oponerte al tratamiento de tus datos</li>
                   <li>Solicitar la limitación del tratamiento</li>
                 </ul>
                 <p className="mt-4">
@@ -92,7 +95,7 @@ export default function PoliticaPrivacidadPage() {
 
               <div className="bg-secondary p-6 rounded mt-8">
                 <p className="text-sm">
-                  <strong>Última actualización:</strong> Abril 2024
+                  <strong>Última actualización:</strong> Mayo 2026
                 </p>
               </div>
             </div>
