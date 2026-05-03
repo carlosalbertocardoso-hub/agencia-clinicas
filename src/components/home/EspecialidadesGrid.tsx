@@ -1,6 +1,37 @@
 import { especialidades, iconosEspecialidades } from '@/data/especialidades'
 import EspecialidadCard from '@/components/shared/EspecialidadCard'
 
+const copyEspecialidades: Record<string, { titulo: string; subtitulo: string }> = {
+  'clinicas-dentales-sevilla': {
+    titulo: 'Clínicas dentales en Sevilla.',
+    subtitulo: 'Más implantes y ortodoncia invisible.',
+  },
+  'psicologos-sevilla': {
+    titulo: 'Psicólogos en Sevilla.',
+    subtitulo: 'Más primeras consultas privadas con captación ética.',
+  },
+  'medicina-estetica-sevilla': {
+    titulo: 'Medicina estética en Sevilla.',
+    subtitulo: 'Más solicitudes filtradas por tratamiento.',
+  },
+  'fisioterapia-sevilla': {
+    titulo: 'Fisioterapia en Sevilla.',
+    subtitulo: 'Más pacientes locales con dolor, lesión o rehabilitación.',
+  },
+  'nutricionistas-sevilla': {
+    titulo: 'Nutricionistas en Sevilla.',
+    subtitulo: 'Más consultas privadas de nutrición online o presencial.',
+  },
+  'pediatria-sevilla': {
+    titulo: 'Pediatría en Sevilla.',
+    subtitulo: 'Más familias que buscan pediatra privado de confianza.',
+  },
+  'clinicas-cirugia-sevilla': {
+    titulo: 'Clínicas quirúrgicas en Sevilla.',
+    subtitulo: 'Más consultas cualificadas de alta consideración.',
+  },
+}
+
 export default function EspecialidadesGrid() {
   return (
     <section className="section-padding">
@@ -13,17 +44,20 @@ export default function EspecialidadesGrid() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-          {especialidades.map((esp) => (
-            <EspecialidadCard
-              key={esp.id}
-              nombre={esp.nombre}
-              slug={esp.slug}
-              descripcionCorta={esp.descripcionCorta}
-              icono={iconosEspecialidades[esp.slug] || esp.icono}
-              resultados={esp.resultados}
-              color={esp.color}
-            />
-          ))}
+          {especialidades.map((esp) => {
+            const cardCopy = copyEspecialidades[esp.slug]
+
+            return (
+              <EspecialidadCard
+                key={esp.id}
+                titulo={cardCopy.titulo}
+                subtitulo={cardCopy.subtitulo}
+                slug={esp.slug}
+                icono={iconosEspecialidades[esp.slug] || esp.icono}
+                ariaLabel={`Ver estrategia específica de marketing para ${cardCopy.titulo.replace('.', '').toLowerCase()}`}
+              />
+            )
+          })}
         </div>
       </div>
     </section>

@@ -1,100 +1,149 @@
-# Guía de Deployment — Pacientes Sevilla
+# Deployment — Pacientes Sevilla
 
-## 1. Preparar GitHub
+Guía para desplegar y mantener la web en Vercel.
+
+## Repositorio
+
+Repositorio actual:
 
 ```bash
-# Inicializar repositorio (si no lo está)
-git init
-
-# Agregar remote (reemplaza con tu URL)
-git remote add origin https://github.com/tu-usuario/pacientes-sevilla.git
-
-# Pushear código
-git branch -M main
-git push -u origin main
+https://github.com/carlosalbertocardoso-hub/agencia-clinicas.git
 ```
 
-## 2. Crear proyecto en Vercel
+Rama principal:
 
-1. Accede a [vercel.com](https://vercel.com)
-2. Click en **"Add New..." → "Project"**
-3. Selecciona **"Import Git Repository"**
-4. Busca `pacientes-sevilla` en GitHub
-5. Click en **"Import"**
+```bash
+master
+```
 
-## 3. Configurar variables de entorno en Vercel
+## Deploy en Vercel
 
-En la pantalla de configuración del proyecto:
+1. Entra en Vercel.
+2. Importa el repositorio `agencia-clinicas`.
+3. Framework preset: Next.js.
+4. Build command: `npm run build`.
+5. Output directory: dejar por defecto.
+6. Configura variables de entorno.
+7. Lanza deploy.
 
-1. Abre **"Environment Variables"**
-2. Agrega las siguientes variables:
+## Variables de entorno
 
-| Variable | Valor |
-|----------|-------|
-| `RESEND_API_KEY` | Tu API key de Resend (obtén en [resend.com](https://resend.com)) |
-| `RESEND_FROM_EMAIL` | Remitente verificado en Resend, por ejemplo `Pacientes Sevilla <hola@tudominio.com>` |
-| `CONTACT_TO_EMAIL` | Email donde quieres recibir las consultas, por ejemplo `ccardoso19@hotmail.com` |
-| `NEXT_PUBLIC_SITE_URL` | `https://pacientessevilla.com` |
+Configurar en **Project Settings → Environment Variables** para Production y Preview:
 
-**Importante:** RESEND_API_KEY no debe empezar con `NEXT_PUBLIC_` para que sea privada (solo servidor).
-**Importante:** RESEND_FROM_EMAIL debe usar un dominio o remitente verificado en Resend. Si el remitente no está verificado, Resend rechazará el envío.
+| Variable | Uso |
+|---|---|
+| `RESEND_API_KEY` | API key privada de Resend. |
+| `RESEND_FROM_EMAIL` | Remitente verificado en Resend. |
+| `CONTACT_TO_EMAIL` | Email donde llegan las consultas. |
+| `NEXT_PUBLIC_SITE_URL` | URL pública del deployment o dominio final. |
+| `GOOGLE_ANALYTICS_ID` | Opcional, si se activa analítica. |
+| `GOOGLE_SITE_VERIFICATION` | Opcional, para Search Console. |
 
-## 4. Configurar dominio
+Ejemplo:
 
-1. En Vercel, abre **"Settings → Domains"**
-2. Agrega `pacientessevilla.com`
-3. Vercel te dará DNS records para configurar en tu registrador
-4. Actualiza los DNS en tu registrador (Namecheap, GoDaddy, etc.)
+```env
+RESEND_API_KEY=re_...
+RESEND_FROM_EMAIL="Pacientes Sevilla <hola@dominio-verificado.com>"
+CONTACT_TO_EMAIL=ccardoso19@hotmail.com
+NEXT_PUBLIC_SITE_URL=https://agencia-clinicas-qae4p9ywr-carlosalbertocardoso-hubs-projects.vercel.app
+```
 
-Espera 24-48h para que se propague.
+Importante:
 
-## 5. Probar deployment
+- `RESEND_API_KEY` no debe empezar por `NEXT_PUBLIC_`.
+- `RESEND_FROM_EMAIL` debe pertenecer a un dominio o remitente verificado en Resend.
+- Si cambias variables en Vercel, haz redeploy. Los deployments ya publicados no reciben cambios automáticamente.
 
-Una vez deployado:
+## Resend
 
-- [ ] Visita https://pacientessevilla.com
-- [ ] Prueba el formulario de contacto (enviará email via Resend)
-- [ ] Verifica que los logos y OpenGraph images cargan
-- [ ] Prueba navegación entre páginas
+Para que el formulario funcione:
 
-## 6. Monitoreo post-launch
+1. Crear cuenta en Resend.
+2. Crear API key.
+3. Verificar dominio o remitente.
+4. Copiar la API key a `RESEND_API_KEY`.
+5. Usar el remitente verificado en `RESEND_FROM_EMAIL`.
+6. Probar el formulario.
+7. Revisar Resend Logs si no llega el email.
 
-- **Vercel Dashboard:** Monitorea builds, logs, Core Web Vitals
-- **Resend Console:** Verifica emails enviados/fallidos
-- **Google Search Console:** Monitorea indexación y errores de rastreo
+El código del envío está en:
+
+```txt
+src/app/actions/sendEmail.ts
+```
+
+El email principal se envía a `CONTACT_TO_EMAIL`. El email de confirmación al usuario no bloquea la recepción del lead si falla.
+
+## Comprobación previa
+
+Antes de hacer push o redeploy:
+
+```bash
+npm run build
+```
+
+Comprobar:
+
+- La home carga correctamente.
+- El formulario muestra estado de envío.
+- Las rutas principales funcionan.
+- No hay errores TypeScript.
+- No se han añadido variables sensibles al repo.
+
+## Rutas que conviene revisar tras deploy
+
+- `/`
+- `/contacto`
+- `/servicios/seo-medico`
+- `/servicios/google-ads`
+- `/servicios/diseno-web`
+- `/servicios/redes-sociales`
+- `/especialidades/clinicas-dentales-sevilla`
+- `/especialidades/psicologos-sevilla`
+- `/blog`
 
 ## Troubleshooting
 
-**Error: "RESEND_API_KEY not found"**
-- Verifica que la variable está en Vercel (Settings → Environment Variables)
-- Asegúrate de que no está encriptada accidentalmente
-- Redeploy el proyecto
+### No llegan emails
 
-**Email no se envía**
-- Comprueba que RESEND_API_KEY es válido en [resend.com](https://resend.com)
-- Comprueba que RESEND_FROM_EMAIL existe en Vercel y pertenece a un dominio/remitente verificado en Resend
-- Comprueba que CONTACT_TO_EMAIL apunta al email correcto
-- Revisa Vercel logs (Deployments → Ver detalles)
-- Resend Console para ver intentos fallidos
+1. Confirmar que el último commit está desplegado.
+2. Hacer redeploy si se cambiaron variables de entorno.
+3. Revisar que `RESEND_API_KEY` existe en Vercel.
+4. Revisar que `RESEND_FROM_EMAIL` está verificado en Resend.
+5. Revisar que `CONTACT_TO_EMAIL` apunta al buzón correcto.
+6. Mirar logs de Vercel.
+7. Mirar logs de Resend.
 
-**DNS no se propaga**
-- Espera 24-48h
-- Verifica que agregaste los records correctamente
-- Usa [mxtoolbox.com](https://mxtoolbox.com) para verificar DNS
+### Error de remitente en Resend
 
-## Comandos útiles
+Usa un remitente verificado. Ejemplo:
 
-```bash
-# Build local
-npm run build
-
-# Start producción local
-npm run start
-
-# Deploy manual (si lo necesitas)
-# Desde Vercel Dashboard: Settings → Deployments → Redeploy
+```env
+RESEND_FROM_EMAIL="Pacientes Sevilla <hola@dominio-verificado.com>"
 ```
 
----
+No usar `noreply@pacientessevilla.com` si ese dominio todavía no está verificado.
 
-**Contacto del proyecto:** Carlos Cardoso — ccardoso19@hotmail.com
+### Variables correctas pero sigue fallando
+
+Haz redeploy desde Vercel:
+
+```txt
+Deployments → último deployment → Redeploy
+```
+
+## Dominio final
+
+Cuando se configure dominio propio:
+
+1. Añadir dominio en Vercel.
+2. Configurar DNS en el proveedor.
+3. Actualizar `NEXT_PUBLIC_SITE_URL`.
+4. Actualizar metadata/schema si se deja de usar URL temporal.
+5. Redeploy.
+
+## Documentación relacionada
+
+- [`README.md`](./README.md)
+- [`design.md`](./design.md)
+- [`Claude.md`](./Claude.md)

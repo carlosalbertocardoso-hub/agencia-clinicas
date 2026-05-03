@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="mx-auto max-w-4xl text-center text-white">
           <p className="text-label text-[#FFD166] mb-4">Marketing sanitario para centros médicos privados en Sevilla</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold mb-6 text-white leading-tight">
-            Haz crecer tu Clínica en Sevilla con Marketing Digital Especializado
+            Marketing para Clínicas en Sevilla que buscan rentabilidad y pacientes privados
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Convertimos Google, tu web, tus campañas y tu reputación online en un sistema medible para atraer pacientes privados altamente rentables, respetando la Ley de Publicidad Sanitaria en España y el tono que exige el sector salud.

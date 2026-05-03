@@ -10,12 +10,11 @@ import {
 } from 'lucide-react'
 
 interface EspecialidadCardProps {
-  nombre: string
+  titulo: string
+  subtitulo: string
   slug: string
-  descripcionCorta: string
   icono: string
-  resultados: string
-  color: string
+  ariaLabel: string
 }
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -29,35 +28,28 @@ const iconMap: Record<string, React.ReactNode> = {
 }
 
 export default function EspecialidadCard({
-  nombre,
+  titulo,
+  subtitulo,
   slug,
-  descripcionCorta,
   icono,
-  resultados,
-  color,
+  ariaLabel,
 }: EspecialidadCardProps) {
   const lucideIcon = iconMap[icono] || icono
 
   return (
-    <Link href={`/especialidades/${slug}`}>
-      <div className="card h-full p-6 cursor-pointer group hover:shadow-md transition-shadow">
+    <Link href={`/especialidades/${slug}`} aria-label={ariaLabel} className="block h-full">
+      <article className="card h-full p-6 cursor-pointer group hover:shadow-md transition-shadow">
         <div className="w-14 h-14 rounded-md border border-primary/20 bg-white flex items-center justify-center mb-5 transition text-primary group-hover:border-primary/45">
           {typeof lucideIcon === 'string' ? <CircleDot size={28} strokeWidth={1.6} /> : lucideIcon}
         </div>
         <h3 className="font-heading text-2xl font-semibold mb-3 text-text group-hover:text-primary transition">
-          {nombre}
+          {titulo}
         </h3>
-        <p className="text-text-muted text-sm mb-6 leading-relaxed">{descripcionCorta}</p>
-        <div
-          className="inline-block px-4 py-2 rounded-full text-xs font-semibold"
-          style={{
-            backgroundColor: color + '15',
-            color: color,
-          }}
-        >
-          {resultados}
-        </div>
-      </div>
+        <p className="text-text-muted text-sm mb-6 leading-relaxed">{subtitulo}</p>
+        <span className="inline-flex items-center justify-center rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold text-primary transition group-hover:bg-primary group-hover:text-white">
+          Ver estrategia específica
+        </span>
+      </article>
     </Link>
   )
 }

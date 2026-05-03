@@ -1,161 +1,221 @@
-# CLAUDE.md — PacientesSevilla Web
+# CLAUDE.md — Pacientes Sevilla
+
+Guía operativa del proyecto para mantener el código, el copy y el SEO alineados con la web actual.
 
 ## Proyecto
-Agencia de marketing digital especializada en sector sanitario en Sevilla.
-Referencia estructural: conseguirpacientes.com
-Stack: Next.js 14 (App Router) + TypeScript + Tailwind CSS
-Deployment: Vercel
 
----
+Pacientes Sevilla es una web de captación para una agencia de marketing sanitario especializada en clínicas privadas, consultas y profesionales de salud en Sevilla.
 
-## Estructura del proyecto
----
+Objetivo principal:
+
+Convertir la presencia digital de una clínica en un sistema medible de captación de pacientes privados en Sevilla: Google, web, campañas, reputación, contenido, formularios y conversión.
+
+Stack:
+
+- Next.js 14 con App Router.
+- TypeScript.
+- Tailwind CSS.
+- React Hook Form.
+- Server Actions.
+- Resend para envío de formularios.
+- Vercel como hosting.
+
+## Estructura
+
+```txt
+src/
+  app/
+    actions/sendEmail.ts
+    blog/
+    contacto/
+    especialidades/
+    servicios/
+    layout.tsx
+    page.tsx
+    globals.css
+  components/
+    home/
+    layout/
+    shared/
+  data/
+  lib/
+  types/
+public/
+docs/
+README.md
+design.md
+DEPLOYMENT.md
+```
 
 ## Convenciones de código
 
-- Componentes: PascalCase, archivo = nombre del componente
-- Server Components por defecto — usar 'use client' SOLO cuando sea necesario
-  (interactividad: formularios, menú mobile, animaciones con estado)
-- Metadata: generateMetadata() en CADA page.tsx, nunca hardcodeada en <head>
-- JSON-LD: siempre en <script type="application/ld+json"> dentro del page.tsx
-- Imágenes: SIEMPRE next/image, nunca <img>. Alt text descriptivo obligatorio.
-- Formularios: React Hook Form + Server Actions. No client-side fetch para forms.
-- Estilos: Tailwind utility classes. CSS variables en globals.css para tokens.
-- Internacionalización: todo el copy en español castellano. Sin Lorem Ipsum.
+- Componentes en PascalCase.
+- Server Components por defecto.
+- Usar `'use client'` solo cuando haga falta estado, eventos o hooks de cliente.
+- Formularios con React Hook Form y Server Actions.
+- Estilos con Tailwind y tokens globales en `src/app/globals.css`.
+- Copy en español de España.
+- Mantener un único H1 por página.
+- No prometer pacientes garantizados, resultados clínicos ni métricas no verificadas.
+- No inventar testimonios, casos reales o cifras.
 
----
+## Diseño
 
-## Paleta y tipografía
+La guía visual actual está en:
+
+- [`design.md`](./design.md)
+
+Tokens principales:
 
 ```css
---color-primary:       #0A6B5E;   /* Verde médico profundo */
---color-primary-light: #0E8C7A;
---color-secondary:     #F5F0E8;   /* Blanco cálido */
---color-accent:        #E8A030;   /* Ámbar confianza */
---color-text:          #1A1F2E;
---color-text-muted:    #6B7280;
---font-heading:        'DM Serif Display', serif;
---font-body:           'DM Sans', sans-serif;
+--color-primary: #0A6B5E;
+--color-primary-dark: #085249;
+--color-accent: #8B6D11;
+--color-accent-dark: #6E560D;
+--color-bg: #FCF9F2;
+--color-surface: #F4F1EA;
+--color-text: #1A1A1A;
+--color-text-muted: #5A5A5A;
+--color-border: #E5E1D8;
+--font-heading: 'Newsreader', Georgia, serif;
+--font-body: 'Inter', 'Geist', system-ui, sans-serif;
 ```
 
----
+Breakpoints Tailwind:
 
-## SEO — Reglas obligatorias
+```ts
+sm: '640px'
+md: '768px'
+lg: '1024px'
+xl: '1280px'
+2xl: '1536px'
+```
 
-1. Cada page.tsx DEBE exportar generateMetadata() con:
-   - title (incluye keyword + ciudad "Sevilla")
-   - description (150-160 caracteres, incluye CTA)
-   - canonical (URL absoluta)
-   - openGraph (title, description, image, url, locale: 'es_ES')
-   - twitter (card: 'summary_large_image')
+## Home actual
 
-2. H1 ÚNICO por página. Incluye keyword principal + "Sevilla" cuando aplique.
+La home incluye:
 
-3. H2/H3 con variaciones semánticas de la keyword (no repetir H1 exacto).
+- `HeroSection`
+- `PainSection`
+- `GarantiaNormativaSection`
+- `EspecialidadesGrid`
+- `ServiciosSection`
+- `PorQueNosotrosSection`
+- `CroAuthoritySection`
+- `BlogPreviewSection`
+- `ProcesoSection`
+- `CtaFinal`
 
-4. Alt text en todas las imágenes: descriptivo, no keyword stuffing.
+La sección "A quién ayudamos" usa cards con:
 
-5. Internal linking obligatorio:
-   - Páginas de especialidad → enlazar a servicios relacionados
-   - Páginas de servicio → enlazar a especialidades relevantes
-   - Home → enlazar a todas las especialidades y servicios
+- Título: `[Especialidad] en Sevilla.`
+- Subtítulo: beneficio directo.
+- CTA: `Ver estrategia específica`.
+- `aria-label` descriptivo.
 
-6. Breadcrumb con Schema.org BreadcrumbList en TODAS las páginas internas.
+## SEO
 
-7. Estructura URL limpia: /especialidades/[slug]/ y /servicios/[slug]/
+Reglas:
 
----
+- Metadata por página usando `metadata` o `generateMetadata`, según convenga.
+- Title único por página.
+- Meta description única por página.
+- Canonical cuando la ruta lo soporte.
+- Open Graph configurado.
+- H1 único.
+- H2/H3 claros y semánticos.
+- Enlazado interno entre servicios, especialidades, blog y contacto.
+- Texto local natural: Sevilla, Google Maps, Google Business Profile, barrios o zonas cuando tenga sentido.
 
-## GEO — Generative Engine Optimization
+Home actual:
 
-- robots.txt: permitir GPTBot, ClaudeBot, Google-Extended, PerplexityBot, cohere-ai
-- /public/llms.txt: descripción completa de la agencia para LLMs
-- Contenido E-E-A-T en todo el copy:
-  · Mencionar experiencia y años en el sector
-  · Citar casos reales con métricas
-  · Localización Sevilla/Andalucía presente en copy y schema
-- FAQ pages con Schema.org FAQPage en páginas de especialidad
-- Citas y testimonios reales con nombre y clínica
+- Title: `Agencia de Marketing Sanitario en Sevilla | Captación de Pacientes Privados`
+- Keywords:
+  - `marketing medico sevilla`
+  - `seo local clinicas sevilla`
+  - `publicidad clinicas dentales sevilla`
+  - `captacion pacientes privados`
 
----
+## JSON-LD
 
-## Structured Data (JSON-LD)
+Actualmente hay un schema global en `src/app/layout.tsx`:
 
-### En layout.tsx (global):
-- Organization + LocalBusiness + WebSite con SearchAction
+- `@type`: `ProfessionalService`
+- Nombre: `Pacientes Sevilla - Agencia de Marketing Sanitario`
+- Localidad: Sevilla, Andalucía, ES
+- Servicios: Marketing Médico, SEO Local, Google Ads para Clínicas
+- Área servida: Sevilla, Nervión, Triana, Aljarafe
 
-### En cada /servicios/[slug]/page.tsx:
-- Service (provider apunta al @id de Organization)
+También existen schemas específicos en:
 
-### En cada /especialidades/[slug]/page.tsx:
-- Service + FAQPage + BreadcrumbList
+- Breadcrumbs.
+- Servicios.
+- Especialidades.
+- FAQs.
+- Artículos de blog.
 
-### En /casos-de-exito/page.tsx:
-- ItemList con los casos
+## Formularios
 
-Usar los builders de src/lib/schemas.ts, nunca escribir JSON-LD inline a mano.
+Componente:
 
----
+- `src/components/shared/ContactForm.tsx`
 
-## Componentes clave y su responsabilidad
+Server Action:
 
-| Componente | Tipo | Notas |
-|---|---|---|
-| Header | Client | Sticky, mega-menu especialidades |
-| Footer | Server | Links SEO, schema LocalBusiness |
-| HeroSection | Server | H1, CTA, trust badges, next/image |
-| EspecialidadesGrid | Server | Grid de tarjetas, datos de especialidades.ts |
-| ContactForm | Client | React Hook Form + Server Action |
-| FaqSection | Server | Acordeón + schema FAQPage |
-| BreadcrumbNav | Server | Schema BreadcrumbList |
-| LocalBusinessSchema | Server | JSON-LD en layout |
+- `src/app/actions/sendEmail.ts`
 
----
+Variables necesarias:
 
-## Performance targets (Core Web Vitals)
+```env
+RESEND_API_KEY=...
+RESEND_FROM_EMAIL="Pacientes Sevilla <email_verificado_en_resend>"
+CONTACT_TO_EMAIL=tu_email_destino
+NEXT_PUBLIC_SITE_URL=https://tu-dominio-o-preview
+```
 
-- LCP: < 2.5s → hero image con priority={true}, preconnect fonts
-- INP: < 100ms → minimizar 'use client', no librerías pesadas
-- CLS: < 0.1 → width/height explícitos en todas las imágenes
-- PageSpeed mobile: > 90
-- PageSpeed desktop: > 95
+Notas:
 
-Acciones obligatorias:
-✅ next/image con sizes="..." y priority en imagen hero
-✅ <link rel="preconnect"> para Google Fonts en layout.tsx
-✅ Lazy load en imágenes below-the-fold (por defecto en next/image)
-✅ SVGs inline para iconos de especialidades (no requests adicionales)
-✅ prefers-reduced-motion: sin animaciones pesadas en mobile
+- `RESEND_FROM_EMAIL` debe ser un remitente verificado en Resend.
+- El envío al administrador es prioritario.
+- El email de confirmación al usuario no bloquea la recepción del lead si falla.
 
----
+## Imágenes
 
-## Lo que NO se debe hacer
+- Usar `next/image` en imágenes principales y de layout.
+- Alt descriptivo obligatorio.
+- La imagen hero usa `priority`.
+- Evitar imágenes externas inestables o sin control.
 
-❌ Usar pages/ directory (siempre app/)
-❌ <img> en lugar de next/image
-❌ Páginas sin generateMetadata()
-❌ Imágenes sin alt text
-❌ <a href="#"> sin texto descriptivo
-❌ Contenido duplicado entre páginas de especialidad (cada una es única)
-❌ Lorem Ipsum — todo el copy en español real
-❌ 'use client' sin necesidad real
-❌ Hardcodear URLs (usar constantes en src/lib/config.ts)
-❌ CSS custom fuera de Tailwind salvo tokens en globals.css
-❌ Bloquear AI crawlers en robots.txt
+## Accesibilidad
 
----
+- Enlaces con texto descriptivo o `aria-label`.
+- Botones con texto claro.
+- Formularios con labels visibles.
+- Contraste suficiente.
+- No usar `<a href="#">`.
 
-## Comandos habituales
+## Comandos
 
 ```bash
-npm run dev          # Desarrollo local (http://localhost:3000)
-npm run build        # Build de producción
-npm run lint         # ESLint
-npx next-sitemap     # Regenerar sitemap.xml
+npm run dev
+npm run build
+npm run start
+npm run lint
+npm run sitemap
 ```
 
----
+Antes de publicar:
+
+```bash
+npm run build
+```
+
+## Documentación relacionada
+
+- [`README.md`](./README.md): resumen general.
+- [`design.md`](./design.md): diseño, responsive, UI y CRO.
+- [`DEPLOYMENT.md`](./DEPLOYMENT.md): despliegue en Vercel y Resend.
 
 ## Contacto del proyecto
-Cliente: Carlos Cardoso — Consultor Digital, Sevilla
-Referencia: conseguirpacientes.com
+
+Cliente: Carlos Cardoso, consultor digital en Sevilla.

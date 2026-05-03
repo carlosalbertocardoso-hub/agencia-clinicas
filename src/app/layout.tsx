@@ -41,38 +41,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': ['ProfessionalService', 'MarketingAgency'],
-    '@id': 'https://pacientessevilla.com',
-    name: 'Pacientes Sevilla',
-    alternateName: 'Tu Agencia de Marketing Sanitario',
-    url: 'https://pacientessevilla.com',
-    description:
-      'Agencia de marketing digital en Sevilla especializada exclusivamente en el sector sanitario. Ayudamos a clínicas, hospitales y centros médicos a captar pacientes privados.',
-    email: 'hola@pacientessevilla.com',
+    '@type': 'ProfessionalService',
+    name: 'Pacientes Sevilla - Agencia de Marketing Sanitario',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Sevilla',
       addressRegion: 'Andalucía',
       addressCountry: 'ES',
     },
-    areaServed: {
-      '@type': 'City',
-      name: 'Sevilla',
-    },
-    knowsAbout: [
-      'SEO Médico',
-      'Marketing Sanitario',
-      'Publicidad para Clínicas',
-      'SEO Local para Médicos',
-      'Captación de pacientes privados',
-    ],
-    serviceType: [
-      'Marketing digital para clínicas',
-      'SEO local sanitario',
-      'Google Ads para clínicas',
-      'Diseño web para clínicas',
-      'Captación de pacientes privados',
-    ],
+    url: 'https://agencia-clinicas-qae4p9ywr-carlosalbertocardoso-hubs-projects.vercel.app/',
+    serviceType: ['Marketing Médico', 'SEO Local', 'Google Ads para Clínicas'],
+    areaServed: ['Sevilla', 'Nervión', 'Triana', 'Aljarafe'],
   }
 
   return (

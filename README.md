@@ -1,58 +1,202 @@
 # Pacientes Sevilla
 
-Agencia de marketing digital especializada en clínicas y profesionales sanitarios en Sevilla.
+Web de captación para **Pacientes Sevilla**, agencia de marketing sanitario especializada en clínicas privadas, consultas y profesionales de salud en Sevilla.
+
+La propuesta central del proyecto es convertir Google, web, campañas, reputación y conversión en un sistema medible de captación de pacientes privados, con comunicación prudente para el sector sanitario.
 
 ## Stack
 
-- **Framework**: Next.js 14 (App Router)
-- **Lenguaje**: TypeScript
-- **Estilos**: Tailwind CSS
-- **Formularios**: React Hook Form
-- **Hosting**: Vercel
+- **Framework:** Next.js 14 con App Router
+- **Lenguaje:** TypeScript
+- **UI:** React
+- **Estilos:** Tailwind CSS + tokens en `src/app/globals.css`
+- **Iconos:** `lucide-react`
+- **Formularios:** React Hook Form + Server Actions
+- **Email:** Resend
+- **Hosting:** Vercel
 
 ## Instalación
 
 ```bash
-# Instalar dependencias
 npm install
-
-# Crear archivo .env.local
 cp .env.example .env.local
-
-# Ejecutar servidor de desarrollo
 npm run dev
 ```
 
-El sitio estará disponible en [http://localhost:3000](http://localhost:3000)
+El sitio estará disponible en:
 
-## Scripts disponibles
+```bash
+http://localhost:3000
+```
 
-- `npm run dev` - Iniciar servidor de desarrollo
-- `npm run build` - Compilar para producción
-- `npm run start` - Ejecutar en producción
-- `npm run lint` - Ejecutar ESLint
+## Scripts
 
-## Estructura del proyecto
+```bash
+npm run dev       # Servidor local
+npm run build     # Build de producción
+npm run start     # Servir build de producción
+npm run lint      # Lint de Next/ESLint
+npm run sitemap   # Generar sitemap con next-sitemap
+```
 
-Ver [CLAUDE.md](./CLAUDE.md) para detalles sobre convenciones de código, SEO y estructura.
+## Variables de entorno
 
-## Especialidades
+El formulario de contacto usa Resend. Configura estas variables en `.env.local` y en Vercel:
 
-1. Clínicas Dentales
-2. Psicólogos
-3. Medicina Estética
-4. Fisioterapia
-5. Nutrición
-6. Pediatría
-7. Cirugía
+```env
+RESEND_API_KEY=...
+RESEND_FROM_EMAIL="Pacientes Sevilla <email_verificado_en_resend>"
+CONTACT_TO_EMAIL=tu_email_destino
+NEXT_PUBLIC_SITE_URL=https://tu-dominio-o-preview
+```
+
+Notas importantes:
+
+- `RESEND_FROM_EMAIL` debe ser un remitente o dominio verificado en Resend.
+- Si cambias variables en Vercel, haz redeploy para que entren en vigor.
+- `CONTACT_TO_EMAIL` es el buzón donde llegan las solicitudes del formulario.
+
+## Estructura
+
+```txt
+src/
+  app/
+    actions/sendEmail.ts
+    blog/
+    contacto/
+    especialidades/
+    servicios/
+    layout.tsx
+    page.tsx
+    globals.css
+  components/
+    home/
+    layout/
+    shared/
+  data/
+  lib/
+  types/
+public/
+docs/
+design.md
+DEPLOYMENT.md
+```
+
+## Páginas principales
+
+- `/`
+- `/contacto`
+- `/blog`
+- `/blog/errores-seo-dentistas`
+- `/blog/google-ads-psicologos`
+- `/blog/diseno-web-clinicas`
+- `/servicios`
+- `/servicios/seo-medico`
+- `/servicios/google-ads`
+- `/servicios/diseno-web`
+- `/servicios/redes-sociales`
+- `/especialidades`
+- `/especialidades/clinicas-dentales-sevilla`
+- `/especialidades/psicologos-sevilla`
+- `/especialidades/medicina-estetica-sevilla`
+- `/especialidades/fisioterapia-sevilla`
+- `/especialidades/nutricionistas-sevilla`
+- `/especialidades/pediatria-sevilla`
+- `/especialidades/clinicas-cirugia-sevilla`
+- `/politica-privacidad`
+- `/terminos-legales`
 
 ## Servicios
 
-1. SEO Médico Sevilla
-2. Google Ads para Clínicas
-3. Diseño Web Médico
-4. Gestión de Redes Sociales
+- SEO local para clínicas en Sevilla
+- Google Ads para clínicas privadas
+- Diseño web para clínicas orientado a captar citas
+- Redes sociales y contenido sanitario
 
-## Contacto
+## Especialidades
 
-**Cliente**: Carlos Cardoso — Consultor Digital, Sevilla
+- Clínicas dentales
+- Psicólogos
+- Medicina estética
+- Fisioterapia
+- Nutricionistas
+- Pediatría
+- Clínicas quirúrgicas y especialistas
+
+## Diseño
+
+La guía visual está en:
+
+- [`design.md`](./design.md)
+
+Incluye paleta, tipografías, breakpoints, reglas responsive, cards, CTAs, formularios, accesibilidad y criterios CRO/SEO visual.
+
+## SEO y datos estructurados
+
+El proyecto incluye:
+
+- Metadata por página.
+- Canonicals.
+- Open Graph.
+- JSON-LD global `ProfessionalService`.
+- Breadcrumb schema en páginas internas.
+- FAQ schema en FAQs.
+- Article schema en artículos del blog.
+
+La home usa keywords locales como:
+
+- `marketing medico sevilla`
+- `seo local clinicas sevilla`
+- `publicidad clinicas dentales sevilla`
+- `captacion pacientes privados`
+
+## Formulario
+
+Componente principal:
+
+- `src/components/shared/ContactForm.tsx`
+
+Server Action:
+
+- `src/app/actions/sendEmail.ts`
+
+El envío principal al administrador es prioritario. El email de confirmación al usuario no bloquea la recepción del lead si falla.
+
+## Deploy
+
+Ver guía completa:
+
+- [`DEPLOYMENT.md`](./DEPLOYMENT.md)
+
+Resumen:
+
+1. Configurar variables de entorno en Vercel.
+2. Verificar remitente en Resend.
+3. Hacer deploy o redeploy.
+4. Probar formulario.
+5. Revisar logs en Vercel y Resend si no llegan emails.
+
+## Comprobación antes de publicar
+
+```bash
+npm run build
+```
+
+Revisar:
+
+- Home en móvil y desktop.
+- Formulario de contacto.
+- CTAs principales.
+- Un único H1 por página.
+- Imágenes con alt descriptivo.
+- Textos sin promesas sanitarias o claims no verificables.
+
+## Documentación adicional
+
+- [`Claude.md`](./Claude.md): convenciones internas originales del proyecto.
+- [`design.md`](./design.md): sistema visual y reglas UI/CRO.
+- [`DEPLOYMENT.md`](./DEPLOYMENT.md): despliegue y troubleshooting en Vercel/Resend.
+
+## Contacto del proyecto
+
+Cliente: Carlos Cardoso, consultor digital en Sevilla.
