@@ -36,7 +36,7 @@ export default function HeroSection() {
               href="/servicios"
               className="inline-flex w-full sm:w-auto items-center justify-center rounded-md border border-white/80 px-5 sm:px-8 py-4 text-base md:text-lg font-semibold text-white transition hover:bg-white hover:text-primary"
             >
-              Hablemos de tu Centro
+              Ver servicios para clínicas
             </Link>
           </div>
 

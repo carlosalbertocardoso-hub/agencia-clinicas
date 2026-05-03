@@ -299,14 +299,9 @@ export default function ServicioPage({ params }: Props) {
                 <p className="text-sm text-text-muted mb-6">
                   Podemos revisar este área de tu captación sin compromiso y decirte qué conviene mejorar primero.
                 </p>
-                <div className="space-y-3">
-                  <a href="#formulario-auditoria" className="btn-primary btn-primary-lg block text-center">
-                    {serviceCta}
-                  </a>
-                  <a href="#que-revisamos" className="btn-secondary block text-center">
-                    Ver qué revisamos
-                  </a>
-                </div>
+                <a href="#formulario-auditoria" className="btn-primary btn-primary-lg block text-center">
+                  {serviceCta}
+                </a>
               </div>
             </div>
           </div>
@@ -371,11 +366,18 @@ export default function ServicioPage({ params }: Props) {
             </h2>
             <div className="flex flex-wrap gap-3 justify-center">
               {(relatedLinks[servicio.slug] || []).map((item) => (
-                <Link key={item.href} href={item.href} className="btn-secondary">
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-text-muted transition hover:border-primary hover:text-primary"
+                >
                   {item.label}
                 </Link>
               ))}
-              <Link href="/contacto" className="btn-primary">
+              <Link
+                href="/contacto"
+                className="inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white"
+              >
                 auditoría gratuita
               </Link>
             </div>

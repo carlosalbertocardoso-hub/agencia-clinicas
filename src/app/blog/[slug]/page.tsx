@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Fragment } from 'react'
 import { blogPosts, getBlogPostBySlug } from '@/data/blog'
 import { buildArticleSchema, buildBreadcrumbSchema } from '@/lib/schemas'
 import Header from '@/components/layout/Header'
@@ -15,6 +16,9 @@ interface Props {
 }
 
 function renderMarkdown(content: string) {
+  let visibleBlocks = 0
+  let ctaInserted = false
+
   return content
     .trim()
     .split('\n')
@@ -23,34 +27,70 @@ function renderMarkdown(content: string) {
 
       if (!trimmed) return null
 
+      const maybeInsertCta = () => {
+        visibleBlocks += 1
+
+        if (ctaInserted || visibleBlocks < 5) {
+          return null
+        }
+
+        ctaInserted = true
+
+        return (
+          <aside key={`cta-${index}`} className="my-8 rounded-lg border border-primary/20 bg-primary/5 p-5">
+            <p className="font-heading text-xl font-semibold text-text mb-2">
+              ¿Quieres detectar estos puntos en tu clínica?
+            </p>
+            <p className="text-sm text-text-muted mb-4">
+              Revisamos tu caso y te indicamos qué mejorar primero en Google, web, campañas o conversión.
+            </p>
+            <Link href="/contacto" className="font-semibold text-primary hover:underline">
+              Solicitar auditoría gratuita
+            </Link>
+          </aside>
+        )
+      }
+
       if (trimmed.startsWith('# ')) {
         return (
-          <h2 key={index} className="text-3xl md:text-4xl font-heading font-semibold text-primary mt-10 mb-4">
-            {trimmed.replace('# ', '')}
-          </h2>
+          <Fragment key={index}>
+            {maybeInsertCta()}
+            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-primary mt-10 mb-4">
+              {trimmed.replace('# ', '')}
+            </h2>
+          </Fragment>
         )
       }
 
       if (trimmed.startsWith('## ')) {
         return (
-          <h3 key={index} className="text-2xl md:text-3xl font-heading font-semibold text-text mt-8 mb-3">
-            {trimmed.replace('## ', '')}
-          </h3>
+          <Fragment key={index}>
+            {maybeInsertCta()}
+            <h3 className="text-2xl md:text-3xl font-heading font-semibold text-text mt-8 mb-3">
+              {trimmed.replace('## ', '')}
+            </h3>
+          </Fragment>
         )
       }
 
       if (trimmed.startsWith('- ')) {
         return (
-          <li key={index} className="ml-5 list-disc text-text-muted leading-relaxed">
-            {trimmed.replace('- ', '')}
-          </li>
+          <Fragment key={index}>
+            {maybeInsertCta()}
+            <li className="ml-5 list-disc text-text-muted leading-relaxed">
+              {trimmed.replace('- ', '')}
+            </li>
+          </Fragment>
         )
       }
 
       return (
-        <p key={index} className="text-text-muted leading-relaxed mb-4">
-          {trimmed}
-        </p>
+        <Fragment key={index}>
+          {maybeInsertCta()}
+          <p className="text-text-muted leading-relaxed mb-4">
+            {trimmed}
+          </p>
+        </Fragment>
       )
     })
 }

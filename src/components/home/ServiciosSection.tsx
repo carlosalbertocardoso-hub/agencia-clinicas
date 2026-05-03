@@ -77,7 +77,7 @@ export default function ServiciosSection() {
                 </ul>
 
                 <span className="inline-flex items-center gap-1 text-primary font-semibold transition">
-                  Hablemos de tu Centro <ChevronRight size={16} strokeWidth={1.8} />
+                  Ver servicio <ChevronRight size={16} strokeWidth={1.8} />
                 </span>
               </article>
             </Link>

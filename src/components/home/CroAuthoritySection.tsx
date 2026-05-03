@@ -66,12 +66,9 @@ export default function CroAuthoritySection() {
               </div>
             ))}
           </div>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <div className="mt-8">
             <Link href="/contacto" className="btn-primary w-full sm:w-auto">
               Solicitar Auditoría de mi Clínica
-            </Link>
-            <Link href="/servicios/seo-medico" className="btn-secondary w-full sm:w-auto">
-              Hablemos de tu Centro
             </Link>
           </div>
         </div>

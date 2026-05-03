@@ -403,14 +403,9 @@ export default function EspecialidadPage({ params }: Props) {
                 <p className="text-sm text-text-muted mb-6">
                   Analizamos Google, web, campañas, reputación y puntos de contacto de tu clínica en Sevilla.
                 </p>
-                <div className="space-y-3">
-                  <a href="#formulario-auditoria" className="btn-primary btn-primary-lg block text-center">
-                    {content.cta}
-                  </a>
-                  <a href="#servicios-prioritarios" className="btn-secondary block text-center">
-                    Ver oportunidades de mejora
-                  </a>
-                </div>
+                <a href="#formulario-auditoria" className="btn-primary btn-primary-lg block text-center">
+                  {content.cta}
+                </a>
               </div>
             </div>
           </div>

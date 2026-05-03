@@ -11,20 +11,12 @@ export default function CtaFinal() {
           Solicita una auditoría de tu clínica. Revisaremos Google, web, publicidad médica, reputación y automatización de citas para detectar qué está frenando pacientes privados altamente rentables.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contacto"
-            className="inline-flex w-full sm:w-auto items-center justify-center bg-[#FFD166] text-[#073F38] px-5 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
-          >
-            Solicitar Auditoría de mi Clínica
-          </Link>
-          <Link
-            href="/servicios/seo-medico"
-            className="inline-flex w-full sm:w-auto items-center justify-center border-2 border-white text-white px-5 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-primary transition font-semibold uppercase tracking-wide"
-          >
-            Hablemos de tu Centro
-          </Link>
-        </div>
+        <Link
+          href="/contacto"
+          className="inline-flex w-full sm:w-auto items-center justify-center bg-[#FFD166] text-[#073F38] px-5 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
+        >
+          Solicitar Auditoría de mi Clínica
+        </Link>
 
         <p className="text-sm opacity-80 mt-8 text-white">
           Sin compromiso. Respuesta en menos de 24h laborables. Explicado en lenguaje claro.
