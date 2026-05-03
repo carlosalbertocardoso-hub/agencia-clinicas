@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Marketing para especialidades sanitarias en Sevilla | Pacientes Sevilla',
   description:
     'Marketing digital para clínicas dentales, psicólogos, medicina estética, fisioterapia, nutrición, pediatría, cirugía y especialistas en Sevilla.',
+  alternates: {
+    canonical: '/especialidades',
+  },
 }
 
 export default function EspecialidadesPage() {

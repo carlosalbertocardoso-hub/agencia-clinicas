@@ -213,7 +213,7 @@ export default function BlogPostPage({ params }: Props) {
                     <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                       <div className="h-40 bg-surface relative overflow-hidden">
                         {relPost.imagen && (
-                          <Image src={relPost.imagen} alt={relPost.titulo} fill className="object-cover transition duration-300 group-hover:scale-105" />
+                          <img src={relPost.imagen} alt={relPost.titulo} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
                         )}
                       </div>
                       <div className="p-6">

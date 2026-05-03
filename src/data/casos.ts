@@ -10,7 +10,7 @@ export const casos: CasoExito[] = [
     resultado: 'Objetivo: más solicitudes cualificadas',
     resultadoValue: 0,
     resultadoUnit: '',
-    imagen: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80',
+    imagen: '/images/hero-clinica-marketing.png',
     descripcion:
       'Escenario habitual: ficha de Google incompleta, pocas páginas por tratamiento y campañas sin medición de llamadas. El trabajo se centraría en SEO local, landings y tracking.',
   },
@@ -22,7 +22,7 @@ export const casos: CasoExito[] = [
     resultado: 'Objetivo: agenda más estable',
     resultadoValue: 0,
     resultadoUnit: '',
-    imagen: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80',
+    imagen: '/images/hero-clinica-marketing.png',
     descripcion:
       'Escenario habitual: dependencia de recomendaciones, mensajes poco claros y ausencia de landings por necesidad. El foco sería visibilidad local, tono ético y medición de formularios.',
   },
@@ -34,7 +34,7 @@ export const casos: CasoExito[] = [
     resultado: 'Objetivo: mejor calidad de contacto',
     resultadoValue: 0,
     resultadoUnit: '',
-    imagen: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800&q=80',
+    imagen: '/images/hero-clinica-marketing.png',
     descripcion:
       'Escenario habitual: redes activas pero web poco clara, campañas genéricas y muchas consultas de baja intención. El trabajo se orientaría a páginas por tratamiento, confianza y filtros.',
   },

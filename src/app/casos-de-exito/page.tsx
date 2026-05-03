@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: 'Ejemplos de diagnóstico para clínicas | Pacientes Sevilla',
   description:
     'Ejemplos representativos de problemas de captación online en clínicas privadas. Sustituir por casos reales cuando existan datos verificables.',
+  alternates: {
+    canonical: '/casos-de-exito',
+  },
   openGraph: {
     title: 'Ejemplos de diagnóstico - Pacientes Sevilla',
     description: 'Situaciones habituales de captación online en clínicas privadas de Sevilla.',

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Sobre Pacientes Sevilla | Agencia para clínicas privadas',
   description:
     'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla. Estrategia, medición y comunicación sanitaria clara.',
+  alternates: {
+    canonical: '/nosotros',
+  },
   openGraph: {
     title: 'Sobre Pacientes Sevilla',
     description: 'Quiénes somos y cómo ayudamos a clínicas privadas de Sevilla a ordenar su captación online.',

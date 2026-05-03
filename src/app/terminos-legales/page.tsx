@@ -5,6 +5,9 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
   title: 'Términos Legales | Pacientes Sevilla',
+  alternates: {
+    canonical: '/terminos-legales',
+  },
   robots: 'noindex',
 }
 

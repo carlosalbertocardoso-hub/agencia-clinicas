@@ -7,7 +7,7 @@ export const servicios: Servicio[] = [
     slug: 'seo-medico',
     descripcion:
       'Haz que tu clínica aparezca cuando un paciente busca tu especialidad, tu tratamiento o una clínica cercana en Sevilla.',
-    imagen: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80',
+    imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Auditoría de Google Business Profile, web, Search Console y competencia local',
       'Optimización de páginas de servicios, tratamientos, titles, metas y arquitectura',
@@ -24,7 +24,7 @@ export const servicios: Servicio[] = [
     slug: 'google-ads',
     descripcion:
       'Campañas para captar búsquedas con intención real: personas que ya están buscando una clínica, tratamiento o profesional sanitario.',
-    imagen: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80',
+    imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Campañas Search por especialidad, tratamiento, zona y nivel de intención',
       'Segmentación local en Sevilla capital, provincia, barrios o áreas concretas',
@@ -41,7 +41,7 @@ export const servicios: Servicio[] = [
     slug: 'diseno-web',
     descripcion:
       'Creamos o mejoramos webs sanitarias pensadas para transmitir confianza, explicar tus servicios y convertir visitas en solicitudes de cita.',
-    imagen: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80',
+    imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Home clara con propuesta de valor, especialidad, ubicación y vías de contacto',
       'Páginas de tratamientos, landings de campañas y FAQs para resolver dudas reales',
@@ -58,7 +58,7 @@ export const servicios: Servicio[] = [
     slug: 'redes-sociales',
     descripcion:
       'Una presencia profesional que refuerza confianza, explica tratamientos y acompaña la decisión del paciente antes de pedir cita.',
-    imagen: 'https://images.unsplash.com/photo-1611162617263-4ec3d744e2f6?w=700&q=80',
+    imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Calendario editorial adaptado a tu especialidad y a dudas frecuentes de pacientes',
       'Posts, reels y piezas informativas con tono sanitario, claro y prudente',

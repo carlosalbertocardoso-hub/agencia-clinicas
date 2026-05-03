@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { blogPosts } from '@/data/blog'
 
@@ -22,11 +21,10 @@ export default function BlogPreviewSection() {
               <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                 <div className="h-48 bg-gray-200 relative overflow-hidden">
                   {articulo.imagen && (
-                    <Image
+                    <img
                       src={articulo.imagen}
                       alt={articulo.titulo}
-                      fill
-                      className="object-cover group-hover:scale-105 transition"
+                      className="h-full w-full object-cover group-hover:scale-105 transition"
                     />
                   )}
                 </div>

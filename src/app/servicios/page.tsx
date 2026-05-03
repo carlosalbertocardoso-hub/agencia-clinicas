@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Servicios de marketing para clínicas en Sevilla | Pacientes Sevilla',
   description:
     'SEO local, Google Ads, diseño web, redes, reputación y medición para clínicas privadas y profesionales sanitarios en Sevilla.',
+  alternates: {
+    canonical: '/servicios',
+  },
 }
 
 export default function ServiciosPage() {

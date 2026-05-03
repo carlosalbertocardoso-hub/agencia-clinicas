@@ -5,6 +5,9 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidad | Pacientes Sevilla',
+  alternates: {
+    canonical: '/politica-privacidad',
+  },
   robots: 'noindex',
 }
 
