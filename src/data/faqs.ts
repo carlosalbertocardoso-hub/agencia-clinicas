@@ -5,37 +5,37 @@ export const faqsGeneral: FAQ[] = [
     id: '1',
     pregunta: '¿Cuánto tiempo tardamos en ver resultados?',
     respuesta:
-      'Depende de tu situación actual. Algunas mejoras, como ordenar la web o activar anuncios bien orientados, pueden notarse antes. Aparecer mejor en Google suele requerir varios meses de trabajo constante.',
+      'Depende del punto de partida, especialidad, zona, inversión y capacidad de seguimiento de cada clínica. Google Ads puede generar contactos antes; SEO local, reputación y conversión suelen requerir trabajo progresivo.',
   },
   {
     id: '2',
-    pregunta: '¿Cuáles son vuestros precios?',
+    pregunta: '¿Qué incluye la auditoría gratuita?',
     respuesta:
-      'No usamos un precio único para todas las clínicas. Primero revisamos qué necesitas mejorar y después proponemos un plan ajustado a tu situación y presupuesto.',
+      'Revisamos visibilidad en Google y Google Maps, web, mensajes principales, facilidad de contacto desde móvil, reseñas, competencia local y oportunidades rápidas de mejora.',
   },
   {
     id: '3',
     pregunta: '¿Trabajáis solo con clínicas grandes?',
     respuesta:
-      'No. Trabajamos con consultas pequeñas, clínicas medianas y centros con varias especialidades. Adaptamos el trabajo a la realidad de cada negocio.',
+      'No. Trabajamos con consultas privadas, clínicas medianas y centros con varias especialidades. Adaptamos prioridades a agenda, inversión y capacidad real de atención.',
   },
   {
     id: '4',
-    pregunta: '¿Qué incluye la revisión gratuita?',
+    pregunta: '¿Garantizáis pacientes?',
     respuesta:
-      'Revisamos cómo aparece tu clínica online, si tu web transmite confianza, si es fácil pedir cita y qué mejoras podrían ayudarte a recibir más solicitudes.',
+      'No prometemos un número concreto de pacientes ni resultados clínicos. Sí trabajamos con medición, claridad y acciones orientadas a mejorar visibilidad, confianza y solicitudes cualificadas.',
   },
   {
     id: '5',
-    pregunta: '¿Garantizáis resultados?',
+    pregunta: '¿Podemos empezar por un solo servicio?',
     respuesta:
-      'No prometemos resultados imposibles. Sí prometemos claridad, seguimiento y un plan de mejora pensado para que tu clínica tenga más oportunidades de contacto.',
+      'Sí. A veces lo más urgente es Google, otras la web, campañas o medición. La auditoría sirve para decidir qué conviene abordar primero.',
   },
   {
     id: '6',
-    pregunta: '¿Puedo contratar solo un servicio?',
+    pregunta: '¿Cómo sabré qué parte del marketing funciona?',
     respuesta:
-      'Sí. Podemos empezar por lo más urgente: mejorar la web, aparecer mejor en Google, ordenar redes o activar anuncios. No siempre hace falta hacerlo todo a la vez.',
+      'Medimos llamadas, clics a WhatsApp, formularios, campañas, páginas clave y calidad de las solicitudes para que puedas tomar decisiones con más claridad.',
   },
 ]
 

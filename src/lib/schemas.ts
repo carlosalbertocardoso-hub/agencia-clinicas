@@ -56,6 +56,42 @@ export function buildFAQSchema(
   }
 }
 
+export function buildArticleSchema({
+  headline,
+  description,
+  url,
+  image,
+  datePublished,
+}: {
+  headline: string
+  description: string
+  url: string
+  image?: string
+  datePublished?: string
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline,
+    description,
+    url,
+    image: image || 'https://pacientessevilla.com/images/og-default.svg',
+    datePublished,
+    author: {
+      '@type': 'Organization',
+      name: 'Pacientes Sevilla',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Pacientes Sevilla',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://pacientessevilla.com/logo.svg',
+      },
+    },
+  }
+}
+
 export function buildOrganizationSchema() {
   return {
     '@context': 'https://schema.org',

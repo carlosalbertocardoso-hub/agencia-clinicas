@@ -1,41 +1,42 @@
 import type { CasoExito } from '@/types'
 
+// Escenarios de diagnóstico, no casos reales. Sustituir por casos verificados antes de usarlos como prueba social.
 export const casos: CasoExito[] = [
   {
     id: '1',
-    titulo: 'Clínica dental aumentó un 280% sus pacientes',
-    clinica: 'Clínica Dental Sonrisa Blanca',
+    titulo: 'Ejemplo orientativo: clínica dental con baja visibilidad local',
+    clinica: 'Ejemplo representativo para sustituir por caso real',
     especialidad: 'Odontología',
-    resultado: '+280%',
-    resultadoValue: 280,
-    resultadoUnit: '%',
+    resultado: 'Objetivo: más solicitudes cualificadas',
+    resultadoValue: 0,
+    resultadoUnit: '',
     imagen: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80',
     descripcion:
-      'Estrategia SEO + Google Ads para una clínica dental en Sevilla. En 6 meses pasaron de 15 pacientes nuevos/mes a más de 50 consultas mensuales.',
+      'Escenario habitual: ficha de Google incompleta, pocas páginas por tratamiento y campañas sin medición de llamadas. El trabajo se centraría en SEO local, landings y tracking.',
   },
   {
     id: '2',
-    titulo: 'Centro de psicología triplicó sus consultores',
-    clinica: 'Centro Psicológico Equilibrio',
+    titulo: 'Ejemplo orientativo: consulta de psicología con captación irregular',
+    clinica: 'Ejemplo representativo para sustituir por caso real',
     especialidad: 'Psicología',
-    resultado: '+320%',
-    resultadoValue: 320,
-    resultadoUnit: '%',
+    resultado: 'Objetivo: agenda más estable',
+    resultadoValue: 0,
+    resultadoUnit: '',
     imagen: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80',
     descripcion:
-      'Marketing digital enfocado en psicología clínica y terapia. Con un plan de Google Ads + redes sociales consiguieron ocupar todas las franjas horarias disponibles.',
+      'Escenario habitual: dependencia de recomendaciones, mensajes poco claros y ausencia de landings por necesidad. El foco sería visibilidad local, tono ético y medición de formularios.',
   },
   {
     id: '3',
-    titulo: 'Clínica estética multiplicó su captación',
-    clinica: 'Centro Estética Belleza Moderna',
-    especialidad: 'Medicina Estética',
-    resultado: '+350%',
-    resultadoValue: 350,
-    resultadoUnit: '%',
+    titulo: 'Ejemplo orientativo: clínica estética con solicitudes poco filtradas',
+    clinica: 'Ejemplo representativo para sustituir por caso real',
+    especialidad: 'Medicina estética',
+    resultado: 'Objetivo: mejor calidad de contacto',
+    resultadoValue: 0,
+    resultadoUnit: '',
     imagen: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800&q=80',
     descripcion:
-      'Diseño web + Google Ads + redes sociales estratégica para clínica estética. Lograron un aumento exponencial en consultas de nuevos tratamientos.',
+      'Escenario habitual: redes activas pero web poco clara, campañas genéricas y muchas consultas de baja intención. El trabajo se orientaría a páginas por tratamiento, confianza y filtros.',
   },
 ]
 

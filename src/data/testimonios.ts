@@ -1,45 +1,42 @@
 import type { Testimonio } from '@/types'
 
+// Feedback representativo, no testimonios reales. Sustituir por citas verificadas antes de publicarlo como prueba social.
 export const testimonios: Testimonio[] = [
   {
     id: '1',
-    nombre: 'Dr. Juan García',
-    clinica: 'Clínica Dental Sonrisa Blanca',
-    cargo: 'Propietario',
+    nombre: 'Gerente de clínica dental',
+    clinica: 'Ejemplo representativo',
+    cargo: 'Dirección',
     texto:
-      'Pasamos de 15 pacientes nuevos al mes a más de 50. El equipo es profesional, responde rápido y los resultados hablan solos. Recomendado 100%.',
+      'Necesitábamos entender por qué Google y la web no estaban generando solicitudes de calidad. La auditoría nos ayudó a ordenar prioridades sin tecnicismos.',
     rating: 5,
-    imagen: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&q=80',
   },
   {
     id: '2',
-    nombre: 'Dra. María López',
-    clinica: 'Centro Psicológico Equilibrio',
-    cargo: 'Directora',
+    nombre: 'Psicóloga sanitaria',
+    clinica: 'Ejemplo representativo',
+    cargo: 'Consulta privada',
     texto:
-      'Increíble transformación. Desde que trabajamos con ellos, tengo lista de espera. El SEO y Google Ads fue exactamente lo que necesitaba.',
+      'El enfoque fue respetuoso y claro. No queríamos una comunicación agresiva, sino que las personas adecuadas nos encontraran y entendieran cómo trabajamos.',
     rating: 5,
-    imagen: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
   },
   {
     id: '3',
-    nombre: 'Isabel Rodríguez',
-    clinica: 'Centro Estética Belleza',
-    cargo: 'Gerenta',
+    nombre: 'Responsable de clínica estética',
+    clinica: 'Ejemplo representativo',
+    cargo: 'Gerencia',
     texto:
-      'El diseño web es hermoso y funciona perfecto. Las conversiones aumentaron un 300%. Excelente inversión para nuestro negocio.',
+      'Nos ayudó especialmente revisar la web, las campañas y el tipo de consultas que llegaban. El objetivo no era más volumen sin control, sino mejores solicitudes.',
     rating: 5,
-    imagen: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
   },
   {
     id: '4',
-    nombre: 'Prof. Carlos Mendez',
-    clinica: 'Consulta de Fisioterapia',
-    cargo: 'Fisioterapeuta',
+    nombre: 'Fisioterapeuta con consulta propia',
+    clinica: 'Ejemplo representativo',
+    cargo: 'Profesional sanitario',
     texto:
-      'Pequeño consultorio, pero los resultados fueron enormes. Ahora tengo cita para 3 meses. No pensé que fuera posible con mi presupuesto.',
+      'La revisión aterrizó problemas concretos: ficha de Google, llamadas desde móvil, servicios poco explicados y falta de medición. Fue práctico desde el primer momento.',
     rating: 5,
-    imagen: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&q=80',
   },
 ]
 

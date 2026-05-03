@@ -3,70 +3,69 @@ import type { Servicio } from '@/types'
 export const servicios: Servicio[] = [
   {
     id: '1',
-    nombre: 'Aparecer mejor en Google',
+    nombre: 'SEO local para clínicas en Sevilla',
     slug: 'seo-medico',
     descripcion:
-      'Trabajamos para que tu clínica sea más visible cuando una persona busca tus servicios en Sevilla.',
+      'Haz que tu clínica aparezca cuando un paciente busca tu especialidad, tu tratamiento o una clínica cercana en Sevilla.',
     imagen: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80',
     caracteristicas: [
-      'Revisión de cómo aparece tu clínica en Google',
-      'Mejora de tus páginas principales',
-      'Textos claros para tus servicios',
-      'Mejor presencia en búsquedas locales',
-      'Seguimiento mensual de avances',
-      'Recomendaciones fáciles de entender',
+      'Auditoría de Google Business Profile, web, Search Console y competencia local',
+      'Optimización de páginas de servicios, tratamientos, titles, metas y arquitectura',
+      'SEO local por barrio, zona y búsquedas cercanas cuando tenga sentido',
+      'Mejora de reseñas, señales de confianza, fotos y mensajes principales',
+      'Schema sanitario/local cuando proceda y medición de llamadas, WhatsApp y formularios',
+      'Informes claros sobre visibilidad, clics, contactos y oportunidades de mejora',
     ],
     especialidades: ['clinicas-dentales-sevilla', 'psicologos-sevilla', 'fisioterapia-sevilla'],
   },
   {
     id: '2',
-    nombre: 'Anuncios para recibir más solicitudes',
+    nombre: 'Google Ads para clínicas privadas en Sevilla',
     slug: 'google-ads',
     descripcion:
-      'Creamos anuncios para personas que ya están buscando una clínica o tratamiento como el tuyo.',
+      'Campañas para captar búsquedas con intención real: personas que ya están buscando una clínica, tratamiento o profesional sanitario.',
     imagen: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80',
     caracteristicas: [
-      'Anuncios orientados a tu zona y especialidad',
-      'Control del presupuesto',
-      'Páginas claras para pedir información',
-      'Revisión de consultas recibidas',
-      'Ajustes para evitar gastos innecesarios',
-      'Informes sencillos de entender',
+      'Campañas Search por especialidad, tratamiento, zona y nivel de intención',
+      'Segmentación local en Sevilla capital, provincia, barrios o áreas concretas',
+      'Palabras clave negativas para reducir gasto en consultas poco útiles',
+      'Landing pages pensadas para generar confianza y facilitar el contacto',
+      'Tracking de llamadas, formularios y WhatsApp con lectura de calidad del contacto',
+      'Optimización por coste, volumen y calidad de solicitud, no solo por clics',
     ],
     especialidades: ['clinicas-dentales-sevilla', 'medicina-estetica-sevilla', 'clinicas-cirugia-sevilla'],
   },
   {
     id: '3',
-    nombre: 'Web que transmite confianza',
+    nombre: 'Diseño web para clínicas en Sevilla orientado a captar citas',
     slug: 'diseno-web',
     descripcion:
-      'Mejoramos o creamos una web clara, rápida y preparada para que más personas pidan cita.',
+      'Creamos o mejoramos webs sanitarias pensadas para transmitir confianza, explicar tus servicios y convertir visitas en solicitudes de cita.',
     imagen: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80',
     caracteristicas: [
-      'Diseño profesional y fácil de usar',
-      'Buena experiencia desde móvil',
-      'Botones claros para pedir cita',
-      'Textos que explican tus servicios',
-      'Carga rápida y segura',
-      'Formulario sencillo para nuevos contactos',
-      'Revisión de resultados mensuales',
+      'Home clara con propuesta de valor, especialidad, ubicación y vías de contacto',
+      'Páginas de tratamientos, landings de campañas y FAQs para resolver dudas reales',
+      'Botones de llamada, WhatsApp y formulario visibles desde móvil',
+      'Equipo, fotos reales, reseñas, ubicación y señales de confianza bien ordenadas',
+      'SEO básico, velocidad, UX móvil, accesibilidad y estructura preparada para medir',
+      'Analítica de conversión para saber qué páginas generan solicitudes',
     ],
     especialidades: ['clinicas-dentales-sevilla', 'psicologos-sevilla', 'medicina-estetica-sevilla'],
   },
   {
     id: '4',
-    nombre: 'Presencia cuidada en redes',
+    nombre: 'Redes sociales para clínicas en Sevilla que quieren generar confianza',
     slug: 'redes-sociales',
-    descripcion: 'Te ayudamos a mostrar una imagen profesional y cercana para que tu clínica genere confianza antes de la primera visita.',
+    descripcion:
+      'Una presencia profesional que refuerza confianza, explica tratamientos y acompaña la decisión del paciente antes de pedir cita.',
     imagen: 'https://images.unsplash.com/photo-1611162617263-4ec3d744e2f6?w=700&q=80',
     caracteristicas: [
-      'Ideas de contenido para tu especialidad',
-      'Publicaciones claras y profesionales',
-      'Imagen visual coherente',
-      'Respuesta organizada a consultas',
-      'Revisión de lo que funciona mejor',
-      'Anuncios cuando tenga sentido',
-      'Informe mensual sin tecnicismos',
+      'Calendario editorial adaptado a tu especialidad y a dudas frecuentes de pacientes',
+      'Posts, reels y piezas informativas con tono sanitario, claro y prudente',
+      'Contenido sobre equipo, instalaciones, proceso, FAQs y pruebas de confianza',
+      'Creatividades para campañas y derivación a web, WhatsApp o llamada',
+      'Coherencia visual para que la clínica parezca tan profesional online como en consulta',
+      'Medición de mensajes, tráfico, consultas y apoyo real a la captación',
     ],
     especialidades: ['psicologos-sevilla', 'medicina-estetica-sevilla', 'nutricionistas-sevilla'],
   },
@@ -84,69 +83,129 @@ export const faqsPorServicio: Record<string, Array<{ id: string; pregunta: strin
   'seo-medico': [
     {
       id: '1',
-      pregunta: '¿Cuánto se tarda en aparecer mejor en Google?',
-      respuesta: 'Normalmente hacen falta varios meses de trabajo constante. Depende de tu especialidad, tu zona y cómo esté ahora tu web.',
+      pregunta: '¿Cuánto tarda el SEO local para una clínica?',
+      respuesta:
+        'Depende del punto de partida, la especialidad y la competencia en Sevilla. Algunas mejoras de ficha, mensajes o páginas pueden notarse antes, pero el SEO local suele requerir varios meses de trabajo constante.',
     },
     {
       id: '2',
-      pregunta: '¿Qué diferencia hay entre mejorar Google y poner anuncios?',
-      respuesta: 'Mejorar tu presencia en Google es un trabajo progresivo. Los anuncios pueden traer contactos antes, pero requieren presupuesto activo.',
+      pregunta: '¿Qué diferencia hay entre SEO y Google Ads?',
+      respuesta:
+        'Google Ads puede activar visibilidad inmediata mientras haya inversión. El SEO construye presencia orgánica y local de forma progresiva. En muchas clínicas conviene combinar ambos con medición clara.',
     },
     {
       id: '3',
-      pregunta: '¿Cómo sabe Google qué servicios ofrece mi clínica?',
-      respuesta: 'Tu web debe explicar bien tus tratamientos, tu ubicación y tu especialidad. Nosotros revisamos esos textos y los ordenamos para que se entiendan mejor.',
+      pregunta: '¿Necesito crear páginas por tratamiento?',
+      respuesta:
+        'Normalmente sí, si cada tratamiento tiene búsquedas, dudas y criterios de decisión distintos. Una página específica ayuda a Google y al paciente a entender mejor tu especialización.',
+    },
+    {
+      id: '4',
+      pregunta: '¿Se puede trabajar SEO si ya tengo web?',
+      respuesta:
+        'Sí. Primero revisamos si la web actual puede aprovecharse. A veces basta con reorganizar contenidos, mejorar páginas y corregir bloqueos técnicos; otras veces conviene una landing o rediseño parcial.',
+    },
+    {
+      id: '5',
+      pregunta: '¿Cómo medimos si está funcionando?',
+      respuesta:
+        'Medimos visibilidad, clics, llamadas, formularios, WhatsApp, páginas que generan contacto y calidad de las solicitudes. No nos quedamos solo en posiciones.',
     },
   ],
   'google-ads': [
     {
       id: '1',
-      pregunta: '¿Cuánto debería invertir en anuncios?',
-      respuesta: 'Depende de tu especialidad y de la competencia en tu zona. Antes de invertir fuerte, conviene revisar qué servicio quieres impulsar y cuánto vale para tu clínica una nueva cita.',
+      pregunta: '¿Cuánto invertir al mes en Google Ads?',
+      respuesta:
+        'No hay una cifra universal. Depende de la especialidad, zona, competencia, valor de cada paciente y capacidad de seguimiento. Antes de escalar inversión conviene revisar landing, tracking y calidad del contacto.',
     },
     {
       id: '2',
-      pregunta: '¿Los anuncios pueden traer solicitudes rápido?',
-      respuesta: 'Sí, pueden generar contactos antes que otras acciones, siempre que estén bien orientados y la página donde llega la persona transmita confianza.',
+      pregunta: '¿Cuándo se empiezan a ver solicitudes?',
+      respuesta:
+        'Las campañas pueden generar contactos desde los primeros días si hay demanda y la propuesta es clara. Aun así, las primeras semanas sirven para filtrar búsquedas, ajustar mensajes y mejorar la calidad.',
     },
     {
       id: '3',
-      pregunta: '¿Cómo evitamos gastar en personas que no interesan?',
-      respuesta: 'Limitamos la zona, elegimos bien los servicios a promocionar y revisamos qué consultas llegan para ajustar la inversión.',
+      pregunta: '¿Qué pasa si ya he probado Ads y no funcionó?',
+      respuesta:
+        'Revisamos estructura, palabras clave, negativas, anuncios, landing, medición y seguimiento comercial. Muchas campañas fallan por llevar tráfico a una web que no convierte o por medir solo clics.',
+    },
+    {
+      id: '4',
+      pregunta: '¿Cómo evitáis leads de baja calidad?',
+      respuesta:
+        'Trabajamos palabras clave de intención, exclusiones, mensajes claros, landings específicas y lectura de llamadas/formularios para ajustar hacia solicitudes más relevantes.',
+    },
+    {
+      id: '5',
+      pregunta: '¿Necesito una landing específica?',
+      respuesta:
+        'En campañas importantes suele ser recomendable. Una landing por tratamiento o necesidad reduce distracciones, explica mejor la oferta y facilita que el paciente contacte desde móvil.',
     },
   ],
   'diseno-web': [
     {
       id: '1',
-      pregunta: '¿Qué hace que una web de clínica funcione mejor?',
-      respuesta: 'Que explique rápido qué haces, transmita confianza, se vea bien en móvil y permita pedir información sin complicaciones.',
+      pregunta: '¿Necesito una web nueva o mejorar la actual?',
+      respuesta:
+        'Depende de si tu web transmite confianza, carga rápido, se entiende en móvil y genera llamadas o solicitudes. Si la base es buena, podemos mejorarla por fases.',
     },
     {
       id: '2',
-      pregunta: '¿Es mejor tener web o redes sociales?',
-      respuesta: 'La web debe ser tu base principal. Las redes ayudan a reforzar confianza, pero muchas personas deciden pedir cita después de revisar tu web.',
+      pregunta: '¿Qué debe tener una web de clínica?',
+      respuesta:
+        'Mensaje claro, tratamientos bien explicados, equipo, ubicación, reseñas, fotos reales, FAQs, llamada, WhatsApp, formulario sencillo, velocidad y medición de conversiones.',
     },
     {
       id: '3',
-      pregunta: '¿Cuánto cuesta mejorar o crear una web para clínica?',
-      respuesta: 'Depende de si necesitas una web completa, una mejora puntual o una página para un servicio concreto. Primero revisamos tu caso.',
+      pregunta: '¿Cuánto tarda una web sanitaria?',
+      respuesta:
+        'Varía según número de páginas, tratamientos, materiales y aprobaciones internas. Una landing puede ir más rápido; una web completa requiere más trabajo de contenido, estructura y revisión.',
+    },
+    {
+      id: '4',
+      pregunta: '¿Se puede conectar con WhatsApp, formulario o software de cita?',
+      respuesta:
+        'Sí. Podemos preparar llamadas, WhatsApp, formularios y enlaces a sistemas de cita siempre que la herramienta lo permita y se respete la privacidad.',
+    },
+    {
+      id: '5',
+      pregunta: '¿Cómo sé si la web convierte?',
+      respuesta:
+        'Configuramos medición de clics a teléfono, WhatsApp, formularios y páginas clave. Después analizamos qué visitas terminan en contacto y dónde se pierden oportunidades.',
     },
   ],
   'redes-sociales': [
     {
       id: '1',
       pregunta: '¿Qué redes necesita mi clínica?',
-      respuesta: 'Depende de tu especialidad y de tus pacientes. No se trata de estar en todas, sino de cuidar las que de verdad ayudan a generar confianza.',
+      respuesta:
+        'Depende de la especialidad y del tipo de paciente. No se trata de estar en todas, sino de cuidar los canales donde puedes reforzar confianza y apoyar la decisión.',
     },
     {
       id: '2',
-      pregunta: '¿Cada cuánto debería publicar?',
-      respuesta: 'Mejor publicar menos y bien que mucho sin criterio. Buscamos una presencia constante, profesional y fácil de mantener.',
+      pregunta: '¿Sirven las redes para captar pacientes?',
+      respuesta:
+        'Pueden ayudar, pero rara vez deberían ser el único canal. Funcionan mejor como apoyo a la confianza, la educación sanitaria, el recuerdo de marca y las campañas.',
     },
     {
       id: '3',
-      pregunta: '¿Cómo sé si las redes están ayudando?',
-      respuesta: 'Miramos si generan mensajes, llamadas, visitas a la web y confianza antes de la primera cita. No nos quedamos solo en los me gusta.',
+      pregunta: '¿Cada cuánto publicar?',
+      respuesta:
+        'Mejor una frecuencia sostenible y útil que publicar mucho sin criterio. Definimos un calendario realista según equipo, especialidad y objetivos.',
+    },
+    {
+      id: '4',
+      pregunta: '¿Qué contenidos puede publicar una clínica sin ser agresiva?',
+      respuesta:
+        'FAQs, explicación de tratamientos, criterios de seguridad, equipo, instalaciones, proceso de primera visita, cuidados generales y contenido educativo con prudencia sanitaria.',
+    },
+    {
+      id: '5',
+      pregunta: '¿Cómo medimos si aportan?',
+      respuesta:
+        'Miramos mensajes, visitas a la web, clics a WhatsApp, consultas atribuidas, contenido que mejor responde dudas y apoyo a campañas. No valoramos solo likes.',
     },
   ],
 }

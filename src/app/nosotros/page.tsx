@@ -5,20 +5,14 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Sobre Nosotros | Pacientes Sevilla - Marketing para Clínicas',
+  title: 'Sobre Pacientes Sevilla | Agencia para clínicas privadas',
   description:
-    'Somos especialistas en marketing digital para clínicas, dentistas, psicólogos y profesionales sanitarios en Sevilla. 10+ años de experiencia.',
+    'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla. Estrategia, medición y comunicación sanitaria clara.',
   openGraph: {
     title: 'Sobre Pacientes Sevilla',
-    description: 'Quiénes somos y cómo ayudamos a clínicas a crecer en Sevilla',
+    description: 'Quiénes somos y cómo ayudamos a clínicas privadas de Sevilla a ordenar su captación online.',
     url: 'https://pacientessevilla.com/nosotros',
-    images: [
-      {
-        url: '/images/og-default.svg',
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }
 
@@ -33,10 +27,11 @@ export default function NosotrosPage() {
             <BreadcrumbNav items={[{ label: 'Sobre nosotros', href: '/nosotros' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-8">
-              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Somos especialistas en marketing para clínicas</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">
+                Especialistas en captación online para clínicas privadas en Sevilla
+              </h1>
               <p className="text-xl text-text-muted mb-8">
-                10+ años ayudando a profesionales sanitarios en Sevilla a atraer más pacientes a través de estrategias digitales
-                efectivas.
+                Ayudamos a gerentes, doctores y responsables de consulta a entender qué funciona en Google, web, campañas y conversión sin depender de informes confusos.
               </p>
             </div>
           </div>
@@ -44,23 +39,19 @@ export default function NosotrosPage() {
 
         <section className="section-padding">
           <div className="container-custom max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8">Nuestra historia</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8">Nuestro enfoque</h2>
 
             <div className="space-y-6 text-text-muted leading-relaxed">
               <p>
-                Pacientes Sevilla nació de una necesidad real: profesionales sanitarios que no sabían cómo atraer pacientes en la era
-                digital. Vimos clínicas excelentes con pocos pacientes, mientras competidores mediocres con marketing efectivo crecían
-                sin parar.
+                Pacientes Sevilla nace para resolver un problema muy concreto: clínicas excelentes que no aparecen bien en Google, webs que no transmiten su nivel real y campañas que generan dudas porque nadie sabe qué contactos llegan.
               </p>
 
               <p>
-                Decidimos especializar todo nuestro conocimiento en el sector sanitario. No somos agencia genérica. Entendemos
-                regulación médica, ética profesional, privacidad de pacientes y cómo decide el paciente en la consulta.
+                No trabajamos como una agencia genérica. Miramos el recorrido completo del paciente privado: búsqueda, primera impresión, confianza, web, llamada, WhatsApp, formulario, seguimiento y medición.
               </p>
 
               <p>
-                Hoy trabajamos con 500+ clínicas en Sevilla y Andalucía. Cada una ha aumentado sus pacientes entre 200% y 400%. No
-                prometemos milagros — prometemos estrategia, ejecución y transparencia total en resultados.
+                Nuestro papel es ayudarte a decidir prioridades con claridad: qué conviene mejorar primero, por qué importa y qué resultado de negocio busca. Sin prometer un número concreto de pacientes, sin métricas infladas y sin lenguaje innecesariamente técnico.
               </p>
             </div>
           </div>
@@ -68,16 +59,16 @@ export default function NosotrosPage() {
 
         <section className="section-padding bg-surface">
           <div className="container-custom">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-12 text-center">Nuestros valores</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-12 text-center">Nuestros criterios</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="card p-8">
                 <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
                   <Target size={22} strokeWidth={1.6} />
                 </div>
-                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Resultados sobre promesas</h3>
+                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Captación medible</h3>
                 <p className="text-text-muted text-sm">
-                  No nos importan las vanity metrics. Medimos pacientes generados, ingresos aumentados, ROI comprobado.
+                  Medimos llamadas, WhatsApp, formularios y calidad de contacto. Las visitas importan si ayudan a generar oportunidades reales.
                 </p>
               </div>
 
@@ -85,9 +76,9 @@ export default function NosotrosPage() {
                 <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
                   <ShieldCheck size={22} strokeWidth={1.6} />
                 </div>
-                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Privacidad y ética</h3>
+                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Prudencia sanitaria</h3>
                 <p className="text-text-muted text-sm">
-                  Cumplimos GDPR, regulación sanitaria y código de ética. Nunca exponemos datos de pacientes.
+                  Cuidamos privacidad, tono, expectativas y credibilidad. No usamos promesas clínicas ni claims que no puedan sostenerse.
                 </p>
               </div>
 
@@ -95,9 +86,9 @@ export default function NosotrosPage() {
                 <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
                   <Lightbulb size={22} strokeWidth={1.6} />
                 </div>
-                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Innovación continua</h3>
+                <h3 className="font-heading text-lg md:text-xl font-semibold mb-3 text-text">Claridad para dirección</h3>
                 <p className="text-text-muted text-sm">
-                  Algoritmos de Google cambian cada mes. Nosotros nos mantenemos adelante. Tu estrategia nunca queda obsoleta.
+                  Explicamos qué se hace, por qué se hace y qué decisión permite tomar. El marketing debe ser entendible para quien gestiona la clínica.
                 </p>
               </div>
             </div>
@@ -106,22 +97,18 @@ export default function NosotrosPage() {
 
         <section className="section-padding">
           <div className="container-custom max-w-3xl text-center">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">Nuestro equipo</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">¿Hablamos de tu clínica?</h2>
             <p className="text-text-muted mb-8">
-              Especialistas en SEO médico, Google Ads, diseño web y redes sociales. Cada miembro aporta 10+ años en el sector. No
-              hay inexpertos en tu cuenta.
+              Podemos revisar tu presencia en Google, tu web y tus puntos de contacto para detectar oportunidades concretas de mejora.
             </p>
 
             <div className="bg-white p-8 rounded-lg border border-slate-200">
-              <p className="text-text font-semibold mb-2">¿Preguntas sobre nosotros?</p>
+              <p className="text-text font-semibold mb-2">Auditoría gratuita de captación online</p>
               <p className="text-text-muted mb-6">
-                Llámanos, escríbenos o agenda una videollamada. Nos encanta hablar sobre marketing y clínicas.
+                Sin compromiso. Respuesta en menos de 24h laborables. Explicado en lenguaje claro.
               </p>
-              <a
-                href="/contacto"
-                className="btn-primary"
-              >
-                Contáctanos
+              <a href="/contacto" className="btn-primary">
+                Solicitar auditoría gratuita
               </a>
             </div>
           </div>

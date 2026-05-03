@@ -2,10 +2,10 @@ import { BadgeCheck, BarChart3, Star, Target } from 'lucide-react'
 
 export default function TrustBadges() {
   const badges = [
-    { icon: BadgeCheck, label: 'Especialistas en clínicas' },
-    { icon: Star, label: 'Trato claro y cercano' },
-    { icon: BarChart3, label: 'Más contactos interesados' },
-    { icon: Target, label: 'Enfocados en Sevilla' },
+    { icon: BadgeCheck, label: 'Especialistas en clínicas privadas' },
+    { icon: Target, label: 'Enfoque local Sevilla' },
+    { icon: BarChart3, label: 'Captación medible' },
+    { icon: Star, label: 'Sin informes incomprensibles' },
   ]
 
   return (

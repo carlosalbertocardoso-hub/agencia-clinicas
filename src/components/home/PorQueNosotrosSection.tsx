@@ -4,39 +4,39 @@ export default function PorQueNosotrosSection() {
   const razones = [
     {
       icono: Target,
-      titulo: 'Entendemos cómo decide un paciente',
+      titulo: 'Hablamos de pacientes, agenda y rentabilidad',
       descripcion:
-        'Una persona no elige una clínica como compra cualquier producto. Necesita claridad, confianza y facilidad para pedir cita.',
-    },
-    {
-      icono: BarChart3,
-      titulo: 'Nos centramos en contactos útiles',
-      descripcion:
-        'No buscamos visitas por buscar visitas. Trabajamos para que lleguen personas interesadas en tus servicios.',
-    },
-    {
-      icono: Workflow,
-      titulo: 'Miramos todo el recorrido',
-      descripcion:
-        'Desde que alguien te encuentra en Google hasta que llama, escribe o pide cita desde el móvil.',
-    },
-    {
-      icono: MessageCircle,
-      titulo: 'Te lo explicamos en lenguaje claro',
-      descripcion:
-        'Sabrás qué estamos haciendo, por qué lo hacemos y qué resultado esperamos, sin informes imposibles de leer.',
+        'No nos quedamos en visitas o impresiones. Priorizamos acciones que puedan traducirse en solicitudes de cita útiles.',
     },
     {
       icono: CircleDollarSign,
-      titulo: 'Cuidamos tu inversión',
+      titulo: 'Priorizamos impacto en solicitudes',
       descripcion:
-        'Priorizamos acciones que puedan traducirse en más contactos, más citas y mejor presencia local.',
+        'Ordenamos el trabajo según lo que más puede estar frenando contactos: visibilidad, confianza, conversión o inversión mal enfocada.',
+    },
+    {
+      icono: Workflow,
+      titulo: 'Entendemos la decisión sanitaria privada',
+      descripcion:
+        'Una persona compara, duda y busca seguridad antes de elegir clínica. El mensaje debe acompañar ese proceso con rigor.',
+    },
+    {
+      icono: BarChart3,
+      titulo: 'Medimos llamadas, WhatsApp y formularios',
+      descripcion:
+        'Configuramos medición para saber qué canales generan contactos y qué calidad tienen esas solicitudes.',
+    },
+    {
+      icono: MessageCircle,
+      titulo: 'Adaptamos el mensaje a cada especialidad',
+      descripcion:
+        'No comunica igual una clínica dental, una consulta de psicología, una clínica estética o un especialista quirúrgico.',
     },
     {
       icono: MapPin,
-      titulo: 'Conocemos el mercado local',
+      titulo: 'Mentalidad local: Sevilla y competencia cercana',
       descripcion:
-        'Trabajamos pensando en Sevilla, sus barrios y cómo buscan los pacientes una clínica privada cercana.',
+        'Trabajamos con barrios, zonas, búsquedas cercanas y competidores reales, no con plantillas genéricas de agencia.',
     },
   ]
 
@@ -44,9 +44,9 @@ export default function PorQueNosotrosSection() {
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué tiene sentido para tu clínica</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué Pacientes Sevilla</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            No necesitas aprender marketing. Necesitas que tu presencia online ayude a llenar mejor la agenda.
+            Somos un partner estratégico para ordenar tu captación online sin que tengas que convertirte en experto en SEO, Ads o analítica.
           </p>
         </div>
 

@@ -8,9 +8,9 @@ export default function CasosExitoSection() {
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Casos de éxito</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Situaciones que revisamos a menudo</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Resultados reales de clínicas y profesionales sanitarios en Sevilla
+            Ejemplos representativos de problemas de captación. Sustituir por casos reales cuando existan datos verificables.
           </p>
         </div>
 
@@ -18,19 +18,9 @@ export default function CasosExitoSection() {
           {casos.map((caso) => (
             <div key={caso.id} className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition">
               <div className="h-48 relative bg-gray-200">
-                {caso.imagen && (
-                  <Image
-                    src={caso.imagen}
-                    alt={caso.titulo}
-                    fill
-                    className="object-cover"
-                  />
-                )}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                  <div className="text-center">
-                    <div className="text-5xl font-bold text-white">{caso.resultado}</div>
-                    <p className="text-white text-sm mt-2 font-medium">Aumento en captación</p>
-                  </div>
+                {caso.imagen && <Image src={caso.imagen} alt={caso.titulo} fill className="object-cover" />}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/45">
+                  <p className="text-white text-sm font-semibold text-center px-6">{caso.resultado}</p>
                 </div>
               </div>
 
@@ -45,11 +35,8 @@ export default function CasosExitoSection() {
         </div>
 
         <div className="text-center">
-          <Link
-            href="/casos-de-exito"
-            className="btn-primary btn-primary-lg inline-flex items-center gap-2"
-          >
-            Ver todos los casos <ChevronRight size={18} strokeWidth={1.8} />
+          <Link href="/casos-de-exito" className="btn-primary btn-primary-lg inline-flex items-center gap-2">
+            Ver ejemplos de diagnóstico <ChevronRight size={18} strokeWidth={1.8} />
           </Link>
         </div>
       </div>

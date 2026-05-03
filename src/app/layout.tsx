@@ -3,40 +3,32 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://pacientessevilla.com'),
-  title: 'Pacientes Sevilla | Más pacientes para clínicas en Sevilla',
+  title: 'Marketing digital para clínicas en Sevilla | Pacientes Sevilla',
   description:
-    'Ayudamos a clínicas y profesionales sanitarios en Sevilla a mejorar su presencia online, aparecer mejor en Google y recibir más solicitudes de cita.',
+    'Agencia de marketing digital para clínicas privadas en Sevilla. SEO local, Google Ads, diseño web, reputación y captación de pacientes.',
   keywords: [
-    'marketing clínicas Sevilla',
-    'conseguir pacientes Sevilla',
-    'marketing dentistas',
-    'marketing psicólogos',
-    'agencia marketing sanitario',
-    'aparecer en Google clínicas Sevilla',
-    'más citas clínica Sevilla',
+    'marketing digital clínicas Sevilla',
+    'SEO local clínicas Sevilla',
+    'Google Ads clínicas Sevilla',
+    'diseño web clínicas Sevilla',
+    'captación pacientes privados Sevilla',
+    'marketing sanitario Sevilla',
+    'auditoría marketing clínica',
   ],
   openGraph: {
     type: 'website',
     locale: 'es_ES',
     url: 'https://pacientessevilla.com',
-    title: 'Pacientes Sevilla | Más pacientes para clínicas',
+    title: 'Marketing digital para clínicas en Sevilla | Pacientes Sevilla',
     description:
-      'Mejora la presencia online de tu clínica en Sevilla y facilita que más pacientes contacten contigo.',
-    images: [
-      {
-        url: '/images/og-default.svg',
-        width: 1200,
-        height: 630,
-        alt: 'Pacientes Sevilla - Ayuda online para clínicas',
-      },
-    ],
+      'SEO local, Google Ads, diseño web, reputación y captación medible para clínicas privadas en Sevilla.',
+    images: [{ url: '/images/og-default.svg', width: 1200, height: 630, alt: 'Pacientes Sevilla - Marketing para clínicas' }],
     siteName: 'Pacientes Sevilla',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pacientes Sevilla | Más pacientes para clínicas',
-    description:
-      'Ayudamos a clínicas de Sevilla a recibir más solicitudes de cita.',
+    title: 'Marketing digital para clínicas en Sevilla',
+    description: 'Captación online medible para clínicas privadas y profesionales sanitarios en Sevilla.',
     images: ['/images/og-default.svg'],
   },
   robots: {
@@ -49,11 +41,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'ProfessionalService',
     '@id': 'https://pacientessevilla.com',
     name: 'Pacientes Sevilla',
     description:
-      'Agencia que ayuda a clínicas y profesionales sanitarios en Sevilla a mejorar su presencia online y recibir más solicitudes',
+      'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla.',
     url: 'https://pacientessevilla.com',
     telephone: '+34 XXX XXX XXX',
     email: 'hola@pacientessevilla.com',
@@ -64,23 +56,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Calle Principal, nº 1',
       addressLocality: 'Sevilla',
       addressRegion: 'Andalucía',
-      postalCode: '41001',
       addressCountry: 'ES',
     },
-    sameAs: [
-      'https://www.facebook.com/pacientessevilla',
-      'https://www.instagram.com/pacientessevilla',
-      'https://www.linkedin.com/company/pacientessevilla',
-    ],
     knowsAbout: [
-      'Presencia online para clínicas',
-      'Google para clínicas',
-      'Anuncios para clínicas',
-      'Web para clínicas',
-      'Comunicación sanitaria',
+      'SEO local para clínicas',
+      'Google Ads para clínicas',
+      'Diseño web sanitario',
+      'Reputación online sanitaria',
+      'Captación de pacientes privados',
+    ],
+    serviceType: [
+      'Marketing digital para clínicas',
+      'SEO local sanitario',
+      'Google Ads para clínicas',
+      'Diseño web para clínicas',
+      'Captación de pacientes privados',
     ],
   }
 
@@ -93,9 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body className="font-body text-text bg-neutral">{children}</body>

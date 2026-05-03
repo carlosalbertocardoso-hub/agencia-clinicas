@@ -13,115 +13,162 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
-    titulo: '10 errores SEO que cometen los dentistas en Sevilla',
+    titulo: '10 errores de SEO local que frenan la visibilidad de una clínica dental en Sevilla',
     slug: 'errores-seo-dentistas',
-    excerpt: 'Descubre los errores más comunes en SEO que reducen tu visibilidad en Google. Cómo evitarlos y posicionar tu clínica dental.',
+    excerpt:
+      'Errores frecuentes de SEO local en clínicas dentales de Sevilla: Google Business Profile, páginas por tratamiento, reseñas, velocidad, contenido y medición.',
     imagen: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80',
     contenido: `
-# 10 errores SEO que cometen los dentistas en Sevilla
+# 10 errores de SEO local que frenan la visibilidad de una clínica dental en Sevilla
 
 ## Introducción
-Los dentistas en Sevilla pierden miles de euros en pacientes potenciales por errores básicos de SEO. En este artículo te mostramos los 10 errores más comunes y cómo evitarlos.
+Una clínica dental puede tener buen equipo, buenas instalaciones y pacientes satisfechos, pero seguir perdiendo oportunidades si no aparece bien cuando alguien busca en Google. En Sevilla, el paciente compara cercanía, reseñas, tratamientos, web y facilidad de contacto antes de llamar.
 
-### Error 1: No tener palabras clave locales
-La mayoría de dentistas ignoran la importancia de palabras clave locales como "dentista Sevilla", "implantes dentales en Sevilla", etc.
+Este listado no pretende prometer posiciones. Sirve para detectar puntos habituales que suelen reducir visibilidad y confianza.
 
-### Error 2: Meta descriptions genéricas
-Las descripciones deben ser únicas, descriptivas y con CTA. "Clínica dental" no funciona.
+## 1. Google Business Profile incompleto
+La ficha de Google no es un trámite. Categorías, servicios, fotos, horarios, ubicación, enlaces, reseñas y descripción influyen en cómo te descubre y evalúa un paciente.
 
-### Error 3: Contenido duplicado
-No copies el mismo contenido en múltiples páginas. Google penaliza duplicados.
+## 2. No tener páginas por tratamiento
+No basta con una página general de odontología. Implantes, ortodoncia, estética dental, urgencias o revisiones responden a dudas distintas y merecen páginas claras cuando son servicios prioritarios.
 
-### Error 4: Falta de schema dental
-Schema.org para "dentista" y "clínica dental" ayuda a Google a entender qué haces.
+## 3. Ignorar barrios y zonas de Sevilla
+Muchas búsquedas son cercanas: Triana, Nervión, Los Remedios, Sevilla Este, Aljarafe o centro. No se trata de llenar la web de páginas artificiales, sino de mostrar ubicación y contexto local con naturalidad.
 
-### Error 5: Imágenes sin alt text
-Todo paciente que busca "sonrisa perfecta" ve imágenes. Sin alt text, Google no las indexa.
+## 4. Usar fotos pobres o genéricas
+El paciente quiere ver dónde va a entrar, quién le atenderá y qué sensación transmite la clínica. Las fotos reales ayudan a reducir incertidumbre.
 
-### Error 6: Velocidad lenta
-Site speed es ranking factor. Optimiza imágenes, minifica CSS/JS.
+## 5. No trabajar reseñas con estrategia
+Las reseñas influyen en confianza y decisión. Conviene pedirlas de forma ordenada, responder con prudencia y aprender de las dudas que aparecen en ellas.
 
-### Error 7: Falta de reviews
-Reseñas en Google, Trustpilot, PacientesDentales. Reviews = posicionamiento + confianza.
+## 6. Tener una web lenta o incómoda en móvil
+Gran parte de las búsquedas se hacen desde móvil. Si la web tarda, se ve mal o es difícil llamar, la oportunidad se pierde antes de que recepción pueda actuar.
 
-### Error 8: Mobile unfriendly
-50%+ búsquedas son mobile. Si tu web no es responsive, pierdes mitad de tráfico.
+## 7. No medir llamadas ni formularios
+Sin medición no sabes qué tratamientos generan contacto ni qué páginas convierten. Search Console, eventos de llamada, formularios y WhatsApp ayudan a decidir con datos.
 
-### Error 9: No linkear entre páginas
-Enlaza "implantes dentales" → "precio implantes" → "garantía implantes". Link juice interno.
+## 8. No diferenciar tratamientos de alto valor
+Implantes, ortodoncia o estética dental suelen requerir más confianza y explicación que una revisión básica. El mensaje debe responder a objeciones reales, no solo listar servicios.
 
-### Error 10: Ignorar análiticos
-Si no mides, no mejoras. Monitorea posiciones, clics, CTR en Google Search Console.
+## 9. No responder preguntas frecuentes
+Precio orientativo, duración, financiación si aplica, primera visita, urgencias, materiales o mantenimiento son dudas habituales. Responderlas mejora confianza y reduce llamadas repetitivas.
 
-## Resumen
-Evita estos 10 errores y ya estás por encima del 90% de dentistas en Sevilla.
+## 10. No conectar SEO con captación
+El SEO no debería perseguir tráfico por tráfico. Debe ayudar a que personas con intención real encuentren la clínica, entiendan la propuesta y contacten.
+
+## Cómo empezar
+Revisa tu ficha de Google, tus páginas de tratamiento, tus reseñas, tu web móvil y tu medición. Si no sabes por dónde empezar, una auditoría puede ayudarte a priorizar.
+
+¿Quieres aplicar esto a tu clínica dental en Sevilla? Solicita una auditoría gratuita para revisar el SEO de tu clínica dental.
     `,
-    fecha: '28 de abril, 2024',
-    categoria: 'SEO',
+    fecha: '3 de mayo, 2026',
+    categoria: 'SEO local',
     tiempoLectura: '8 min',
   },
   {
     id: '2',
-    titulo: 'Google Ads para psicólogos: Guía completa 2024',
+    titulo: 'Google Ads para psicólogos en Sevilla: cómo captar consultas con un enfoque ético',
     slug: 'google-ads-psicologos',
-    excerpt: 'Cómo configurar campañas de Google Ads efectivas si eres psicólogo en Sevilla. Palabras clave, presupuesto y conversión.',
+    excerpt:
+      'Guía de Google Ads para psicólogos en Sevilla: palabras clave, campañas, landings, presupuesto orientativo, privacidad y captación ética de consultas.',
     imagen: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80',
     contenido: `
-# Google Ads para Psicólogos: Guía Completa 2024
+# Google Ads para psicólogos en Sevilla: cómo captar consultas con un enfoque ético
 
 ## Introducción
-Google Ads para psicólogos es diferente. No vendo productos. Vendo consultas. Esto cambia todo.
+Google Ads en psicología exige más cuidado que en otros sectores. No se trata de presionar a una persona vulnerable, sino de facilitar que encuentre ayuda profesional cuando ya está buscando apoyo.
 
-## Palabras clave relevantes para psicólogos
-- "psicólogo Sevilla"
-- "psicólogo ansiedad Sevilla"
-- "terapia parejas Sevilla"
-- "psicólogo infantil Sevilla"
-- "depresión Sevilla psicólogo"
+## Captar intención real
+Las campañas deben centrarse en búsquedas con intención clara: psicólogo en Sevilla, ansiedad, terapia de pareja, psicología infantil, terapia online o consulta presencial. Cada grupo necesita mensajes y páginas diferentes.
 
-## Presupuesto recomendado
-Mínimo €300/mes para resultados. Ideal €800-1.200/mes para campañas combinadas.
+## Cuidar el tono
+El anuncio debe ser claro y humano. Evita promesas sobre resultados emocionales, urgencias artificiales o frases que banalicen el sufrimiento. La confianza empieza antes del clic.
 
-## Estructura de campañas
-1. Campaña por especialidad (ansiedad, depresión, pareja)
-2. Palabras clave de marca (tu nombre + "psicólogo")
-3. Remarketing a web sin conversión
+## Usar keywords negativas
+Las negativas ayudan a no gastar en búsquedas de empleo, formación, gratis, seguridad social, oposiciones, sueldo, universidad, test gratis, PDF o información que no tiene intención de consulta privada.
 
-## Tasa de conversión esperada
-3-8% en psicología. Pacientes buscan específicamente y conversion rate es alta.
+## Landing por problema o servicio
+Una página genérica suele convertir peor. Una landing para ansiedad, terapia de pareja o psicología infantil puede explicar enfoque, primera sesión, modalidad online/presencial, privacidad y forma de contacto.
 
-## Tips finales
-- Landing page específica por especialidad
-- Prueba social: "Atiende a 200+ pacientes al año"
-- CTA claro: "Pedir cita" o "Llamar"
+## Privacidad y prudencia
+Los formularios deben pedir solo lo necesario. El contenido debe respetar privacidad y evitar cualquier uso de datos sensibles fuera de lo imprescindible para responder a la solicitud.
+
+## Presupuesto sin cifras mágicas
+La inversión depende de competencia, zona, especialidad, capacidad de agenda y coste por clic. Conviene empezar con una estructura medible, revisar la calidad de contactos y escalar solo cuando tenga sentido.
+
+## Medición útil
+Mide llamadas, formularios, WhatsApp, coste por contacto y calidad de la solicitud. Un lead barato no siempre es un buen lead si no encaja con tu consulta.
+
+## Conclusión
+Google Ads puede ser útil para psicólogos si se trabaja con sensibilidad, filtros y medición. La campaña debe ayudar a la persona adecuada a dar el primer paso de forma segura.
+
+¿Quieres revisar tus campañas de psicología o valorar si Ads tiene sentido para tu consulta? Solicita una auditoría gratuita.
     `,
-    fecha: '25 de abril, 2024',
+    fecha: '3 de mayo, 2026',
     categoria: 'Google Ads',
-    tiempoLectura: '12 min',
+    tiempoLectura: '9 min',
   },
   {
     id: '3',
-    titulo: 'Diseño web para clínicas: qué convierte pacientes',
+    titulo: 'Diseño web para clínicas: elementos que convierten visitas en citas',
     slug: 'diseno-web-clinicas',
-    excerpt: 'Elementos clave en una web médica que convierte visitantes en pacientes. Ejemplos de clínicas que crecieron 3x.',
+    excerpt:
+      'Qué debe tener una web de clínica para generar confianza y convertir visitas en llamadas, WhatsApp y solicitudes de cita desde móvil.',
     imagen: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80',
     contenido: `
-La web de una clínica no tiene que impresionar por complicada. Tiene que hacer algo mucho más importante: dar confianza rápido y facilitar que una persona pida cita sin pensárselo demasiado.
+# Diseño web para clínicas: elementos que convierten visitas en citas
 
-Cuando alguien entra en tu web, normalmente llega con una duda concreta: necesita un dentista, un psicólogo, una revisión, un tratamiento o una segunda opinión. Si en pocos segundos no entiende qué haces, dónde estás y cómo contactar, se irá a otra clínica.
+## La web no es solo un escaparate
+La web de una clínica no tiene que impresionar por complicada. Tiene que hacer algo más importante: dar confianza rápido y facilitar que una persona pida cita sin fricción.
 
-Lo primero es un mensaje claro. Una frase sencilla como "Clínica dental en Sevilla especializada en implantes y estética" funciona mejor que un texto muy creativo pero ambiguo. El paciente no quiere descifrar la web; quiere saber si puedes ayudarle.
+## Mensaje claro en los primeros segundos
+El paciente debe entender qué especialidad tienes, dónde estás, qué servicios ofreces y cómo contactar. Una frase concreta suele funcionar mejor que un mensaje creativo pero ambiguo.
 
-Después viene la confianza. Fotos reales del equipo o del centro, opiniones visibles, años de experiencia, tratamientos explicados con palabras normales y una sensación general de orden. No hace falta prometer demasiado. De hecho, en salud suele funcionar mejor un tono tranquilo, profesional y humano.
+## Checklist above the fold
+- Especialidad y ubicación visibles.
+- Tratamientos principales claros.
+- Botón de llamada o WhatsApp.
+- Señal de confianza: equipo, reseñas o experiencia.
+- Mensaje sin tecnicismos ni promesas exageradas.
 
-También es clave que contactar sea fácil. En móvil, el teléfono y WhatsApp deben estar a mano. El formulario debe pedir solo lo necesario. Si la persona tiene que rellenar demasiados campos, probablemente lo deje para luego. Y "luego" casi nunca llega.
+## Confianza sanitaria visible
+Fotos reales del equipo o del centro, opiniones, experiencia, tratamientos explicados con palabras normales, ubicación y sensación de orden ayudan a reducir dudas. En salud, prometer menos y explicar mejor suele convertir más.
 
-Una buena web también ayuda al equipo de recepción. Si explica bien los servicios, precios orientativos, horarios, ubicación y preguntas frecuentes, llegan menos llamadas repetitivas y más consultas realmente interesadas.
+## Experiencia móvil
+Muchas visitas llegan desde móvil. El teléfono, WhatsApp y formulario deben estar a mano. Si la persona tiene que buscar cómo contactar, probablemente seguirá comparando.
 
+Un CTA fijo en móvil puede ayudar si no tapa contenido ni molesta. Lo importante es que llamar, escribir por WhatsApp o enviar formulario sea inmediato.
+
+## Páginas por tratamiento
+Cada tratamiento importante merece una explicación propia: qué problema resuelve, cómo es el proceso, qué dudas suelen aparecer y cuál es el siguiente paso. Esto ayuda al paciente y también al SEO local.
+
+## Estructura ideal de una página de tratamiento
+- Qué es el tratamiento y para quién tiene sentido.
+- Cuándo conviene pedir valoración.
+- Cómo trabaja la clínica ese servicio.
+- Equipo, ubicación y señales de confianza.
+- Preguntas frecuentes.
+- Botón de llamada, WhatsApp y formulario.
+
+## Formularios simples
+Pide solo lo necesario para responder bien. Nombre, teléfono, email, especialidad o motivo y mensaje breve suelen ser suficientes para una primera solicitud.
+
+## Ayuda a recepción
+Una web clara reduce llamadas repetitivas y mejora la calidad del contacto. Si explica horarios, ubicación, proceso, FAQs y servicios, la conversación empieza más avanzada.
+
+## Métricas de conversión
+Una web sanitaria debe medir clics a teléfono, WhatsApp, formularios, páginas más consultadas y puntos donde se pierde gente. Sin datos, las mejoras son intuición.
+
+## FAQs que reducen fricción
+Las preguntas frecuentes ayudan a resolver objeciones antes de llamar: primera visita, duración, preparación, ubicación, horarios, financiación si aplica y formas de contacto.
+
+## Conclusión
 El objetivo no es tener una web bonita sin más. El objetivo es que la web trabaje cada día para la clínica: que transmita confianza, filtre mejor los contactos y convierta visitas en primeras citas.
+
+¿Quieres revisar mi web de clínica y saber si está frenando solicitudes? Solicita una auditoría gratuita y analizamos los puntos principales.
     `,
-    fecha: '22 de abril, 2024',
-    categoria: 'Diseño Web',
+    fecha: '3 de mayo, 2026',
+    categoria: 'Diseño web',
     tiempoLectura: '10 min',
   },
 ]

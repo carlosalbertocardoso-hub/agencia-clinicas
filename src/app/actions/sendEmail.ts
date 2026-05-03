@@ -13,6 +13,7 @@ export interface ContactFormData {
   clinica?: string
   especialidad?: string
   zona?: string
+  web?: string
   objetivo?: string
   mensaje?: string
 }
@@ -50,6 +51,7 @@ export async function sendContactEmail(data: ContactFormData) {
     const sanitizedClinica = sanitizeHtml(data.clinica || '')
     const sanitizedEspecialidad = sanitizeHtml(data.especialidad || '')
     const sanitizedZona = sanitizeHtml(data.zona || '')
+    const sanitizedWeb = sanitizeHtml(data.web || '')
     const sanitizedObjetivo = sanitizeHtml(data.objetivo || '')
     const sanitizedMensaje = sanitizeHtml(data.mensaje || '')
 
@@ -69,6 +71,7 @@ export async function sendContactEmail(data: ContactFormData) {
         <p><strong>Clínica:</strong> ${sanitizedClinica || 'No especificada'}</p>
         <p><strong>Especialidad:</strong> ${sanitizedEspecialidad || 'No especificada'}</p>
         <p><strong>Zona:</strong> ${sanitizedZona || 'No especificada'}</p>
+        <p><strong>Web actual:</strong> ${sanitizedWeb || 'No especificada'}</p>
         <p><strong>Qué quiere mejorar:</strong> ${sanitizedObjetivo || 'No especificado'}</p>
         <p><strong>Mensaje:</strong></p>
         <p>${sanitizedMensaje || 'Sin mensaje'}</p>

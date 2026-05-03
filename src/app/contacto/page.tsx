@@ -1,29 +1,36 @@
 import type { Metadata } from 'next'
-import { Mail, MessageCircle, MapPin } from 'lucide-react'
+import { CheckCircle2, Mail, MapPin, MessageCircle } from 'lucide-react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contacto | Pacientes Sevilla - Revisión gratuita',
+  title: 'Solicitar auditoría gratuita | Pacientes Sevilla',
   description:
-    'Contacta con Pacientes Sevilla. Revisamos gratis la presencia online de tu clínica y te contamos cómo mejorarla.',
+    'Solicita una auditoría gratuita para tu clínica en Sevilla. Revisamos Google, web, campañas, reseñas y puntos de contacto para detectar oportunidades de captación.',
+  alternates: {
+    canonical: '/contacto',
+  },
   openGraph: {
-    title: 'Contacto - Pacientes Sevilla',
-    description: 'Solicita una revisión gratuita de la presencia online de tu clínica',
+    title: 'Solicita una auditoría gratuita - Pacientes Sevilla',
+    description: 'Revisamos Google, web y puntos de conversión de tu clínica en Sevilla.',
     url: 'https://pacientessevilla.com/contacto',
-    images: [
-      {
-        url: '/images/og-default.svg',
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }
 
 export default function ContactoPage() {
+  const puntos = [
+    'Visibilidad en Google y Google Maps.',
+    'Web y mensajes principales.',
+    'Facilidad de contacto desde móvil.',
+    'Reseñas y confianza.',
+    'Competencia local.',
+    'Oportunidades rápidas de mejora.',
+    'Medición de llamadas, formularios y WhatsApp.',
+  ]
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -34,19 +41,41 @@ export default function ContactoPage() {
             <BreadcrumbNav items={[{ label: 'Contacto', href: '/contacto' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-8">
-              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Cuéntanos qué quieres mejorar</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">
+                Auditoría gratuita de captación online para clínicas en Sevilla
+              </h1>
               <p className="text-xl text-text-muted">
-                Revisamos cómo te encuentran hoy los pacientes y te explicamos qué pasos pueden ayudarte a recibir más solicitudes.
+                Revisaremos cómo aparece tu clínica en Google, qué transmite tu web y qué puntos pueden estar frenando nuevas solicitudes de cita.
               </p>
             </div>
           </div>
         </section>
 
         <section className="section-padding bg-surface">
-          <div className="container-custom max-w-2xl">
-            <div className="bg-white p-12 rounded-lg border border-slate-200 shadow-sm">
-              <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-8">Revisar mi presencia online</h2>
-              <ContactForm buttonText="Enviar solicitud" />
+          <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div className="bg-white p-8 rounded-lg border border-slate-200 shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-5">Qué revisamos</h2>
+              <ul className="space-y-3 mb-6">
+                {puntos.map((punto) => (
+                  <li key={punto} className="flex gap-3 text-text-muted">
+                    <CheckCircle2 size={18} strokeWidth={1.8} className="text-primary flex-shrink-0 mt-1" />
+                    <span>{punto}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm text-text-muted">
+                Sin compromiso. Te responderemos en menos de 24h laborables con una visión clara y accionable.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 md:p-12 rounded-lg border border-slate-200 shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-3">
+                Revisemos dónde está perdiendo oportunidades tu clínica
+              </h2>
+              <p className="text-sm text-text-muted mb-8">
+                Cuéntanos lo esencial y revisaremos Google, web, anuncios, redes, agenda o captación según tu caso.
+              </p>
+              <ContactForm buttonText="Solicitar auditoría gratuita" />
             </div>
           </div>
         </section>
@@ -69,6 +98,7 @@ export default function ContactoPage() {
                   <MessageCircle size={28} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-text mb-2">WhatsApp</h3>
+                {/* TODO: Sustituir por el número real de WhatsApp antes de producción. */}
                 <a href="https://wa.me/34600000000" className="text-primary hover:underline">
                   +34 600 00 00 00
                 </a>
@@ -83,26 +113,13 @@ export default function ContactoPage() {
               </div>
             </div>
 
-            {/* Google Maps */}
-            <div className="rounded-lg overflow-hidden border border-slate-200 shadow-md mb-12">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102760.24063387158!2d-6.0376!3d37.3891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1114be1469%3A0x9c26aace7c8d6a93!2sSevilla!5e0!3m2!1ses!2ses!4v1"
-                width="100%"
-                height="400"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-
             <div className="bg-white p-8 rounded-lg border border-slate-200">
-              <h3 className="font-semibold text-text mb-4">¿Tienes prisa?</h3>
-              <p className="text-text-muted mb-6">
-                Responde el formulario y te contactaremos en las próximas 24 horas para entender tu caso.
+              <h3 className="font-semibold text-text mb-4">Respuesta clara, sin compromiso</h3>
+              <p className="text-text-muted mb-4">
+                Te indicaremos qué conviene revisar primero y si tiene más sentido actuar sobre Google, web, campañas, reseñas o medición.
               </p>
               <p className="text-text-muted text-sm">
-                Horario de atención: Lunes a viernes 9am-7pm. Sábados bajo demanda.
+                Horario de atención: lunes a viernes, 09:00-19:00. Sábados bajo cita previa.
               </p>
             </div>
           </div>

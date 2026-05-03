@@ -8,20 +8,17 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Blog | Pacientes Sevilla - Marketing para Clínicas',
+  title: 'Blog de marketing para clínicas en Sevilla | Pacientes Sevilla',
   description:
-    'Consejos claros para clínicas y profesionales sanitarios que quieren mejorar su presencia online y recibir más solicitudes.',
+    'Guías prácticas sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes para clínicas privadas y profesionales sanitarios en Sevilla.',
+  alternates: {
+    canonical: '/blog',
+  },
   openGraph: {
-    title: 'Blog - Pacientes Sevilla',
-    description: 'Artículos para mejorar la presencia online de clínicas y consultas sanitarias',
+    title: 'Guías de marketing para clínicas privadas en Sevilla',
+    description: 'SEO local, Google Ads, diseño web, reputación y captación para clínicas privadas.',
     url: 'https://pacientessevilla.com/blog',
-    images: [
-      {
-        url: '/images/og-default.svg',
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }
 
@@ -36,9 +33,11 @@ export default function BlogPage() {
             <BreadcrumbNav items={[{ label: 'Blog', href: '/blog' }]} />
 
             <div className="max-w-3xl mx-auto text-center my-8">
-              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">Ideas para que más pacientes encuentren tu clínica</h1>
+              <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">
+                Guías de marketing digital para clínicas privadas en Sevilla
+              </h1>
               <p className="text-xl text-text-muted">
-                Explicaciones sencillas sobre Google, web, anuncios y presencia online para clínicas y consultas privadas.
+                Ideas prácticas sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes para clínicas y consultas sanitarias.
               </p>
             </div>
           </div>
@@ -52,12 +51,7 @@ export default function BlogPage() {
                   <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                     <div className="h-48 bg-surface relative overflow-hidden">
                       {post.imagen && (
-                        <Image
-                          src={post.imagen}
-                          alt={post.titulo}
-                          fill
-                          className="object-cover transition duration-300 group-hover:scale-105"
-                        />
+                        <Image src={post.imagen} alt={post.titulo} fill className="object-cover transition duration-300 group-hover:scale-105" />
                       )}
                     </div>
 
@@ -91,15 +85,14 @@ export default function BlogPage() {
 
         <section className="section-padding bg-surface">
           <div className="container-custom text-center max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">¿Necesitas estrategia personalizada?</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">
+              ¿Quieres aplicar estas ideas a tu clínica?
+            </h2>
             <p className="text-text-muted mb-8">
-              Los artículos son guías generales. Si quieres revisar tu caso, podemos ver qué está frenando más solicitudes de cita.
+              Cada clínica parte de una situación distinta. Revisamos tu caso y te decimos qué acciones tendrían más impacto en visibilidad, confianza y solicitudes de cita.
             </p>
-            <Link
-              href="/contacto"
-              className="btn-primary btn-primary-lg"
-            >
-              Revisar mi presencia online gratis
+            <Link href="/contacto" className="btn-primary btn-primary-lg">
+              Solicitar auditoría gratuita
             </Link>
           </div>
         </section>

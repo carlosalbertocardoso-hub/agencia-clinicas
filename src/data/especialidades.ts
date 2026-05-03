@@ -1,99 +1,105 @@
 import type { Especialidad } from '@/types'
 
-// Mapa de iconos Lucide para especialidades (diseño healthcare profesional)
 export const iconosEspecialidades: Record<string, string> = {
-  'clinicas-dentales-sevilla': 'Tooth', // Molar real
-  'psicologos-sevilla': 'Brain', // Cabeza/mente
-  'medicina-estetica-sevilla': 'Sparkles', // Varita mágica elegante
-  'fisioterapia-sevilla': 'Activity', // Pesa/movimiento
-  'nutricionistas-sevilla': 'Apple', // Utensilio/comida
-  'pediatria-sevilla': 'Baby', // Bebé
-  'clinicas-cirugia-sevilla': 'Hospital', // Estetoscopio/médico
+  'clinicas-dentales-sevilla': 'Tooth',
+  'psicologos-sevilla': 'Brain',
+  'medicina-estetica-sevilla': 'Sparkles',
+  'fisioterapia-sevilla': 'Activity',
+  'nutricionistas-sevilla': 'Apple',
+  'pediatria-sevilla': 'Baby',
+  'clinicas-cirugia-sevilla': 'Hospital',
 }
 
 export const especialidades: Especialidad[] = [
   {
     id: '1',
-    nombre: 'Clínicas Dentales',
+    nombre: 'Clínicas dentales',
     slug: 'clinicas-dentales-sevilla',
-    descripcionCorta: 'Ayudamos a que más pacientes encuentren tu clínica dental y pidan cita',
+    descripcionCorta:
+      'Más visibilidad para implantes, ortodoncia, estética dental, urgencias y revisiones.',
     descripcionLarga:
-      'Ayudamos a clínicas dentales en Sevilla a aparecer mejor cuando alguien busca tratamientos, transmitir confianza y recibir más solicitudes de cita.',
+      'Marketing digital para clínicas dentales en Sevilla que necesitan competir mejor en Google, transmitir confianza y captar solicitudes de tratamientos de valor.',
     icono: 'Tooth',
     color: '#0A6B5E',
-    resultados: '+280% más solicitudes',
+    resultados: 'Implantes, ortodoncia y estética',
     servicios: ['seo-medico', 'google-ads', 'diseno-web'],
   },
   {
     id: '2',
     nombre: 'Psicólogos',
     slug: 'psicologos-sevilla',
-    descripcionCorta: 'Haz más fácil que las personas que necesitan ayuda encuentren tu consulta',
+    descripcionCorta:
+      'Captación ética y clara para ansiedad, pareja, infantil, terapia online o presencial.',
     descripcionLarga:
-      'Ayudamos a psicólogos en Sevilla a explicar mejor sus servicios, ganar visibilidad y recibir más consultas de personas que buscan apoyo profesional.',
+      'Marketing digital para psicólogos en Sevilla con un enfoque sensible: visibilidad local, confianza, privacidad y mensajes que ayudan a dar el primer paso.',
     icono: 'Brain',
     color: '#0E8C7A',
-    resultados: '+320% consultas nuevas',
+    resultados: 'Ansiedad, pareja e infantil',
     servicios: ['seo-medico', 'google-ads', 'redes-sociales'],
   },
   {
     id: '3',
-    nombre: 'Medicina Estética',
+    nombre: 'Medicina estética',
     slug: 'medicina-estetica-sevilla',
-    descripcionCorta: 'Muestra mejor tus tratamientos y recibe más solicitudes de información',
+    descripcionCorta:
+      'Web, anuncios y contenido para explicar tratamientos, generar confianza y filtrar solicitudes.',
     descripcionLarga:
-      'Ayudamos a clínicas de medicina estética en Sevilla a presentar sus tratamientos con claridad, confianza y una presencia online más cuidada.',
+      'Marketing digital para clínicas de medicina estética en Sevilla que quieren comunicar tratamientos con rigor, naturalidad y una captación menos agresiva.',
     icono: 'Sparkles',
     color: '#E8A030',
-    resultados: '+350% pacientes nuevos',
+    resultados: 'Confianza y solicitudes filtradas',
     servicios: ['diseno-web', 'google-ads', 'redes-sociales'],
   },
   {
     id: '4',
     nombre: 'Fisioterapia',
     slug: 'fisioterapia-sevilla',
-    descripcionCorta: 'Consigue que más personas encuentren tu centro cuando necesitan fisioterapia',
+    descripcionCorta:
+      'SEO local y campañas para recuperación, dolor, rehabilitación y fisioterapia deportiva.',
     descripcionLarga:
-      'Ayudamos a centros de fisioterapia en Sevilla a aparecer mejor en búsquedas locales y facilitar que nuevos pacientes contacten.',
+      'Marketing digital para clínicas de fisioterapia en Sevilla orientado a búsquedas cercanas, necesidades concretas y contacto rápido desde móvil.',
     icono: 'Activity',
     color: '#0A6B5E',
-    resultados: '+290% pacientes activos',
+    resultados: 'Dolor, lesiones y rehabilitación',
     servicios: ['seo-medico', 'google-ads', 'diseno-web'],
   },
   {
     id: '5',
-    nombre: 'Nutrición',
+    nombre: 'Nutricionistas',
     slug: 'nutricionistas-sevilla',
-    descripcionCorta: 'Ayuda a que más personas entiendan tu enfoque y pidan información',
+    descripcionCorta:
+      'Presencia profesional para pérdida de peso, salud digestiva, nutrición deportiva y educación alimentaria.',
     descripcionLarga:
-      'Ayudamos a nutricionistas en Sevilla a explicar mejor sus servicios, ganar visibilidad y recibir más consultas iniciales.',
+      'Marketing digital para nutricionistas en Sevilla que necesitan diferenciar su método, reforzar autoridad profesional y convertir interés en consultas.',
     icono: 'Apple',
     color: '#0E8C7A',
-    resultados: '+310% consultas iniciales',
+    resultados: 'Método, autoridad y consulta',
     servicios: ['seo-medico', 'redes-sociales', 'diseno-web'],
   },
   {
     id: '6',
     nombre: 'Pediatría',
     slug: 'pediatria-sevilla',
-    descripcionCorta: 'Genera confianza en familias que buscan atención pediátrica',
+    descripcionCorta:
+      'Confianza para familias que buscan atención privada, cercanía, disponibilidad y trato claro.',
     descripcionLarga:
-      'Ayudamos a pediatras y clínicas pediátricas en Sevilla a transmitir confianza y facilitar que las familias contacten.',
+      'Marketing digital para clínicas pediátricas en Sevilla que quieren transmitir confianza, cercanía y facilidad de contacto a familias.',
     icono: 'Baby',
     color: '#E8A030',
-    resultados: '+270% pacientes nuevos',
-    servicios: ['google-ads', 'seo-medico', 'redes-sociales'],
+    resultados: 'Familias, confianza y cercanía',
+    servicios: ['seo-medico', 'google-ads', 'redes-sociales'],
   },
   {
     id: '7',
-    nombre: 'Cirugía',
+    nombre: 'Cirugía y especialistas',
     slug: 'clinicas-cirugia-sevilla',
-    descripcionCorta: 'Presenta tu experiencia con claridad y recibe consultas mejor informadas',
+    descripcionCorta:
+      'Comunicación rigurosa para procedimientos especializados, segunda opinión y consultas de alta consideración.',
     descripcionLarga:
-      'Ayudamos a clínicas quirúrgicas en Sevilla a explicar sus servicios con rigor, mejorar su presencia online y recibir consultas más cualificadas.',
+      'Marketing digital para clínicas quirúrgicas y especialistas en Sevilla, con foco en autoridad médica, claridad del proceso y solicitudes cualificadas.',
     icono: 'Hospital',
     color: '#0A6B5E',
-    resultados: '+340% consultas especializadas',
+    resultados: 'Autoridad y consultas cualificadas',
     servicios: ['seo-medico', 'google-ads', 'diseno-web'],
   },
 ]

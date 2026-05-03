@@ -7,9 +7,12 @@ export default function ServiciosSection() {
     <section className="section-padding bg-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Cómo ayudamos a tu clínica</h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Mejoramos los puntos que hacen que un paciente te encuentre, confíe en ti y contacte.
+          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">
+            Trabajamos el recorrido completo del paciente, no piezas sueltas
+          </h2>
+          <p className="text-lg text-text-muted max-w-3xl mx-auto">
+            No sirve de mucho tener anuncios si la web no convierte. Ni tener una web bonita si nadie la encuentra.
+            Por eso revisamos visibilidad, confianza, mensaje, contacto, medición y seguimiento.
           </p>
         </div>
 
@@ -35,7 +38,7 @@ export default function ServiciosSection() {
                 </ul>
 
                 <span className="inline-flex items-center gap-1 text-primary font-semibold transition">
-                  Ver cómo funciona <ChevronRight size={16} strokeWidth={1.8} />
+                  Ver servicio <ChevronRight size={16} strokeWidth={1.8} />
                 </span>
               </div>
             </Link>
