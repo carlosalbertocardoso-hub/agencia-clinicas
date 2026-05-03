@@ -32,9 +32,12 @@ En la pantalla de configuración del proyecto:
 | Variable | Valor |
 |----------|-------|
 | `RESEND_API_KEY` | Tu API key de Resend (obtén en [resend.com](https://resend.com)) |
+| `RESEND_FROM_EMAIL` | Remitente verificado en Resend, por ejemplo `Pacientes Sevilla <hola@tudominio.com>` |
+| `CONTACT_TO_EMAIL` | Email donde quieres recibir las consultas, por ejemplo `ccardoso19@hotmail.com` |
 | `NEXT_PUBLIC_SITE_URL` | `https://pacientessevilla.com` |
 
 **Importante:** RESEND_API_KEY no debe empezar con `NEXT_PUBLIC_` para que sea privada (solo servidor).
+**Importante:** RESEND_FROM_EMAIL debe usar un dominio o remitente verificado en Resend. Si el remitente no está verificado, Resend rechazará el envío.
 
 ## 4. Configurar dominio
 
@@ -69,6 +72,8 @@ Una vez deployado:
 
 **Email no se envía**
 - Comprueba que RESEND_API_KEY es válido en [resend.com](https://resend.com)
+- Comprueba que RESEND_FROM_EMAIL existe en Vercel y pertenece a un dominio/remitente verificado en Resend
+- Comprueba que CONTACT_TO_EMAIL apunta al email correcto
 - Revisa Vercel logs (Deployments → Ver detalles)
 - Resend Console para ver intentos fallidos
 
