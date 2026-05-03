@@ -58,10 +58,16 @@ export default function Header() {
             onMouseLeave={() => setOpenDropdown(null)}
           >
             <button className="text-text hover:text-primary transition font-medium text-sm">
-              Especialidades
+              A quiÃ©n ayudamos
             </button>
             {openDropdown === 'especialidades' && (
-              <div className="absolute left-0 mt-1 w-56 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
+              <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
+                <Link
+                  href="/especialidades"
+                  className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold"
+                >
+                  Ver todas las especialidades
+                </Link>
                 {especialidades.map((esp) => (
                   <Link
                     key={esp.id}
@@ -75,9 +81,28 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/blog" className="text-text hover:text-primary transition font-medium text-sm">
-            Blog
-          </Link>
+          <div
+            className="relative group"
+            onMouseEnter={() => setOpenDropdown('recursos')}
+            onMouseLeave={() => setOpenDropdown(null)}
+          >
+            <button className="text-text hover:text-primary transition font-medium text-sm">
+              Recursos
+            </button>
+            {openDropdown === 'recursos' && (
+              <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
+                <Link href="/recursos" className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold">
+                  Centro de recursos
+                </Link>
+                <Link href="/blog" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
+                  Blog y guÃ­as
+                </Link>
+                <Link href="/casos-de-exito" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
+                  DiagnÃ³sticos representativos
+                </Link>
+              </div>
+            )}
+          </div>
           <Link href="/contacto" className="text-text hover:text-primary transition font-medium text-sm">
             Contacto
           </Link>
@@ -106,10 +131,10 @@ export default function Header() {
               Servicios
             </Link>
             <Link href="/especialidades" className="block py-2 text-text hover:text-primary font-medium">
-              Especialidades
+              A quiÃ©n ayudamos
             </Link>
-            <Link href="/blog" className="block py-2 text-text hover:text-primary font-medium">
-              Blog
+            <Link href="/recursos" className="block py-2 text-text hover:text-primary font-medium">
+              Recursos
             </Link>
             <Link href="/contacto" className="block py-2 text-text hover:text-primary font-medium">
               Contacto

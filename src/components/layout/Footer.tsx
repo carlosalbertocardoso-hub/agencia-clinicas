@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">Especialidades</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">A quiÃ©n ayudamos</h4>
             <ul className="space-y-2">
               <li><a href="/especialidades/clinicas-dentales-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Clínicas dentales</a></li>
               <li><a href="/especialidades/psicologos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Psicólogos</a></li>
@@ -57,8 +57,10 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="/" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Inicio</a></li>
               <li><a href="/servicios" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Servicios</a></li>
-              <li><a href="/especialidades" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Especialidades</a></li>
-              <li><a href="/blog" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Blog</a></li>
+              <li><a href="/especialidades" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">A quiÃ©n ayudamos</a></li>
+              <li><a href="/recursos" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Recursos</a></li>
+              <li><a href="/blog" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Blog y guÃ­as</a></li>
+              <li><a href="/casos-de-exito" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">DiagnÃ³sticos representativos</a></li>
               <li><a href="/contacto" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Contacto</a></li>
               <li><a href="/politica-privacidad" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Política de privacidad</a></li>
               <li><a href="/terminos-legales" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Términos legales</a></li>

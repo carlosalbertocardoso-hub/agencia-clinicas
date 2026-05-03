@@ -29,6 +29,7 @@ src/
     blog/
     contacto/
     especialidades/
+    recursos/
     servicios/
     layout.tsx
     page.tsx
@@ -106,6 +107,24 @@ La home incluye:
 - `ProcesoSection`
 - `CtaFinal`
 
+## Arquitectura actual
+
+La navegación pública se organiza en:
+
+- `Inicio`
+- `Servicios`
+- `A quién ayudamos`
+- `Recursos`
+- `Contacto`
+
+`A quién ayudamos` agrupa las páginas por tipo de clínica o especialidad sanitaria. La URL sigue siendo `/especialidades` para conservar estructura SEO existente, pero el lenguaje de navegación es más orientado al cliente.
+
+`Recursos` es el hub editorial en `/recursos` y agrupa:
+
+- Blog y guías.
+- Diagnósticos representativos.
+- Artículos por problema de captación: SEO local, Google Ads, web/CRO.
+
 La sección "A quién ayudamos" usa cards con:
 
 - Título: `[Especialidad] en Sevilla.`
@@ -124,7 +143,7 @@ Reglas:
 - Open Graph configurado.
 - H1 único.
 - H2/H3 claros y semánticos.
-- Enlazado interno entre servicios, especialidades, blog y contacto.
+- Enlazado interno entre servicios, especialidades, recursos, blog y contacto.
 - Texto local natural: Sevilla, Google Maps, Google Business Profile, barrios o zonas cuando tenga sentido.
 
 Home actual:

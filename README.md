@@ -65,6 +65,7 @@ src/
     blog/
     contacto/
     especialidades/
+    recursos/
     servicios/
     layout.tsx
     page.tsx
@@ -86,6 +87,7 @@ DEPLOYMENT.md
 
 - `/`
 - `/contacto`
+- `/recursos`
 - `/blog`
 - `/blog/errores-seo-dentistas`
 - `/blog/google-ads-psicologos`
@@ -113,7 +115,16 @@ DEPLOYMENT.md
 - Diseño web para clínicas orientado a captar citas
 - Redes sociales y contenido sanitario
 
-## Especialidades
+## Arquitectura de contenido
+
+La navegación principal se organiza en:
+
+- **A quién ayudamos:** páginas por tipo de clínica o profesional sanitario.
+- **Servicios:** páginas por canal o solución de captación.
+- **Recursos:** hub editorial con blog, diagnósticos y guías.
+- **Contacto:** auditoría gratuita de captación online.
+
+## A quién ayudamos
 
 - Clínicas dentales
 - Psicólogos
@@ -122,6 +133,12 @@ DEPLOYMENT.md
 - Nutricionistas
 - Pediatría
 - Clínicas quirúrgicas y especialistas
+
+## Recursos
+
+- `/recursos`: hub principal de contenidos.
+- `/blog`: artículos y guías.
+- `/casos-de-exito`: diagnósticos representativos y escenarios de mejora.
 
 ## Diseño
 
