@@ -7,14 +7,14 @@ export default function CasosExitoSection() {
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Situaciones que revisamos a menudo</h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">Situaciones que revisamos a menudo</h2>
+          <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
             Ejemplos representativos de problemas de captación. Sustituir por casos reales cuando existan datos verificables.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 lg:gap-8 mb-10 md:mb-12">
           {casos.map((caso) => (
             <div key={caso.id} className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition">
               <div className="h-48 relative bg-gray-200">
@@ -24,7 +24,7 @@ export default function CasosExitoSection() {
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="p-5 sm:p-6">
                 <h3 className="font-heading text-lg md:text-xl font-semibold mb-2 text-text">{caso.titulo}</h3>
                 <p className="text-sm text-text-muted mb-2">{caso.clinica}</p>
                 <p className="text-sm text-text-muted mb-4">{caso.especialidad}</p>
@@ -35,7 +35,7 @@ export default function CasosExitoSection() {
         </div>
 
         <div className="text-center">
-          <Link href="/casos-de-exito" className="btn-primary btn-primary-lg inline-flex items-center gap-2">
+          <Link href="/casos-de-exito" className="btn-primary btn-primary-lg inline-flex w-full sm:w-auto items-center justify-center gap-2">
             Ver ejemplos de diagnóstico <ChevronRight size={18} strokeWidth={1.8} />
           </Link>
         </div>

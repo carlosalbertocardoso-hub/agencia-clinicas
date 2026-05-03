@@ -41,30 +41,29 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
+    '@type': ['ProfessionalService', 'MarketingAgency'],
     '@id': 'https://pacientessevilla.com',
     name: 'Pacientes Sevilla',
-    description:
-      'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla.',
+    alternateName: 'Tu Agencia de Marketing Sanitario',
     url: 'https://pacientessevilla.com',
-    telephone: '+34 XXX XXX XXX',
+    description:
+      'Agencia de marketing digital en Sevilla especializada exclusivamente en el sector sanitario. Ayudamos a clínicas, hospitales y centros médicos a captar pacientes privados.',
     email: 'hola@pacientessevilla.com',
-    areaServed: {
-      '@type': 'City',
-      name: 'Sevilla',
-      addressCountry: 'ES',
-    },
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Sevilla',
       addressRegion: 'Andalucía',
       addressCountry: 'ES',
     },
+    areaServed: {
+      '@type': 'City',
+      name: 'Sevilla',
+    },
     knowsAbout: [
-      'SEO local para clínicas',
-      'Google Ads para clínicas',
-      'Diseño web sanitario',
-      'Reputación online sanitaria',
+      'SEO Médico',
+      'Marketing Sanitario',
+      'Publicidad para Clínicas',
+      'SEO Local para Médicos',
       'Captación de pacientes privados',
     ],
     serviceType: [

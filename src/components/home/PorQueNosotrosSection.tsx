@@ -43,16 +43,16 @@ export default function PorQueNosotrosSection() {
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué Pacientes Sevilla</h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué Pacientes Sevilla</h2>
+          <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
             Somos un partner estratégico para ordenar tu captación online sin que tengas que convertirte en experto en SEO, Ads o analítica.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-8">
           {razones.map((razon, idx) => (
-            <div key={idx} className="bg-white border border-slate-200 rounded-lg p-8 hover:shadow-lg transition hover:border-primary">
+            <div key={idx} className="bg-white border border-slate-200 rounded-lg p-6 sm:p-8 hover:shadow-lg transition hover:border-primary">
               <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
                 <razon.icono size={22} strokeWidth={1.6} />
               </div>

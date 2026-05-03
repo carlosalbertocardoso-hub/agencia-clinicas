@@ -384,11 +384,11 @@ export default function EspecialidadPage({ params }: Props) {
               ]}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start my-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start my-6">
               <div>
                 <p className="text-label text-accent mb-4">Especialistas en clínicas de Sevilla</p>
-                <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{content.h1}</h1>
-                <p className="text-lg text-text-muted mb-6">{content.hero}</p>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{content.h1}</h1>
+                <p className="text-base sm:text-lg text-text-muted mb-6">{content.hero}</p>
                 <div className="bg-surface border border-slate-200 rounded-lg p-6 mb-6">
                   <h2 className="font-heading text-2xl font-semibold text-text mb-3">El reto real</h2>
                   <p className="text-text-muted leading-relaxed">{content.pain}</p>
@@ -396,7 +396,7 @@ export default function EspecialidadPage({ params }: Props) {
                 <p className="text-text leading-relaxed font-medium">{content.keyText}</p>
               </div>
 
-              <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm">
+              <div className="bg-white border border-slate-200 rounded-lg p-6 sm:p-8 shadow-sm">
                 <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-3">
                   ¿Quieres revisar esta especialidad?
                 </h2>
@@ -418,10 +418,10 @@ export default function EspecialidadPage({ params }: Props) {
 
         <section className="section-padding bg-surface">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="bg-white border border-slate-200 rounded-lg p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 lg:gap-8">
+              <div className="bg-white border border-slate-200 rounded-lg p-6 sm:p-8">
                 <Search size={28} strokeWidth={1.6} className="text-primary mb-4" />
-                <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-5">Qué búsquedas conviene captar</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold mb-5">Qué búsquedas conviene captar</h2>
                 <ul className="space-y-3">
                   {content.searches.map((search) => (
                     <li key={search} className="flex gap-3 text-text-muted">
@@ -432,9 +432,9 @@ export default function EspecialidadPage({ params }: Props) {
                 </ul>
               </div>
 
-              <div className="bg-white border border-slate-200 rounded-lg p-8">
+              <div className="bg-white border border-slate-200 rounded-lg p-6 sm:p-8">
                 <ShieldCheck size={28} strokeWidth={1.6} className="text-primary mb-4" />
-                <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-5">Qué confianza necesita esta especialidad</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold mb-5">Qué confianza necesita esta especialidad</h2>
                 <ul className="space-y-3">
                   {content.trust.map((item) => (
                     <li key={item} className="flex gap-3 text-text-muted">
@@ -450,7 +450,7 @@ export default function EspecialidadPage({ params }: Props) {
 
         <section id="servicios-prioritarios" className="section-padding">
           <div className="container-custom max-w-4xl">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">
               Servicios que suelen tener más sentido
             </h2>
             <div className="space-y-4">
@@ -471,7 +471,7 @@ export default function EspecialidadPage({ params }: Props) {
         <section className="section-padding bg-surface">
           <div className="container-custom max-w-3xl text-center">
             <MessageCircle size={32} strokeWidth={1.6} className="text-primary mx-auto mb-5" />
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6">
               Captación sanitaria sin perder rigor
             </h2>
             <p className="text-text-muted">
@@ -486,17 +486,17 @@ export default function EspecialidadPage({ params }: Props) {
           <div className="container-custom">
             <Target size={32} strokeWidth={1.6} className="mx-auto mb-5 text-[#FFD166]" />
             <div className="max-w-3xl mx-auto text-center mb-8">
-              <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">
                 ¿Quieres revisar tu captación en esta especialidad?
               </h2>
-              <p className="text-lg text-white">
+              <p className="text-base sm:text-lg text-white">
                 Revisaremos cómo aparece tu clínica en Google, qué transmite tu web y qué oportunidades pueden estar frenando nuevas solicitudes.
               </p>
               <p className="text-sm opacity-80 mt-4 text-white">
                 La auditoría no te obliga a contratar. Sirve para saber qué mejorar primero y si tiene sentido trabajar juntos.
               </p>
             </div>
-            <div className="max-w-2xl mx-auto bg-white rounded-lg border border-white/20 p-8 shadow-lg">
+            <div className="max-w-2xl mx-auto bg-white rounded-lg border border-white/20 p-6 sm:p-8 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-3">
                 Solicita una auditoría gratuita
               </h3>

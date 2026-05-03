@@ -8,14 +8,14 @@ export default function BlogPreviewSection() {
   return (
     <section className="section-padding bg-surface">
       <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Ideas para mejorar tu clínica online</h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">Ideas para mejorar tu clínica online</h2>
+          <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
             Consejos claros para que más pacientes te encuentren, confíen en ti y pidan cita.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 lg:gap-8 mb-10 md:mb-12">
           {articulosRecientes.map((articulo) => (
             <Link key={articulo.id} href={`/blog/${articulo.slug}`}>
               <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
@@ -29,7 +29,7 @@ export default function BlogPreviewSection() {
                   )}
                 </div>
 
-                <div className="p-6">
+                <div className="p-5 sm:p-6">
                   <div className="flex gap-2 mb-3">
                     <span className="text-xs font-semibold text-white bg-primary px-3 py-1 rounded-full uppercase">
                       {articulo.categoria}

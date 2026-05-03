@@ -12,16 +12,16 @@ import ProcesoSection from '@/components/home/ProcesoSection'
 import CtaFinal from '@/components/home/CtaFinal'
 
 export const metadata: Metadata = {
-  title: 'Marketing digital para clínicas en Sevilla | Pacientes Sevilla',
+  title: 'Agencia de Marketing Digital para Clínicas en Sevilla | Captación de Pacientes',
   description:
-    'Agencia de marketing digital para clínicas privadas en Sevilla. SEO local, Google Ads, diseño web, reputación y captación de pacientes. Solicita auditoría gratuita.',
+    'Impulsa tu centro médico en Sevilla con estrategias de marketing sanitario. Captación de pacientes privados, SEO local y publicidad médica respetando la normativa.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Marketing digital para clínicas en Sevilla | Pacientes Sevilla',
+    title: 'Agencia de Marketing Digital para Clínicas en Sevilla | Captación de Pacientes',
     description:
-      'SEO local, Google Ads, diseño web, reputación y conversión para clínicas privadas en Sevilla.',
+      'Impulsa tu centro médico en Sevilla con estrategias de marketing sanitario. Captación de pacientes privados, SEO local y publicidad médica respetando la normativa.',
     url: 'https://pacientessevilla.com',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },

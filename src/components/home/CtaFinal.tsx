@@ -4,25 +4,25 @@ export default function CtaFinal() {
   return (
     <section className="section-padding section-primary">
       <div className="container-custom text-center">
-        <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">
-          ¿Quieres saber cuántas oportunidades está perdiendo tu clínica online?
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">
+          ¿Quieres captar más pacientes privados en Sevilla sin sonar agresivo?
         </h2>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-95 text-white">
-          Solicita una auditoría gratuita. Revisaremos tu presencia en Google, tu web y tus puntos de conversión para decirte qué mejorar primero.
+        <p className="text-base sm:text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-95 text-white">
+          Solicita una auditoría de tu clínica. Revisaremos Google, web, publicidad médica, reputación y automatización de citas para detectar qué está frenando pacientes privados altamente rentables.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contacto"
-            className="inline-block bg-[#FFD166] text-[#073F38] px-8 py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
+            className="inline-flex w-full sm:w-auto items-center justify-center bg-[#FFD166] text-[#073F38] px-5 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition"
           >
-            Solicitar auditoría gratuita
+            Solicitar Auditoría de mi Clínica
           </Link>
           <Link
             href="/servicios/seo-medico"
-            className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition font-semibold uppercase tracking-wide"
+            className="inline-flex w-full sm:w-auto items-center justify-center border-2 border-white text-white px-5 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-primary transition font-semibold uppercase tracking-wide"
           >
-            Analizar mi presencia en Google
+            Hablemos de tu Centro
           </Link>
         </div>
 

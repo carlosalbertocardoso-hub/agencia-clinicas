@@ -272,7 +272,7 @@ export default function ServicioPage({ params }: Props) {
               ]}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start my-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start my-6">
               <div>
                 {servicio.imagen && (
                   <div className="mb-6 rounded-lg overflow-hidden shadow-md h-48 md:h-56 relative">
@@ -281,8 +281,8 @@ export default function ServicioPage({ params }: Props) {
                 )}
 
                 <p className="text-label text-accent mb-4">Servicio especializado para clínicas</p>
-                <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{servicio.nombre}</h1>
-                <p className="text-lg text-text-muted mb-6">{servicio.descripcion}</p>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{servicio.nombre}</h1>
+                <p className="text-base sm:text-lg text-text-muted mb-6">{servicio.descripcion}</p>
 
                 <div className="bg-surface border border-slate-200 rounded-lg p-6 mb-6">
                   <p className="font-semibold text-text mb-2">Problema que resuelve</p>
@@ -292,7 +292,7 @@ export default function ServicioPage({ params }: Props) {
                 <p className="text-text leading-relaxed font-medium">{content.keyCopy}</p>
               </div>
 
-              <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm sticky top-24">
+              <div className="bg-white border border-slate-200 rounded-lg p-6 sm:p-8 shadow-sm lg:sticky lg:top-24">
                 <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-3">
                   ¿Quieres ver oportunidades de mejora?
                 </h2>
@@ -314,9 +314,9 @@ export default function ServicioPage({ params }: Props) {
 
         <section id="que-revisamos" className="section-padding bg-surface">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 lg:gap-8">
               {content.sections.map((section) => (
-                <div key={section.title} className="bg-white border border-slate-200 rounded-lg p-8">
+                <div key={section.title} className="bg-white border border-slate-200 rounded-lg p-6 sm:p-8">
                   <div className="w-12 h-12 rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
                     <ClipboardCheck size={22} strokeWidth={1.6} />
                   </div>
@@ -337,9 +337,9 @@ export default function ServicioPage({ params }: Props) {
 
         <section className="section-padding">
           <div className="container-custom max-w-4xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 lg:gap-8">
               <div className="md:col-span-2">
-                <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6">
                   Qué resultados medimos
                 </h2>
                 <p className="text-text-muted mb-6">
@@ -366,7 +366,7 @@ export default function ServicioPage({ params }: Props) {
 
         <section className="section-padding">
           <div className="container-custom max-w-3xl text-center">
-            <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6">
               También puede interesarte
             </h2>
             <div className="flex flex-wrap gap-3 justify-center">
@@ -386,17 +386,17 @@ export default function ServicioPage({ params }: Props) {
           <div className="container-custom">
             <Target size={32} strokeWidth={1.6} className="mx-auto mb-5 text-[#FFD166]" />
             <div className="max-w-3xl mx-auto text-center mb-8">
-              <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">
                 ¿Quieres revisar si este servicio encaja con tu clínica?
               </h2>
-              <p className="text-lg text-white">
+              <p className="text-base sm:text-lg text-white">
                 Cuéntanos brevemente tu caso y revisaremos dónde puede estar perdiendo oportunidades tu clínica.
               </p>
               <p className="text-sm opacity-80 mt-4 text-white">
                 La auditoría no te obliga a contratar. Sirve para saber qué mejorar primero y si tiene sentido trabajar juntos.
               </p>
             </div>
-            <div className="max-w-2xl mx-auto bg-white rounded-lg border border-white/20 p-8 shadow-lg">
+            <div className="max-w-2xl mx-auto bg-white rounded-lg border border-white/20 p-6 sm:p-8 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-3">
                 Solicita una auditoría gratuita
               </h3>

@@ -5,16 +5,16 @@ export default function TestimoniosSection() {
   return (
     <section className="section-padding bg-surface">
       <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">Ejemplos representativos de feedback</h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">Ejemplos representativos de feedback</h2>
+          <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
             Textos de referencia preparados para sustituirse por testimonios reales y verificados de clientes.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
           {testimonios.map((testimonio) => (
-            <div key={testimonio.id} className="card card-testimonial p-8">
+            <article key={testimonio.id} className="card card-testimonial p-6 sm:p-8">
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonio.rating }).map((_, i) => (
                   <Star key={i} size={16} strokeWidth={1.7} className="text-accent" />
@@ -33,7 +33,7 @@ export default function TestimoniosSection() {
                   <p className="text-sm text-primary font-medium">{testimonio.clinica}</p>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -170,7 +170,13 @@ a:hover {
 }
 
 .section-padding {
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding: 3rem 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -179,9 +185,22 @@ a:hover {
   }
 }
 
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 5rem 2rem;
+  }
+}
+
 .py-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .py-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -191,10 +210,30 @@ a:hover {
   }
 }
 
+@media (min-width: 1024px) {
+  .py-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 .container-custom {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding: 0 2rem;
+  }
 }
 
 /* === BOTONES === */
@@ -210,6 +249,7 @@ a:hover {
   transition: background-color 0.2s ease;
   font-size: var(--text-base);
   display: inline-block;
+  text-align: center;
 }
 
 .btn-primary:hover {
@@ -217,8 +257,15 @@ a:hover {
 }
 
 .btn-primary-lg {
-  padding: 1rem 2.5rem;
-  font-size: var(--text-lg);
+  padding: 0.875rem 1.5rem;
+  font-size: var(--text-base);
+}
+
+@media (min-width: 768px) {
+  .btn-primary-lg {
+    padding: 1rem 2.5rem;
+    font-size: var(--text-lg);
+  }
 }
 
 .btn-cta {
@@ -232,6 +279,7 @@ a:hover {
   transition: background-color 0.2s ease;
   font-size: var(--text-base);
   display: inline-block;
+  text-align: center;
 }
 
 .btn-cta:hover {
@@ -239,8 +287,15 @@ a:hover {
 }
 
 .btn-cta-lg {
-  padding: 1rem 2.5rem;
-  font-size: var(--text-lg);
+  padding: 0.875rem 1.5rem;
+  font-size: var(--text-base);
+}
+
+@media (min-width: 768px) {
+  .btn-cta-lg {
+    padding: 1rem 2.5rem;
+    font-size: var(--text-lg);
+  }
 }
 
 .btn-outline {
@@ -254,6 +309,7 @@ a:hover {
   cursor: pointer;
   font-size: var(--text-base);
   display: inline-block;
+  text-align: center;
 }
 
 .btn-outline:hover {
@@ -271,6 +327,7 @@ a:hover {
   transition: all 0.2s ease;
   cursor: pointer;
   font-size: var(--text-base);
+  text-align: center;
 }
 
 .btn-secondary:hover {

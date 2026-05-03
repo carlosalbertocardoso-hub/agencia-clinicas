@@ -5,14 +5,14 @@ export default function EspecialidadesGrid() {
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-semibold mb-4">A quién ayudamos</h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">A quién ayudamos</h2>
+          <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
             Clínicas, consultas y profesionales sanitarios de Sevilla que quieren captar pacientes privados con más claridad y medición.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {especialidades.map((esp) => (
             <EspecialidadCard
               key={esp.id}
