@@ -210,6 +210,8 @@ Rutas mínimas:
 - `/politica-privacidad`
 - `/terminos-legales`
 
+Nota de navegación: el header principal debe priorizar solo rutas con valor comercial claro. Por ahora `Recursos` queda fuera del header y se mantiene accesible desde footer/enlaces internos.
+
 Checks mínimos:
 
 - Sin scroll horizontal inesperado.

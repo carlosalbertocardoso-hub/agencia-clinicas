@@ -129,45 +129,6 @@ export default function Header() {
             )}
           </div>
 
-          <div
-            className="relative"
-            onMouseEnter={() => openMenu('recursos')}
-            onMouseLeave={scheduleCloseMenu}
-          >
-            <button
-              type="button"
-              className="text-text hover:text-primary transition font-medium text-sm"
-              aria-haspopup="true"
-              aria-expanded={openDropdown === 'recursos'}
-              onClick={() => openMenu('recursos')}
-              onFocus={() => openMenu('recursos')}
-              onKeyDown={(event) => {
-                if (event.key === 'Escape') closeDropdown()
-              }}
-            >
-              Recursos
-            </button>
-            {openDropdown === 'recursos' && (
-              <div
-                className="absolute left-0 top-full z-50 w-64 pt-3"
-                onMouseEnter={() => openMenu('recursos')}
-                onMouseLeave={scheduleCloseMenu}
-              >
-                <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
-                  <Link href="/recursos" onClick={closeDropdown} className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold">
-                    Centro de recursos
-                  </Link>
-                  <Link href="/blog" onClick={closeDropdown} className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
-                    Blog y guías
-                  </Link>
-                  <Link href="/casos-de-exito" onClick={closeDropdown} className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
-                    Diagnósticos representativos
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-
           <Link href="/contacto" className="text-text hover:text-primary transition font-medium text-sm">
             Contacto
           </Link>
@@ -200,9 +161,6 @@ export default function Header() {
             </Link>
             <Link href="/especialidades" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
               A quién ayudamos
-            </Link>
-            <Link href="/recursos" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
-              Recursos
             </Link>
             <Link href="/contacto" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
               Contacto

@@ -187,13 +187,10 @@ async function main() {
   await desktopPage.goto(baseUrl + '/', { waitUntil: 'networkidle' })
   await testDropdown(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
   await testDropdown(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
-  await testDropdown(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)
   await testDropdownSlowBridge(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
   await testDropdownSlowBridge(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
-  await testDropdownSlowBridge(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)
   await testDropdownClick(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
   await testDropdownClick(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
-  await testDropdownClick(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)
   await desktopPage.close()
 
   const mobilePage = await browser.newPage({ viewport: { width: 390, height: 844 } })
@@ -206,7 +203,7 @@ async function main() {
     await mobilePage.waitForTimeout(150)
     if (!(await mobilePage.getByLabel(/Cerrar men/).count())) failures.push('mobile: no cambia a cerrar menú')
 
-    for (const href of ['/', '/servicios', '/especialidades', '/recursos', '/contacto']) {
+    for (const href of ['/', '/servicios', '/especialidades', '/contacto']) {
       if (!(await mobilePage.locator(`#mobile-navigation a[href="${href}"]`).count())) {
         failures.push(`mobile: falta enlace ${href}`)
       }

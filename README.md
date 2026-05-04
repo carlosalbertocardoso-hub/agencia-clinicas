@@ -122,8 +122,9 @@ La navegación principal se organiza en:
 
 - **A quién ayudamos:** páginas por tipo de clínica o profesional sanitario.
 - **Servicios:** páginas por canal o solución de captación.
-- **Recursos:** hub editorial con blog, diagnósticos y guías.
 - **Contacto:** auditoría gratuita de captación online.
+
+El hub de recursos, blog y diagnósticos sigue publicado, pero no se muestra en el header principal hasta que aporte suficiente valor como ruta prioritaria.
 
 ## A quién ayudamos
 
