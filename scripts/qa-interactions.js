@@ -68,6 +68,38 @@ async function testDropdown(page, buttonIndex, label, expectedLinkPattern, failu
   }
 }
 
+async function testDropdownSlowBridge(page, buttonIndex, label, expectedLinkPattern, failures) {
+  const button = page.locator('header nav button').nth(buttonIndex)
+  const buttonBox = await button.boundingBox()
+  if (!buttonBox) {
+    failures.push(`${label}: botón no visible en prueba lenta`)
+    return
+  }
+
+  await button.hover()
+  await page.waitForTimeout(120)
+
+  const target = page.getByRole('link', { name: expectedLinkPattern }).first()
+  const targetBox = await target.boundingBox()
+  if (!targetBox) {
+    failures.push(`${label}: enlace esperado no visible en prueba lenta`)
+    return
+  }
+
+  await page.mouse.move(buttonBox.x + buttonBox.width / 2, buttonBox.y + buttonBox.height + 8)
+  await page.waitForTimeout(260)
+  if (!(await target.isVisible())) {
+    failures.push(`${label}: el desplegable se cierra al pausar entre botón y panel`)
+    return
+  }
+
+  await page.mouse.move(targetBox.x + 18, targetBox.y + targetBox.height / 2)
+  await page.waitForTimeout(160)
+  if (!(await target.isVisible())) {
+    failures.push(`${label}: el desplegable se cierra tras entrar al panel`)
+  }
+}
+
 async function testDropdownClick(page, buttonIndex, label, expectedLinkPattern, failures) {
   const button = page.locator('header nav button').nth(buttonIndex)
   if (!(await button.count())) {
@@ -156,6 +188,9 @@ async function main() {
   await testDropdown(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
   await testDropdown(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
   await testDropdown(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)
+  await testDropdownSlowBridge(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
+  await testDropdownSlowBridge(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
+  await testDropdownSlowBridge(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)
   await testDropdownClick(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
   await testDropdownClick(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
   await testDropdownClick(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)

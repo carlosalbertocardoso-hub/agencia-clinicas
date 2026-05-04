@@ -61,7 +61,11 @@ export default function Header() {
               Servicios
             </button>
             {openDropdown === 'servicios' && (
-              <div className="absolute left-0 top-full z-50 w-64 pt-3">
+              <div
+                className="absolute left-0 top-full z-50 w-64 pt-3"
+                onMouseEnter={() => openMenu('servicios')}
+                onMouseLeave={scheduleCloseMenu}
+              >
                 <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
                   {servicios.map((srv) => (
                     <Link
@@ -97,7 +101,11 @@ export default function Header() {
               A quién ayudamos
             </button>
             {openDropdown === 'especialidades' && (
-              <div className="absolute left-0 top-full z-50 w-64 pt-3">
+              <div
+                className="absolute left-0 top-full z-50 w-64 pt-3"
+                onMouseEnter={() => openMenu('especialidades')}
+                onMouseLeave={scheduleCloseMenu}
+              >
                 <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
                   <Link
                     href="/especialidades"
@@ -140,7 +148,11 @@ export default function Header() {
               Recursos
             </button>
             {openDropdown === 'recursos' && (
-              <div className="absolute left-0 top-full z-50 w-64 pt-3">
+              <div
+                className="absolute left-0 top-full z-50 w-64 pt-3"
+                onMouseEnter={() => openMenu('recursos')}
+                onMouseLeave={scheduleCloseMenu}
+              >
                 <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
                   <Link href="/recursos" onClick={closeDropdown} className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold">
                     Centro de recursos
