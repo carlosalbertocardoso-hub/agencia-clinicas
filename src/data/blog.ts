@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'errores-seo-dentistas',
     excerpt:
       'Errores frecuentes de SEO local en clínicas dentales de Sevilla: Google Business Profile, páginas por tratamiento, reseñas, velocidad, contenido y medición.',
-    imagen: '/images/hero-clinica-marketing.png',
+    imagen: '/images/blog-seo-dental.svg',
     contenido: `
 # 10 errores de SEO local que frenan la visibilidad de una clínica dental en Sevilla
 
@@ -71,7 +71,7 @@ Revisa tu ficha de Google, tus páginas de tratamiento, tus reseñas, tu web mó
     slug: 'google-ads-psicologos',
     excerpt:
       'Guía de Google Ads para psicólogos en Sevilla: palabras clave, campañas, landings, presupuesto orientativo, privacidad y captación ética de consultas.',
-    imagen: '/images/hero-clinica-marketing.png',
+    imagen: '/images/blog-google-ads-psicologos.svg',
     contenido: `
 # Google Ads para psicólogos en Sevilla: cómo captar consultas con un enfoque ético
 
@@ -114,7 +114,7 @@ Google Ads puede ser útil para psicólogos si se trabaja con sensibilidad, filt
     slug: 'diseno-web-clinicas',
     excerpt:
       'Qué debe tener una web de clínica para generar confianza y convertir visitas en llamadas, WhatsApp y solicitudes de cita desde móvil.',
-    imagen: '/images/hero-clinica-marketing.png',
+    imagen: '/images/blog-diseno-web-clinicas.svg',
     contenido: `
 # Diseño web para clínicas: elementos que convierten visitas en citas
 

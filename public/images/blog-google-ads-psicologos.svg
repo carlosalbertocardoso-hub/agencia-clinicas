@@ -1,0 +1,20 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#FCF9F2"/>
+  <rect x="76" y="82" width="1048" height="556" rx="36" fill="#FFFFFF" stroke="#E5E1D8" stroke-width="3"/>
+  <rect x="142" y="150" width="470" height="84" rx="18" fill="#F4F1EA"/>
+  <circle cx="184" cy="192" r="18" stroke="#0A6B5E" stroke-width="8"/>
+  <path d="m199 207 26 26" stroke="#0A6B5E" stroke-width="8" stroke-linecap="round"/>
+  <rect x="256" y="174" width="284" height="18" rx="9" fill="#1A1A1A"/>
+  <rect x="256" y="204" width="210" height="14" rx="7" fill="#5A5A5A"/>
+  <rect x="144" y="292" width="470" height="252" rx="24" fill="#0A6B5E"/>
+  <rect x="188" y="342" width="382" height="46" rx="12" fill="#FCF9F2"/>
+  <rect x="188" y="414" width="286" height="18" rx="9" fill="#E5E1D8"/>
+  <rect x="188" y="456" width="338" height="18" rx="9" fill="#E5E1D8"/>
+  <rect x="188" y="498" width="220" height="18" rx="9" fill="#E5E1D8"/>
+  <rect x="704" y="160" width="330" height="384" rx="30" fill="#F4F1EA"/>
+  <circle cx="869" cy="288" r="76" fill="#0A6B5E"/>
+  <path d="M842 288c0-15 12-27 27-27s27 12 27 27-12 27-27 27-27-12-27-27Z" fill="#FCF9F2"/>
+  <path d="M796 462c20-54 62-86 116-86s96 32 116 86" stroke="#8B6D11" stroke-width="28" stroke-linecap="round"/>
+  <rect x="742" y="586" width="256" height="18" rx="9" fill="#0A6B5E"/>
+  <text x="142" y="606" fill="#0A6B5E" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Google Ads para psicología</text>
+</svg>
