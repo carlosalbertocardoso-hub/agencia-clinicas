@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Globe2, Send, UsersRound } from 'lucide-react'
+import { Send, UsersRound } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -18,9 +18,6 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-3 mt-6">
-              <Link href="/recursos" className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center hover:bg-accent transition-colors duration-200" aria-label="Ver recursos de Pacientes Sevilla">
-                <Globe2 size={18} strokeWidth={1.6} className="text-white" />
-              </Link>
               <Link href="/contacto" className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center hover:bg-accent transition-colors duration-200" aria-label="Contactar con Pacientes Sevilla">
                 <Send size={18} strokeWidth={1.6} className="text-white" />
               </Link>
@@ -59,9 +56,6 @@ export default function Footer() {
               <li><a href="/" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Inicio</a></li>
               <li><a href="/servicios" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Servicios</a></li>
               <li><a href="/especialidades" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">A quién ayudamos</a></li>
-              <li><a href="/recursos" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Recursos</a></li>
-              <li><a href="/blog" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Blog y guías</a></li>
-              <li><a href="/casos-de-exito" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Diagnósticos representativos</a></li>
               <li><a href="/contacto" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Contacto</a></li>
               <li><a href="/politica-privacidad" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Política de privacidad</a></li>
               <li><a href="/terminos-legales" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Términos legales</a></li>
