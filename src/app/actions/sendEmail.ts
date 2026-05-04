@@ -71,7 +71,7 @@ export async function sendContactEmail(data: ContactFormData) {
     const sanitizedObjetivo = sanitizeHtml(data.objetivo || '')
     const sanitizedMensaje = sanitizeHtml(data.mensaje || '')
 
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pacientessevilla.com'
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://imarketingclinicas.com'
 
     const adminEmail = await resend.emails.send({
       from: fromEmail,
@@ -109,13 +109,13 @@ export async function sendContactEmail(data: ContactFormData) {
     const confirmationEmail = await resend.emails.send({
       from: fromEmail,
       to: data.email,
-      subject: 'Hemos recibido tu solicitud - Pacientes Sevilla',
+      subject: 'Hemos recibido tu solicitud - iMarketing Clínicas',
       html: `
         <h2>Hola ${sanitizedNombre}</h2>
-        <p>Gracias por contactar con Pacientes Sevilla.</p>
+        <p>Gracias por contactar con iMarketing Clínicas.</p>
         <p>Hemos recibido tu solicitud. Revisaremos tu caso y nos pondremos en contacto contigo en las proximas 24 horas laborables.</p>
         <p>Mientras tanto, puedes seguir explorando nuestros servicios en <a href="${siteUrl}">${siteUrl}</a></p>
-        <p>Saludos,<br/>Equipo Pacientes Sevilla</p>
+        <p>Saludos,<br/>Equipo iMarketing Clínicas</p>
       `,
     })
 

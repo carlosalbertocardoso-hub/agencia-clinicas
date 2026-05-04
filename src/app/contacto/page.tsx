@@ -6,16 +6,16 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Solicitar auditoría gratuita | Pacientes Sevilla',
+  title: 'Solicitar auditoría gratuita | iMarketing Clínicas',
   description:
     'Solicita una auditoría gratuita para tu clínica en Sevilla. Revisamos Google, web, campañas, reseñas y puntos de contacto para detectar oportunidades de captación.',
   alternates: {
     canonical: '/contacto',
   },
   openGraph: {
-    title: 'Solicita una auditoría gratuita - Pacientes Sevilla',
+    title: 'Solicita una auditoría gratuita - iMarketing Clínicas',
     description: 'Revisamos Google, web y puntos de conversión de tu clínica en Sevilla.',
-    url: 'https://pacientessevilla.com/contacto',
+    url: 'https://imarketingclinicas.com/contacto',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }
@@ -88,8 +88,8 @@ export default function ContactoPage() {
                   <Mail size={28} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-text mb-2">Email</h3>
-                <a href="mailto:hola@pacientessevilla.com" className="text-primary hover:underline">
-                  hola@pacientessevilla.com
+                <a href="mailto:hola@imarketingclinicas.com" className="text-primary hover:underline">
+                  hola@imarketingclinicas.com
                 </a>
               </div>
 

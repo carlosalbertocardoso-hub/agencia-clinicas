@@ -7,7 +7,7 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Blog de marketing para clínicas en Sevilla | Pacientes Sevilla',
+  title: 'Blog de marketing para clínicas en Sevilla | iMarketing Clínicas',
   description:
     'Guías prácticas sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes para clínicas privadas y profesionales sanitarios en Sevilla.',
   alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Guías de marketing para clínicas privadas en Sevilla',
     description: 'SEO local, Google Ads, diseño web, reputación y captación para clínicas privadas.',
-    url: 'https://pacientessevilla.com/blog',
+    url: 'https://imarketingclinicas.com/blog',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

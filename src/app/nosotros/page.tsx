@@ -5,16 +5,16 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Sobre Pacientes Sevilla | Agencia para clínicas privadas',
+  title: 'Sobre iMarketing Clínicas | Agencia para clínicas privadas',
   description:
     'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla. Estrategia, medición y comunicación sanitaria clara.',
   alternates: {
     canonical: '/nosotros',
   },
   openGraph: {
-    title: 'Sobre Pacientes Sevilla',
+    title: 'Sobre iMarketing Clínicas',
     description: 'Quiénes somos y cómo ayudamos a clínicas privadas de Sevilla a ordenar su captación online.',
-    url: 'https://pacientessevilla.com/nosotros',
+    url: 'https://imarketingclinicas.com/nosotros',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }
@@ -46,7 +46,7 @@ export default function NosotrosPage() {
 
             <div className="space-y-6 text-text-muted leading-relaxed">
               <p>
-                Pacientes Sevilla nace para resolver un problema muy concreto: clínicas excelentes que no aparecen bien en Google, webs que no transmiten su nivel real y campañas que generan dudas porque nadie sabe qué contactos llegan.
+                iMarketing Clínicas nace para resolver un problema muy concreto: clínicas excelentes que no aparecen bien en Google, webs que no transmiten su nivel real y campañas que generan dudas porque nadie sabe qué contactos llegan.
               </p>
 
               <p>

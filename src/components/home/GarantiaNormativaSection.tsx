@@ -25,7 +25,7 @@ export default function GarantiaNormativaSection() {
             Marketing Sanitario Ético y Legal
           </h2>
           <p className="text-base sm:text-lg text-text-muted leading-relaxed">
-            No todas las agencias entienden que la publicidad médica en Sevilla está sujeta a normativas estrictas. En Pacientes Sevilla trabajamos bajo el marco de la Ley de Publicidad Sanitaria y los códigos deontológicos, asegurando que tu captación sea tan rigurosa como tu práctica médica.
+            No todas las agencias entienden que la publicidad médica en Sevilla está sujeta a normativas estrictas. En iMarketing Clínicas trabajamos bajo el marco de la Ley de Publicidad Sanitaria y los códigos deontológicos, asegurando que tu captación sea tan rigurosa como tu práctica médica.
           </p>
         </div>
 

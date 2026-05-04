@@ -4,7 +4,7 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad | Pacientes Sevilla',
+  title: 'Política de Privacidad | iMarketing Clínicas',
   alternates: {
     canonical: '/politica-privacidad',
   },
@@ -27,7 +27,7 @@ export default function PoliticaPrivacidadPage() {
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">1. Responsable del tratamiento</h2>
                 <p>
-                  Pacientes Sevilla es responsable del tratamiento de los datos personales recibidos a través de esta web. Nos
+                  iMarketing Clínicas es responsable del tratamiento de los datos personales recibidos a través de esta web. Nos
                   comprometemos a proteger tu privacidad conforme al RGPD y la LOPDGDD.
                 </p>
               </div>
@@ -63,7 +63,7 @@ export default function PoliticaPrivacidadPage() {
                 </p>
                 <p className="mt-4">
                   El envío de comunicaciones comerciales se realiza únicamente si marcas la casilla específica habilitada para ello.
-                  Puedes retirar ese consentimiento en cualquier momento escribiéndonos a <strong>hola@pacientessevilla.com</strong>.
+                  Puedes retirar ese consentimiento en cualquier momento escribiéndonos a <strong>hola@imarketingclinicas.com</strong>.
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export default function PoliticaPrivacidadPage() {
                   <li>Solicitar la limitación del tratamiento</li>
                 </ul>
                 <p className="mt-4">
-                  Para ejercer estos derechos, contacta con nosotros en <strong>hola@pacientessevilla.com</strong>
+                  Para ejercer estos derechos, contacta con nosotros en <strong>hola@imarketingclinicas.com</strong>
                 </p>
               </div>
 

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pacientessevilla.com'),
-  title: 'Marketing digital para clínicas en Sevilla | Pacientes Sevilla',
+  metadataBase: new URL('https://imarketingclinicas.com'),
+  title: 'Marketing digital para clínicas en Sevilla | iMarketing Clínicas',
   description:
     'Agencia de marketing digital para clínicas privadas en Sevilla. SEO local, Google Ads, diseño web, reputación y captación de pacientes.',
   keywords: [
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://pacientessevilla.com',
-    title: 'Marketing digital para clínicas en Sevilla | Pacientes Sevilla',
+    url: 'https://imarketingclinicas.com',
+    title: 'Marketing digital para clínicas en Sevilla | iMarketing Clínicas',
     description:
       'SEO local, Google Ads, diseño web, reputación y captación medible para clínicas privadas en Sevilla.',
-    images: [{ url: '/images/og-default.svg', width: 1200, height: 630, alt: 'Pacientes Sevilla - Marketing para clínicas' }],
-    siteName: 'Pacientes Sevilla',
+    images: [{ url: '/images/og-default.svg', width: 1200, height: 630, alt: 'iMarketing Clínicas - Marketing para clínicas' }],
+    siteName: 'iMarketing Clínicas',
   },
   twitter: {
     card: 'summary_large_image',
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Pacientes Sevilla - Agencia de Marketing Sanitario',
+    name: 'iMarketing Clínicas - Agencia de Marketing Sanitario',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Sevilla',

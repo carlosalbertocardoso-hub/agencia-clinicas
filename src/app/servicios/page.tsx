@@ -5,7 +5,7 @@ import ServiciosSection from '@/components/home/ServiciosSection'
 import CtaFinal from '@/components/home/CtaFinal'
 
 export const metadata: Metadata = {
-  title: 'Servicios de marketing para clínicas en Sevilla | Pacientes Sevilla',
+  title: 'Servicios de marketing para clínicas en Sevilla | iMarketing Clínicas',
   description:
     'SEO local, Google Ads, diseño web, redes, reputación y medición para clínicas privadas y profesionales sanitarios en Sevilla.',
   alternates: {

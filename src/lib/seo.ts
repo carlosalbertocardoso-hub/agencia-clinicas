@@ -1,4 +1,4 @@
-export function generateSEOTitle(title: string, suffix = 'Sevilla | Pacientes Sevilla'): string {
+export function generateSEOTitle(title: string, suffix = 'Sevilla | iMarketing Clínicas'): string {
   return `${title} - ${suffix}`
 }
 
@@ -9,7 +9,7 @@ export function generateSEODescription(description: string): string {
   return description
 }
 
-export const baseUrl = 'https://pacientessevilla.com'
+export const baseUrl = 'https://imarketingclinicas.com'
 
 export function getCanonicalUrl(path: string): string {
   return `${baseUrl}${path}`

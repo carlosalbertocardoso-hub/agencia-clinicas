@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: 'Agencia de Marketing Sanitario en Sevilla | Captación de Pacientes Privados',
     description:
       'Impulsa tu centro médico en Sevilla con estrategias de marketing sanitario. Captación de pacientes privados, SEO local y publicidad médica respetando la normativa.',
-    url: 'https://pacientessevilla.com',
+    url: 'https://imarketingclinicas.com',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

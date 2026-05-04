@@ -33,7 +33,7 @@ export default function Header() {
             <path d="M22 22l6 6" stroke="#E8A030" strokeWidth="2.5" strokeLinecap="round" />
           </svg>
           <div className="text-xl font-heading font-semibold text-primary">
-            Pacientes Sevilla
+            iMarketing Clínicas
           </div>
         </Link>
 

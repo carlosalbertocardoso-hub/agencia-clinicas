@@ -1,8 +1,8 @@
-# PacientesSevilla: Completion Plan
+# iMarketing Clínicas: Completion Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Complete the remaining phases (5-6) of PacientesSevilla website by implementing dynamic service pages, additional content pages, server actions, and completing specialty FAQs.
+**Goal:** Complete the remaining phases (5-6) of iMarketing Clínicas website by implementing dynamic service pages, additional content pages, server actions, and completing specialty FAQs.
 
 **Architecture:** 
 - **Task 1 (Parallel):** Add FAQ content for 4 remaining specialties (modifies existing file)

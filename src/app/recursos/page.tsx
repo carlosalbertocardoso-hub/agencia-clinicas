@@ -7,7 +7,7 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import { blogPosts } from '@/data/blog'
 
 export const metadata: Metadata = {
-  title: 'Recursos de marketing sanitario para clínicas en Sevilla | Pacientes Sevilla',
+  title: 'Recursos de marketing sanitario para clínicas en Sevilla | iMarketing Clínicas',
   description:
     'Guías, diagnósticos y contenidos prácticos sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes privados en Sevilla.',
   alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Recursos de marketing sanitario para clínicas en Sevilla',
     description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
-    url: 'https://pacientessevilla.com/recursos',
+    url: 'https://imarketingclinicas.com/recursos',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

@@ -14,7 +14,7 @@ export function buildServiceSchema({
     description,
     url,
     provider: {
-      '@id': 'https://pacientessevilla.com',
+      '@id': 'https://imarketingclinicas.com',
     },
     areaServed: {
       '@type': 'City',
@@ -75,18 +75,18 @@ export function buildArticleSchema({
     headline,
     description,
     url,
-    image: image || 'https://pacientessevilla.com/images/og-default.svg',
+    image: image || 'https://imarketingclinicas.com/images/og-default.svg',
     datePublished,
     author: {
       '@type': 'Organization',
-      name: 'Pacientes Sevilla',
+      name: 'iMarketing Clínicas',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Pacientes Sevilla',
+      name: 'iMarketing Clínicas',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://pacientessevilla.com/logo.svg',
+        url: 'https://imarketingclinicas.com/logo.svg',
       },
     },
   }
@@ -96,14 +96,14 @@ export function buildOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://pacientessevilla.com',
-    name: 'Pacientes Sevilla',
-    url: 'https://pacientessevilla.com',
-    logo: 'https://pacientessevilla.com/images/logo.svg',
+    '@id': 'https://imarketingclinicas.com',
+    name: 'iMarketing Clínicas',
+    url: 'https://imarketingclinicas.com',
+    logo: 'https://imarketingclinicas.com/images/logo.svg',
     description: 'Agencia de marketing digital para clínicas y profesionales sanitarios en Sevilla',
     sameAs: [
-      'https://www.facebook.com/pacientessevilla',
-      'https://www.instagram.com/pacientessevilla',
+      'https://www.facebook.com/imarketingclinicas',
+      'https://www.instagram.com/imarketingclinicas',
     ],
   }
 }

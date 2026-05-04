@@ -18,7 +18,7 @@ interface Props {
 
 const metadataBySlug: Record<string, { title: string; description: string }> = {
   'seo-medico': {
-    title: 'SEO local para clínicas en Sevilla | Pacientes Sevilla',
+    title: 'SEO local para clínicas en Sevilla | iMarketing Clínicas',
     description:
       'Mejora la visibilidad de tu clínica en Google y Google Maps. SEO local para clínicas privadas en Sevilla: tratamientos, reseñas, web, contenido y medición.',
   },
@@ -184,7 +184,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pageMeta = metadataBySlug[servicio.slug]
 
   return {
-    title: pageMeta?.title || `${servicio.nombre} | Pacientes Sevilla`,
+    title: pageMeta?.title || `${servicio.nombre} | iMarketing Clínicas`,
     description: pageMeta?.description || servicio.descripcion,
     alternates: {
       canonical: `/servicios/${params.slug}`,
@@ -192,7 +192,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: pageMeta?.title || servicio.nombre,
       description: pageMeta?.description || servicio.descripcion,
-      url: `https://pacientessevilla.com/servicios/${params.slug}`,
+      url: `https://imarketingclinicas.com/servicios/${params.slug}`,
       images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
     },
   }
@@ -222,13 +222,13 @@ export default function ServicioPage({ params }: Props) {
   const serviceCta = serviceCtas[servicio.slug] || 'Solicitar auditoría gratuita'
   const faqs = faqsPorServicio[servicio.slug] || []
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Servicios', url: 'https://pacientessevilla.com/servicios' },
-    { name: servicio.nombre, url: `https://pacientessevilla.com/servicios/${servicio.slug}` },
+    { name: 'Servicios', url: 'https://imarketingclinicas.com/servicios' },
+    { name: servicio.nombre, url: `https://imarketingclinicas.com/servicios/${servicio.slug}` },
   ])
   const serviceSchema = buildServiceSchema({
     name: `${servicio.nombre} en Sevilla`,
     description: servicio.descripcion,
-    url: `https://pacientessevilla.com/servicios/${servicio.slug}`,
+    url: `https://imarketingclinicas.com/servicios/${servicio.slug}`,
   })
   const relatedLinks: Record<string, Array<{ href: string; label: string }>> = {
     'seo-medico': [

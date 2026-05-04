@@ -5,7 +5,7 @@ import EspecialidadesGrid from '@/components/home/EspecialidadesGrid'
 import CtaFinal from '@/components/home/CtaFinal'
 
 export const metadata: Metadata = {
-  title: 'A quién ayudamos | Marketing sanitario en Sevilla | Pacientes Sevilla',
+  title: 'A quién ayudamos | Marketing sanitario en Sevilla | iMarketing Clínicas',
   description:
     'Marketing digital para clínicas dentales, reproducción asistida, pedagogos, dermatólogos, nutricionistas, oftalmólogos y profesionales sanitarios en Sevilla.',
   alternates: {

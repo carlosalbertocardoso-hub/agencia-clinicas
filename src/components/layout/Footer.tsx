@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-lg font-heading font-semibold text-white mb-3">
-              Pacientes Sevilla
+              iMarketing Clínicas
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
               Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla.
@@ -18,10 +18,10 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-3 mt-6">
-              <Link href="/contacto" className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center hover:bg-accent transition-colors duration-200" aria-label="Contactar con Pacientes Sevilla">
+              <Link href="/contacto" className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center hover:bg-accent transition-colors duration-200" aria-label="Contactar con iMarketing Clínicas">
                 <Send size={18} strokeWidth={1.6} className="text-white" />
               </Link>
-              <Link href="/nosotros" className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center hover:bg-accent transition-colors duration-200" aria-label="Conocer el enfoque de Pacientes Sevilla">
+              <Link href="/nosotros" className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center hover:bg-accent transition-colors duration-200" aria-label="Conocer el enfoque de iMarketing Clínicas">
                 <UsersRound size={18} strokeWidth={1.6} className="text-white" />
               </Link>
             </div>
@@ -69,7 +69,7 @@ export default function Footer() {
 
         <div className="border-t border-primary-light/30 pt-8">
           <p className="text-xs text-gray-400 text-center">
-            © 2026 Pacientes Sevilla. Todos los derechos reservados.
+            © 2026 iMarketing Clínicas. Todos los derechos reservados.
           </p>
         </div>
       </div>
