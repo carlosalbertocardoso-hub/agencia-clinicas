@@ -16,6 +16,8 @@ export interface ContactFormData {
   web?: string
   objetivo?: string
   mensaje?: string
+  privacidad?: boolean
+  comunicaciones?: boolean
 }
 
 function sanitizeHtml(text: string): string {
@@ -57,6 +59,9 @@ export async function sendContactEmail(data: ContactFormData) {
     if (data.mensaje && data.mensaje.length > 5000) {
       return { success: false, error: 'Mensaje demasiado largo' }
     }
+    if (!data.privacidad) {
+      return { success: false, error: 'Debes aceptar la politica de privacidad para enviar el formulario.' }
+    }
 
     const sanitizedNombre = sanitizeHtml(data.nombre)
     const sanitizedClinica = sanitizeHtml(data.clinica || '')
@@ -85,6 +90,9 @@ export async function sendContactEmail(data: ContactFormData) {
         <p><strong>Que quiere mejorar:</strong> ${sanitizedObjetivo || 'No especificado'}</p>
         <p><strong>Mensaje:</strong></p>
         <p>${sanitizedMensaje || 'Sin mensaje'}</p>
+        <hr />
+        <p><strong>Consentimiento tratamiento de datos:</strong> ${data.privacidad ? 'Aceptado' : 'No aceptado'}</p>
+        <p><strong>Comunicaciones comerciales:</strong> ${data.comunicaciones ? 'Aceptadas' : 'No aceptadas'}</p>
       `,
     })
 

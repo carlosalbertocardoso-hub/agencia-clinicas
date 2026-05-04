@@ -121,7 +121,8 @@ El formulario debe:
 
 - Pedir solo datos necesarios según contexto.
 - Mostrar microcopy claro.
-- Incluir política de privacidad.
+- Incluir un check obligatorio de tratamiento de datos y política de privacidad.
+- Incluir un check separado y opcional para comunicaciones comerciales.
 - Usar mensajes de error comprensibles.
 - Mantener el botón a ancho completo en móvil.
 

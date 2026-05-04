@@ -61,6 +61,10 @@ export default function PoliticaPrivacidadPage() {
                   El tratamiento de tus datos se basa en tu consentimiento al enviar el formulario y en nuestro interés legítimo para
                   responder a tu solicitud comercial o informativa.
                 </p>
+                <p className="mt-4">
+                  El envío de comunicaciones comerciales se realiza únicamente si marcas la casilla específica habilitada para ello.
+                  Puedes retirar ese consentimiento en cualquier momento escribiéndonos a <strong>hola@pacientessevilla.com</strong>.
+                </p>
               </div>
 
               <div>

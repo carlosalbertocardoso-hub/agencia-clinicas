@@ -24,7 +24,7 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-100">
+    <header className="sticky top-0 z-[100] bg-white/90 backdrop-blur-sm border-b border-slate-100">
       <div className="container-custom flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="flex-shrink-0" aria-hidden="true">

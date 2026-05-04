@@ -29,6 +29,7 @@ export default function ContactForm({
       objetivo: '',
       mensaje: '',
       privacidad: false,
+      comunicaciones: false,
     },
   })
   const [submitted, setSubmitted] = useState(false)
@@ -208,18 +209,33 @@ export default function ContactForm({
         />
       </div>
 
-      <label className={`flex gap-3 text-sm text-text-muted leading-relaxed ${variant === 'inline' ? 'md:col-span-2' : ''}`}>
+      <label htmlFor="privacidad" className={`flex gap-3 text-sm text-text-muted leading-relaxed ${variant === 'inline' ? 'md:col-span-2' : ''}`}>
         <input
           {...register('privacidad', { required: true })}
           type="checkbox"
+          id="privacidad"
+          required
+          aria-required="true"
           className="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary"
         />
         <span>
-          Acepto la{' '}
+          He leído y acepto la{' '}
           <a href="/politica-privacidad" className="text-primary font-medium hover:underline">
             política de privacidad
           </a>{' '}
-          y autorizo el contacto para responder a mi solicitud.
+          y autorizo el tratamiento de mis datos para responder a mi solicitud. *
+        </span>
+      </label>
+
+      <label htmlFor="comunicaciones" className={`flex gap-3 text-sm text-text-muted leading-relaxed ${variant === 'inline' ? 'md:col-span-2' : ''}`}>
+        <input
+          {...register('comunicaciones')}
+          type="checkbox"
+          id="comunicaciones"
+          className="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary"
+        />
+        <span>
+          Acepto recibir comunicaciones comerciales de Pacientes Sevilla sobre servicios, contenidos y novedades relacionados con marketing sanitario. Podré retirar mi consentimiento en cualquier momento.
         </span>
       </label>
 
