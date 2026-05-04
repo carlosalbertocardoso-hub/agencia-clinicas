@@ -36,6 +36,7 @@ npm run dev       # Servidor local
 npm run build     # Build de producción
 npm run start     # Servir build de producción
 npm run lint      # Lint de Next/ESLint
+npm run qa:interactions # QA real con Playwright sobre rutas, header, móvil y formulario
 npm run sitemap   # Generar sitemap con next-sitemap
 ```
 
@@ -229,6 +230,19 @@ Resultado final de la pasada `after`:
 - Menú móvil operativo.
 
 Las capturas se generan en `qa-screenshots/`. Esa carpeta está ignorada en Git para no subir artefactos pesados al repositorio.
+
+Para repetir la batería interactiva:
+
+```bash
+npm run dev
+npm run qa:interactions
+```
+
+También se puede apuntar a otro entorno:
+
+```bash
+QA_BASE_URL=https://tu-url.vercel.app npm run qa:interactions
+```
 
 Incidencias corregidas en la última revisión:
 

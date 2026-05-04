@@ -220,3 +220,17 @@ Checks mínimos:
 - No hay textos con codificación rota.
 
 Las capturas locales se guardan en `qa-screenshots/`, pero esa carpeta no se versiona por peso. Si hace falta conservar evidencias, exportarlas fuera del repo o subir solo una selección optimizada.
+
+Comando obligatorio para detectar sorpresas de interacción:
+
+```bash
+npm run qa:interactions
+```
+
+Esta prueba cubre:
+
+- Hover real desde cada botón desktop hasta sus subcategorías.
+- Menú móvil y navegación desde el menú.
+- Rutas obligatorias en desktop, tablet y móvil.
+- H1, metadata, overflow, imágenes, placeholders y mojibake.
+- Escritura básica en el formulario de contacto sin enviar un lead real.
