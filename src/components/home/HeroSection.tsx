@@ -9,11 +9,11 @@ export default function HeroSection() {
         src="/images/hero-clinica-marketing.png"
         alt="Equipo de agencia de marketing en Sevilla analizando métricas de una clínica"
         fill
-        className="object-cover"
+        className="pointer-events-none object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-primary/70" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-primary/35 to-primary/80" />
+      <div className="pointer-events-none absolute inset-0 bg-primary/70" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/25 via-primary/35 to-primary/80" />
 
       <div className="container-custom relative z-10 flex min-h-[680px] sm:min-h-[720px] md:min-h-[760px] items-center justify-center py-12 sm:py-16">
         <div className="mx-auto max-w-4xl text-center text-white">

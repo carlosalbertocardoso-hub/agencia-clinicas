@@ -208,6 +208,37 @@ Revisar:
 - Imágenes con alt descriptivo.
 - Textos sin promesas sanitarias o claims no verificables.
 
+## QA visual y CRO
+
+La última auditoría local se hizo con Playwright sobre 24 rutas y 4 viewports:
+
+- Desktop: `1440x900`
+- Laptop: `1280x800`
+- Tablet: `768x1024`
+- Mobile: `390x844`
+
+Resultado final de la pasada `after`:
+
+- `96` comprobaciones.
+- `0` incidencias detectadas por el script.
+- Sin imágenes rotas.
+- Sin H1 duplicados.
+- Sin scroll horizontal inesperado.
+- Sin enlaces `href="#"`.
+- Sin WhatsApp/teléfono ficticio visible.
+- Menú móvil operativo.
+
+Las capturas se generan en `qa-screenshots/`. Esa carpeta está ignorada en Git para no subir artefactos pesados al repositorio.
+
+Incidencias corregidas en la última revisión:
+
+- Enlaces placeholder del footer sustituidos por rutas reales.
+- WhatsApp ficticio oculto hasta disponer de número real.
+- Microcopy de error del formulario actualizado para no dirigir a WhatsApp sin dato válido.
+- Header mejorado con atributos ARIA y cierre de menú móvil al navegar.
+- Hero corregido para que imagen y overlays no intercepten clics del header en móvil.
+- Textos de navegación y recursos revisados para evitar codificación rota.
+
 ## Documentación adicional
 
 - [`Claude.md`](./Claude.md): convenciones internas originales del proyecto.

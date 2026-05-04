@@ -9,6 +9,7 @@ import { servicios } from '@/data/servicios'
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const closeMobileMenu = () => setIsMobileMenuOpen(false)
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-100">
@@ -34,7 +35,13 @@ export default function Header() {
             onMouseEnter={() => setOpenDropdown('servicios')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="text-text hover:text-primary transition font-medium text-sm">
+            <button
+              type="button"
+              className="text-text hover:text-primary transition font-medium text-sm"
+              aria-haspopup="true"
+              aria-expanded={openDropdown === 'servicios'}
+              onFocus={() => setOpenDropdown('servicios')}
+            >
               Servicios
             </button>
             {openDropdown === 'servicios' && (
@@ -57,8 +64,14 @@ export default function Header() {
             onMouseEnter={() => setOpenDropdown('especialidades')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="text-text hover:text-primary transition font-medium text-sm">
-              A quiÃ©n ayudamos
+            <button
+              type="button"
+              className="text-text hover:text-primary transition font-medium text-sm"
+              aria-haspopup="true"
+              aria-expanded={openDropdown === 'especialidades'}
+              onFocus={() => setOpenDropdown('especialidades')}
+            >
+              A quién ayudamos
             </button>
             {openDropdown === 'especialidades' && (
               <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
@@ -86,7 +99,13 @@ export default function Header() {
             onMouseEnter={() => setOpenDropdown('recursos')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="text-text hover:text-primary transition font-medium text-sm">
+            <button
+              type="button"
+              className="text-text hover:text-primary transition font-medium text-sm"
+              aria-haspopup="true"
+              aria-expanded={openDropdown === 'recursos'}
+              onFocus={() => setOpenDropdown('recursos')}
+            >
               Recursos
             </button>
             {openDropdown === 'recursos' && (
@@ -95,10 +114,10 @@ export default function Header() {
                   Centro de recursos
                 </Link>
                 <Link href="/blog" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
-                  Blog y guÃ­as
+                  Blog y guías
                 </Link>
                 <Link href="/casos-de-exito" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
-                  DiagnÃ³sticos representativos
+                  Diagnósticos representativos
                 </Link>
               </div>
             )}
@@ -113,9 +132,12 @@ export default function Header() {
         </Link>
 
         <button
+          type="button"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="lg:hidden p-2 text-text"
           aria-label={isMobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-navigation"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -123,24 +145,24 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-100 bg-white">
-          <nav className="container-custom py-4 space-y-3">
-            <Link href="/" className="block py-2 text-text hover:text-primary font-medium">
+          <nav id="mobile-navigation" className="container-custom py-4 space-y-3">
+            <Link href="/" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
               Inicio
             </Link>
-            <Link href="/servicios" className="block py-2 text-text hover:text-primary font-medium">
+            <Link href="/servicios" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
               Servicios
             </Link>
-            <Link href="/especialidades" className="block py-2 text-text hover:text-primary font-medium">
-              A quiÃ©n ayudamos
+            <Link href="/especialidades" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
+              A quién ayudamos
             </Link>
-            <Link href="/recursos" className="block py-2 text-text hover:text-primary font-medium">
+            <Link href="/recursos" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
               Recursos
             </Link>
-            <Link href="/contacto" className="block py-2 text-text hover:text-primary font-medium">
+            <Link href="/contacto" onClick={closeMobileMenu} className="block py-2 text-text hover:text-primary font-medium">
               Contacto
             </Link>
             <div className="pt-4">
-              <Link href="/contacto" className="block btn-cta text-center text-sm">
+              <Link href="/contacto" onClick={closeMobileMenu} className="block btn-cta text-center text-sm">
                 Solicitar auditoría
               </Link>
             </div>

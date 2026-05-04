@@ -5,6 +5,7 @@
 
 # Testing
 /coverage
+/qa-screenshots
 
 # Next.js
 /.next/

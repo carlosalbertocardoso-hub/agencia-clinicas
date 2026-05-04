@@ -129,9 +129,12 @@ El formulario debe:
 Requisitos mínimos:
 
 - Enlaces con texto o `aria-label` descriptivo.
+- No usar enlaces placeholder (`href="#"`) en producción. Si no hay destino real, ocultar el elemento o enlazar a una ruta interna útil.
 - Imágenes con alt útil, no keyword stuffing.
 - Contraste suficiente en CTAs y textos sobre fondos oscuros.
 - Botones y campos con estados `focus`.
+- Botones de navegación con `type="button"` y estados `aria-expanded` cuando abran menús.
+- Menú móvil clicable en todo momento; las imágenes o overlays del hero no pueden interceptar eventos del header.
 - No depender solo del color para comunicar estado.
 
 ## SEO Visual y CRO
@@ -181,3 +184,39 @@ Comprobar especialmente:
 - CTAs visibles y legibles.
 - Un único H1 por página.
 - No introducir cambios visuales que parezcan una landing genérica.
+
+## QA Visual
+
+La auditoría visual senior se ejecuta con Playwright sobre estas resoluciones:
+
+- Desktop: `1440x900`
+- Laptop: `1280x800`
+- Tablet: `768x1024`
+- Mobile: `390x844`
+
+Rutas mínimas:
+
+- `/`
+- `/contacto`
+- `/blog`
+- `/servicios`
+- `/especialidades`
+- `/recursos`
+- `/nosotros`
+- `/casos-de-exito`
+- Páginas dinámicas de blog, servicios y especialidades.
+- `/politica-privacidad`
+- `/terminos-legales`
+
+Checks mínimos:
+
+- Sin scroll horizontal inesperado.
+- Sin imágenes rotas o sin alt.
+- Sin H1 duplicados.
+- Sin titles o meta descriptions vacíos.
+- Sin enlaces placeholder.
+- Sin teléfono o WhatsApp ficticio visible.
+- Menú móvil abre y cierra.
+- No hay textos con codificación rota.
+
+Las capturas locales se guardan en `qa-screenshots/`, pero esa carpeta no se versiona por peso. Si hace falta conservar evidencias, exportarlas fuera del repo o subir solo una selección optimizada.

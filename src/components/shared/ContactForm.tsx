@@ -44,10 +44,10 @@ export default function ContactForm({
         reset()
         setTimeout(() => setSubmitted(false), 5000)
       } else {
-        setError(result.error || 'No se ha podido enviar el formulario. Revisa los campos o escríbenos por WhatsApp.')
+        setError(result.error || 'No se ha podido enviar el formulario. Revisa los campos o escríbenos por email.')
       }
     } catch (err) {
-      setError('No se ha podido enviar el formulario. Revisa los campos o escríbenos por WhatsApp.')
+      setError('No se ha podido enviar el formulario. Revisa los campos o escríbenos por email.')
     }
   }
 

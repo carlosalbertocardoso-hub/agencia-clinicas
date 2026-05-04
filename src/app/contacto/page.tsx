@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { CheckCircle2, Mail, MapPin, MessageCircle } from 'lucide-react'
+import { CheckCircle2, Mail, MapPin } from 'lucide-react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
@@ -82,7 +82,7 @@ export default function ContactoPage() {
 
         <section className="section-padding">
           <div className="container-custom max-w-3xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="text-center">
                 <div className="w-12 h-12 mx-auto rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
                   <Mail size={28} strokeWidth={1.6} className="text-primary" />
@@ -93,16 +93,7 @@ export default function ContactoPage() {
                 </a>
               </div>
 
-              <div className="text-center">
-                <div className="w-12 h-12 mx-auto rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">
-                  <MessageCircle size={28} strokeWidth={1.6} className="text-primary" />
-                </div>
-                <h3 className="font-semibold text-text mb-2">WhatsApp</h3>
-                {/* TODO: Sustituir por el número real de WhatsApp antes de producción. */}
-                <a href="https://wa.me/34600000000" className="text-primary hover:underline">
-                  +34 600 00 00 00
-                </a>
-              </div>
+              {/* TODO: Añadir WhatsApp cuando exista un número real de contacto. */}
 
               <div className="text-center">
                 <div className="w-12 h-12 mx-auto rounded-md border border-primary/20 bg-white text-primary flex items-center justify-center mb-4">

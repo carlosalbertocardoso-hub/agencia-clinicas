@@ -7,15 +7,15 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import { blogPosts } from '@/data/blog'
 
 export const metadata: Metadata = {
-  title: 'Recursos de marketing sanitario para clÃ­nicas en Sevilla | Pacientes Sevilla',
+  title: 'Recursos de marketing sanitario para clínicas en Sevilla | Pacientes Sevilla',
   description:
-    'GuÃ­as, diagnÃ³sticos y contenidos prÃ¡cticos sobre SEO local, Google Ads, diseÃ±o web, reputaciÃ³n y captaciÃ³n de pacientes privados en Sevilla.',
+    'Guías, diagnósticos y contenidos prácticos sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes privados en Sevilla.',
   alternates: {
     canonical: '/recursos',
   },
   openGraph: {
-    title: 'Recursos de marketing sanitario para clÃ­nicas en Sevilla',
-    description: 'Contenido prÃ¡ctico para mejorar la captaciÃ³n online de clÃ­nicas privadas en Sevilla.',
+    title: 'Recursos de marketing sanitario para clínicas en Sevilla',
+    description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
     url: 'https://pacientessevilla.com/recursos',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
@@ -24,19 +24,19 @@ export const metadata: Metadata = {
 const categorias = [
   {
     title: 'SEO local y Google Maps',
-    description: 'CÃ³mo aparecer cuando un paciente busca especialidad, tratamiento o clÃ­nica cercana en Sevilla.',
+    description: 'Cómo aparecer cuando un paciente busca especialidad, tratamiento o clínica cercana en Sevilla.',
     href: '/blog/errores-seo-dentistas',
     icon: MapPin,
   },
   {
-    title: 'Google Ads y captaciÃ³n privada',
-    description: 'CampaÃ±as con intenciÃ³n real, mensajes prudentes, negativas y mediciÃ³n de calidad.',
+    title: 'Google Ads y captación privada',
+    description: 'Campañas con intención real, mensajes prudentes, negativas y medición de calidad.',
     href: '/blog/google-ads-psicologos',
     icon: Megaphone,
   },
   {
-    title: 'Web, CRO y conversiÃ³n',
-    description: 'Elementos que ayudan a convertir visitas mÃ³viles en llamadas, WhatsApp y solicitudes.',
+    title: 'Web, CRO y conversión',
+    description: 'Elementos que ayudan a convertir visitas móviles en llamadas, WhatsApp y solicitudes.',
     href: '/blog/diseno-web-clinicas',
     icon: MonitorSmartphone,
   },
@@ -44,20 +44,20 @@ const categorias = [
 
 const hubs = [
   {
-    title: 'Blog y guÃ­as',
-    description: 'ArtÃ­culos prÃ¡cticos sobre captaciÃ³n, SEO, Ads, diseÃ±o web y reputaciÃ³n para clÃ­nicas.',
+    title: 'Blog y guías',
+    description: 'Artículos prácticos sobre captación, SEO, Ads, diseño web y reputación para clínicas.',
     href: '/blog',
     icon: BookOpenText,
   },
   {
-    title: 'DiagnÃ³sticos representativos',
-    description: 'Escenarios habituales que muestran quÃ© solemos revisar antes de proponer un plan.',
+    title: 'Diagnósticos representativos',
+    description: 'Escenarios habituales que muestran qué solemos revisar antes de proponer un plan.',
     href: '/casos-de-exito',
     icon: FileSearch,
   },
   {
-    title: 'AuditorÃ­a de captaciÃ³n',
-    description: 'RevisiÃ³n gratuita de Google, web, campaÃ±as, reseÃ±as y puntos de contacto de tu clÃ­nica.',
+    title: 'Auditoría de captación',
+    description: 'Revisión gratuita de Google, web, campañas, reseñas y puntos de contacto de tu clínica.',
     href: '/contacto',
     icon: BarChart3,
   },
@@ -76,10 +76,10 @@ export default function RecursosPage() {
             <div className="max-w-3xl mx-auto text-center my-8">
               <p className="text-label text-accent mb-4">Recursos</p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold text-primary mb-6">
-                Recursos de marketing sanitario para clÃ­nicas privadas en Sevilla
+                Recursos de marketing sanitario para clínicas privadas en Sevilla
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-text-muted">
-                GuÃ­as, diagnÃ³sticos y contenidos prÃ¡cticos para entender quÃ© puede estar frenando tu visibilidad, confianza y solicitudes de cita.
+                Guías, diagnósticos y contenidos prácticos para entender qué puede estar frenando tu visibilidad, confianza y solicitudes de cita.
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function RecursosPage() {
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">
-                GuÃ­as por problema de captaciÃ³n
+                Guías por problema de captación
               </h2>
               <p className="text-text-muted">
                 Contenidos pensados para gerentes y profesionales sanitarios que quieren tomar mejores decisiones antes de invertir.
@@ -140,12 +140,12 @@ export default function RecursosPage() {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
               <div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-3">
-                  Ãšltimos artÃ­culos
+                  Últimos artículos
                 </h2>
-                <p className="text-text-muted">Ideas aplicables a SEO local, Ads y web de clÃ­nicas privadas.</p>
+                <p className="text-text-muted">Ideas aplicables a SEO local, Ads y web de clínicas privadas.</p>
               </div>
               <Link href="/blog" className="text-primary font-semibold hover:underline">
-                Ver todos los artÃ­culos
+                Ver todos los artículos
               </Link>
             </div>
 
@@ -168,13 +168,13 @@ export default function RecursosPage() {
         <section className="section-padding section-primary">
           <div className="container-custom text-center max-w-2xl">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6 text-white">
-              Â¿Quieres aplicar esto a tu clÃ­nica?
+              ¿Quieres aplicar esto a tu clínica?
             </h2>
             <p className="text-base sm:text-lg text-white mb-8">
-              Revisamos tu situaciÃ³n concreta y te decimos quÃ© acciones tienen mÃ¡s sentido para ganar visibilidad, confianza y solicitudes cualificadas.
+              Revisamos tu situación concreta y te decimos qué acciones tienen más sentido para ganar visibilidad, confianza y solicitudes cualificadas.
             </p>
             <Link href="/contacto" className="inline-flex w-full sm:w-auto items-center justify-center bg-[#FFD166] text-[#073F38] px-5 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold uppercase tracking-wide shadow-lg hover:bg-white hover:text-primary transition">
-              Solicitar auditorÃ­a gratuita
+              Solicitar auditoría gratuita
             </Link>
           </div>
         </section>

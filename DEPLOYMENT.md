@@ -90,6 +90,17 @@ Comprobar:
 - No hay errores TypeScript.
 - No se han añadido variables sensibles al repo.
 
+Para una revisión visual completa, ejecutar la auditoría Playwright local y revisar las capturas generadas en `qa-screenshots/`. Esa carpeta está ignorada por Git para evitar subir artefactos pesados.
+
+Checks mínimos antes de desplegar:
+
+- No hay enlaces `href="#"`.
+- No hay teléfono o WhatsApp ficticio visible.
+- El menú móvil abre y cierra en `390x844`.
+- No hay imágenes rotas o sin alt.
+- No hay scroll horizontal inesperado en desktop, laptop, tablet o móvil.
+- Cada página revisada mantiene un único H1 y metadata válida.
+
 ## Rutas que conviene revisar tras deploy
 
 - `/`
