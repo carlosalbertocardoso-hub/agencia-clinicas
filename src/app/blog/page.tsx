@@ -50,7 +50,7 @@ export default function BlogPage() {
                   <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                     <div className="h-48 bg-surface relative overflow-hidden">
                       {post.imagen && (
-                        <img src={post.imagen} alt={post.titulo} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                        <img src={post.imagen} alt={post.imagenAlt || post.titulo} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
                       )}
                     </div>
 

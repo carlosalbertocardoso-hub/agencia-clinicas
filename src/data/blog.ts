@@ -8,6 +8,7 @@ export interface BlogPost {
   categoria: string
   tiempoLectura: string
   imagen?: string
+  imagenAlt?: string
 }
 
 export const blogPosts: BlogPost[] = [
@@ -17,7 +18,9 @@ export const blogPosts: BlogPost[] = [
     slug: 'errores-seo-dentistas',
     excerpt:
       'Errores frecuentes de SEO local en clínicas dentales de Sevilla: Google Business Profile, páginas por tratamiento, reseñas, velocidad, contenido y medición.',
-    imagen: '/images/blog-seo-dental.svg',
+    imagen: '/images/blog-seo-dental-real.jpg',
+    imagenAlt:
+      'Dentista atendiendo a un paciente en una clínica dental, imagen realista para SEO local dental en Sevilla',
     contenido: `
 # 10 errores de SEO local que frenan la visibilidad de una clínica dental en Sevilla
 
@@ -71,7 +74,9 @@ Revisa tu ficha de Google, tus páginas de tratamiento, tus reseñas, tu web mó
     slug: 'google-ads-psicologos',
     excerpt:
       'Guía de Google Ads para psicólogos en Sevilla: palabras clave, campañas, landings, presupuesto orientativo, privacidad y captación ética de consultas.',
-    imagen: '/images/blog-google-ads-psicologos.svg',
+    imagen: '/images/blog-google-ads-psicologos-real.jpg',
+    imagenAlt:
+      'Doctora realizando una consulta online desde un portátil, imagen realista para campañas sanitarias',
     contenido: `
 # Google Ads para psicólogos en Sevilla: cómo captar consultas con un enfoque ético
 
@@ -114,7 +119,9 @@ Google Ads puede ser útil para psicólogos si se trabaja con sensibilidad, filt
     slug: 'diseno-web-clinicas',
     excerpt:
       'Qué debe tener una web de clínica para generar confianza y convertir visitas en llamadas, WhatsApp y solicitudes de cita desde móvil.',
-    imagen: '/images/blog-diseno-web-clinicas.svg',
+    imagen: '/images/blog-diseno-web-clinicas-real.jpg',
+    imagenAlt:
+      'Médica atendiendo una consulta por videollamada en una clínica, imagen realista para diseño web sanitario',
     contenido: `
 # Diseño web para clínicas: elementos que convierten visitas en citas
 

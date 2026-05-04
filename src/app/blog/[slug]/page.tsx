@@ -205,7 +205,7 @@ export default function BlogPostPage({ params }: Props) {
 
             {post.imagen && (
               <div className="max-w-5xl mx-auto rounded-lg overflow-hidden border border-slate-200 shadow-sm relative aspect-[16/7] bg-surface">
-                <Image src={post.imagen} alt={post.titulo} fill priority className="object-cover" />
+                <Image src={post.imagen} alt={post.imagenAlt || post.titulo} fill priority className="object-cover" />
               </div>
             )}
           </div>
@@ -253,7 +253,7 @@ export default function BlogPostPage({ params }: Props) {
                     <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                       <div className="h-40 bg-surface relative overflow-hidden">
                         {relPost.imagen && (
-                          <img src={relPost.imagen} alt={relPost.titulo} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                          <img src={relPost.imagen} alt={relPost.imagenAlt || relPost.titulo} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
                         )}
                       </div>
                       <div className="p-6">

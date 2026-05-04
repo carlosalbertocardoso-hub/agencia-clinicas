@@ -23,7 +23,7 @@ export default function BlogPreviewSection() {
                   {articulo.imagen && (
                     <img
                       src={articulo.imagen}
-                      alt={articulo.titulo}
+                      alt={articulo.imagenAlt || articulo.titulo}
                       className="h-full w-full object-cover group-hover:scale-105 transition"
                     />
                   )}
