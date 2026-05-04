@@ -3,7 +3,7 @@ import { Globe2, Send, UsersRound } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white border-t-4 border-t-accent py-16 md:py-20">
+    <footer className="bg-primary text-white border-t-4 border-t-accent py-12 md:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>

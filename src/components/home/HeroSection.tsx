@@ -4,7 +4,7 @@ import TrustBadges from '@/components/shared/TrustBadges'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[680px] sm:min-h-[720px] md:min-h-[760px] overflow-hidden">
+    <section className="relative min-h-[600px] sm:min-h-[620px] md:min-h-[640px] overflow-hidden">
       <Image
         src="/images/hero-clinica-marketing.png"
         alt="Equipo de agencia de marketing en Sevilla analizando métricas de una clínica"
@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute inset-0 bg-primary/70" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/25 via-primary/35 to-primary/80" />
 
-      <div className="container-custom relative z-10 flex min-h-[680px] sm:min-h-[720px] md:min-h-[760px] items-center justify-center py-12 sm:py-16">
+      <div className="container-custom relative z-10 flex min-h-[600px] sm:min-h-[620px] md:min-h-[640px] items-center justify-center py-10 sm:py-12">
         <div className="mx-auto max-w-4xl text-center text-white">
           <p className="text-label text-[#FFD166] mb-4">Marketing sanitario para centros médicos privados en Sevilla</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold mb-6 text-white leading-tight">

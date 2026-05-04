@@ -65,6 +65,7 @@ Patrones:
 - CTAs principales deben ser `w-full` en móvil y `sm:w-auto` en desktop.
 - Sidebars sticky solo desde `lg`.
 - Usar `section-padding` y `container-custom` antes que padding manual repetido.
+- Mantener una densidad de captación: en desktop el padding vertical estándar de sección no debe superar `3rem` por lado salvo heroes o casos justificados.
 
 ## Layout
 
@@ -135,6 +136,7 @@ Requisitos mínimos:
 - Botones y campos con estados `focus`.
 - Botones de navegación con `type="button"` y estados `aria-expanded` cuando abran menús.
 - Menú móvil clicable en todo momento; las imágenes o overlays del hero no pueden interceptar eventos del header.
+- Los dropdowns desktop deben funcionar tanto por hover como por click. El click debe abrir y mantener visible el panel, no cerrarlo de forma accidental.
 - No depender solo del color para comunicar estado.
 
 ## SEO Visual y CRO
@@ -230,6 +232,7 @@ npm run qa:interactions
 Esta prueba cubre:
 
 - Hover real desde cada botón desktop hasta sus subcategorías.
+- Click real en cada botón desktop de dropdown.
 - Menú móvil y navegación desde el menú.
 - Rutas obligatorias en desktop, tablet y móvil.
 - H1, metadata, overflow, imágenes, placeholders y mojibake.

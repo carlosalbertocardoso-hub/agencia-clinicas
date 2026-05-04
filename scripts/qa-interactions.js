@@ -68,6 +68,22 @@ async function testDropdown(page, buttonIndex, label, expectedLinkPattern, failu
   }
 }
 
+async function testDropdownClick(page, buttonIndex, label, expectedLinkPattern, failures) {
+  const button = page.locator('header nav button').nth(buttonIndex)
+  if (!(await button.count())) {
+    failures.push(`${label}: botón no encontrado para click`)
+    return
+  }
+
+  await button.click()
+  await page.waitForTimeout(180)
+
+  const target = page.getByRole('link', { name: expectedLinkPattern }).first()
+  if (!(await target.isVisible())) {
+    failures.push(`${label}: el desplegable no permanece abierto tras clicar`)
+  }
+}
+
 async function main() {
   const failures = []
   const browser = await chromium.launch({ headless: true })
@@ -140,6 +156,9 @@ async function main() {
   await testDropdown(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
   await testDropdown(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
   await testDropdown(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)
+  await testDropdownClick(desktopPage, 0, 'Servicios', /SEO local sanitario/, failures)
+  await testDropdownClick(desktopPage, 1, 'A quién ayudamos', /Cl.nicas dentales/, failures)
+  await testDropdownClick(desktopPage, 2, 'Recursos', /Blog y gu.as/, failures)
   await desktopPage.close()
 
   const mobilePage = await browser.newPage({ viewport: { width: 390, height: 844 } })

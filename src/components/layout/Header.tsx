@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { especialidades } from '@/data/especialidades'
 import { servicios } from '@/data/servicios'
@@ -9,7 +9,19 @@ import { servicios } from '@/data/servicios'
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const closeTimerRef = useRef<number | null>(null)
   const closeMobileMenu = () => setIsMobileMenuOpen(false)
+  const closeDropdown = () => setOpenDropdown(null)
+
+  const openMenu = (menu: string) => {
+    if (closeTimerRef.current) window.clearTimeout(closeTimerRef.current)
+    setOpenDropdown(menu)
+  }
+
+  const scheduleCloseMenu = () => {
+    if (closeTimerRef.current) window.clearTimeout(closeTimerRef.current)
+    closeTimerRef.current = window.setTimeout(() => setOpenDropdown(null), 180)
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-100">
@@ -32,15 +44,19 @@ export default function Header() {
 
           <div
             className="relative"
-            onMouseEnter={() => setOpenDropdown('servicios')}
-            onMouseLeave={() => setOpenDropdown(null)}
+            onMouseEnter={() => openMenu('servicios')}
+            onMouseLeave={scheduleCloseMenu}
           >
             <button
               type="button"
               className="text-text hover:text-primary transition font-medium text-sm"
               aria-haspopup="true"
               aria-expanded={openDropdown === 'servicios'}
-              onFocus={() => setOpenDropdown('servicios')}
+              onClick={() => openMenu('servicios')}
+              onFocus={() => openMenu('servicios')}
+              onKeyDown={(event) => {
+                if (event.key === 'Escape') closeDropdown()
+              }}
             >
               Servicios
             </button>
@@ -51,6 +67,7 @@ export default function Header() {
                     <Link
                       key={srv.id}
                       href={`/servicios/${srv.slug}`}
+                      onClick={closeDropdown}
                       className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
                     >
                       {srv.nombre}
@@ -63,15 +80,19 @@ export default function Header() {
 
           <div
             className="relative"
-            onMouseEnter={() => setOpenDropdown('especialidades')}
-            onMouseLeave={() => setOpenDropdown(null)}
+            onMouseEnter={() => openMenu('especialidades')}
+            onMouseLeave={scheduleCloseMenu}
           >
             <button
               type="button"
               className="text-text hover:text-primary transition font-medium text-sm"
               aria-haspopup="true"
               aria-expanded={openDropdown === 'especialidades'}
-              onFocus={() => setOpenDropdown('especialidades')}
+              onClick={() => openMenu('especialidades')}
+              onFocus={() => openMenu('especialidades')}
+              onKeyDown={(event) => {
+                if (event.key === 'Escape') closeDropdown()
+              }}
             >
               A quién ayudamos
             </button>
@@ -80,6 +101,7 @@ export default function Header() {
                 <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
                   <Link
                     href="/especialidades"
+                    onClick={closeDropdown}
                     className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold"
                   >
                     Ver todas las especialidades
@@ -88,6 +110,7 @@ export default function Header() {
                     <Link
                       key={esp.id}
                       href={`/especialidades/${esp.slug}`}
+                      onClick={closeDropdown}
                       className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
                     >
                       {esp.nombre}
@@ -100,28 +123,32 @@ export default function Header() {
 
           <div
             className="relative"
-            onMouseEnter={() => setOpenDropdown('recursos')}
-            onMouseLeave={() => setOpenDropdown(null)}
+            onMouseEnter={() => openMenu('recursos')}
+            onMouseLeave={scheduleCloseMenu}
           >
             <button
               type="button"
               className="text-text hover:text-primary transition font-medium text-sm"
               aria-haspopup="true"
               aria-expanded={openDropdown === 'recursos'}
-              onFocus={() => setOpenDropdown('recursos')}
+              onClick={() => openMenu('recursos')}
+              onFocus={() => openMenu('recursos')}
+              onKeyDown={(event) => {
+                if (event.key === 'Escape') closeDropdown()
+              }}
             >
               Recursos
             </button>
             {openDropdown === 'recursos' && (
               <div className="absolute left-0 top-full z-50 w-64 pt-3">
                 <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
-                  <Link href="/recursos" className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold">
+                  <Link href="/recursos" onClick={closeDropdown} className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold">
                     Centro de recursos
                   </Link>
-                  <Link href="/blog" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
+                  <Link href="/blog" onClick={closeDropdown} className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
                     Blog y guías
                   </Link>
-                  <Link href="/casos-de-exito" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
+                  <Link href="/casos-de-exito" onClick={closeDropdown} className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
                     Diagnósticos representativos
                   </Link>
                 </div>
