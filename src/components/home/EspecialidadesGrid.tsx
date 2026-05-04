@@ -18,9 +18,25 @@ const copyEspecialidades: Record<string, { titulo: string; subtitulo: string }> 
     titulo: 'Fisioterapia en Sevilla.',
     subtitulo: 'Más pacientes locales con dolor, lesión o rehabilitación.',
   },
+  'clinicas-reproduccion-asistida-sevilla': {
+    titulo: 'Reproducción asistida en Sevilla.',
+    subtitulo: 'Más primeras valoraciones con privacidad y confianza.',
+  },
+  'pedagogos-sevilla': {
+    titulo: 'Pedagogos en Sevilla.',
+    subtitulo: 'Más familias que buscan apoyo educativo especializado.',
+  },
+  'dermatologos-sevilla': {
+    titulo: 'Dermatólogos en Sevilla.',
+    subtitulo: 'Más consultas privadas de piel, acné, manchas o revisión.',
+  },
   'nutricionistas-sevilla': {
     titulo: 'Nutricionistas en Sevilla.',
     subtitulo: 'Más consultas privadas de nutrición online o presencial.',
+  },
+  'oftalmologos-sevilla': {
+    titulo: 'Oftalmólogos en Sevilla.',
+    subtitulo: 'Más revisiones y consultas oftalmológicas privadas.',
   },
   'pediatria-sevilla': {
     titulo: 'Pediatría en Sevilla.',

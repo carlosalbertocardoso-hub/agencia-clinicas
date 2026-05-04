@@ -103,7 +103,11 @@ DEPLOYMENT.md
 - `/especialidades/psicologos-sevilla`
 - `/especialidades/medicina-estetica-sevilla`
 - `/especialidades/fisioterapia-sevilla`
+- `/especialidades/clinicas-reproduccion-asistida-sevilla`
+- `/especialidades/pedagogos-sevilla`
+- `/especialidades/dermatologos-sevilla`
 - `/especialidades/nutricionistas-sevilla`
+- `/especialidades/oftalmologos-sevilla`
 - `/especialidades/pediatria-sevilla`
 - `/especialidades/clinicas-cirugia-sevilla`
 - `/politica-privacidad`
@@ -132,7 +136,11 @@ El hub de recursos, blog y diagnósticos sigue publicado, pero no se muestra en 
 - Psicólogos
 - Medicina estética
 - Fisioterapia
+- Clínicas de reproducción asistida
+- Pedagogos
+- Dermatólogos
 - Nutricionistas
+- Oftalmólogos
 - Pediatría
 - Clínicas quirúrgicas y especialistas
 

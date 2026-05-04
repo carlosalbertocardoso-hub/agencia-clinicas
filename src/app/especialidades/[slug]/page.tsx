@@ -165,6 +165,108 @@ const specialtyContent: Record<
       },
     ],
   },
+  'clinicas-reproduccion-asistida-sevilla': {
+    h1: 'Marketing digital para clínicas de reproducción asistida en Sevilla',
+    hero:
+      'Presencia digital para clínicas de fertilidad que necesitan transmitir rigor médico, privacidad y confianza antes de la primera valoración.',
+    keyText:
+      'En reproducción asistida, la decisión es íntima, sensible y de alta consideración. El marketing debe informar con prudencia, explicar el proceso y facilitar que la persona o pareja contacte sin sentirse presionada.',
+    pain:
+      'Muchas pacientes comparan clínicas, tratamientos, equipo, tiempos, privacidad y sensaciones de confianza antes de pedir cita. Si la web o Google no responden esas dudas, la oportunidad se desplaza a otra clínica.',
+    searches: ['Clínica fertilidad Sevilla', 'Reproducción asistida Sevilla', 'FIV Sevilla', 'Preservación fertilidad', 'Primera valoración fertilidad'],
+    trust: ['Privacidad y tono sensible', 'Equipo médico visible', 'Procesos explicados con claridad', 'FAQs prudentes', 'Formulario discreto y fácil'],
+    serviceNotes: {
+      'seo-medico': 'SEO local para fertilidad, FIV, preservación, donación y búsquedas de alta intención.',
+      'google-ads': 'Campañas prudentes por intención real, con negativas para evitar búsquedas informativas poco cualificadas.',
+      'diseno-web': 'Landings por tratamiento con confianza, privacidad, proceso, equipo y contacto discreto.',
+    },
+    cta: 'Revisar captación en reproducción asistida',
+    faqs: [
+      {
+        id: '1',
+        pregunta: '¿Cómo hacer marketing en reproducción asistida sin resultar agresivo?',
+        respuesta: 'Con información clara, tono prudente, privacidad, autoridad médica y llamadas a la acción discretas. No usamos presión ni promesas sobre resultados clínicos.',
+      },
+      {
+        id: '2',
+        pregunta: '¿Qué tratamientos conviene trabajar primero?',
+        respuesta: 'Depende de la clínica, pero suelen requerir páginas específicas FIV, preservación de fertilidad, donación, diagnóstico y primera valoración.',
+      },
+      {
+        id: '3',
+        pregunta: '¿Cómo se mide la calidad del contacto?',
+        respuesta: 'Medimos llamadas, formularios, tratamiento consultado, zona, intención y capacidad de seguimiento interno, no solo volumen de leads.',
+      },
+    ],
+  },
+  'pedagogos-sevilla': {
+    h1: 'Marketing digital para pedagogos en Sevilla',
+    hero:
+      'Ayudamos a pedagogos y gabinetes psicopedagógicos a ser encontrados por familias que buscan apoyo educativo, orientación y confianza profesional.',
+    keyText:
+      'En pedagogía, la decisión la suele tomar una familia que necesita claridad, cercanía y seguridad. Tu presencia digital debe explicar cómo trabajas y qué tipo de acompañamiento ofreces.',
+    pain:
+      'Muchas familias buscan ayuda por dificultades de aprendizaje, orientación, conducta o apoyo escolar y encuentran mensajes poco claros. Si tu web no explica especialización, proceso y forma de contacto, compararán otra opción.',
+    searches: ['Pedagogo Sevilla', 'Gabinete psicopedagógico Sevilla', 'Dificultades de aprendizaje', 'Apoyo educativo Sevilla', 'Orientación familiar'],
+    trust: ['Método de trabajo explicado', 'Tono familiar y profesional', 'Especialización visible', 'Proceso de primera valoración', 'Privacidad de menores'],
+    serviceNotes: {
+      'seo-medico': 'SEO local para pedagogía, psicopedagogía, dificultades de aprendizaje y zonas de Sevilla.',
+      'diseno-web': 'Web clara para familias con servicios, método, primera valoración y formularios simples.',
+      'redes-sociales': 'Contenido educativo que refuerza confianza sin exponer casos ni datos de menores.',
+    },
+    cta: 'Revisar mi gabinete pedagógico',
+    faqs: [
+      {
+        id: '1',
+        pregunta: '¿Qué buscan las familias antes de contactar?',
+        respuesta: 'Suelen buscar confianza, especialización, cercanía, método, experiencia con casos similares y una primera orientación clara.',
+      },
+      {
+        id: '2',
+        pregunta: '¿Qué contenidos puede publicar un pedagogo?',
+        respuesta: 'Contenidos sobre aprendizaje, hábitos, orientación familiar, señales de alerta y proceso de trabajo, siempre sin exponer menores ni prometer resultados.',
+      },
+      {
+        id: '3',
+        pregunta: '¿SEO local o redes sociales?',
+        respuesta: 'SEO local ayuda a captar búsquedas activas; redes ayudan a educar y generar recuerdo. La prioridad depende de demanda local y agenda.',
+      },
+    ],
+  },
+  'dermatologos-sevilla': {
+    h1: 'Marketing digital para dermatólogos en Sevilla',
+    hero:
+      'SEO local, web y campañas para dermatología privada: revisión de lunares, acné, manchas, alopecia, dermatología estética y consultas especializadas.',
+    keyText:
+      'En dermatología, el paciente combina necesidad médica, preocupación estética y confianza profesional. Tu marketing debe explicar cuándo pedir valoración y por qué tu consulta es una opción rigurosa.',
+    pain:
+      'Las búsquedas dermatológicas mezclan dudas informativas, urgencia, estética y consulta privada. Sin páginas claras y medición, es fácil atraer contactos poco cualificados o perder búsquedas con intención real.',
+    searches: ['Dermatólogo Sevilla', 'Revisión lunares Sevilla', 'Acné dermatólogo', 'Manchas piel Sevilla', 'Alopecia dermatólogo'],
+    trust: ['Autoridad médica', 'Indicaciones claras', 'Equipo y tecnología', 'Fotos prudentes si proceden', 'FAQs por motivo de consulta'],
+    serviceNotes: {
+      'seo-medico': 'SEO por motivos de consulta, tratamientos, dermatología estética y búsquedas locales.',
+      'google-ads': 'Campañas Search para intención privada con negativas para evitar consultas genéricas.',
+      'diseno-web': 'Páginas por patología o tratamiento con confianza, proceso y contacto rápido.',
+    },
+    cta: 'Revisar captación dermatológica',
+    faqs: [
+      {
+        id: '1',
+        pregunta: '¿Qué servicios dermatológicos conviene posicionar?',
+        respuesta: 'Suelen tener sentido revisión de lunares, acné, manchas, alopecia, dermatología estética y consultas privadas específicas, según equipo y demanda.',
+      },
+      {
+        id: '2',
+        pregunta: '¿Se puede combinar dermatología médica y estética?',
+        respuesta: 'Sí, pero conviene separar mensajes y páginas para no mezclar intenciones distintas ni perder rigor médico.',
+      },
+      {
+        id: '3',
+        pregunta: '¿Cómo filtrar mejor las solicitudes?',
+        respuesta: 'Con páginas específicas, formularios claros, FAQs, segmentación local y medición de calidad del contacto.',
+      },
+    ],
+  },
   'nutricionistas-sevilla': {
     h1: 'Marketing digital para nutricionistas en Sevilla',
     hero:
@@ -196,6 +298,40 @@ const specialtyContent: Record<
         id: '3',
         pregunta: '¿Se puede captar consulta online y presencial?',
         respuesta: 'Sí. Conviene separar mensajes y páginas cuando la experiencia, objeciones y búsquedas del paciente son distintas.',
+      },
+    ],
+  },
+  'oftalmologos-sevilla': {
+    h1: 'Marketing digital para oftalmólogos en Sevilla',
+    hero:
+      'Captación online para clínicas oftalmológicas que necesitan explicar revisiones, cirugía refractiva, cataratas, retina y consultas privadas con claridad.',
+    keyText:
+      'En oftalmología, el paciente busca seguridad, tecnología, experiencia y una explicación clara del proceso. La web y Google deben transmitir confianza antes de pedir cita.',
+    pain:
+      'Las búsquedas oftalmológicas suelen mezclar revisiones, síntomas, cirugía y segunda opinión. Si tu clínica no tiene páginas específicas y contacto claro, pierdes pacientes que ya están comparando opciones privadas.',
+    searches: ['Oftalmólogo Sevilla', 'Clínica oftalmológica Sevilla', 'Cirugía refractiva Sevilla', 'Cataratas Sevilla', 'Revisión vista privada'],
+    trust: ['Equipo médico visible', 'Tecnología y pruebas explicadas', 'Procedimientos claros', 'Segunda opinión', 'Contacto y ubicación visibles'],
+    serviceNotes: {
+      'seo-medico': 'SEO local para revisiones, patologías, procedimientos y búsquedas por zona.',
+      'google-ads': 'Campañas para consultas privadas y procedimientos con intención alta.',
+      'diseno-web': 'Páginas de cirugía, cataratas, retina o revisión con proceso, equipo y FAQs.',
+    },
+    cta: 'Revisar mi clínica oftalmológica',
+    faqs: [
+      {
+        id: '1',
+        pregunta: '¿Qué búsquedas suelen captar más intención?',
+        respuesta: 'Revisión privada, cirugía refractiva, cataratas, retina, segunda opinión y clínica oftalmológica cercana suelen tener intención más clara.',
+      },
+      {
+        id: '2',
+        pregunta: '¿Cómo explicar procedimientos sin prometer resultados?',
+        respuesta: 'Describiendo proceso, valoración previa, tecnología, equipo y expectativas prudentes, sin garantías clínicas ni claims absolutos.',
+      },
+      {
+        id: '3',
+        pregunta: '¿Tiene sentido Google Ads en oftalmología?',
+        respuesta: 'Puede tenerlo si se mide calidad de contacto y se usan landings específicas por procedimiento o motivo de consulta.',
       },
     ],
   },
@@ -290,10 +426,30 @@ const specialtyMeta: Record<string, { title: string; description: string }> = {
     description:
       'Marketing digital para clínicas de fisioterapia en Sevilla. SEO local, Google Ads y web para captar pacientes de dolor, lesiones, rehabilitación y fisioterapia deportiva.',
   },
+  'clinicas-reproduccion-asistida-sevilla': {
+    title: 'Marketing para reproducción asistida en Sevilla | Pacientes Sevilla',
+    description:
+      'Marketing digital para clínicas de reproducción asistida en Sevilla. SEO local, Google Ads y web para fertilidad, FIV, preservación y primera valoración.',
+  },
+  'pedagogos-sevilla': {
+    title: 'Marketing para pedagogos en Sevilla | Pacientes Sevilla',
+    description:
+      'Marketing digital para pedagogos y gabinetes psicopedagógicos en Sevilla. SEO local, web y contenido para llegar a familias con confianza.',
+  },
+  'dermatologos-sevilla': {
+    title: 'Marketing para dermatólogos en Sevilla | Pacientes Sevilla',
+    description:
+      'Marketing digital para dermatólogos en Sevilla. SEO local, Google Ads y diseño web para consultas privadas de piel, acné, manchas, alopecia y revisión.',
+  },
   'nutricionistas-sevilla': {
     title: 'Marketing para nutricionistas en Sevilla | Pacientes Sevilla',
     description:
       'Marketing digital para nutricionistas en Sevilla. SEO, web, contenido y campañas para consultas de pérdida de peso, salud digestiva, nutrición deportiva y educación alimentaria.',
+  },
+  'oftalmologos-sevilla': {
+    title: 'Marketing para oftalmólogos en Sevilla | Pacientes Sevilla',
+    description:
+      'Marketing digital para oftalmólogos y clínicas oftalmológicas en Sevilla. SEO, Google Ads y web para revisiones, cirugía refractiva, cataratas y retina.',
   },
   'pediatria-sevilla': {
     title: 'Marketing para pediatras en Sevilla | Captación privada',

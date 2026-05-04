@@ -5,7 +5,11 @@ export const iconosEspecialidades: Record<string, string> = {
   'psicologos-sevilla': 'Brain',
   'medicina-estetica-sevilla': 'Sparkles',
   'fisioterapia-sevilla': 'Activity',
+  'clinicas-reproduccion-asistida-sevilla': 'Dna',
+  'pedagogos-sevilla': 'GraduationCap',
+  'dermatologos-sevilla': 'ScanFace',
   'nutricionistas-sevilla': 'Apple',
+  'oftalmologos-sevilla': 'Eye',
   'pediatria-sevilla': 'Baby',
   'clinicas-cirugia-sevilla': 'Hospital',
 }
@@ -65,6 +69,45 @@ export const especialidades: Especialidad[] = [
   },
   {
     id: '5',
+    nombre: 'Clínicas de reproducción asistida',
+    slug: 'clinicas-reproduccion-asistida-sevilla',
+    descripcionCorta:
+      'Captación prudente para fertilidad, FIV, preservación, donación y primera valoración.',
+    descripcionLarga:
+      'Marketing digital para clínicas de reproducción asistida en Sevilla que necesitan transmitir rigor médico, privacidad y confianza en decisiones de alta sensibilidad.',
+    icono: 'Dna',
+    color: '#0A6B5E',
+    resultados: 'Confianza, privacidad y valoración',
+    servicios: ['seo-medico', 'google-ads', 'diseno-web'],
+  },
+  {
+    id: '6',
+    nombre: 'Pedagogos',
+    slug: 'pedagogos-sevilla',
+    descripcionCorta:
+      'Visibilidad para apoyo educativo, dificultades de aprendizaje, orientación familiar y atención psicopedagógica.',
+    descripcionLarga:
+      'Marketing digital para pedagogos y gabinetes psicopedagógicos en Sevilla que quieren llegar a familias con un mensaje claro, sensible y profesional.',
+    icono: 'GraduationCap',
+    color: '#0E8C7A',
+    resultados: 'Familias, confianza y orientación',
+    servicios: ['seo-medico', 'diseno-web', 'redes-sociales'],
+  },
+  {
+    id: '7',
+    nombre: 'Dermatólogos',
+    slug: 'dermatologos-sevilla',
+    descripcionCorta:
+      'Captación para dermatología privada, revisión de lunares, acné, manchas, alopecia y dermatología estética.',
+    descripcionLarga:
+      'Marketing digital para dermatólogos y clínicas dermatológicas en Sevilla con foco en confianza médica, diagnóstico privado y solicitudes cualificadas.',
+    icono: 'ScanFace',
+    color: '#E8A030',
+    resultados: 'Consultas privadas y tratamientos',
+    servicios: ['seo-medico', 'google-ads', 'diseno-web'],
+  },
+  {
+    id: '8',
     nombre: 'Nutricionistas',
     slug: 'nutricionistas-sevilla',
     descripcionCorta:
@@ -77,7 +120,20 @@ export const especialidades: Especialidad[] = [
     servicios: ['seo-medico', 'redes-sociales', 'diseno-web'],
   },
   {
-    id: '6',
+    id: '9',
+    nombre: 'Oftalmólogos',
+    slug: 'oftalmologos-sevilla',
+    descripcionCorta:
+      'SEO local, web y campañas para revisiones, cirugía refractiva, cataratas, retina y oftalmología privada.',
+    descripcionLarga:
+      'Marketing digital para oftalmólogos y clínicas oftalmológicas en Sevilla que necesitan explicar procedimientos, reforzar autoridad y captar consultas privadas.',
+    icono: 'Eye',
+    color: '#0A6B5E',
+    resultados: 'Revisiones y cirugía oftalmológica',
+    servicios: ['seo-medico', 'google-ads', 'diseno-web'],
+  },
+  {
+    id: '10',
     nombre: 'Pediatría',
     slug: 'pediatria-sevilla',
     descripcionCorta:
@@ -90,7 +146,7 @@ export const especialidades: Especialidad[] = [
     servicios: ['seo-medico', 'google-ads', 'redes-sociales'],
   },
   {
-    id: '7',
+    id: '11',
     nombre: 'Cirugía y especialistas',
     slug: 'clinicas-cirugia-sevilla',
     descripcionCorta:

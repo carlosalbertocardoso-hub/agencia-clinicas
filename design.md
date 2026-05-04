@@ -204,6 +204,11 @@ Rutas mínimas:
 - `/blog`
 - `/servicios`
 - `/especialidades`
+- `/especialidades/clinicas-reproduccion-asistida-sevilla`
+- `/especialidades/pedagogos-sevilla`
+- `/especialidades/dermatologos-sevilla`
+- `/especialidades/nutricionistas-sevilla`
+- `/especialidades/oftalmologos-sevilla`
 - `/recursos`
 - `/nosotros`
 - `/casos-de-exito`

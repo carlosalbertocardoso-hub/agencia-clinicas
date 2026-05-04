@@ -5,6 +5,10 @@ import {
   Baby,
   Brain,
   CircleDot,
+  Dna,
+  Eye,
+  GraduationCap,
+  ScanFace,
   Stethoscope,
   Wand2,
 } from 'lucide-react'
@@ -22,7 +26,11 @@ const iconMap: Record<string, React.ReactNode> = {
   Brain: <Brain size={28} strokeWidth={1.6} />,
   Sparkles: <Wand2 size={28} strokeWidth={1.6} />,
   Activity: <Activity size={28} strokeWidth={1.6} />,
+  Dna: <Dna size={28} strokeWidth={1.6} />,
+  GraduationCap: <GraduationCap size={28} strokeWidth={1.6} />,
+  ScanFace: <ScanFace size={28} strokeWidth={1.6} />,
   Apple: <Apple size={28} strokeWidth={1.6} />,
+  Eye: <Eye size={28} strokeWidth={1.6} />,
   Baby: <Baby size={28} strokeWidth={1.6} />,
   Hospital: <Stethoscope size={28} strokeWidth={1.6} />,
 }

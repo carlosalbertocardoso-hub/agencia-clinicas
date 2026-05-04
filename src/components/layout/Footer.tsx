@@ -44,7 +44,11 @@ export default function Footer() {
               <li><a href="/especialidades/psicologos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Psicólogos</a></li>
               <li><a href="/especialidades/medicina-estetica-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Medicina estética</a></li>
               <li><a href="/especialidades/fisioterapia-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Fisioterapia</a></li>
-              <li><a href="/especialidades/nutricionistas-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Nutrición</a></li>
+              <li><a href="/especialidades/clinicas-reproduccion-asistida-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Reproducción asistida</a></li>
+              <li><a href="/especialidades/pedagogos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Pedagogos</a></li>
+              <li><a href="/especialidades/dermatologos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Dermatólogos</a></li>
+              <li><a href="/especialidades/nutricionistas-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Nutricionistas</a></li>
+              <li><a href="/especialidades/oftalmologos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Oftalmólogos</a></li>
               <li><a href="/especialidades/pediatria-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Pediatría</a></li>
               <li><a href="/especialidades/clinicas-cirugia-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Cirugía y especialistas</a></li>
             </ul>
