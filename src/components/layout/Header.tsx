@@ -15,7 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-100">
       <div className="container-custom flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="flex-shrink-0">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="flex-shrink-0" aria-hidden="true">
             <rect width="32" height="32" rx="8" fill="#0A6B5E" />
             <path d="M14 8h4v6h6v4h-6v6h-4v-6H8v-4h6z" fill="white" />
             <path d="M22 22l6 6" stroke="#E8A030" strokeWidth="2.5" strokeLinecap="round" />
@@ -31,7 +31,7 @@ export default function Header() {
           </Link>
 
           <div
-            className="relative group"
+            className="relative"
             onMouseEnter={() => setOpenDropdown('servicios')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
@@ -45,22 +45,24 @@ export default function Header() {
               Servicios
             </button>
             {openDropdown === 'servicios' && (
-              <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
-                {servicios.map((srv) => (
-                  <Link
-                    key={srv.id}
-                    href={`/servicios/${srv.slug}`}
-                    className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
-                  >
-                    {srv.nombre}
-                  </Link>
-                ))}
+              <div className="absolute left-0 top-full z-50 w-64 pt-3">
+                <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
+                  {servicios.map((srv) => (
+                    <Link
+                      key={srv.id}
+                      href={`/servicios/${srv.slug}`}
+                      className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
+                    >
+                      {srv.nombre}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
 
           <div
-            className="relative group"
+            className="relative"
             onMouseEnter={() => setOpenDropdown('especialidades')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
@@ -74,28 +76,30 @@ export default function Header() {
               A quién ayudamos
             </button>
             {openDropdown === 'especialidades' && (
-              <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
-                <Link
-                  href="/especialidades"
-                  className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold"
-                >
-                  Ver todas las especialidades
-                </Link>
-                {especialidades.map((esp) => (
+              <div className="absolute left-0 top-full z-50 w-64 pt-3">
+                <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
                   <Link
-                    key={esp.id}
-                    href={`/especialidades/${esp.slug}`}
-                    className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
+                    href="/especialidades"
+                    className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold"
                   >
-                    {esp.nombre}
+                    Ver todas las especialidades
                   </Link>
-                ))}
+                  {especialidades.map((esp) => (
+                    <Link
+                      key={esp.id}
+                      href={`/especialidades/${esp.slug}`}
+                      className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm"
+                    >
+                      {esp.nombre}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
 
           <div
-            className="relative group"
+            className="relative"
             onMouseEnter={() => setOpenDropdown('recursos')}
             onMouseLeave={() => setOpenDropdown(null)}
           >
@@ -109,19 +113,22 @@ export default function Header() {
               Recursos
             </button>
             {openDropdown === 'recursos' && (
-              <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-lg shadow-lg py-2 z-50">
-                <Link href="/recursos" className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold">
-                  Centro de recursos
-                </Link>
-                <Link href="/blog" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
-                  Blog y guías
-                </Link>
-                <Link href="/casos-de-exito" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
-                  Diagnósticos representativos
-                </Link>
+              <div className="absolute left-0 top-full z-50 w-64 pt-3">
+                <div className="bg-white border border-slate-100 rounded-lg shadow-lg py-2">
+                  <Link href="/recursos" className="block px-4 py-2 text-primary hover:bg-slate-50 transition text-sm font-semibold">
+                    Centro de recursos
+                  </Link>
+                  <Link href="/blog" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
+                    Blog y guías
+                  </Link>
+                  <Link href="/casos-de-exito" className="block px-4 py-2 text-text hover:bg-slate-50 hover:text-primary transition text-sm">
+                    Diagnósticos representativos
+                  </Link>
+                </div>
               </div>
             )}
           </div>
+
           <Link href="/contacto" className="text-text hover:text-primary transition font-medium text-sm">
             Contacto
           </Link>
