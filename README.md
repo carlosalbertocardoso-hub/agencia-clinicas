@@ -141,7 +141,7 @@ El hub de recursos, blog y diagnósticos sigue publicado, pero no se muestra en 
 - Dermatólogos
 - Nutricionistas
 - Oftalmólogos
-- Pediatría
+- Pediatras
 - Clínicas quirúrgicas y especialistas
 
 ## Recursos

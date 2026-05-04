@@ -49,7 +49,7 @@ export default function Footer() {
               <li><a href="/especialidades/dermatologos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Dermatólogos</a></li>
               <li><a href="/especialidades/nutricionistas-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Nutricionistas</a></li>
               <li><a href="/especialidades/oftalmologos-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Oftalmólogos</a></li>
-              <li><a href="/especialidades/pediatria-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Pediatría</a></li>
+              <li><a href="/especialidades/pediatria-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Pediatras</a></li>
               <li><a href="/especialidades/clinicas-cirugia-sevilla" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Cirugía y especialistas</a></li>
             </ul>
           </div>

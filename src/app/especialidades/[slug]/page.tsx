@@ -336,9 +336,9 @@ const specialtyContent: Record<
     ],
   },
   'pediatria-sevilla': {
-    h1: 'Marketing digital para clínicas pediátricas en Sevilla',
+    h1: 'Marketing digital para pediatras en Sevilla',
     hero:
-      'Presencia digital para transmitir confianza a familias que buscan pediatra privado, cercanía, disponibilidad y trato claro.',
+      'Presencia digital para pediatras y clínicas pediátricas que necesitan transmitir confianza, cercanía, disponibilidad y trato claro.',
     keyText:
       'Cuando una familia busca pediatra privado, la decisión combina confianza, rapidez, cercanía y trato. La web y Google deben transmitir todo eso en segundos.',
     pain:

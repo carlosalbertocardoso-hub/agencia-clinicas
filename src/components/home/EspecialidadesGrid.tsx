@@ -39,7 +39,7 @@ const copyEspecialidades: Record<string, { titulo: string; subtitulo: string }> 
     subtitulo: 'Más revisiones y consultas oftalmológicas privadas.',
   },
   'pediatria-sevilla': {
-    titulo: 'Pediatría en Sevilla.',
+    titulo: 'Pediatras en Sevilla.',
     subtitulo: 'Más familias que buscan pediatra privado de confianza.',
   },
   'clinicas-cirugia-sevilla': {

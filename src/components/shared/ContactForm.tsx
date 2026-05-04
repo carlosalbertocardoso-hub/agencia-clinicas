@@ -138,7 +138,7 @@ export default function ContactForm({
             <option value="Medicina estética">Medicina estética</option>
             <option value="Fisioterapia">Fisioterapia</option>
             <option value="Nutrición">Nutrición</option>
-            <option value="Pediatría">Pediatría</option>
+            <option value="Pediatras">Pediatras</option>
             <option value="Cirugía y especialistas">Cirugía y especialistas</option>
           </select>
         </div>

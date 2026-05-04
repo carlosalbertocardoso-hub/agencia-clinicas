@@ -134,12 +134,12 @@ export const especialidades: Especialidad[] = [
   },
   {
     id: '10',
-    nombre: 'Pediatría',
+    nombre: 'Pediatras',
     slug: 'pediatria-sevilla',
     descripcionCorta:
-      'Confianza para familias que buscan atención privada, cercanía, disponibilidad y trato claro.',
+      'Confianza para familias que buscan pediatra privado, cercanía, disponibilidad y trato claro.',
     descripcionLarga:
-      'Marketing digital para clínicas pediátricas en Sevilla que quieren transmitir confianza, cercanía y facilidad de contacto a familias.',
+      'Marketing digital para pediatras en Sevilla que quieren transmitir confianza, cercanía y facilidad de contacto a familias.',
     icono: 'Baby',
     color: '#E8A030',
     resultados: 'Familias, confianza y cercanía',
