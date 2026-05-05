@@ -39,6 +39,13 @@ const metadataBySlug: Record<string, { title: string; description: string }> = {
   },
 }
 
+const longTailKeywordsServicios: Record<string, string[]> = {
+  'seo-medico': ['SEO médico Sevilla', 'posicionamiento web clínicas', 'Google Maps clínicas Sevilla', 'auditoría SEO sanitario'],
+  'google-ads': ['Google Ads pacientes', 'anuncios clínicas Sevilla', 'PPC sanitario', 'campañas ads médicas'],
+  'diseno-web': ['diseño web sanitario', 'landing page clínica', 'web conversión pacientes', 'página web médico Sevilla'],
+  'redes-sociales': ['redes sociales clínicas', 'Instagram psicólogos Sevilla', 'contenido sanitario', 'marketing contenido médico'],
+}
+
 const serviceContent: Record<
   string,
   {
@@ -182,19 +189,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const pageMeta = metadataBySlug[servicio.slug]
+  const desc = pageMeta?.description || servicio.descripcion
+  const truncatedDesc = desc.length > 160 ? desc.substring(0, 157) + '...' : desc
 
   return {
     title: pageMeta?.title || `${servicio.nombre} | iMarketing Clínicas`,
-    description: pageMeta?.description || servicio.descripcion,
+    description: truncatedDesc,
     alternates: {
       canonical: `/servicios/${params.slug}`,
     },
     openGraph: {
       title: pageMeta?.title || servicio.nombre,
-      description: pageMeta?.description || servicio.descripcion,
-      url: `https://imarketingclinicas.com/servicios/${params.slug}`,
+      description: truncatedDesc,
+      url: `https://iclinicas.es/servicios/${params.slug}`,
       images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
     },
+    keywords: [
+      `${servicio.nombre.toLowerCase()} Sevilla`,
+      ...(longTailKeywordsServicios[params.slug] || []),
+    ],
   }
 }
 
@@ -222,13 +235,13 @@ export default function ServicioPage({ params }: Props) {
   const serviceCta = serviceCtas[servicio.slug] || 'Solicitar auditoría gratuita'
   const faqs = faqsPorServicio[servicio.slug] || []
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Servicios', url: 'https://imarketingclinicas.com/servicios' },
-    { name: servicio.nombre, url: `https://imarketingclinicas.com/servicios/${servicio.slug}` },
+    { name: 'Servicios', url: 'https://iclinicas.es/servicios' },
+    { name: servicio.nombre, url: `https://iclinicas.es/servicios/${servicio.slug}` },
   ])
   const serviceSchema = buildServiceSchema({
     name: `${servicio.nombre} en Sevilla`,
     description: servicio.descripcion,
-    url: `https://imarketingclinicas.com/servicios/${servicio.slug}`,
+    url: `https://iclinicas.es/servicios/${servicio.slug}`,
   })
   const relatedLinks: Record<string, Array<{ href: string; label: string }>> = {
     'seo-medico': [

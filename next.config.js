@@ -4,11 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'imarketingclinicas.com',
+        hostname: 'iclinicas.es',
       },
       {
         protocol: 'https',
-        hostname: 'www.imarketingclinicas.com',
+        hostname: 'www.iclinicas.es',
       },
       {
         protocol: 'https',

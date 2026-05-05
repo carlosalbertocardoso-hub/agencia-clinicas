@@ -14,7 +14,7 @@ export function buildServiceSchema({
     description,
     url,
     provider: {
-      '@id': 'https://imarketingclinicas.com',
+      '@id': 'https://iclinicas.es',
     },
     areaServed: {
       '@type': 'City',
@@ -75,7 +75,7 @@ export function buildArticleSchema({
     headline,
     description,
     url,
-    image: image || 'https://imarketingclinicas.com/images/og-default.svg',
+    image: image || 'https://iclinicas.es/images/og-default.svg',
     datePublished,
     author: {
       '@type': 'Organization',
@@ -86,7 +86,7 @@ export function buildArticleSchema({
       name: 'iMarketing Clínicas',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://imarketingclinicas.com/logo.svg',
+        url: 'https://iclinicas.es/logo.svg',
       },
     },
   }
@@ -96,10 +96,10 @@ export function buildOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://imarketingclinicas.com',
+    '@id': 'https://iclinicas.es',
     name: 'iMarketing Clínicas',
-    url: 'https://imarketingclinicas.com',
-    logo: 'https://imarketingclinicas.com/images/logo.svg',
+    url: 'https://iclinicas.es',
+    logo: 'https://iclinicas.es/images/logo.svg',
     description: 'Agencia de marketing digital para clínicas y profesionales sanitarios en Sevilla',
     sameAs: [
       'https://www.facebook.com/imarketingclinicas',

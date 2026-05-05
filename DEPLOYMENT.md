@@ -45,7 +45,7 @@ Ejemplo:
 RESEND_API_KEY=re_...
 RESEND_FROM_EMAIL="iMarketing Clínicas <hola@dominio-verificado.com>"
 CONTACT_TO_EMAIL=ccardoso19@hotmail.com
-NEXT_PUBLIC_SITE_URL=https://agencia-clinicas-qae4p9ywr-carlosalbertocardoso-hubs-projects.vercel.app
+NEXT_PUBLIC_SITE_URL=https://iclinicas.es
 ```
 
 Importante:
@@ -133,7 +133,7 @@ Usa un remitente verificado. Ejemplo:
 RESEND_FROM_EMAIL="iMarketing Clínicas <hola@dominio-verificado.com>"
 ```
 
-No usar `noreply@imarketingclinicas.com` si ese dominio todavía no está verificado.
+No usar `noreply@iclinicas.es` si ese dominio todavía no está verificado.
 
 ### Variables correctas pero sigue fallando
 

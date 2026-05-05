@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Solicita una auditoría gratuita - iMarketing Clínicas',
     description: 'Revisamos Google, web y puntos de conversión de tu clínica en Sevilla.',
-    url: 'https://imarketingclinicas.com/contacto',
+    url: 'https://iclinicas.es/contacto',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }
@@ -88,8 +88,8 @@ export default function ContactoPage() {
                   <Mail size={28} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-text mb-2">Email</h3>
-                <a href="mailto:hola@imarketingclinicas.com" className="text-primary hover:underline">
-                  hola@imarketingclinicas.com
+                <a href="mailto:hola@iclinicas.es" className="text-primary hover:underline">
+                  hola@iclinicas.es
                 </a>
               </div>
 

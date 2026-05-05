@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sobre iMarketing Clínicas',
     description: 'Quiénes somos y cómo ayudamos a clínicas privadas de Sevilla a ordenar su captación online.',
-    url: 'https://imarketingclinicas.com/nosotros',
+    url: 'https://iclinicas.es/nosotros',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

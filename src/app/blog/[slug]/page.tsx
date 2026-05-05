@@ -111,7 +111,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.titulo,
       description: post.excerpt,
-      url: `https://imarketingclinicas.com/blog/${params.slug}`,
+      url: `https://iclinicas.es/blog/${params.slug}`,
       type: 'article',
       publishedTime: post.fecha,
       images: [{ url: post.imagen || '/images/og-default.svg', width: 1200, height: 630 }],
@@ -161,13 +161,13 @@ export default function BlogPostPage({ params }: Props) {
   }
 
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Blog', url: 'https://imarketingclinicas.com/blog' },
-    { name: post.titulo, url: `https://imarketingclinicas.com/blog/${post.slug}` },
+    { name: 'Blog', url: 'https://iclinicas.es/blog' },
+    { name: post.titulo, url: `https://iclinicas.es/blog/${post.slug}` },
   ])
   const articleSchema = buildArticleSchema({
     headline: post.titulo,
     description: post.excerpt,
-    url: `https://imarketingclinicas.com/blog/${post.slug}`,
+    url: `https://iclinicas.es/blog/${post.slug}`,
     image: post.imagen,
     datePublished: post.fecha,
   })

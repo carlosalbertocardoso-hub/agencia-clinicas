@@ -189,7 +189,7 @@ Variables necesarias:
 RESEND_API_KEY=...
 RESEND_FROM_EMAIL="iMarketing Clínicas <email_verificado_en_resend>"
 CONTACT_TO_EMAIL=tu_email_destino
-NEXT_PUBLIC_SITE_URL=https://tu-dominio-o-preview
+NEXT_PUBLIC_SITE_URL=https://iclinicas.es
 ```
 
 Notas:

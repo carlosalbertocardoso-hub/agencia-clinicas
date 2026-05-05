@@ -27,7 +27,7 @@ export default function TerminosLegalesPage() {
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">1. Objeto</h2>
                 <p>
-                  Estos términos regulan el uso de la web imarketingclinicas.com y los servicios de marketing digital que ofrecemos
+                  Estos términos regulan el uso de la web iclinicas.es y los servicios de marketing digital que ofrecemos
                   para profesionales sanitarios.
                 </p>
               </div>

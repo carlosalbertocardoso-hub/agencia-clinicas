@@ -463,6 +463,20 @@ const specialtyMeta: Record<string, { title: string; description: string }> = {
   },
 }
 
+const longTailKeywordsEsp: Record<string, string[]> = {
+  'clinicas-dentales-sevilla': ['implantes dentales Sevilla', 'ortodoncia invisible Sevilla', 'dentista cerca', 'odonlogía privada'],
+  'psicologos-sevilla': ['psicólogo ansiedad Sevilla', 'terapia de pareja Sevilla', 'psicólogo infantil Sevilla', 'terapia online Sevilla'],
+  'medicina-estetica-sevilla': ['ácido hialurónico Sevilla', 'Botox Sevilla', 'tratamientos faciales Sevilla', 'medicina estética'],
+  'fisioterapia-sevilla': ['fisioterapeuta cerca', 'rehabilitación Sevilla', 'fisio deportivo Sevilla', 'dolor de espalda'],
+  'clinicas-reproduccion-asistida-sevilla': ['FIV Sevilla', 'fertilidad Sevilla', 'reproducción asistida Sevilla', 'preservación fertilidad'],
+  'pedagogos-sevilla': ['pedagogo Sevilla', 'apoyo educativo', 'psicopedagogo Sevilla', 'dificultades aprendizaje'],
+  'dermatologos-sevilla': ['dermatólogo Sevilla', 'revisión lunares', 'acné tratamiento', 'dermatología estética'],
+  'nutricionistas-sevilla': ['nutricionista Sevilla', 'pérdida de peso', 'nutrición deportiva', 'dieta saludable'],
+  'oftalmologos-sevilla': ['oftalmólogo Sevilla', 'cirugía ocular', 'cataratas Sevilla', 'revisión vista'],
+  'pediatria-sevilla': ['pediatra privado Sevilla', 'pediatra cerca', 'medicina infantil', 'pediatría Sevilla'],
+  'clinicas-cirugia-sevilla': ['cirujano Sevilla', 'segunda opinión médica', 'cirugía privada', 'especialista quirúrgico'],
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const especialidad = getEspecialidadBySlug(params.slug)
   const content = specialtyContent[params.slug]
@@ -472,18 +486,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Especialidad no encontrada' }
   }
 
+  const desc = meta?.description || content?.hero || especialidad.descripcionLarga
+  const truncatedDesc = desc.length > 160 ? desc.substring(0, 157) + '...' : desc
+
   return {
     title: meta?.title || `${content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`} | iMarketing Clínicas`,
-    description: meta?.description || content?.hero || especialidad.descripcionLarga,
+    description: truncatedDesc,
     alternates: {
       canonical: `/especialidades/${params.slug}`,
     },
     openGraph: {
       title: meta?.title || content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`,
-      description: meta?.description || content?.hero || especialidad.descripcionLarga,
-      url: `https://imarketingclinicas.com/especialidades/${params.slug}`,
+      description: truncatedDesc,
+      url: `https://iclinicas.es/especialidades/${params.slug}`,
       images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
     },
+    keywords: [
+      `marketing digital ${especialidad.nombre.toLowerCase()} Sevilla`,
+      ...(content?.searches || []),
+      ...(longTailKeywordsEsp[params.slug] || []),
+    ],
   }
 }
 
@@ -513,14 +535,14 @@ export default function EspecialidadPage({ params }: Props) {
     .filter(Boolean)
 
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Especialidades', url: 'https://imarketingclinicas.com/especialidades' },
-    { name: especialidad.nombre, url: `https://imarketingclinicas.com/especialidades/${especialidad.slug}` },
+    { name: 'Especialidades', url: 'https://iclinicas.es/especialidades' },
+    { name: especialidad.nombre, url: `https://iclinicas.es/especialidades/${especialidad.slug}` },
   ])
 
   const serviceSchema = buildServiceSchema({
     name: content.h1,
     description: content.hero,
-    url: `https://imarketingclinicas.com/especialidades/${especialidad.slug}`,
+    url: `https://iclinicas.es/especialidades/${especialidad.slug}`,
   })
 
   return (
