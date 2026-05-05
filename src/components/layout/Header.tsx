@@ -27,11 +27,7 @@ export default function Header() {
     <header className="sticky top-0 z-[100] bg-white/90 backdrop-blur-sm border-b border-slate-100">
       <div className="container-custom flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="flex-shrink-0" aria-hidden="true">
-            <rect width="32" height="32" rx="8" fill="#0A6B5E" />
-            <path d="M14 8h4v6h6v4h-6v6h-4v-6H8v-4h6z" fill="white" />
-            <path d="M22 22l6 6" stroke="#E8A030" strokeWidth="2.5" strokeLinecap="round" />
-          </svg>
+          <img src="/favicon.svg" alt="" width="32" height="32" className="flex-shrink-0" aria-hidden="true" />
           <div className="text-xl font-heading font-semibold text-primary">
             iMarketing Clínicas
           </div>

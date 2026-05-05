@@ -36,6 +36,14 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: [{ url: '/logo.svg', type: 'image/svg+xml' }],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
