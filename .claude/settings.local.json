@@ -16,7 +16,8 @@
       "Bash(git remote *)",
       "Bash(git push *)",
       "Read(//c/Users/ccard/.claude/skills/ui-ux-pro-max/**)",
-      "Bash(python3 scripts/search.py \"medical clinic healthcare agency professional elegant service\" --design-system -p \"PacientesSevilla\" -f markdown)"
+      "Bash(python3 scripts/search.py \"medical clinic healthcare agency professional elegant service\" --design-system -p \"PacientesSevilla\" -f markdown)",
+      "WebFetch(domain:agencia-clinicas-pqzrjbb6a-carlosalbertocardoso-hubs-projects.vercel.app)"
     ]
   }
 }
