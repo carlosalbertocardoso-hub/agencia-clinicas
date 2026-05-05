@@ -102,8 +102,8 @@ export function buildOrganizationSchema() {
     logo: 'https://iclinicas.es/images/logo.svg',
     description: 'Agencia de marketing digital para clínicas y profesionales sanitarios en Sevilla',
     sameAs: [
-      'https://www.facebook.com/imarketingclinicas',
-      'https://www.instagram.com/imarketingclinicas',
+      'https://www.facebook.com/iclinicas',
+      'https://www.instagram.com/iclinicas',
     ],
   }
 }
