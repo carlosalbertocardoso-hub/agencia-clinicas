@@ -26,11 +26,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-[100] bg-white/90 backdrop-blur-sm border-b border-slate-100">
       <div className="container-custom flex items-center justify-between py-4">
-        <Link href="/" className="flex items-center gap-3">
-          <img src="/favicon.svg" alt="" width="32" height="32" className="flex-shrink-0" aria-hidden="true" />
-          <div className="text-xl font-heading font-semibold text-primary">
-            iclinicas
-          </div>
+        <Link href="/" className="flex items-center">
+          <img
+            src="/brand-logo.svg"
+            alt="iclinicas"
+            width="172"
+            height="44"
+            className="h-9 w-auto sm:h-10"
+          />
         </Link>
 
         <nav className="hidden lg:flex gap-10 items-center">
