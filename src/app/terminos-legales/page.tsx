@@ -4,7 +4,7 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Términos Legales | iMarketing Clínicas',
+  title: 'Términos Legales | iclinicas',
   alternates: {
     canonical: '/terminos-legales',
   },
@@ -53,7 +53,7 @@ export default function TerminosLegalesPage() {
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">4. Limitación de responsabilidad</h2>
                 <p>
-                  iMarketing Clínicas no se responsabiliza por: (a) Interrupción o indisponibilidad temporal de la web; (b)
+                  iclinicas no se responsabiliza por: (a) Interrupción o indisponibilidad temporal de la web; (b)
                   Virus o código malicioso; (c) Resultados específicos de las campañas (que dependen de factores ajenos a
                   nuestro control).
                 </p>
@@ -62,7 +62,7 @@ export default function TerminosLegalesPage() {
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">5. Propiedad intelectual</h2>
                 <p>
-                  Todo contenido de esta web (textos, imágenes, logotipos, diseño) es propiedad de iMarketing Clínicas o sus
+                  Todo contenido de esta web (textos, imágenes, logotipos, diseño) es propiedad de iclinicas o sus
                   licenciantes. No puedes reproducir, distribuir o modificar sin autorización explícita.
                 </p>
               </div>

@@ -7,7 +7,7 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Blog de marketing para clínicas en Sevilla | iMarketing Clínicas',
+  title: 'Blog de marketing para clínicas en Sevilla | iclinicas',
   description:
     'Guías prácticas sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes para clínicas privadas y profesionales sanitarios en Sevilla.',
   alternates: {

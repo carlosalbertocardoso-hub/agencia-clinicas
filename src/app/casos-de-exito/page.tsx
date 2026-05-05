@@ -7,14 +7,14 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Ejemplos de diagnóstico para clínicas | iMarketing Clínicas',
+  title: 'Ejemplos de diagnóstico para clínicas | iclinicas',
   description:
     'Ejemplos representativos de problemas de captación online en clínicas privadas. Sustituir por casos reales cuando existan datos verificables.',
   alternates: {
     canonical: '/casos-de-exito',
   },
   openGraph: {
-    title: 'Ejemplos de diagnóstico - iMarketing Clínicas',
+    title: 'Ejemplos de diagnóstico - iclinicas',
     description: 'Situaciones habituales de captación online en clínicas privadas de Sevilla.',
     url: 'https://iclinicas.es/casos-de-exito',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],

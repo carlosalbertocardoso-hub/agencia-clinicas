@@ -4,7 +4,7 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad | iMarketing Clínicas',
+  title: 'Política de Privacidad | iclinicas',
   alternates: {
     canonical: '/politica-privacidad',
   },
@@ -27,7 +27,7 @@ export default function PoliticaPrivacidadPage() {
               <div>
                 <h2 className="text-h3 font-heading text-text mb-4">1. Responsable del tratamiento</h2>
                 <p>
-                  iMarketing Clínicas es responsable del tratamiento de los datos personales recibidos a través de esta web. Nos
+                  iclinicas es responsable del tratamiento de los datos personales recibidos a través de esta web. Nos
                   comprometemos a proteger tu privacidad conforme al RGPD y la LOPDGDD.
                 </p>
               </div>

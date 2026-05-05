@@ -235,7 +235,7 @@ export default function ContactForm({
           className="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary"
         />
         <span>
-          Acepto recibir comunicaciones comerciales de iMarketing Clínicas sobre servicios, contenidos y novedades relacionados con marketing sanitario. Podré retirar mi consentimiento en cualquier momento.
+          Acepto recibir comunicaciones comerciales de iclinicas sobre servicios, contenidos y novedades relacionados con marketing sanitario. Podré retirar mi consentimiento en cualquier momento.
         </span>
       </label>
 

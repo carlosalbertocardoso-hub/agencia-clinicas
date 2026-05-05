@@ -6,14 +6,14 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Solicitar auditoría gratuita | iMarketing Clínicas',
+  title: 'Solicitar auditoría gratuita | iclinicas',
   description:
     'Solicita una auditoría gratuita para tu clínica en Sevilla. Revisamos Google, web, campañas, reseñas y puntos de contacto para detectar oportunidades de captación.',
   alternates: {
     canonical: '/contacto',
   },
   openGraph: {
-    title: 'Solicita una auditoría gratuita - iMarketing Clínicas',
+    title: 'Solicita una auditoría gratuita - iclinicas',
     description: 'Revisamos Google, web y puntos de conversión de tu clínica en Sevilla.',
     url: 'https://iclinicas.es/contacto',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],

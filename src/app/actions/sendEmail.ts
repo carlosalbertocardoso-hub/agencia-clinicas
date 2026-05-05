@@ -109,13 +109,13 @@ export async function sendContactEmail(data: ContactFormData) {
     const confirmationEmail = await resend.emails.send({
       from: fromEmail,
       to: data.email,
-      subject: 'Hemos recibido tu solicitud - iMarketing Clínicas',
+      subject: 'Hemos recibido tu solicitud - iclinicas',
       html: `
         <h2>Hola ${sanitizedNombre}</h2>
-        <p>Gracias por contactar con iMarketing Clínicas.</p>
+        <p>Gracias por contactar con iclinicas.</p>
         <p>Hemos recibido tu solicitud. Revisaremos tu caso y nos pondremos en contacto contigo en las proximas 24 horas laborables.</p>
         <p>Mientras tanto, puedes seguir explorando nuestros servicios en <a href="${siteUrl}">${siteUrl}</a></p>
-        <p>Saludos,<br/>Equipo iMarketing Clínicas</p>
+        <p>Saludos,<br/>Equipo iclinicas</p>
       `,
     })
 

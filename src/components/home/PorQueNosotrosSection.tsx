@@ -44,7 +44,7 @@ export default function PorQueNosotrosSection() {
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-10 md:mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué iMarketing Clínicas</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué iclinicas</h2>
           <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
             Somos un partner estratégico para ordenar tu captación online sin que tengas que convertirte en experto en SEO, Ads o analítica.
           </p>

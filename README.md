@@ -1,6 +1,6 @@
-# iMarketing Clínicas
+# iclinicas
 
-Web de captación para **iMarketing Clínicas**, agencia de marketing sanitario especializada en clínicas privadas, consultas y profesionales de salud en Sevilla.
+Web de captación para **iclinicas**, agencia de marketing sanitario especializada en clínicas privadas, consultas y profesionales de salud en Sevilla.
 
 La propuesta central del proyecto es convertir Google, web, campañas, reputación y conversión en un sistema medible de captación de pacientes privados, con comunicación prudente para el sector sanitario.
 
@@ -46,7 +46,7 @@ El formulario de contacto usa Resend. Configura estas variables en `.env.local` 
 
 ```env
 RESEND_API_KEY=...
-RESEND_FROM_EMAIL="iMarketing Clínicas <email_verificado_en_resend>"
+RESEND_FROM_EMAIL="iclinicas <email_verificado_en_resend>"
 CONTACT_TO_EMAIL=tu_email_destino
 NEXT_PUBLIC_SITE_URL=https://iclinicas.es
 ```

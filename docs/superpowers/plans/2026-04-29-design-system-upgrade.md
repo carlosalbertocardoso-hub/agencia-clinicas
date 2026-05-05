@@ -351,7 +351,7 @@ Update Header className for better visual hierarchy:
     {/* Logo */}
     <div className="flex items-center">
       <span className="text-xl font-serif font-light text-primary">
-        iMarketing Clínicas
+        iclinicas
       </span>
     </div>
 
@@ -393,7 +393,7 @@ export default function Footer() {
           {/* Column 1: Brand */}
           <div>
             <h3 className="text-lg font-serif font-light text-white mb-3">
-              iMarketing Clínicas
+              iclinicas
             </h3>
             <p className="text-sm text-gray-400 leading-relaxed">
               Agencia de marketing digital especializada en clínicas y profesionales sanitarios en Sevilla.
@@ -464,7 +464,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
           <p className="text-xs text-gray-500 text-center">
-            © 2026 iMarketing Clínicas. Todos los derechos reservados.
+            © 2026 iclinicas. Todos los derechos reservados.
           </p>
         </div>
       </div>

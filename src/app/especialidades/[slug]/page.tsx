@@ -407,7 +407,7 @@ const specialtyContent: Record<
 
 const specialtyMeta: Record<string, { title: string; description: string }> = {
   'clinicas-dentales-sevilla': {
-    title: 'Marketing para clínicas dentales en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para clínicas dentales en Sevilla | iclinicas',
     description:
       'Captación online para clínicas dentales en Sevilla. SEO local, Google Ads, web y contenidos para atraer pacientes de implantes, ortodoncia, estética dental y urgencias.',
   },
@@ -417,7 +417,7 @@ const specialtyMeta: Record<string, { title: string; description: string }> = {
       'Marketing digital para psicólogos en Sevilla. SEO local, Google Ads y web profesional para consultas de ansiedad, pareja, infantil, terapia online y presencial.',
   },
   'medicina-estetica-sevilla': {
-    title: 'Marketing para medicina estética en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para medicina estética en Sevilla | iclinicas',
     description:
       'Captación online para clínicas de medicina estética en Sevilla. Web, SEO, Google Ads y contenidos para transmitir confianza, seguridad y profesionalidad.',
   },
@@ -427,27 +427,27 @@ const specialtyMeta: Record<string, { title: string; description: string }> = {
       'Marketing digital para clínicas de fisioterapia en Sevilla. SEO local, Google Ads y web para captar pacientes de dolor, lesiones, rehabilitación y fisioterapia deportiva.',
   },
   'clinicas-reproduccion-asistida-sevilla': {
-    title: 'Marketing para reproducción asistida en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para reproducción asistida en Sevilla | iclinicas',
     description:
       'Marketing digital para clínicas de reproducción asistida en Sevilla. SEO local, Google Ads y web para fertilidad, FIV, preservación y primera valoración.',
   },
   'pedagogos-sevilla': {
-    title: 'Marketing para pedagogos en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para pedagogos en Sevilla | iclinicas',
     description:
       'Marketing digital para pedagogos y gabinetes psicopedagógicos en Sevilla. SEO local, web y contenido para llegar a familias con confianza.',
   },
   'dermatologos-sevilla': {
-    title: 'Marketing para dermatólogos en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para dermatólogos en Sevilla | iclinicas',
     description:
       'Marketing digital para dermatólogos en Sevilla. SEO local, Google Ads y diseño web para consultas privadas de piel, acné, manchas, alopecia y revisión.',
   },
   'nutricionistas-sevilla': {
-    title: 'Marketing para nutricionistas en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para nutricionistas en Sevilla | iclinicas',
     description:
       'Marketing digital para nutricionistas en Sevilla. SEO, web, contenido y campañas para consultas de pérdida de peso, salud digestiva, nutrición deportiva y educación alimentaria.',
   },
   'oftalmologos-sevilla': {
-    title: 'Marketing para oftalmólogos en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para oftalmólogos en Sevilla | iclinicas',
     description:
       'Marketing digital para oftalmólogos y clínicas oftalmológicas en Sevilla. SEO, Google Ads y web para revisiones, cirugía refractiva, cataratas y retina.',
   },
@@ -457,7 +457,7 @@ const specialtyMeta: Record<string, { title: string; description: string }> = {
       'Marketing digital para pediatras y clínicas pediátricas en Sevilla. Presencia online para transmitir confianza, cercanía y facilitar el contacto de familias.',
   },
   'clinicas-cirugia-sevilla': {
-    title: 'Marketing para clínicas quirúrgicas en Sevilla | iMarketing Clínicas',
+    title: 'Marketing para clínicas quirúrgicas en Sevilla | iclinicas',
     description:
       'Marketing digital para clínicas quirúrgicas y especialistas en Sevilla. Web, SEO y campañas para consultas de alta consideración, segunda opinión y procedimientos especializados.',
   },
@@ -490,7 +490,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const truncatedDesc = desc.length > 160 ? desc.substring(0, 157) + '...' : desc
 
   return {
-    title: meta?.title || `${content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`} | iMarketing Clínicas`,
+    title: meta?.title || `${content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`} | iclinicas`,
     description: truncatedDesc,
     alternates: {
       canonical: `/especialidades/${params.slug}`,

@@ -1,4 +1,4 @@
-export function generateSEOTitle(title: string, suffix = 'Sevilla | iMarketing Clínicas'): string {
+export function generateSEOTitle(title: string, suffix = 'Sevilla | iclinicas'): string {
   return `${title} - ${suffix}`
 }
 

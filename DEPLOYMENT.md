@@ -1,4 +1,4 @@
-# Deployment — iMarketing Clínicas
+# Deployment — iclinicas
 
 Guía para desplegar y mantener la web en Vercel.
 
@@ -43,7 +43,7 @@ Ejemplo:
 
 ```env
 RESEND_API_KEY=re_...
-RESEND_FROM_EMAIL="iMarketing Clínicas <hola@dominio-verificado.com>"
+RESEND_FROM_EMAIL="iclinicas <hola@dominio-verificado.com>"
 CONTACT_TO_EMAIL=ccardoso19@hotmail.com
 NEXT_PUBLIC_SITE_URL=https://iclinicas.es
 ```
@@ -130,7 +130,7 @@ Checks mínimos antes de desplegar:
 Usa un remitente verificado. Ejemplo:
 
 ```env
-RESEND_FROM_EMAIL="iMarketing Clínicas <hola@dominio-verificado.com>"
+RESEND_FROM_EMAIL="iclinicas <hola@dominio-verificado.com>"
 ```
 
 No usar `noreply@iclinicas.es` si ese dominio todavía no está verificado.

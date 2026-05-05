@@ -1,10 +1,10 @@
-# CLAUDE.md — iMarketing Clínicas
+# CLAUDE.md — iclinicas
 
 Guía operativa del proyecto para mantener el código, el copy y el SEO alineados con la web actual.
 
 ## Proyecto
 
-iMarketing Clínicas es una web de captación para una agencia de marketing sanitario especializada en clínicas privadas, consultas y profesionales de salud en Sevilla.
+iclinicas es una web de captación para una agencia de marketing sanitario especializada en clínicas privadas, consultas y profesionales de salud en Sevilla.
 
 Objetivo principal:
 
@@ -160,7 +160,7 @@ Home actual:
 Actualmente hay un schema global en `src/app/layout.tsx`:
 
 - `@type`: `ProfessionalService`
-- Nombre: `iMarketing Clínicas - Agencia de Marketing Sanitario`
+- Nombre: `iclinicas - Agencia de Marketing Sanitario`
 - Localidad: Sevilla, Andalucía, ES
 - Servicios: Marketing Médico, SEO Local, Google Ads para Clínicas
 - Área servida: Sevilla, Nervión, Triana, Aljarafe
@@ -187,7 +187,7 @@ Variables necesarias:
 
 ```env
 RESEND_API_KEY=...
-RESEND_FROM_EMAIL="iMarketing Clínicas <email_verificado_en_resend>"
+RESEND_FROM_EMAIL="iclinicas <email_verificado_en_resend>"
 CONTACT_TO_EMAIL=tu_email_destino
 NEXT_PUBLIC_SITE_URL=https://iclinicas.es
 ```

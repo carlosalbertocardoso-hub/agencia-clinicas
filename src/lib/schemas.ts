@@ -79,11 +79,11 @@ export function buildArticleSchema({
     datePublished,
     author: {
       '@type': 'Organization',
-      name: 'iMarketing Clínicas',
+      name: 'iclinicas',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'iMarketing Clínicas',
+      name: 'iclinicas',
       logo: {
         '@type': 'ImageObject',
         url: 'https://iclinicas.es/logo.svg',
@@ -97,7 +97,7 @@ export function buildOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': 'https://iclinicas.es',
-    name: 'iMarketing Clínicas',
+    name: 'iclinicas',
     url: 'https://iclinicas.es',
     logo: 'https://iclinicas.es/images/logo.svg',
     description: 'Agencia de marketing digital para clínicas y profesionales sanitarios en Sevilla',

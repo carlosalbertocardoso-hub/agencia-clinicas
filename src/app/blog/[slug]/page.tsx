@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${post.titulo} | iMarketing Clínicas Blog`,
+    title: `${post.titulo} | iclinicas Blog`,
     description: post.excerpt,
     alternates: {
       canonical: `/blog/${params.slug}`,

@@ -29,7 +29,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <img src="/favicon.svg" alt="" width="32" height="32" className="flex-shrink-0" aria-hidden="true" />
           <div className="text-xl font-heading font-semibold text-primary">
-            iMarketing Clínicas
+            iclinicas
           </div>
         </Link>
 

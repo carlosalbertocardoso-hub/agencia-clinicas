@@ -18,7 +18,7 @@ interface Props {
 
 const metadataBySlug: Record<string, { title: string; description: string }> = {
   'seo-medico': {
-    title: 'SEO local para clínicas en Sevilla | iMarketing Clínicas',
+    title: 'SEO local para clínicas en Sevilla | iclinicas',
     description:
       'Mejora la visibilidad de tu clínica en Google y Google Maps. SEO local para clínicas privadas en Sevilla: tratamientos, reseñas, web, contenido y medición.',
   },
@@ -193,7 +193,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const truncatedDesc = desc.length > 160 ? desc.substring(0, 157) + '...' : desc
 
   return {
-    title: pageMeta?.title || `${servicio.nombre} | iMarketing Clínicas`,
+    title: pageMeta?.title || `${servicio.nombre} | iclinicas`,
     description: truncatedDesc,
     alternates: {
       canonical: `/servicios/${params.slug}`,

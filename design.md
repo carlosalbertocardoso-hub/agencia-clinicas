@@ -1,10 +1,10 @@
-# Design.md — iMarketing Clínicas
+# Design.md — iclinicas
 
 Guía de diseño para mantener la web consistente, clara y orientada a captación de clínicas privadas en Sevilla.
 
 ## Identidad
 
-iMarketing Clínicas es una agencia de marketing sanitario para clínicas, consultas y profesionales privados. La interfaz debe transmitir rigor, cercanía, confianza sanitaria y claridad comercial.
+iclinicas es una agencia de marketing sanitario para clínicas, consultas y profesionales privados. La interfaz debe transmitir rigor, cercanía, confianza sanitaria y claridad comercial.
 
 El diseño evita el aspecto de agencia genérica: nada de claims exagerados, efectos decorativos innecesarios o composición de landing ruidosa. La prioridad es que un gerente de clínica entienda rápido qué se ofrece, por qué es relevante y cuál es el siguiente paso.
 

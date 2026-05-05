@@ -7,7 +7,7 @@ import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import { blogPosts } from '@/data/blog'
 
 export const metadata: Metadata = {
-  title: 'Recursos de marketing sanitario para clínicas en Sevilla | iMarketing Clínicas',
+  title: 'Recursos de marketing sanitario para clínicas en Sevilla | iclinicas',
   description:
     'Guías, diagnósticos y contenidos prácticos sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes privados en Sevilla.',
   alternates: {
