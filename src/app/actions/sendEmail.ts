@@ -36,7 +36,7 @@ export async function sendContactEmail(data: ContactFormData) {
       console.error('Contact form email is not configured: missing RESEND_API_KEY')
       return {
         success: false,
-        error: 'El envio de emails no esta configurado. Falta RESEND_API_KEY en Vercel.',
+        error: 'El envio de emails no esta configurado. Falta RESEND_API_KEY en el servidor.',
       }
     }
 
@@ -44,7 +44,7 @@ export async function sendContactEmail(data: ContactFormData) {
       console.error('Contact form email is not configured: missing RESEND_FROM_EMAIL')
       return {
         success: false,
-        error: 'El envio de emails no esta configurado. Falta RESEND_FROM_EMAIL en Vercel.',
+        error: 'El envio de emails no esta configurado. Falta RESEND_FROM_EMAIL en el servidor.',
       }
     }
 
@@ -72,8 +72,7 @@ export async function sendContactEmail(data: ContactFormData) {
     const sanitizedObjetivo = sanitizeHtml(data.objetivo || '')
     const sanitizedMensaje = sanitizeHtml(data.mensaje || '')
 
-    const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL
-    const siteUrl = configuredSiteUrl && !configuredSiteUrl.includes('vercel.app') ? configuredSiteUrl : canonicalSiteUrl
+    const siteUrl = canonicalSiteUrl
 
     const adminEmail = await resend.emails.send({
       from: fromEmail,

@@ -13,7 +13,7 @@ La propuesta central del proyecto es convertir Google, web, campañas, reputaci�
 - **Iconos:** `lucide-react`
 - **Formularios:** React Hook Form + Server Actions
 - **Email:** Resend
-- **Hosting:** Vercel
+- **Dominio:** https://www.iclinicas.es
 
 ## Instalación
 
@@ -42,7 +42,7 @@ npm run sitemap   # Generar sitemap con next-sitemap
 
 ## Variables de entorno
 
-El formulario de contacto usa Resend. Configura estas variables en `.env.local` y en Vercel:
+El formulario de contacto usa Resend. Configura estas variables en `.env.local` y en el panel de hosting:
 
 ```env
 RESEND_API_KEY=...
@@ -54,7 +54,7 @@ NEXT_PUBLIC_SITE_URL=https://www.iclinicas.es
 Notas importantes:
 
 - `RESEND_FROM_EMAIL` debe ser un remitente o dominio verificado en Resend.
-- Si cambias variables en Vercel, haz redeploy para que entren en vigor.
+- Si cambias variables en el hosting, haz redeploy para que entren en vigor.
 - `CONTACT_TO_EMAIL` es el buzón donde llegan las solicitudes del formulario.
 
 ## Estructura
@@ -197,11 +197,11 @@ Ver guía completa:
 
 Resumen:
 
-1. Configurar variables de entorno en Vercel.
+1. Configurar variables de entorno en el hosting.
 2. Verificar remitente en Resend.
 3. Hacer deploy o redeploy.
 4. Probar formulario.
-5. Revisar logs en Vercel y Resend si no llegan emails.
+5. Revisar logs del hosting y Resend si no llegan emails.
 
 ## Comprobación antes de publicar
 
@@ -266,7 +266,7 @@ Incidencias corregidas en la última revisión:
 
 - [`Claude.md`](./Claude.md): convenciones internas originales del proyecto.
 - [`design.md`](./design.md): sistema visual y reglas UI/CRO.
-- [`DEPLOYMENT.md`](./DEPLOYMENT.md): despliegue y troubleshooting en Vercel/Resend.
+- [`DEPLOYMENT.md`](./DEPLOYMENT.md): despliegue y troubleshooting del hosting/Resend.
 
 ## Contacto del proyecto
 

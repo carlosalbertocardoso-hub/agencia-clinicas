@@ -18,7 +18,7 @@ Stack:
 - React Hook Form.
 - Server Actions.
 - Resend para envío de formularios.
-- Vercel como hosting.
+- Dominio público: https://www.iclinicas.es.
 
 ## Estructura
 
@@ -233,7 +233,7 @@ npm run build
 
 - [`README.md`](./README.md): resumen general.
 - [`design.md`](./design.md): diseño, responsive, UI y CRO.
-- [`DEPLOYMENT.md`](./DEPLOYMENT.md): despliegue en Vercel y Resend.
+- [`DEPLOYMENT.md`](./DEPLOYMENT.md): despliegue en https://www.iclinicas.es y Resend.
 
 ## Contacto del proyecto
 

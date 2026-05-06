@@ -1,6 +1,6 @@
 # Deployment — iclinicas
 
-Guía para desplegar y mantener la web en Vercel.
+Guía para desplegar y mantener la web en https://www.iclinicas.es.
 
 ## Repositorio
 
@@ -16,9 +16,9 @@ Rama principal:
 master
 ```
 
-## Deploy en Vercel
+## Deploy
 
-1. Entra en Vercel.
+1. Entra en el panel de hosting.
 2. Importa el repositorio `agencia-clinicas`.
 3. Framework preset: Next.js.
 4. Build command: `npm run build`.
@@ -52,7 +52,7 @@ Importante:
 
 - `RESEND_API_KEY` no debe empezar por `NEXT_PUBLIC_`.
 - `RESEND_FROM_EMAIL` debe pertenecer a un dominio o remitente verificado en Resend.
-- Si cambias variables en Vercel, haz redeploy. Los deployments ya publicados no reciben cambios automáticamente.
+- Si cambias variables en el hosting, haz redeploy. Los deployments ya publicados no reciben cambios automáticamente.
 
 ## Resend
 
@@ -119,10 +119,10 @@ Checks mínimos antes de desplegar:
 
 1. Confirmar que el último commit está desplegado.
 2. Hacer redeploy si se cambiaron variables de entorno.
-3. Revisar que `RESEND_API_KEY` existe en Vercel.
+3. Revisar que `RESEND_API_KEY` existe en el hosting.
 4. Revisar que `RESEND_FROM_EMAIL` está verificado en Resend.
 5. Revisar que `CONTACT_TO_EMAIL` apunta al buzón correcto.
-6. Mirar logs de Vercel.
+6. Mirar logs del hosting.
 7. Mirar logs de Resend.
 
 ### Error de remitente en Resend
@@ -137,7 +137,7 @@ No usar `noreply@iclinicas.es` si ese dominio todavía no está verificado.
 
 ### Variables correctas pero sigue fallando
 
-Haz redeploy desde Vercel:
+Haz redeploy desde el panel de hosting:
 
 ```txt
 Deployments → último deployment → Redeploy
@@ -147,7 +147,7 @@ Deployments → último deployment → Redeploy
 
 Cuando se configure dominio propio:
 
-1. Añadir dominio en Vercel.
+1. Añadir el dominio https://www.iclinicas.es en el hosting.
 2. Configurar DNS en el proveedor.
 3. Actualizar `NEXT_PUBLIC_SITE_URL`.
 4. Actualizar metadata/schema si se deja de usar URL temporal.
