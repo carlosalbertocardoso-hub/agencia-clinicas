@@ -5,6 +5,7 @@ import { Resend } from 'resend'
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 const contactToEmail = process.env.CONTACT_TO_EMAIL || 'info@iclinicas.es'
 const fromEmail = process.env.RESEND_FROM_EMAIL
+const canonicalSiteUrl = 'https://www.iclinicas.es'
 
 export interface ContactFormData {
   nombre: string
@@ -71,7 +72,8 @@ export async function sendContactEmail(data: ContactFormData) {
     const sanitizedObjetivo = sanitizeHtml(data.objetivo || '')
     const sanitizedMensaje = sanitizeHtml(data.mensaje || '')
 
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.iclinicas.es'
+    const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL
+    const siteUrl = configuredSiteUrl && !configuredSiteUrl.includes('vercel.app') ? configuredSiteUrl : canonicalSiteUrl
 
     const adminEmail = await resend.emails.send({
       from: fromEmail,
