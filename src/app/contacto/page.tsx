@@ -88,8 +88,8 @@ export default function ContactoPage() {
                   <Mail size={28} strokeWidth={1.6} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-text mb-2">Email</h3>
-                <a href="mailto:hola@iclinicas.es" className="text-primary hover:underline">
-                  hola@iclinicas.es
+                <a href="mailto:info@iclinicas.es" className="text-primary hover:underline">
+                  info@iclinicas.es
                 </a>
               </div>
 

@@ -63,7 +63,7 @@ export default function PoliticaPrivacidadPage() {
                 </p>
                 <p className="mt-4">
                   El envío de comunicaciones comerciales se realiza únicamente si marcas la casilla específica habilitada para ello.
-                  Puedes retirar ese consentimiento en cualquier momento escribiéndonos a <strong>hola@iclinicas.es</strong>.
+                  Puedes retirar ese consentimiento en cualquier momento escribiéndonos a <strong>info@iclinicas.es</strong>.
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export default function PoliticaPrivacidadPage() {
                   <li>Solicitar la limitación del tratamiento</li>
                 </ul>
                 <p className="mt-4">
-                  Para ejercer estos derechos, contacta con nosotros en <strong>hola@iclinicas.es</strong>
+                  Para ejercer estos derechos, contacta con nosotros en <strong>info@iclinicas.es</strong>
                 </p>
               </div>
 

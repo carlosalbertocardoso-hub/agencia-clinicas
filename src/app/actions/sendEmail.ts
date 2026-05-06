@@ -3,7 +3,7 @@
 import { Resend } from 'resend'
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
-const contactToEmail = process.env.CONTACT_TO_EMAIL || 'ccardoso19@hotmail.com'
+const contactToEmail = process.env.CONTACT_TO_EMAIL || 'info@iclinicas.es'
 const fromEmail = process.env.RESEND_FROM_EMAIL
 
 export interface ContactFormData {

@@ -43,8 +43,8 @@ Ejemplo:
 
 ```env
 RESEND_API_KEY=re_...
-RESEND_FROM_EMAIL="iclinicas <hola@dominio-verificado.com>"
-CONTACT_TO_EMAIL=ccardoso19@hotmail.com
+RESEND_FROM_EMAIL="iclinicas <info@iclinicas.es>"
+CONTACT_TO_EMAIL=info@iclinicas.es
 NEXT_PUBLIC_SITE_URL=https://www.iclinicas.es
 ```
 
@@ -130,7 +130,7 @@ Checks mínimos antes de desplegar:
 Usa un remitente verificado. Ejemplo:
 
 ```env
-RESEND_FROM_EMAIL="iclinicas <hola@dominio-verificado.com>"
+RESEND_FROM_EMAIL="iclinicas <info@iclinicas.es>"
 ```
 
 No usar `noreply@iclinicas.es` si ese dominio todavía no está verificado.
