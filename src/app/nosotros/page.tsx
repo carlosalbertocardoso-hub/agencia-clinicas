@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sobre iclinicas',
     description: 'Quiénes somos y cómo ayudamos a clínicas privadas de Sevilla a ordenar su captación online.',
-    url: 'https://iclinicas.es/nosotros',
+    url: 'https://www.iclinicas.es/nosotros',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

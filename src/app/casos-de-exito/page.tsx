@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Ejemplos de diagnóstico - iclinicas',
     description: 'Situaciones habituales de captación online en clínicas privadas de Sevilla.',
-    url: 'https://iclinicas.es/casos-de-exito',
+    url: 'https://www.iclinicas.es/casos-de-exito',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

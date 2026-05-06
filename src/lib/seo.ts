@@ -9,7 +9,7 @@ export function generateSEODescription(description: string): string {
   return description
 }
 
-export const baseUrl = 'https://iclinicas.es'
+export const baseUrl = 'https://www.iclinicas.es'
 
 export function getCanonicalUrl(path: string): string {
   return `${baseUrl}${path}`

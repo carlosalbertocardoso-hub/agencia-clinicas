@@ -201,7 +201,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: pageMeta?.title || servicio.nombre,
       description: truncatedDesc,
-      url: `https://iclinicas.es/servicios/${params.slug}`,
+      url: `https://www.iclinicas.es/servicios/${params.slug}`,
       images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
     },
     keywords: [
@@ -235,13 +235,13 @@ export default function ServicioPage({ params }: Props) {
   const serviceCta = serviceCtas[servicio.slug] || 'Solicitar auditoría gratuita'
   const faqs = faqsPorServicio[servicio.slug] || []
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Servicios', url: 'https://iclinicas.es/servicios' },
-    { name: servicio.nombre, url: `https://iclinicas.es/servicios/${servicio.slug}` },
+    { name: 'Servicios', url: 'https://www.iclinicas.es/servicios' },
+    { name: servicio.nombre, url: `https://www.iclinicas.es/servicios/${servicio.slug}` },
   ])
   const serviceSchema = buildServiceSchema({
     name: `${servicio.nombre} en Sevilla`,
     description: servicio.descripcion,
-    url: `https://iclinicas.es/servicios/${servicio.slug}`,
+    url: `https://www.iclinicas.es/servicios/${servicio.slug}`,
   })
   const relatedLinks: Record<string, Array<{ href: string; label: string }>> = {
     'seo-medico': [

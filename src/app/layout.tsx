@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://iclinicas.es'),
+  metadataBase: new URL('https://www.iclinicas.es'),
   title: 'Marketing digital para clínicas en Sevilla | iclinicas',
   description:
     'Agencia de marketing digital para clínicas privadas en Sevilla. SEO local, Google Ads, diseño web, reputación y captación de pacientes.',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://iclinicas.es',
+    url: 'https://www.iclinicas.es',
     title: 'Marketing digital para clínicas en Sevilla | iclinicas',
     description:
       'SEO local, Google Ads, diseño web, reputación y captación medible para clínicas privadas en Sevilla.',
@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressRegion: 'Andalucía',
       addressCountry: 'ES',
     },
-    url: 'https://iclinicas.es/',
+    url: 'https://www.iclinicas.es/',
     serviceType: ['Marketing Médico', 'SEO Local', 'Google Ads para Clínicas'],
     areaServed: ['Sevilla', 'Nervión', 'Triana', 'Aljarafe'],
   }

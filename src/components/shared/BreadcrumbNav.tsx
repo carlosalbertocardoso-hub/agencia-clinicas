@@ -16,7 +16,7 @@ export default function BreadcrumbNav({ items }: BreadcrumbNavProps) {
   const breadcrumbSchema = buildBreadcrumbSchema(
     items.map((item) => ({
       name: item.label,
-      url: `https://iclinicas.es${item.href}`,
+      url: `https://www.iclinicas.es${item.href}`,
     }))
   )
 

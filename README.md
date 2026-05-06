@@ -48,7 +48,7 @@ El formulario de contacto usa Resend. Configura estas variables en `.env.local` 
 RESEND_API_KEY=...
 RESEND_FROM_EMAIL="iclinicas <email_verificado_en_resend>"
 CONTACT_TO_EMAIL=tu_email_destino
-NEXT_PUBLIC_SITE_URL=https://iclinicas.es
+NEXT_PUBLIC_SITE_URL=https://www.iclinicas.es
 ```
 
 Notas importantes:
@@ -250,7 +250,7 @@ npm run qa:interactions
 También se puede apuntar a otro entorno:
 
 ```bash
-QA_BASE_URL=https://iclinicas.es npm run qa:interactions
+QA_BASE_URL=https://www.iclinicas.es npm run qa:interactions
 ```
 
 Incidencias corregidas en la última revisión:

@@ -498,7 +498,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: meta?.title || content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`,
       description: truncatedDesc,
-      url: `https://iclinicas.es/especialidades/${params.slug}`,
+      url: `https://www.iclinicas.es/especialidades/${params.slug}`,
       images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
     },
     keywords: [
@@ -535,14 +535,14 @@ export default function EspecialidadPage({ params }: Props) {
     .filter(Boolean)
 
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Especialidades', url: 'https://iclinicas.es/especialidades' },
-    { name: especialidad.nombre, url: `https://iclinicas.es/especialidades/${especialidad.slug}` },
+    { name: 'Especialidades', url: 'https://www.iclinicas.es/especialidades' },
+    { name: especialidad.nombre, url: `https://www.iclinicas.es/especialidades/${especialidad.slug}` },
   ])
 
   const serviceSchema = buildServiceSchema({
     name: content.h1,
     description: content.hero,
-    url: `https://iclinicas.es/especialidades/${especialidad.slug}`,
+    url: `https://www.iclinicas.es/especialidades/${especialidad.slug}`,
   })
 
   return (

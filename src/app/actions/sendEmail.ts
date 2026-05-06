@@ -71,7 +71,7 @@ export async function sendContactEmail(data: ContactFormData) {
     const sanitizedObjetivo = sanitizeHtml(data.objetivo || '')
     const sanitizedMensaje = sanitizeHtml(data.mensaje || '')
 
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://iclinicas.es'
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.iclinicas.es'
 
     const adminEmail = await resend.emails.send({
       from: fromEmail,

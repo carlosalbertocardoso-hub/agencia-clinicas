@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Recursos de marketing sanitario para clínicas en Sevilla',
     description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
-    url: 'https://iclinicas.es/recursos',
+    url: 'https://www.iclinicas.es/recursos',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

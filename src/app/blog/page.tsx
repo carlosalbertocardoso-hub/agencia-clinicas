@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Guías de marketing para clínicas privadas en Sevilla',
     description: 'SEO local, Google Ads, diseño web, reputación y captación para clínicas privadas.',
-    url: 'https://iclinicas.es/blog',
+    url: 'https://www.iclinicas.es/blog',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }

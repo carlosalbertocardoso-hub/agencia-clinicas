@@ -14,7 +14,7 @@ export function buildServiceSchema({
     description,
     url,
     provider: {
-      '@id': 'https://iclinicas.es',
+      '@id': 'https://www.iclinicas.es',
     },
     areaServed: {
       '@type': 'City',
@@ -75,7 +75,7 @@ export function buildArticleSchema({
     headline,
     description,
     url,
-    image: image || 'https://iclinicas.es/images/og-default.svg',
+    image: image || 'https://www.iclinicas.es/images/og-default.svg',
     datePublished,
     author: {
       '@type': 'Organization',
@@ -86,7 +86,7 @@ export function buildArticleSchema({
       name: 'iclinicas',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://iclinicas.es/logo.svg',
+        url: 'https://www.iclinicas.es/logo.svg',
       },
     },
   }
@@ -96,10 +96,10 @@ export function buildOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://iclinicas.es',
+    '@id': 'https://www.iclinicas.es',
     name: 'iclinicas',
-    url: 'https://iclinicas.es',
-    logo: 'https://iclinicas.es/images/logo.svg',
+    url: 'https://www.iclinicas.es',
+    logo: 'https://www.iclinicas.es/images/logo.svg',
     description: 'Agencia de marketing digital para clínicas y profesionales sanitarios en Sevilla',
     sameAs: [
       'https://www.facebook.com/iclinicas',

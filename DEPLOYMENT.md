@@ -45,7 +45,7 @@ Ejemplo:
 RESEND_API_KEY=re_...
 RESEND_FROM_EMAIL="iclinicas <hola@dominio-verificado.com>"
 CONTACT_TO_EMAIL=ccardoso19@hotmail.com
-NEXT_PUBLIC_SITE_URL=https://iclinicas.es
+NEXT_PUBLIC_SITE_URL=https://www.iclinicas.es
 ```
 
 Importante:

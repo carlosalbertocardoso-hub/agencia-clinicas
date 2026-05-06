@@ -189,7 +189,7 @@ Variables necesarias:
 RESEND_API_KEY=...
 RESEND_FROM_EMAIL="iclinicas <email_verificado_en_resend>"
 CONTACT_TO_EMAIL=tu_email_destino
-NEXT_PUBLIC_SITE_URL=https://iclinicas.es
+NEXT_PUBLIC_SITE_URL=https://www.iclinicas.es
 ```
 
 Notas:

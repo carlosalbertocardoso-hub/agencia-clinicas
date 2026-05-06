@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Solicita una auditoría gratuita - iclinicas',
     description: 'Revisamos Google, web y puntos de conversión de tu clínica en Sevilla.',
-    url: 'https://iclinicas.es/contacto',
+    url: 'https://www.iclinicas.es/contacto',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
 }
