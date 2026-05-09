@@ -12,6 +12,7 @@ export const iconosEspecialidades: Record<string, string> = {
   'oftalmologos-sevilla': 'Eye',
   'pediatria-sevilla': 'Baby',
   'clinicas-cirugia-sevilla': 'Hospital',
+  'ia-para-clinicas': 'Bot',
 }
 
 export const especialidades: Especialidad[] = [
@@ -157,6 +158,19 @@ export const especialidades: Especialidad[] = [
     color: '#0A6B5E',
     resultados: 'Autoridad y consultas cualificadas',
     servicios: ['seo-medico', 'google-ads', 'diseno-web'],
+  },
+  {
+    id: '12',
+    nombre: 'IA para clínicas',
+    slug: 'ia-para-clinicas',
+    descripcionCorta:
+      'Automatización, personalización y análisis con inteligencia artificial para la captación de pacientes privados.',
+    descripcionLarga:
+      'Aplicaciones prácticas de inteligencia artificial en marketing sanitario: chatbots para clínicas, generación de contenido, análisis predictivo de campañas, optimización de llamadas y automatización de informes.',
+    icono: 'Bot',
+    color: '#6B21A8',
+    resultados: 'Automatización, datos y eficiencia',
+    servicios: ['seo-medico', 'google-ads', 'diseno-web', 'redes-sociales'],
   },
 ]
 

@@ -3,6 +3,7 @@ import {
   Activity,
   Apple,
   Baby,
+  Bot,
   Brain,
   CircleDot,
   Dna,
@@ -33,6 +34,7 @@ const iconMap: Record<string, React.ReactNode> = {
   Eye: <Eye size={28} strokeWidth={1.6} />,
   Baby: <Baby size={28} strokeWidth={1.6} />,
   Hospital: <Stethoscope size={28} strokeWidth={1.6} />,
+  Bot: <Bot size={28} strokeWidth={1.6} />,
 }
 
 export default function EspecialidadCard({

@@ -405,6 +405,51 @@ const specialtyContent: Record<
       },
     ],
   },
+  'ia-para-clinicas': {
+    h1: 'Inteligencia artificial aplicada al marketing sanitario en Sevilla',
+    hero:
+      'Automatización, personalización y análisis de datos con IA para que las clínicas privadas capturen pacientes de forma más inteligente y eficiente.',
+    keyText:
+      'La IA no va a sustituir el criterio de un gestor de clínica, pero puede procesar en segundos lo que a una persona le llevaría horas: analizar cientos de búsquedas, predecir qué canales traen los mejores pacientes y automatizar tareas repetitivas sin perder el control.',
+    pain:
+      'El sector salud genera datos constantemente: búsquedas de pacientes, llamadas entrantes, formularios, reseñas, campañas publicitarias, visitas a la web. Sin IA, gran parte de esa información se pierde o se analiza cuando ya no es útil. Las clínicas que empiezan a aplicar IA en su captación ya están ganando ventaja sobre las que siguen gestionándolo todo manualmente.',
+    searches: ['ia clinicas Sevilla', 'chatbot sanitario', 'automatización marketing clínicas', 'ia generación contenido médico', 'analítica predictiva pacientes'],
+    trust: ['Automatización sin perder el control', 'Datos reales, no predicciones vacías', 'IA aplicada al sector salud', 'Transparencia en los criterios', 'Sin compromiso de permanencia'],
+    serviceNotes: {
+      'seo-medico': 'Generación de contenido médico optimizado con IA, investigación semántica avanzada y adaptación a búsquedas por voz y GEO.',
+      'google-ads': 'Optimización de pujas con machine learning, segmentación predictiva de pacientes, análisis de intención en tiempo real y A/B testing automatizado.',
+      'diseno-web': 'Chatbots inteligentes para clínicas que cualifican leads 24/7, personalización dinámica de contenido y dashboards de datos en tiempo real.',
+      'redes-sociales': 'Programación y optimización de contenido con IA, análisis de sentimiento en reseñas y comentarios, generación asistida de textos y calendarios editoriales.',
+    },
+    cta: 'Revisar cómo aplicar IA en mi clínica',
+    faqs: [
+      {
+        id: '1',
+        pregunta: '¿La IA va a sustituir al gestor de la clínica?',
+        respuesta: 'No. La IA automatiza tareas repetitivas, analiza grandes volúmenes de datos y sugiere decisiones, pero el criterio final y la relación con el paciente siguen siendo humanos.',
+      },
+      {
+        id: '2',
+        pregunta: '¿Qué se puede automatizar sin perder calidad?',
+        respuesta: 'Respuestas a preguntas frecuentes, clasificación de leads por intención, informes de rendimiento, programación de contenido en redes, análisis de llamadas y optimización de pujas publicitarias.',
+      },
+      {
+        id: '3',
+        pregunta: '¿Un chatbot para clínica no resulta frío?',
+        respuesta: 'Bien configurado, un chatbot sanitario responde dudas inmediatas (horarios, precios orientativos, servicios) y deriva llamadas complejas al personal. Los pacientes aprecian la inmediatez y las clínicas reducen llamadas repetitivas.',
+      },
+      {
+        id: '4',
+        pregunta: '¿Qué tipo de IA usáis en las campañas?',
+        respuesta: 'Machine learning para optimización de pujas y segmentación, procesamiento de lenguaje natural para análisis de llamadas y reseñas, y modelos generativos para contenido editorial y descripciones de servicio.',
+      },
+      {
+        id: '5',
+        pregunta: '¿Necesito conocimientos técnicos para aplicar IA en mi clínica?',
+        respuesta: 'No. Nosotros configuramos las herramientas y te presentamos los resultados en informes claros. Tú tomas las decisiones; la IA procesa los datos.',
+      },
+    ],
+  },
 }
 
 const specialtyMeta: Record<string, { title: string; description: string }> = {
@@ -477,6 +522,7 @@ const longTailKeywordsEsp: Record<string, string[]> = {
   'oftalmologos-sevilla': ['oftalmólogo Sevilla', 'cirugía ocular', 'cataratas Sevilla', 'revisión vista'],
   'pediatria-sevilla': ['pediatra privado Sevilla', 'pediatra cerca', 'medicina infantil', 'pediatría Sevilla'],
   'clinicas-cirugia-sevilla': ['cirujano Sevilla', 'segunda opinión médica', 'cirugía privada', 'especialista quirúrgico'],
+  'ia-para-clinicas': ['ia clinicas Sevilla', 'chatbot sanitario', 'automatizacion marketing clinicas', 'analitica predictiva pacientes'],
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

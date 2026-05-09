@@ -46,6 +46,10 @@ const copyEspecialidades: Record<string, { titulo: string; subtitulo: string }> 
     titulo: 'Clínicas quirúrgicas en Sevilla.',
     subtitulo: 'Más consultas cualificadas de alta consideración.',
   },
+  'ia-para-clinicas': {
+    titulo: 'IA para clínicas en Sevilla.',
+    subtitulo: 'Automatización, datos e inteligencia artificial aplicada a la captación.',
+  },
 }
 
 export default function EspecialidadesGrid() {
