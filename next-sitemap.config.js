@@ -3,7 +3,7 @@ const { serviciosSlugs, especialidadesSlugs, blogSlugs } = require('./src/data/s
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.iclinicas.es',
-  generateRobotsTxt: true,
+  generateRobotsTxt: false,
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
