@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { CheckCircle2, MapPin, MessageCircle, Search, ShieldCheck, Target } from 'lucide-react'
 import { especialidades, getEspecialidadBySlug } from '@/data/especialidades'
 import { servicios } from '@/data/servicios'
+import { specialtyRelatedServices } from '@/data/crossLinks'
 import { buildBreadcrumbSchema, buildServiceSchema } from '@/lib/schemas'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -654,6 +656,25 @@ export default function EspecialidadPage({ params }: Props) {
         </section>
 
         <FaqSection faqs={content.faqs} title={`Preguntas sobre marketing para ${especialidad.nombre.toLowerCase()}`} />
+
+        {(() => {
+          const related = specialtyRelatedServices[params.slug] || []
+          if (related.length === 0) return null
+          return (
+            <section className="section-padding bg-white">
+              <div className="container-custom max-w-3xl text-center">
+                <h2 className="text-3xl sm:text-4xl font-heading font-semibold mb-4">Servicios recomendados para tu especialidad</h2>
+                <p className="text-text-muted mb-6">Estos servicios son los que más ayudan a las clínicas de esta especialidad:</p>
+                <div className="flex flex-wrap gap-3 justify-center">
+                  {related.map((item) => (
+                    <Link key={item.href} href={item.href} className="inline-flex items-center rounded-full border border-slate-200 bg-surface hover:bg-primary/5 hover:border-primary px-4 py-2 text-sm font-medium text-text-muted transition hover:text-primary">{item.label}</Link>
+                  ))}
+                  <Link href="/contacto" className="inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white">auditoría gratuita</Link>
+                </div>
+              </div>
+            </section>
+          )
+        })()}
 
         <section id="formulario-auditoria" className="section-padding section-primary">
           <div className="container-custom">

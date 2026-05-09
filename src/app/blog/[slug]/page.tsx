@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Fragment } from 'react'
 import { blogPosts, getBlogPostBySlug } from '@/data/blog'
+import { blogRelatedServices } from '@/data/crossLinks'
 import { buildArticleSchema, buildBreadcrumbSchema } from '@/lib/schemas'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -241,6 +242,32 @@ export default function BlogPostPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {(blogRelatedServices[post.slug] || []).length > 0 && (
+          <section className="section-padding bg-white">
+            <div className="container-custom max-w-3xl text-center">
+              <h2 className="text-3xl sm:text-4xl font-heading font-semibold mb-4">Servicios y especialidades relacionados</h2>
+              <p className="text-text-muted mb-6">Estos servicios y especialidades pueden ayudarte si te ha interesado este artículo:</p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                {(blogRelatedServices[post.slug] || []).map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="inline-flex items-center rounded-full border border-slate-200 bg-surface hover:bg-primary/5 hover:border-primary px-4 py-2 text-sm font-medium text-text-muted transition hover:text-primary"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/contacto"
+                  className="inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white"
+                >
+                  auditoría gratuita
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
 
         {relatedPosts.length > 0 && (
           <section className="section-padding bg-surface">
