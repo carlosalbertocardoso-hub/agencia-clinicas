@@ -1,0 +1,8 @@
+# https://www.iclinicas.es/.well-known/ai.txt
+# AI crawler permissions — Actualizado: 2026-05-09
+
+# Todos los bots de AI training y search tienen acceso completo al sitio.
+# iclinicas.es es una web de marketing sanitario para clínicas privadas en Sevilla.
+
+User-agent: *
+Allow: /

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iclinicas - Blog de Marketing Sanitario</title>
+    <link>https://www.iclinicas.es</link>
+    <description>Recursos, guías y artículos sobre marketing digital para clínicas privadas en Sevilla: SEO local, Google Ads, diseño web y captación de pacientes.</description>
+    <language>es</language>
+    <lastBuildDate>Fri, 09 May 2026 06:00:00 GMT</lastBuildDate>
+    <atom:link href="https://www.iclinicas.es/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diseño web para clínicas: lo que funciona en 2026</title>
+      <link>https://www.iclinicas.es/blog/diseno-web-clinicas</link>
+      <description>Guía sobre diseño web sanitario orientado a conversión: velocidad, usabilidad, LOPD y captación de pacientes para clínicas en Sevilla.</description>
+      <pubDate>Fri, 25 Apr 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Google Ads para psicólogos: cómo captar pacientes sin desperdiciar presupuesto</title>
+      <link>https://www.iclinicas.es/blog/google-ads-psicologos</link>
+      <description>Cómo estructurar campañas de Google Ads para consultas de psicología en Sevilla, segmentación por intención y medición de coste por paciente.</description>
+      <pubDate>Fri, 11 Apr 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Errores SEO que cometen los dentistas en Sevilla (y cómo evitarlos)</title>
+      <link>https://www.iclinicas.es/blog/errores-seo-dentistas</link>
+      <description>Los 7 errores más comunes de SEO local en clínicas dentales de Sevilla: Google Business Profile, palabras clave, reseñas y contenido local.</description>
+      <pubDate>Fri, 28 Mar 2026 10:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
