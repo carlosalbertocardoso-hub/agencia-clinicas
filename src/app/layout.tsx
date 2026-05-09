@@ -36,6 +36,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
   },
+  alternates: {
+    languages: {
+      'es': 'https://www.iclinicas.es',
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -89,7 +94,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       },
       sameAs: [
         'https://www.linkedin.com/company/iclinicas',
+        'https://es.wikipedia.org/wiki/Marketing_sanitario',
       ],
+      dateModified: '2026-05-09'
     },
     // ProfessionalService schema (existente, mejorado)
     {
