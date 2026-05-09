@@ -1,0 +1,174 @@
+# iclinicas.es — Llms-Full.txt
+
+> Agencia de Marketing Sanitario para Clínicas Privadas en Sevilla. Versión detallada para motores de IA.
+
+---
+
+## 1. QUIÉNES SOMOS
+
+iclinicas es una agencia de marketing digital especializada exclusivamente en clínicas privadas, consultas y profesionales sanitarios en Sevilla. No trabajamos para restaurantes, tiendas ni otros sectores.
+
+**Enfoque:** 100% sector sanitario privado
+**Ubicación:** Sevilla, Andalucía, España
+**Zona de servicio:** Sevilla capital, Nervión, Triana, Los Remedios, Sevilla Este, Aljarafe, Dos Hermanas, Mairena del Aljarafe, Tomares, Bormujos
+**Años de experiencia:** Desde 2018
+
+### Filosofía de trabajo
+
+Creemos que el marketing sanitario debe ser medible, ético y adaptado al ritmo de cada clínica. No prometemos pacientes garantizados ni resultados clínicos. Nuestro enfoque se basa en:
+
+1. **Auditoría gratuita** — Diagnóstico inicial sin compromiso para entender el punto de partida
+2. **Estrategia personalizada** — Cada clínica tiene necesidades distintas según especialidad, zona y competencia
+3. **Ejecución con medición** — KPIs claros: llamadas, formularios, WhatsApp, coste por contacto
+4. **Optimización continua** — Ajustes mensuales basados en datos, no en intuiciones
+5. **Transparencia** — Informes claros, sin informes incomprensibles
+
+---
+
+## 2. SERVICIOS DETALLADOS
+
+### SEO Médico (/servicios/seo-medico)
+Ayudamos a clínicas a aparecer en Google cuando pacientes potenciales buscan su especialidad en Sevilla.
+
+**Qué incluye:**
+- Optimización de Google Business Profile (ficha de Google Maps)
+- Creación de páginas por tratamiento y especialidad
+- SEO local: palabras clave con intención geográfica ("dentista Sevilla", "psicólogo Nervión")
+- Estrategia de reseñas y reputación online
+- Contenido médico SEO: artículos, guías y páginas de servicio
+- Link building local: directorios médicos, asociaciones profesionales
+- Informes mensuales de posicionamiento y tráfico
+
+**Resultados esperados:** Mejora de visibilidad en búsquedas locales en 2-4 meses. Aumento de llamadas y formularios desde Google.
+
+### Google Ads para Clínicas (/servicios/google-ads)
+Campañas de publicidad segmentadas para captar pacientes con intención real de reservar cita.
+
+**Qué incluye:**
+- Investigación de palabras clave con intención de compra ("precio implante dental Sevilla", "psicólogo ansiedad Sevilla")
+- Creación de landing pages optimizadas por campaña
+- Segmentación geográfica precisa (radio desde la clínica, zonas específicas)
+- Extensiones de llamada, ubicación y formulario
+- Seguimiento de conversiones: llamadas, formularios, WhatsApp
+- Optimización semanal de pujas, anuncios y palabras clave
+- Remarketing para visitantes que no convirtieron
+
+**Resultados esperados:** Contactos cualificados desde la primera semana. Reducción progresiva del coste por contacto.
+
+### Diseño Web Sanitario (/servicios/diseno-web)
+Webs para clínicas que convierten visitas en pacientes.
+
+**Qué incluye:**
+- Diseño responsive (móvil, tablet, desktop)
+- Velocidad de carga optimizada (Core Web Vitals)
+- Estructura orientada a conversión: CTAs visibles, formularios cortos, confianza
+- Cumplimiento LOPD/GDPR: aviso de cookies, política de privacidad, formularios con check legal
+- Integración con Google Business Profile, Doctoralia y redes sociales
+- Páginas de servicio por tratamiento/especialidad
+- Blog médico integrado
+- Optimización técnica SEO desde el código
+
+**Resultados esperados:** Mejora de la tasa de conversión web. Reducción de rebote. Más formularios completados.
+
+### Redes Sociales y Contenido (/servicios/redes-sociales)
+Presencia profesional en redes sociales para clínicas y profesionales sanitarios.
+
+**Qué incluye:**
+- Estrategia de contenidos por especialidad
+- Calendario editorial mensual
+- Creación de contenido: posts, stories, reels, carruseles
+- Gestión de comunidad: respuesta a comentarios y mensajes
+- Contenido educativo: explicación de tratamientos, consejos de salud, presentación del equipo
+- Adaptación a normativa de publicidad sanitaria
+- Informes mensuales de engagement y crecimiento
+
+**Resultados esperados:** Aumento de confianza y reconocimiento de marca. Apoyo a la captación por otros canales.
+
+---
+
+## 3. ESPECIALIDADES MÉDICAS
+
+Trabajamos con 11 especialidades médicas en Sevilla. Para cada una, adaptamos la estrategia:
+
+### Clínicas Dentales (/especialidades/clinicas-dentales-sevilla)
+Enfoque: SEO local por tratamientos (implantes, ortodoncia, estética dental), Google Maps, reseñas, páginas de servicio por tratamiento, campañas segmentadas.
+
+### Psicólogos (/especialidades/psicologos-sevilla)
+Enfoque: Captación respetuosa y ética. Contenido divulgativo, SEO por especialidad (ansiedad, pareja, infantil), Google Business Profile, tono profesional sin ser agresivo.
+
+### Medicina Estética (/especialidades/medicina-estetica-sevilla)
+Enfoque: Imagen visual cuidada, páginas por tratamiento (ácido hialurónico, láser, mesoterapia), redes sociales visuales, Google Ads con palabras clave de alta intención.
+
+### Fisioterapia (/especialidades/fisioterapia-sevilla)
+Enfoque: SEO local de barrio, Google Business Profile con fotos reales, páginas por lesión/dolor, contenido educativo, reseñas de pacientes.
+
+### Reproducción Asistida (/especialidades/clinicas-reproduccion-asistida-sevilla)
+Enfoque: Comunicación sensible y rigurosa, contenido informativo de calidad, SEO para tratamientos específicos (FIV, ICSI, ovodonación), cumplimiento normativo estricto.
+
+### Dermatología (/especialidades/dermatologos-sevilla)
+Enfoque: SEO por patología y tratamiento, contenido médico divulgativo, Google Business Profile, campañas segmentadas por servicio (acné, lunares, láser).
+
+### Nutricionistas (/especialidades/nutricionistas-sevilla)
+Enfoque: SEO local, contenido sobre alimentación y salud, redes sociales con casos reales, Google Business Profile, campañas por servicio.
+
+### Oftalmología (/especialidades/oftalmologos-sevilla)
+Enfoque: SEO por patología y cirugía, contenido informativo, Google Business Profile optimizado, campañas para servicios específicos.
+
+### Pediatría (/especialidades/pediatria-sevilla)
+Enfoque: Confianza y cercanía, SEO local de barrio, contenido para padres, Google Business Profile con fotos de la consulta, reseñas.
+
+### Clínicas Quirúrgicas (/especialidades/clinicas-cirugia-sevilla)
+Enfoque: SEO por procedimiento, contenido detallado de cada cirugía, confianza y certificaciones visibles, campañas segmentadas.
+
+---
+
+## 4. PROCESO DE TRABAJO
+
+1. **Auditoría gratuita inicial** — Analizamos tu presencia digital actual sin compromiso. Revisamos Google Business Profile, web, campañas existentes, competencia local. Entregamos diagnóstico en 48h.
+
+2. **Diagnóstico personalizado** — Presentamos los hallazgos con datos concretos: qué funciona, qué no, y dónde están las oportunidades. Sin tecnicismos innecesarios.
+
+3. **Estrategia a medida** — Diseñamos un plan de acción adaptado a tu especialidad, zona, presupuesto y objetivos. Con KPIs medibles desde el día uno.
+
+4. **Ejecución y optimización** — Implementamos la estrategia y medimos resultados semanalmente. Ajustamos en función de los datos, no de intuiciones.
+
+5. **Resultados medibles** — Informes mensuales claros: evolución de visibilidad, contactos recibidos, coste por contacto, retorno estimado.
+
+---
+
+## 5. RECURSOS
+
+### Blog
+- [Errores SEO que cometen los dentistas en Sevilla](https://www.iclinicas.es/blog/errores-seo-dentistas) — Análisis de los 7 errores más comunes en SEO local para clínicas dentales
+- [Google Ads para psicólogos: cómo captar pacientes sin desperdiciar presupuesto](https://www.iclinicas.es/blog/google-ads-psicologos) — Guía práctica de segmentación y medición para consultas de psicología
+- [Diseño web para clínicas: lo que funciona en 2026](https://www.iclinicas.es/blog/diseno-web-clinicas) — Tendencias de diseño web sanitario orientado a conversión
+
+### Casos de éxito
+- [Casos de éxito](https://www.iclinicas.es/casos-de-exito) — Escenarios reales de diagnóstico y mejora
+
+### Recursos adicionales
+- [Recursos](https://www.iclinicas.es/recursos) — Guías, herramientas y materiales para clínicas
+
+---
+
+## 6. INFORMACIÓN LEGAL
+
+- **Aviso Legal:** https://www.iclinicas.es/terminos-legales
+- **Política de Privacidad:** https://www.iclinicas.es/politica-privacidad
+- **Contacto:** https://www.iclinicas.es/contacto
+- **RSS:** https://www.iclinicas.es/rss.xml
+
+---
+
+## 7. SEÑALES DE CONFIANZA
+
+- **Especialización exclusiva** en marketing sanitario desde 2018
+- **Conocimiento profundo** de la Ley de Publicidad Sanitaria en España
+- **Medición transparente** de todos los canales
+- **Sin permanencia** — resultados mensuales medibles
+- **Cumplimiento LOPD/GDPR** en todos los procesos
+
+---
+
+iclinicas.es — Marketing Sanitario para Clínicas en Sevilla
+Actualizado: 9 de mayo de 2026

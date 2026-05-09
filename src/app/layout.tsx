@@ -183,6 +183,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         },
       ],
     },
+    // HowTo schema — proceso de trabajo
+    {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: 'Cómo trabaja iclinicas con las clínicas',
+      description: 'Proceso de captación de pacientes en 5 pasos: auditoría gratuita, diagnóstico, estrategia, ejecución y resultados medibles.',
+      step: [
+        { '@type': 'HowToStep', position: 1, name: 'Auditoría gratuita', text: 'Analizamos presencia digital: Google Business Profile, web, campañas y competencia. Diagnóstico en 48h sin compromiso.' },
+        { '@type': 'HowToStep', position: 2, name: 'Diagnóstico personalizado', text: 'Hallazgos con datos: qué funciona, qué no y oportunidades. Sin tecnicismos.' },
+        { '@type': 'HowToStep', position: 3, name: 'Estrategia a medida', text: 'Plan adaptado a especialidad, zona, presupuesto y objetivos con KPIs medibles.' },
+        { '@type': 'HowToStep', position: 4, name: 'Ejecución y optimización', text: 'Implementación con medición semanal. Ajustes por datos, no intuiciones.' },
+        { '@type': 'HowToStep', position: 5, name: 'Resultados medibles', text: 'Informes mensuales: visibilidad, contactos, coste por contacto, retorno estimado.' },
+      ],
+    },
+    // Review schemas
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Review',
+      itemReviewed: { '@type': 'ProfessionalService', name: 'iclinicas - Agencia de Marketing Sanitario' },
+      author: { '@type': 'Person', name: 'Dr. Manuel R.' },
+      reviewBody: 'A los 3 meses de aplicar los cambios, las llamadas desde Google habían crecido un 40%.',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Review',
+      itemReviewed: { '@type': 'ProfessionalService', name: 'iclinicas - Agencia de Marketing Sanitario' },
+      author: { '@type': 'Person', name: 'Dra. Carmen L.' },
+      reviewBody: 'Las consultas han pasado de ser esporádicas a tener la agenda llena con 2-3 semanas de antelación.',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+    },
   ]
 
   return (

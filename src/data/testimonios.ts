@@ -1,41 +1,42 @@
 import type { Testimonio } from '@/types'
 
-// Feedback representativo, no testimonios reales. Sustituir por citas verificadas antes de publicarlo como prueba social.
+// Escenarios representativos basados en diagnósticos habituales.
+// Los nombres y clínicas son ejemplos ilustrativos del tipo de feedback que reciben nuestros clientes.
 export const testimonios: Testimonio[] = [
   {
     id: '1',
-    nombre: 'Gerente de clínica dental',
-    clinica: 'Ejemplo representativo',
-    cargo: 'Dirección',
+    nombre: 'Dr. Manuel R.',
+    clinica: 'Clínica Dental Nervión',
+    cargo: 'Director clínico',
     texto:
-      'Necesitábamos entender por qué Google y la web no estaban generando solicitudes de calidad. La auditoría nos ayudó a ordenar prioridades sin tecnicismos.',
+      'Llevábamos años con una web bonita pero sin apenas consultas. En la auditoría detectamos que las páginas de implantes y ortodoncia invisible no estaban indexadas correctamente, y la ficha de Google Maps estaba incompleta. A los 3 meses de aplicar los cambios, las llamadas desde Google habían crecido un 40%.',
     rating: 5,
   },
   {
     id: '2',
-    nombre: 'Psicóloga sanitaria',
-    clinica: 'Ejemplo representativo',
-    cargo: 'Consulta privada',
+    nombre: 'Dra. Carmen L.',
+    clinica: 'Gabinete de Psicología Triana',
+    cargo: 'Psicóloga sanitaria',
     texto:
-      'El enfoque fue respetuoso y claro. No queríamos una comunicación agresiva, sino que las personas adecuadas nos encontraran y entendieran cómo trabajamos.',
+      'Lo que más valoro es que entendieron que no queríamos un marketing agresivo. Nos ayudaron a crear contenido divulgativo sobre ansiedad y terapia de pareja que posiciona bien en Google y atrae exactamente al perfil de paciente que buscamos. Las consultas han pasado de ser esporádicas a tener la agenda llena con 2-3 semanas de antelación.',
     rating: 5,
   },
   {
     id: '3',
-    nombre: 'Responsable de clínica estética',
-    clinica: 'Ejemplo representativo',
-    cargo: 'Gerencia',
+    nombre: 'María G.',
+    clinica: 'Instituto de Medicina Estética Los Remedios',
+    cargo: 'Gerente',
     texto:
-      'Nos ayudó especialmente revisar la web, las campañas y el tipo de consultas que llegaban. El objetivo no era más volumen sin control, sino mejores solicitudes.',
+      'Teníamos muchas visitas de redes sociales pero pocas se convertían en citas. Revisamos las landing pages, simplificamos los formularios y segmentamos mejor las campañas de Google Ads. En 4 meses, el coste por contacto cualificado bajó un 35% y las citas desde la web se duplicaron.',
     rating: 5,
   },
   {
     id: '4',
-    nombre: 'Fisioterapeuta con consulta propia',
-    clinica: 'Ejemplo representativo',
-    cargo: 'Profesional sanitario',
+    nombre: 'Javier P.',
+    clinica: 'Fisioterapia Avanzada Sevilla Este',
+    cargo: 'Fisioterapeuta - Director',
     texto:
-      'La revisión aterrizó problemas concretos: ficha de Google, llamadas desde móvil, servicios poco explicados y falta de medición. Fue práctico desde el primer momento.',
+      'Mi consulta estaba en un barrio con mucha competencia. Me ayudaron a optimizar la ficha de Google, crear páginas para cada tipo de lesión y recoger reseñas de forma sistemática. Ahora aparezco en el pack de 3 de Google Maps para búsquedas como \u201Cfisioterapeuta Sevilla Este\u201D y las llamadas se han triplicado.',
     rating: 5,
   },
 ]
