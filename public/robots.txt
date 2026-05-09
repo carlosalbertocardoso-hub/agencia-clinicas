@@ -1,9 +1,101 @@
-# *
+# robots.txt — iclinicas.es
+# Optimizado para AI search visibility — Actualizado: 2026-05-09
+
+# ============================================
+# AI Training Bots
+# ============================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: claude-web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: AI2Bot-Dolma
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: xAI-Bot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# ============================================
+# AI Search & Citation Bots
+# ============================================
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# ============================================
+# General
+# ============================================
 User-agent: *
 Allow: /
 
-# Host
+# ============================================
+# Host & Sitemaps
+# ============================================
 Host: https://www.iclinicas.es
-
-# Sitemaps
 Sitemap: https://www.iclinicas.es/sitemap.xml
