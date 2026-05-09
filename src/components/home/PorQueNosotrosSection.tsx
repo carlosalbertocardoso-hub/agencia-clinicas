@@ -1,42 +1,42 @@
-import { BarChart3, CircleDollarSign, MapPin, MessageCircle, Target, Workflow } from 'lucide-react'
+import { BarChart3, CircleDollarSign, Clock, MapPin, MessageCircle, Target } from 'lucide-react'
 
 export default function PorQueNosotrosSection() {
   const razones = [
     {
       icono: Target,
-      titulo: 'Hablamos de pacientes, agenda y rentabilidad',
+      titulo: 'Te ahorramos tiempo',
       descripcion:
-        'No nos quedamos en visitas o impresiones. Priorizamos acciones que puedan traducirse en solicitudes de cita útiles.',
+        'No tendrás que revisar campañas, analizar estadísticas ni perseguir a tu equipo de marketing. Nosotros lo hacemos y te presentamos solo lo que importa.',
     },
     {
       icono: CircleDollarSign,
-      titulo: 'Priorizamos impacto en solicitudes',
+      titulo: 'Sabes lo que pagas y lo que obtienes',
       descripcion:
-        'Ordenamos el trabajo según lo que más puede estar frenando contactos: visibilidad, confianza, conversión o inversión mal enfocada.',
+        'Cada mes recibes un informe con datos reales: contactos recibidos, coste por paciente y canales que funcionan. Sin adornos ni métricas que suenan bien pero no significan nada.',
     },
     {
-      icono: Workflow,
-      titulo: 'Entendemos la decisión sanitaria privada',
+      icono: Clock,
+      titulo: '15 minutos a la semana',
       descripcion:
-        'Una persona compara, duda y busca seguridad antes de elegir clínica. El mensaje debe acompañar ese proceso con rigor.',
+        'Eso es lo único que necesitas dedicar al marketing de tu clínica. Validar resultados, tomar decisiones rápidas y seguir con tu día a día. Nosotros hacemos el resto.',
     },
     {
       icono: BarChart3,
-      titulo: 'Medimos llamadas, WhatsApp y formularios',
+      titulo: 'Medimos lo que importa: pacientes',
       descripcion:
-        'Configuramos medición para saber qué canales generan contactos y qué calidad tienen esas solicitudes.',
+        'Llamadas, formularios, WhatsApp. No nos quedamos en visitas web o impresiones. Sabemos qué campaña trae pacientes de verdad y cuál solo gasta presupuesto.',
     },
     {
       icono: MessageCircle,
-      titulo: 'Adaptamos el mensaje a cada especialidad',
+      titulo: 'Hablamos tu idioma (no tecnicismos)',
       descripcion:
-        'No comunica igual una clínica dental, una consulta de psicología, una clínica estética o un especialista quirúrgico.',
+        'Nada de explicarte cómo funciona el algoritmo de Google o qué es el CTR. Te contamos lo que necesitas saber para decidir, con lenguaje claro y sin rodeos.',
     },
     {
       icono: MapPin,
-      titulo: 'Mentalidad local: Sevilla y competencia cercana',
+      titulo: 'Solo trabajamos en Sevilla',
       descripcion:
-        'Trabajamos con barrios, zonas, búsquedas cercanas y competidores reales, no con plantillas genéricas de agencia.',
+        'Conocemos los barrios, la competencia local y cómo busca un paciente en Sevilla. No somos una agencia nacional con plantilla. Somos de aquí y trabajamos para clínicas de aquí.',
     },
   ]
 
@@ -46,7 +46,8 @@ export default function PorQueNosotrosSection() {
         <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-4">Por qué iclinicas</h2>
           <p className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
-            Somos un partner estratégico para ordenar tu captación online sin que tengas que convertirte en experto en SEO, Ads o analítica.
+            Porque no necesitas otra carga de trabajo. Necesitas alguien que se encargue del marketing 
+            mientras tú te encargas de tu clínica.
           </p>
         </div>
 

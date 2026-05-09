@@ -17,20 +17,17 @@ export default function HeroSection() {
 
       <div className="container-custom relative z-10 flex min-h-[600px] sm:min-h-[620px] md:min-h-[640px] items-center justify-center py-10 sm:py-12">
         <div className="mx-auto max-w-4xl text-center text-white">
-          <p className="text-label text-[#FFD166] mb-4">Marketing sanitario para centros médicos privados</p>
+          <p className="text-label text-[#FFD166] mb-4">
+            Marketing sanitario para clínicas privadas en Sevilla
+          </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold mb-6 text-white leading-tight">
-            Captación de pacientes privados para clínicas en Sevilla
+            Más pacientes para tu clínica sin que el marketing te quite tiempo
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Convertimos Google, tu web, tus campañas y tu reputación online en un sistema medible para atraer pacientes privados, respetando la Ley de Publicidad Sanitaria en España y el tono que exige el sector salud.
+            Eliminamos la gestión diaria de tu marketing digital para que puedas dedicarte a tu clínica 
+            mientras nosotros nos encargamos de que los pacientes lleguen. Solo 15 minutos a la semana 
+            para validar resultados.
           </p>
-
-          <blockquote className="text-sm sm:text-base text-white/80 italic border-l-4 border-[#FFD166] pl-4 mb-8 max-w-2xl mx-auto text-left">
-            &ldquo;El 76% de los pacientes busca un especialista por Google antes de pedir cita, y el 63% descarta clínicas que no aparecen en los primeros resultados locales.&rdquo;
-            <footer className="text-white/60 text-xs mt-1 not-italic">
-              — Fuente: Google Health Research, 2025
-            </footer>
-          </blockquote>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-6 justify-center">
             <Link
@@ -57,6 +54,8 @@ export default function HeroSection() {
             <span>Diagnóstico en 48h</span>
             <span className="text-white/30">·</span>
             <span>Sin permanencia</span>
+            <span className="text-white/30">·</span>
+            <span>15 min/semana de tu tiempo</span>
           </div>
         </div>
       </div>
