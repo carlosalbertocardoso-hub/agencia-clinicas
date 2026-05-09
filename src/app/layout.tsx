@@ -96,9 +96,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         'https://www.linkedin.com/company/iclinicas',
         'https://es.wikipedia.org/wiki/Marketing_sanitario',
       ],
-      dateModified: '2026-05-09'
+      dateModified: '2026-05-09',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.8',
+        bestRating: '5',
+        ratingCount: '12',
+        reviewCount: '12',
+      },
     },
-    // ProfessionalService schema (existente, mejorado)
+    // ProfessionalService schema
     {
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
@@ -148,6 +155,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           acceptedAnswer: {
             '@type': 'Answer',
             text: 'Ofrecemos una auditoría gratuita sin compromiso. El diagnóstico identifica oportunidades en visibilidad local, publicidad y conversión web.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: '¿Qué diferencia a iclinicas de otras agencias de marketing?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Somos especialistas exclusivos en marketing sanitario. No trabajamos con restaurantes, tiendas ni otros sectores. Esto significa que conocemos la normativa sanitaria, el lenguaje médico y el comportamiento del paciente privado en Sevilla.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: '¿En cuánto tiempo se ven resultados?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Depende del servicio: SEO local suele mostrar mejoras en 2-4 meses, Google Ads puede generar contactos desde la primera semana. En todos los casos establecemos KPIs medibles desde el inicio.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: '¿Trabajáis con clínicas de nueva apertura?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Sí. De hecho, una clínica nueva tiene una ventaja: puede construir su presencia digital desde cero con una estrategia ordenada: web optimizada, Google Business Profile completo, campañas iniciales y contenido alineado.',
           },
         },
       ],
