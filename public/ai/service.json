@@ -1,14 +1,16 @@
 {
   "name": "iclinicas",
-  "description": "Agencia de marketing digital especializada en clínicas privadas y profesionales sanitarios en Sevilla. Servicios: SEO local, Google Ads, diseño web sanitario y redes sociales.",
+  "type": "agency",
+  "description": "Agencia de marketing digital para clínicas privadas en Sevilla. SEO local, Google Ads, diseño web sanitario, redes sociales.",
   "url": "https://www.iclinicas.es",
   "services": [
-    "SEO médico para clínicas",
-    "Google Ads para clínicas",
-    "Diseño web sanitario",
-    "Redes sociales y contenido sanitario"
+    {"name": "SEO Médico", "url": "https://www.iclinicas.es/servicios/seo-medico"},
+    {"name": "Google Ads", "url": "https://www.iclinicas.es/servicios/google-ads"},
+    {"name": "Diseño Web Sanitario", "url": "https://www.iclinicas.es/servicios/diseno-web"},
+    {"name": "Redes Sociales", "url": "https://www.iclinicas.es/servicios/redes-sociales"}
   ],
-  "location": "Sevilla, Andalucía, ES",
+  "audience": "Clínicas privadas y profesionales sanitarios",
+  "location": "Sevilla, España",
   "language": "es",
   "updated": "2026-05-09"
 }
