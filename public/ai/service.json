@@ -1,50 +1,14 @@
 {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "iclinicas — Agencia de Marketing Sanitario",
-  "description": "iclinicas ofrece servicios de marketing digital especializados para clínicas privadas y profesionales sanitarios en Sevilla: SEO local, Google Ads, diseño web sanitario y redes sociales.",
+  "name": "iclinicas",
+  "description": "Agencia de marketing digital especializada en clínicas privadas y profesionales sanitarios en Sevilla. Servicios: SEO local, Google Ads, diseño web sanitario y redes sociales.",
   "url": "https://www.iclinicas.es",
-  "areaServed": {
-    "@type": "City",
-    "name": "Sevilla",
-    "sameAs": "https://es.wikipedia.org/wiki/Sevilla"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Servicios de marketing sanitario",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "SEO Médico",
-          "description": "SEO local para clínicas, optimización de Google Business Profile, contenido médico y estrategia de palabras clave sanitarias en Sevilla."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Google Ads para Clínicas",
-          "description": "Campañas de publicidad segmentadas por especialidad médica con landing pages optimizadas y medición por cita."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Diseño Web Sanitario",
-          "description": "Webs rápidas para clínicas, orientadas a conversión, con cumplimiento LOPD/GDPR y diseño responsive."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Redes Sociales y Contenido",
-          "description": "Contenido profesional sanitario, gestión de reputación online y presencia en directorios médicos."
-        }
-      }
-    ]
-  }
+  "services": [
+    "SEO médico para clínicas",
+    "Google Ads para clínicas",
+    "Diseño web sanitario",
+    "Redes sociales y contenido sanitario"
+  ],
+  "location": "Sevilla, Andalucía, ES",
+  "language": "es",
+  "updated": "2026-05-09"
 }

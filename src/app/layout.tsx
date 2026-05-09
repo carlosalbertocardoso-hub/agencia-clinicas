@@ -95,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       sameAs: [
         'https://www.linkedin.com/company/iclinicas',
         'https://es.wikipedia.org/wiki/Marketing_sanitario',
+        'https://www.wikidata.org/wiki/Q2527955',
       ],
       dateModified: '2026-05-09',
       aggregateRating: {
