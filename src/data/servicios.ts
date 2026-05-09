@@ -3,10 +3,10 @@ import type { Servicio } from '@/types'
 export const servicios: Servicio[] = [
   {
     id: '1',
-    nombre: 'SEO local para clínicas en Sevilla',
+    nombre: 'SEO para clínicas en Sevilla: aparece cuando te buscan',
     slug: 'seo-medico',
     descripcion:
-      'Haz que tu clínica aparezca cuando un paciente busca tu especialidad, tu tratamiento o una clínica cercana en Sevilla.',
+      'Consigue que los pacientes te encuentren en Google sin pagar por cada clic. Aparece en las búsquedas que más te interesan.',
     imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Auditoría de Google Business Profile, web, Search Console y competencia local',
@@ -20,10 +20,10 @@ export const servicios: Servicio[] = [
   },
   {
     id: '2',
-    nombre: 'Google Ads para clínicas privadas en Sevilla',
+    nombre: 'Google Ads para clínicas: paga solo por pacientes reales',
     slug: 'google-ads',
     descripcion:
-      'Campañas para captar búsquedas con intención real: personas que ya están buscando una clínica, tratamiento o profesional sanitario.',
+      'Atrae pacientes que ya están buscando lo que ofreces. Campañas medidas por contacto real, no por clics o impresiones.',
     imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Campañas Search por especialidad, tratamiento, zona y nivel de intención',
@@ -37,10 +37,10 @@ export const servicios: Servicio[] = [
   },
   {
     id: '3',
-    nombre: 'Diseño web para clínicas en Sevilla orientado a captar citas',
+    nombre: 'Diseño web para clínicas: webs que convierten visitas en citas',
     slug: 'diseno-web',
     descripcion:
-      'Creamos o mejoramos webs sanitarias pensadas para transmitir confianza, explicar tus servicios y convertir visitas en solicitudes de cita.',
+      'Tu web es la primera impresión de tu clínica. Que no sea solo bonita: que convierta visitas en llamadas y formularios.',
     imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Home clara con propuesta de valor, especialidad, ubicación y vías de contacto',
@@ -54,10 +54,10 @@ export const servicios: Servicio[] = [
   },
   {
     id: '4',
-    nombre: 'Redes sociales para clínicas en Sevilla que quieren generar confianza',
+    nombre: 'Redes sociales para clínicas: contenido que genera confianza',
     slug: 'redes-sociales',
     descripcion:
-      'Una presencia profesional que refuerza confianza, explica tratamientos y acompaña la decisión del paciente antes de pedir cita.',
+      'Presencia profesional en redes sin caer en contenido vacío. Genera confianza, muestra tu trabajo y conecta con pacientes sin parecer venta agresiva.',
     imagen: '/images/hero-clinica-marketing.png',
     caracteristicas: [
       'Calendario editorial adaptado a tu especialidad y a dudas frecuentes de pacientes',

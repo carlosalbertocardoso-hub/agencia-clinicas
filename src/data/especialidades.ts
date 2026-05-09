@@ -21,7 +21,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Clínicas dentales',
     slug: 'clinicas-dentales-sevilla',
     descripcionCorta:
-      'Más visibilidad para implantes, ortodoncia, estética dental, urgencias y revisiones.',
+      'Consigue que los pacientes de implantes, ortodoncia y estética dental te encuentren en Google. Sin pagar por cada clic.',
     descripcionLarga:
       'Marketing digital para clínicas dentales en Sevilla que necesitan competir mejor en Google, transmitir confianza y captar solicitudes de tratamientos de valor.',
     icono: 'Tooth',
@@ -34,7 +34,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Psicólogos',
     slug: 'psicologos-sevilla',
     descripcionCorta:
-      'Captación ética y clara para ansiedad, pareja, infantil, terapia online o presencial.',
+      'Atrae pacientes de ansiedad, terapia de pareja e infantil con un tono ético y profesional. Sin parecer venta agresiva.',
     descripcionLarga:
       'Marketing digital para psicólogos en Sevilla con un enfoque sensible: visibilidad local, confianza, privacidad y mensajes que ayudan a dar el primer paso.',
     icono: 'Brain',
@@ -47,7 +47,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Medicina estética',
     slug: 'medicina-estetica-sevilla',
     descripcionCorta:
-      'Web, anuncios y contenido para explicar tratamientos, generar confianza y filtrar solicitudes.',
+      'Explica tus tratamientos, genera confianza y filtra las solicitudes que realmente te interesan.',
     descripcionLarga:
       'Marketing digital para clínicas de medicina estética en Sevilla que quieren comunicar tratamientos con rigor, naturalidad y una captación menos agresiva.',
     icono: 'Sparkles',
@@ -60,7 +60,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Fisioterapia',
     slug: 'fisioterapia-sevilla',
     descripcionCorta:
-      'SEO local y campañas para recuperación, dolor, rehabilitación y fisioterapia deportiva.',
+      'Aparece cuando un paciente busca fisioterapeuta cerca de su casa. SEO local y campañas para tu barrio.',
     descripcionLarga:
       'Marketing digital para clínicas de fisioterapia en Sevilla orientado a búsquedas cercanas, necesidades concretas y contacto rápido desde móvil.',
     icono: 'Activity',
@@ -73,7 +73,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Clínicas de reproducción asistida',
     slug: 'clinicas-reproduccion-asistida-sevilla',
     descripcionCorta:
-      'Captación prudente para fertilidad, FIV, preservación, donación y primera valoración.',
+      'Comunicación sensible y rigurosa para clínicas de fertilidad. Transmite confianza sin banalizar.',
     descripcionLarga:
       'Marketing digital para clínicas de reproducción asistida en Sevilla que necesitan transmitir rigor médico, privacidad y confianza en decisiones de alta sensibilidad.',
     icono: 'Dna',
@@ -86,7 +86,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Pedagogos',
     slug: 'pedagogos-sevilla',
     descripcionCorta:
-      'Visibilidad para apoyo educativo, dificultades de aprendizaje, orientación familiar y atención psicopedagógica.',
+      'Llega a familias que buscan apoyo educativo especializado en Sevilla. Con un mensaje claro y profesional.',
     descripcionLarga:
       'Marketing digital para pedagogos y gabinetes psicopedagógicos en Sevilla que quieren llegar a familias con un mensaje claro, sensible y profesional.',
     icono: 'GraduationCap',
@@ -99,7 +99,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Dermatólogos',
     slug: 'dermatologos-sevilla',
     descripcionCorta:
-      'Captación para dermatología privada, revisión de lunares, acné, manchas, alopecia y dermatología estética.',
+      'Pacientes privados de dermatología que buscan revisión de lunares, acné o tratamientos estéticos. Consigue que te encuentren.',
     descripcionLarga:
       'Marketing digital para dermatólogos y clínicas dermatológicas en Sevilla con foco en confianza médica, diagnóstico privado y solicitudes cualificadas.',
     icono: 'ScanFace',
@@ -112,7 +112,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Nutricionistas',
     slug: 'nutricionistas-sevilla',
     descripcionCorta:
-      'Presencia profesional para pérdida de peso, salud digestiva, nutrición deportiva y educación alimentaria.',
+      'Construye una presencia profesional que diferencie tu método y convierta interés en consultas.',
     descripcionLarga:
       'Marketing digital para nutricionistas en Sevilla que necesitan diferenciar su método, reforzar autoridad profesional y convertir interés en consultas.',
     icono: 'Apple',
@@ -125,7 +125,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Oftalmólogos',
     slug: 'oftalmologos-sevilla',
     descripcionCorta:
-      'SEO local, web y campañas para revisiones, cirugía refractiva, cataratas, retina y oftalmología privada.',
+      'Capta pacientes privados de cirugía ocular, cataratas y revisiones. Explica procedimientos con rigor.',
     descripcionLarga:
       'Marketing digital para oftalmólogos y clínicas oftalmológicas en Sevilla que necesitan explicar procedimientos, reforzar autoridad y captar consultas privadas.',
     icono: 'Eye',
@@ -138,7 +138,7 @@ export const especialidades: Especialidad[] = [
     nombre: 'Pediatras',
     slug: 'pediatria-sevilla',
     descripcionCorta:
-      'Confianza para familias que buscan pediatra privado, cercanía, disponibilidad y trato claro.',
+      'Ayuda a familias a encontrar tu consulta de pediatría. Confianza, cercanía y disponibilidad visibles desde Google.',
     descripcionLarga:
       'Marketing digital para pediatras en Sevilla que quieren transmitir confianza, cercanía y facilidad de contacto a familias.',
     icono: 'Baby',
