@@ -1,7 +1,21 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-export function middleware(_request: NextRequest) {
+export function middleware(request: NextRequest) {
+  const hostname = request.headers.get('host') || ''
+
+  // Redirect non-www to www (301 permanent)
+  // This handles the case when Vercel Dashboard redirect toggle is off
+  if (hostname === 'iclinicas.es') {
+    const url = request.nextUrl.clone()
+    url.host = 'www.iclinicas.es'
+    url.protocol = 'https'
+    const redirect = NextResponse.redirect(url, 301)
+    // Explicit cache header so Google doesn't flag it as "weird redirect"
+    redirect.headers.set('Cache-Control', 'public, max-age=31536000, immutable')
+    return redirect
+  }
+
   const response = NextResponse.next()
 
   // Security headers
