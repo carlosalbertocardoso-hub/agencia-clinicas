@@ -1,17 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "iclinicas.es"
-        }
-      ],
-      "destination": "https://www.iclinicas.es/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/favicon.svg",
