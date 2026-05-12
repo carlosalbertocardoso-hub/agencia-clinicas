@@ -119,7 +119,7 @@ export default function NosotrosPage() {
 
               <div>
                 <Image
-                  src="/images/carlos-cardoso.jpg"
+                  src="/images/carlos-cardoso.jpeg"
                   alt="Carlos Cardoso — Fundador de iclinicas"
                   width={96}
                   height={96}
