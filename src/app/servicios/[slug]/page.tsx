@@ -202,7 +202,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: pageMeta?.title || servicio.nombre,
       description: truncatedDesc,
       url: `https://www.iclinicas.es/servicios/${params.slug}`,
-      images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
+      images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: pageMeta?.title || servicio.nombre,
+      description: truncatedDesc,
+      images: ['/images/og-default.png'],
     },
     keywords: [
       `${servicio.nombre.toLowerCase()} Sevilla`,

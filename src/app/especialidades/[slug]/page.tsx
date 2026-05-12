@@ -547,7 +547,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: meta?.title || content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`,
       description: truncatedDesc,
       url: `https://www.iclinicas.es/especialidades/${params.slug}`,
-      images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
+      images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: meta?.title || content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`,
+      description: truncatedDesc,
+      images: ['/images/og-default.png'],
     },
     keywords: [
       `marketing digital ${especialidad.nombre.toLowerCase()} Sevilla`,

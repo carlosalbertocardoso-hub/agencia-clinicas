@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     title: 'Marketing digital para clínicas en Sevilla | iclinicas',
     description:
       'SEO local, Google Ads, diseño web, reputación y captación medible para clínicas privadas en Sevilla.',
-    images: [{ url: '/images/og-default.svg', width: 1200, height: 630, alt: 'iclinicas - Marketing para clínicas' }],
+    images: [{ url: '/images/og-default.png', width: 1200, height: 630, alt: 'iclinicas - Marketing para clínicas' }],
     siteName: 'iclinicas',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Marketing digital para clínicas en Sevilla',
     description: 'Captación online medible para clínicas privadas y profesionales sanitarios en Sevilla.',
-    images: ['/images/og-default.svg'],
+    images: ['/images/og-default.png'],
   },
   robots: {
     index: true,
@@ -75,9 +75,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     {
       '@context': 'https://schema.org',
       '@type': 'Organization',
+      '@id': 'https://www.iclinicas.es/#organization',
       name: 'iclinicas - Agencia de Marketing Sanitario',
       url: 'https://www.iclinicas.es/',
       logo: 'https://www.iclinicas.es/logo.svg',
+      email: 'info@iclinicas.es',
+      foundingDate: '2018',
       description:
         'Agencia de marketing digital especializada en clínicas privadas y profesionales sanitarios en Sevilla.',
       address: {
@@ -89,6 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer service',
+        email: 'info@iclinicas.es',
         availableLanguage: ['Spanish'],
         url: 'https://www.iclinicas.es/contacto',
       },
@@ -97,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         'https://es.wikipedia.org/wiki/Marketing_sanitario',
         'https://www.wikidata.org/wiki/Q2527955',
       ],
-      dateModified: '2026-05-09',
+      dateModified: '2026-05-12',
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '4.8',
@@ -106,20 +110,41 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         reviewCount: '12',
       },
     },
-    // ProfessionalService schema
+    // LocalBusiness + ProfessionalService + MarketingAgency schema
     {
       '@context': 'https://schema.org',
-      '@type': 'ProfessionalService',
-      name: 'iclinicas - Agencia de Marketing Sanitario',
+      '@type': ['LocalBusiness', 'ProfessionalService', 'MarketingAgency'],
+      '@id': 'https://www.iclinicas.es/#local-business',
+      name: 'iclinicas',
+      description:
+        'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla',
+      url: 'https://www.iclinicas.es',
+      email: 'info@iclinicas.es',
+      logo: 'https://www.iclinicas.es/logo.svg',
+      image: 'https://www.iclinicas.es/images/og-default.png',
+      foundingDate: '2018',
+      inLanguage: 'es-ES',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Sevilla',
         addressRegion: 'Andalucía',
         addressCountry: 'ES',
       },
-      url: 'https://www.iclinicas.es/',
-      serviceType: ['Marketing Médico', 'SEO Local', 'Google Ads para Clínicas'],
-      areaServed: ['Sevilla', 'Nervión', 'Triana', 'Aljarafe'],
+      areaServed: [
+        { '@type': 'City', name: 'Sevilla' },
+        { '@type': 'City', name: 'Dos Hermanas' },
+        'Nervión', 'Los Remedios', 'Triana', 'Sevilla Este', 'Aljarafe',
+      ],
+      serviceType: [
+        'Marketing Médico',
+        'SEO Local para Clínicas',
+        'Google Ads para Clínicas',
+        'Diseño Web Sanitario',
+        'Gestión de Redes Sociales Sanitarias',
+      ],
+      parentOrganization: {
+        '@id': 'https://www.iclinicas.es/#organization',
+      },
     },
     // FAQPage schema
     {

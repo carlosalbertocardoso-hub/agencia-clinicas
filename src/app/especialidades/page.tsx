@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/especialidades',
   },
+  openGraph: {
+    title: 'A quién ayudamos | Marketing sanitario en Sevilla | iclinicas',
+    description: 'Marketing digital para clínicas dentales, psicólogos, medicina estética, fisioterapia, dermatología, nutricionistas, oftalmología y más en Sevilla.',
+    url: 'https://www.iclinicas.es/especialidades',
+    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'A quién ayudamos | Marketing sanitario en Sevilla | iclinicas',
+    description: 'Marketing digital para clínicas dentales, psicólogos, medicina estética, fisioterapia, dermatología, nutricionistas, oftalmología y más en Sevilla.',
+    images: ['/images/og-default.png'],
+  },
 }
 
 export default function EspecialidadesPage() {

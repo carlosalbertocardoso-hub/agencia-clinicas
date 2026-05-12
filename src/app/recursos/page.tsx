@@ -17,7 +17,13 @@ export const metadata: Metadata = {
     title: 'Recursos de marketing sanitario para clínicas en Sevilla',
     description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
     url: 'https://www.iclinicas.es/recursos',
-    images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
+    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Recursos de marketing sanitario para clínicas en Sevilla',
+    description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
+    images: ['/images/og-default.png'],
   },
 }
 

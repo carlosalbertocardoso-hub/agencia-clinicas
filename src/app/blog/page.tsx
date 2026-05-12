@@ -17,7 +17,13 @@ export const metadata: Metadata = {
     title: 'Guías de marketing para clínicas privadas en Sevilla',
     description: 'SEO local, Google Ads, diseño web, reputación y captación para clínicas privadas.',
     url: 'https://www.iclinicas.es/blog',
-    images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
+    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guías de marketing para clínicas privadas en Sevilla',
+    description: 'SEO local, Google Ads, diseño web, reputación y captación para clínicas privadas.',
+    images: ['/images/og-default.png'],
   },
 }
 

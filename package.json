@@ -4,7 +4,7 @@
   "description": "Marketing digital para clínicas y sanitarios en Sevilla",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "qa:interactions": "node scripts/qa-interactions.js",
@@ -28,6 +28,7 @@
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
     "eslint": "^8.54.0",
-    "eslint-config-next": "^14.0.0"
+    "eslint-config-next": "^14.0.0",
+    "sharp": "^0.34.5"
   }
 }

@@ -64,7 +64,7 @@ Revisa tu ficha de Google, tus páginas de tratamiento, tus reseñas, tu web mó
 
 ¿Quieres aplicar esto a tu clínica dental en Sevilla? Solicita una auditoría gratuita para revisar el SEO de tu clínica dental.
     `,
-    fecha: '3 de mayo, 2026',
+    fecha: '2 de mayo, 2026',
     categoria: 'SEO local',
     tiempoLectura: '8 min',
   },
@@ -174,7 +174,7 @@ El objetivo no es tener una web bonita sin más. El objetivo es que la web traba
 
 ¿Quieres revisar mi web de clínica y saber si está frenando solicitudes? Solicita una auditoría gratuita y analizamos los puntos principales.
     `,
-    fecha: '3 de mayo, 2026',
+    fecha: '5 de mayo, 2026',
     categoria: 'Diseño web',
     tiempoLectura: '10 min',
   },

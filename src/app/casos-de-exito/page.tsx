@@ -17,7 +17,13 @@ export const metadata: Metadata = {
     title: 'Ejemplos de diagnóstico - iclinicas',
     description: 'Situaciones habituales de captación online en clínicas privadas de Sevilla.',
     url: 'https://www.iclinicas.es/casos-de-exito',
-    images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
+    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ejemplos de diagnóstico - iclinicas',
+    description: 'Situaciones habituales de captación online en clínicas privadas de Sevilla.',
+    images: ['/images/og-default.png'],
   },
 }
 

@@ -115,7 +115,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://www.iclinicas.es/blog/${params.slug}`,
       type: 'article',
       publishedTime: post.fecha,
-      images: [{ url: post.imagen || '/images/og-default.svg', width: 1200, height: 630 }],
+      images: [{ url: post.imagen || '/images/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.titulo,
+      description: post.excerpt,
+      images: [post.imagen || '/images/og-default.png'],
     },
   }
 }
