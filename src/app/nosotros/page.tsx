@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Lightbulb, ShieldCheck, Target, ExternalLink } from 'lucide-react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -34,7 +35,7 @@ const personSchema = {
   description:
     'Consultor con más de 15 años de experiencia en marketing digital y ecommerce. Especializado en captación online para clínicas privadas y profesionales sanitarios en Sevilla desde 2018.',
   url: 'https://www.iclinicas.es/nosotros',
-  sameAs: ['https://www.linkedin.com/in/carloscardoso'],
+  sameAs: ['https://www.linkedin.com/in/carlos-cardoso-75025721/'],
   worksFor: {
     '@id': 'https://www.iclinicas.es/#organization',
   },
@@ -117,6 +118,13 @@ export default function NosotrosPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 
               <div>
+                <Image
+                  src="/images/carlos-cardoso.jpg"
+                  alt="Carlos Cardoso — Fundador de iclinicas"
+                  width={96}
+                  height={96}
+                  className="rounded-full border-2 border-primary/20 mb-6 object-cover"
+                />
                 <p className="text-label text-accent mb-3">Fundador</p>
                 <h2 className="text-4xl md:text-5xl font-heading font-semibold text-text mb-4">
                   Carlos Cardoso
@@ -128,7 +136,7 @@ export default function NosotrosPage() {
                   La especialización no fue una decisión de nicho de mercado: fue el resultado de comprobar que el sector sanitario tiene lógicas de decisión, normativa y sensibilidad propias que una agencia generalista no suele entender bien.
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/carloscardoso"
+                  href="https://www.linkedin.com/in/carlos-cardoso-75025721/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary/30 rounded-full px-4 py-2 hover:bg-primary hover:text-white transition"
@@ -269,7 +277,7 @@ export default function NosotrosPage() {
                   Solicitar auditoría gratuita
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/carloscardoso"
+                  href="https://www.linkedin.com/in/carlos-cardoso-75025721/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/30 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition"
