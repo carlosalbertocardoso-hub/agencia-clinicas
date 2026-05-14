@@ -85,13 +85,15 @@ const especialidadesAtendidas = [
 
 export default function NosotrosPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        suppressHydrationWarning
       />
 
-      <Header />
+      <div className="min-h-screen flex flex-col">
+        <Header />
 
       <main className="flex-grow">
 
@@ -293,6 +295,7 @@ export default function NosotrosPage() {
       </main>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }

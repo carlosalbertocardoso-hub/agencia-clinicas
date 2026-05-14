@@ -614,7 +614,7 @@ export default function EspecialidadPage({ params }: Props) {
   })
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       {/* Breadcrumb Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} suppressHydrationWarning />
       {/* Service Schema */}
@@ -632,7 +632,8 @@ export default function EspecialidadPage({ params }: Props) {
           },
         })),
       }) }} suppressHydrationWarning />
-      <Header />
+      <div className="min-h-screen flex flex-col">
+        <Header />
 
       <main className="flex-grow">
 
@@ -785,6 +786,7 @@ export default function EspecialidadPage({ params }: Props) {
       </main>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }

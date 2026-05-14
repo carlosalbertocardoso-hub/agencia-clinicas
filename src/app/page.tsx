@@ -89,27 +89,30 @@ const homeFaqSchema = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+        suppressHydrationWarning
       />
-      <Header />
+      <div className="min-h-screen flex flex-col">
+        <Header />
 
-      <main className="flex-grow">
-        <HeroSection />
-        <PainSection />
-        <GarantiaNormativaSection />
-        <EspecialidadesGrid />
-        <ServiciosSection />
-        <PorQueNosotrosSection />
-        <CroAuthoritySection />
-        <BlogPreviewSection />
-        <ProcesoSection />
-        <CtaFinal />
-      </main>
+        <main className="flex-grow">
+          <HeroSection />
+          <PainSection />
+          <GarantiaNormativaSection />
+          <EspecialidadesGrid />
+          <ServiciosSection />
+          <PorQueNosotrosSection />
+          <CroAuthoritySection />
+          <BlogPreviewSection />
+          <ProcesoSection />
+          <CtaFinal />
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   )
 }

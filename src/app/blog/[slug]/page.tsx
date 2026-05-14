@@ -180,12 +180,14 @@ export default function BlogPostPage({ params }: Props) {
   })
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} suppressHydrationWarning />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} suppressHydrationWarning />
 
-      <main className="flex-grow">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+
+        <main className="flex-grow">
 
         <section className="py-section pb-8 md:pb-10">
           <div className="container-custom">
@@ -303,9 +305,10 @@ export default function BlogPostPage({ params }: Props) {
             </div>
           </section>
         )}
-      </main>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   )
 }
