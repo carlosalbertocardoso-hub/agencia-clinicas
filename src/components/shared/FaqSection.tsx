@@ -1,4 +1,3 @@
-import { buildFAQSchema } from '@/lib/schemas'
 import type { FAQ } from '@/types'
 
 interface FaqSectionProps {
@@ -7,19 +6,8 @@ interface FaqSectionProps {
 }
 
 export default function FaqSection({ faqs, title = 'Preguntas Frecuentes' }: FaqSectionProps) {
-  const faqSchema = buildFAQSchema(
-    faqs.map((faq) => ({
-      question: faq.pregunta,
-      answer: faq.respuesta,
-    }))
-  )
-
   return (
     <section className="section-padding bg-surface">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <div className="container-custom max-w-3xl">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold text-center mb-10 md:mb-12 text-text">
           {title}

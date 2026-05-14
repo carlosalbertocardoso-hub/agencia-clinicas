@@ -249,6 +249,7 @@ export default function ServicioPage({ params }: Props) {
     description: servicio.descripcion,
     url: `https://www.iclinicas.es/servicios/${servicio.slug}`,
   })
+
   const relatedLinks: Record<string, Array<{ href: string; label: string }>> = {
     'seo-medico': [
       { href: '/servicios/google-ads', label: 'Google Ads para clínicas privadas' },
@@ -276,11 +277,28 @@ export default function ServicioPage({ params }: Props) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} suppressHydrationWarning />
+      {/* Service Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} suppressHydrationWarning />
+      {/* FAQ Schema */}
+      {faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.pregunta,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.respuesta,
+            },
+          })),
+        }) }} suppressHydrationWarning />
+      )}
       <Header />
 
       <main className="flex-grow">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
 
         <section className="py-section">
           <div className="container-custom">

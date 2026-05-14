@@ -584,6 +584,20 @@ export default function EspecialidadPage({ params }: Props) {
   }
 
   const content = specialtyContent[especialidad.slug]
+
+  if (!content) {
+    return (
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow container-custom py-20 text-center">
+          <h1 className="text-h1 font-heading text-primary mb-4">Contenido no disponible</h1>
+          <p className="text-text-muted">Lo sentimos, no pudimos cargar el contenido de esta especialidad.</p>
+        </main>
+        <Footer />
+      </div>
+    )
+  }
+
   const relatedServices = especialidad.servicios
     .map((slug) => servicios.find((servicio) => servicio.slug === slug))
     .filter(Boolean)
@@ -601,11 +615,26 @@ export default function EspecialidadPage({ params }: Props) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} suppressHydrationWarning />
+      {/* Service Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} suppressHydrationWarning />
+      {/* FAQ Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: content.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.pregunta,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.respuesta,
+          },
+        })),
+      }) }} suppressHydrationWarning />
       <Header />
 
       <main className="flex-grow">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
 
         <section className="py-section">
           <div className="container-custom">
