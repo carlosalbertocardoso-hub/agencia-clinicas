@@ -167,8 +167,10 @@ El proyecto incluye:
 - Open Graph.
 - JSON-LD global `ProfessionalService`.
 - Breadcrumb schema en páginas internas.
-- FAQ schema en FAQs.
+- FAQ schema en FAQs (generado a nivel de página para evitar duplicados).
 - Article schema en artículos del blog.
+
+**Nota sobre FAQPage schema:** Se generan a nivel de página en `src/app/especialidades/[slug]/page.tsx` y `src/app/servicios/[slug]/page.tsx` usando etiquetas `<script>` directas. Esto previene duplicados que causaban errores en Google Search Console. El componente `FaqSection` solo renderiza el HTML visual, sin generar schema.
 
 La home usa keywords locales como:
 
