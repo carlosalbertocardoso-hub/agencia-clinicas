@@ -3,6 +3,13 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import EspecialidadesGrid from '@/components/home/EspecialidadesGrid'
 import CtaFinal from '@/components/home/CtaFinal'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
+
+const ogImage = buildOgUrl({
+  title: 'A quién ayudamos en marketing sanitario',
+  category: 'Especialidades',
+  subtitle: 'Clínicas y consultas privadas en Sevilla',
+})
 
 export const metadata: Metadata = {
   title: 'A quién ayudamos | Marketing sanitario en Sevilla | iclinicas',
@@ -15,13 +22,13 @@ export const metadata: Metadata = {
     title: 'A quién ayudamos | Marketing sanitario en Sevilla | iclinicas',
     description: 'Marketing digital para clínicas dentales, psicólogos, medicina estética, fisioterapia, dermatología, nutricionistas, oftalmología y más en Sevilla.',
     url: 'https://www.iclinicas.es/especialidades',
-    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'A quién ayudamos | Marketing sanitario en Sevilla | iclinicas',
     description: 'Marketing digital para clínicas dentales, psicólogos, medicina estética, fisioterapia, dermatología, nutricionistas, oftalmología y más en Sevilla.',
-    images: ['/images/og-default.png'],
+    images: [ogImage],
   },
 }
 

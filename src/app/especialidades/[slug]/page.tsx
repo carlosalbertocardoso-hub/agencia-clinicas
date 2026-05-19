@@ -4,7 +4,8 @@ import { CheckCircle2, MapPin, MessageCircle, Search, ShieldCheck, Target } from
 import { especialidades, getEspecialidadBySlug } from '@/data/especialidades'
 import { servicios } from '@/data/servicios'
 import { specialtyRelatedServices } from '@/data/crossLinks'
-import { buildBreadcrumbSchema, buildServiceSchema } from '@/lib/schemas'
+import { buildServiceSchema } from '@/lib/schemas'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
@@ -536,24 +537,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const desc = meta?.description || content?.hero || especialidad.descripcionLarga
   const truncatedDesc = desc.length > 160 ? desc.substring(0, 157) + '...' : desc
+  const ogTitle = content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`
+  const ogImage = buildOgUrl({
+    title: ogTitle,
+    category: 'A quién ayudamos',
+    subtitle: `${especialidad.nombre} · Sevilla`,
+  })
 
   return {
-    title: meta?.title || `${content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`} | iclinicas`,
+    title: meta?.title || `${ogTitle} | iclinicas`,
     description: truncatedDesc,
     alternates: {
       canonical: `/especialidades/${params.slug}`,
     },
     openGraph: {
-      title: meta?.title || content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`,
+      title: meta?.title || ogTitle,
       description: truncatedDesc,
       url: `https://www.iclinicas.es/especialidades/${params.slug}`,
-      images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+      images: [{ url: ogImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: meta?.title || content?.h1 || `Marketing digital para ${especialidad.nombre} en Sevilla`,
+      title: meta?.title || ogTitle,
       description: truncatedDesc,
-      images: ['/images/og-default.png'],
+      images: [ogImage],
     },
     keywords: [
       `marketing digital ${especialidad.nombre.toLowerCase()} Sevilla`,
@@ -602,11 +609,6 @@ export default function EspecialidadPage({ params }: Props) {
     .map((slug) => servicios.find((servicio) => servicio.slug === slug))
     .filter(Boolean)
 
-  const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Especialidades', url: 'https://www.iclinicas.es/especialidades' },
-    { name: especialidad.nombre, url: `https://www.iclinicas.es/especialidades/${especialidad.slug}` },
-  ])
-
   const serviceSchema = buildServiceSchema({
     name: content.h1,
     description: content.hero,
@@ -615,8 +617,6 @@ export default function EspecialidadPage({ params }: Props) {
 
   return (
     <>
-      {/* Breadcrumb Schema */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} suppressHydrationWarning />
       {/* Service Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} suppressHydrationWarning />
       {/* FAQ Schema */}

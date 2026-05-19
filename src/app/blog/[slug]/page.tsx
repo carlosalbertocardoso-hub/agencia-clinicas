@@ -3,8 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Fragment } from 'react'
 import { blogPosts, getBlogPostBySlug } from '@/data/blog'
+import { getAutor } from '@/data/autores'
 import { blogRelatedServices } from '@/data/crossLinks'
-import { buildArticleSchema, buildBreadcrumbSchema } from '@/lib/schemas'
+import { buildArticleSchema } from '@/lib/schemas'
+import { formatDateES } from '@/lib/utils/dates'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
@@ -103,6 +105,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Artículo no encontrado' }
   }
 
+  const autor = getAutor(post.autorSlug)
+  const autorUrl = autor ? `https://www.iclinicas.es/autores/${autor.slug}` : undefined
+
   return {
     title: `${post.titulo} | iclinicas Blog`,
     description: post.excerpt,
@@ -114,7 +119,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       url: `https://www.iclinicas.es/blog/${params.slug}`,
       type: 'article',
-      publishedTime: post.fecha,
+      publishedTime: post.fechaPublicacion,
+      modifiedTime: post.fechaModificacion,
+      ...(autorUrl ? { authors: [autorUrl] } : {}),
       images: [{ url: post.imagen || '/images/og-default.png', width: 1200, height: 630 }],
     },
     twitter: {
@@ -132,6 +139,7 @@ export async function generateStaticParams() {
 
 export default function BlogPostPage({ params }: Props) {
   const post = getBlogPostBySlug(params.slug)
+  const autor = post ? getAutor(post.autorSlug) : undefined
   const relatedPosts = blogPosts.filter((p) => p.id !== post?.id).slice(0, 3)
   const contextualLinks: Record<string, Array<{ href: string; label: string }>> = {
     'errores-seo-dentistas': [
@@ -167,21 +175,25 @@ export default function BlogPostPage({ params }: Props) {
     )
   }
 
-  const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Blog', url: 'https://www.iclinicas.es/blog' },
-    { name: post.titulo, url: `https://www.iclinicas.es/blog/${post.slug}` },
-  ])
+  const autorPageUrl = autor
+    ? `https://www.iclinicas.es/autores/${autor.slug}`
+    : 'https://www.iclinicas.es/nosotros'
   const articleSchema = buildArticleSchema({
     headline: post.titulo,
     description: post.excerpt,
     url: `https://www.iclinicas.es/blog/${post.slug}`,
     image: post.imagen,
-    datePublished: post.fecha,
+    datePublished: post.fechaPublicacion,
+    dateModified: post.fechaModificacion,
+    author: {
+      name: autor?.nombre ?? 'iclinicas',
+      url: autorPageUrl,
+      ...(autor && autor.sameAs.length > 0 ? { sameAs: autor.sameAs } : {}),
+    },
   })
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} suppressHydrationWarning />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} suppressHydrationWarning />
 
       <div className="min-h-screen flex flex-col">
@@ -205,7 +217,9 @@ export default function BlogPostPage({ params }: Props) {
                 </span>
                 <span className="text-sm text-text-muted">{post.tiempoLectura} lectura</span>
                 <span className="text-sm text-text-muted">·</span>
-                <span className="text-sm text-text-muted">{post.fecha}</span>
+                <time className="text-sm text-text-muted" dateTime={post.fechaPublicacion}>
+                  {formatDateES(post.fechaPublicacion)}
+                </time>
               </div>
 
               <h1 className="text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{post.titulo}</h1>
@@ -225,6 +239,31 @@ export default function BlogPostPage({ params }: Props) {
             <article className="mb-12 text-text">
               {renderMarkdown(post.contenido)}
             </article>
+
+            {autor && (
+              <aside className="mb-12 bg-white border border-slate-200 rounded-lg p-6 flex gap-5 items-start">
+                <Image
+                  src={autor.foto}
+                  alt={`${autor.nombre} — ${autor.rol}`}
+                  width={72}
+                  height={72}
+                  className="rounded-full border border-primary/20 object-cover flex-shrink-0"
+                />
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-accent font-semibold mb-1">
+                    Sobre el autor
+                  </p>
+                  <p className="font-heading text-lg font-semibold text-text mb-1">{autor.nombre}</p>
+                  <p className="text-sm text-text-muted leading-relaxed mb-3">{autor.bioCorta}</p>
+                  <Link
+                    href={`/autores/${autor.slug}`}
+                    className="text-sm font-semibold text-primary hover:underline"
+                  >
+                    Ver perfil completo →
+                  </Link>
+                </div>
+              </aside>
+            )}
 
             <div className="bg-surface p-6 rounded-lg border border-slate-200 mb-12">
               <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-4">

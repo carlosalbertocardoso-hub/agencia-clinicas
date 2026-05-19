@@ -7,7 +7,7 @@ export const servicios: Servicio[] = [
     slug: 'seo-medico',
     descripcion:
       'Consigue que los pacientes te encuentren en Google sin pagar por cada clic. Aparece en las búsquedas que más te interesan.',
-    imagen: '/images/hero-clinica-marketing.png',
+    imagen: '/images/hero-clinica-marketing.jpg',
     caracteristicas: [
       'Auditoría de Google Business Profile, web, Search Console y competencia local',
       'Optimización de páginas de servicios, tratamientos, titles, metas y arquitectura',
@@ -24,7 +24,7 @@ export const servicios: Servicio[] = [
     slug: 'google-ads',
     descripcion:
       'Atrae pacientes que ya están buscando lo que ofreces. Campañas medidas por contacto real, no por clics o impresiones.',
-    imagen: '/images/hero-clinica-marketing.png',
+    imagen: '/images/hero-clinica-marketing.jpg',
     caracteristicas: [
       'Campañas Search por especialidad, tratamiento, zona y nivel de intención',
       'Segmentación local en Sevilla capital, provincia, barrios o áreas concretas',
@@ -41,7 +41,7 @@ export const servicios: Servicio[] = [
     slug: 'diseno-web',
     descripcion:
       'Tu web es la primera impresión de tu clínica. Que no sea solo bonita: que convierta visitas en llamadas y formularios.',
-    imagen: '/images/hero-clinica-marketing.png',
+    imagen: '/images/hero-clinica-marketing.jpg',
     caracteristicas: [
       'Home clara con propuesta de valor, especialidad, ubicación y vías de contacto',
       'Páginas de tratamientos, landings de campañas y FAQs para resolver dudas reales',
@@ -58,7 +58,7 @@ export const servicios: Servicio[] = [
     slug: 'redes-sociales',
     descripcion:
       'Presencia profesional en redes sin caer en contenido vacío. Genera confianza, muestra tu trabajo y conecta con pacientes sin parecer venta agresiva.',
-    imagen: '/images/hero-clinica-marketing.png',
+    imagen: '/images/hero-clinica-marketing.jpg',
     caracteristicas: [
       'Calendario editorial adaptado a tu especialidad y a dudas frecuentes de pacientes',
       'Posts, reels y piezas informativas con tono sanitario, claro y prudente',

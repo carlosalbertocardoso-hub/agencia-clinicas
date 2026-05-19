@@ -2,9 +2,17 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { blogPosts } from '@/data/blog'
+import { formatDateES } from '@/lib/utils/dates'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
+
+const ogImage = buildOgUrl({
+  title: 'Guías de marketing para clínicas privadas',
+  category: 'Blog',
+  subtitle: 'SEO, Google Ads, web y captación en Sevilla',
+})
 
 export const metadata: Metadata = {
   title: 'Blog de marketing para clínicas en Sevilla | iclinicas',
@@ -17,13 +25,13 @@ export const metadata: Metadata = {
     title: 'Guías de marketing para clínicas privadas en Sevilla',
     description: 'SEO local, Google Ads, diseño web, reputación y captación para clínicas privadas.',
     url: 'https://www.iclinicas.es/blog',
-    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Guías de marketing para clínicas privadas en Sevilla',
     description: 'SEO local, Google Ads, diseño web, reputación y captación para clínicas privadas.',
-    images: ['/images/og-default.png'],
+    images: [ogImage],
   },
 }
 
@@ -75,7 +83,7 @@ export default function BlogPage() {
                       <p className="text-text-muted text-sm mb-4 line-clamp-2">{post.excerpt}</p>
 
                       <div className="flex justify-between items-center text-xs text-text-muted">
-                        <span>{post.fecha}</span>
+                        <time dateTime={post.fechaPublicacion}>{formatDateES(post.fechaPublicacion)}</time>
                         <span className="text-primary font-semibold inline-flex items-center gap-1">
                           Leer <ArrowRight size={14} strokeWidth={1.8} />
                         </span>

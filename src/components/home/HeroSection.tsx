@@ -6,11 +6,14 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[600px] sm:min-h-[620px] md:min-h-[640px] overflow-hidden">
       <Image
-        src="/images/hero-clinica-marketing.png"
+        src="/images/hero-clinica-marketing.jpg"
         alt="Equipo de agencia de marketing sanitario en Sevilla analizando métricas de una clínica"
         fill
+        sizes="100vw"
+        quality={75}
         className="pointer-events-none object-cover"
         priority
+        fetchPriority="high"
       />
       <div className="pointer-events-none absolute inset-0 bg-primary/70" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/25 via-primary/35 to-primary/80" />

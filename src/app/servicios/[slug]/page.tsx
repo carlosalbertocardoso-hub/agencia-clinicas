@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Check, ClipboardCheck, Search, Target } from 'lucide-react'
 import { servicios, faqsPorServicio } from '@/data/servicios'
-import { buildBreadcrumbSchema, buildServiceSchema } from '@/lib/schemas'
+import { buildServiceSchema } from '@/lib/schemas'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
@@ -191,6 +192,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pageMeta = metadataBySlug[servicio.slug]
   const desc = pageMeta?.description || servicio.descripcion
   const truncatedDesc = desc.length > 160 ? desc.substring(0, 157) + '...' : desc
+  const ogImage = buildOgUrl({
+    title: servicio.nombre,
+    category: 'Servicio',
+    subtitle: 'Marketing sanitario en Sevilla',
+  })
 
   return {
     title: pageMeta?.title || `${servicio.nombre} | iclinicas`,
@@ -202,13 +208,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: pageMeta?.title || servicio.nombre,
       description: truncatedDesc,
       url: `https://www.iclinicas.es/servicios/${params.slug}`,
-      images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+      images: [{ url: ogImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: pageMeta?.title || servicio.nombre,
       description: truncatedDesc,
-      images: ['/images/og-default.png'],
+      images: [ogImage],
     },
     keywords: [
       `${servicio.nombre.toLowerCase()} Sevilla`,
@@ -240,10 +246,6 @@ export default function ServicioPage({ params }: Props) {
   const content = serviceContent[servicio.slug]
   const serviceCta = serviceCtas[servicio.slug] || 'Solicitar auditoría gratuita'
   const faqs = faqsPorServicio[servicio.slug] || []
-  const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Servicios', url: 'https://www.iclinicas.es/servicios' },
-    { name: servicio.nombre, url: `https://www.iclinicas.es/servicios/${servicio.slug}` },
-  ])
   const serviceSchema = buildServiceSchema({
     name: `${servicio.nombre} en Sevilla`,
     description: servicio.descripcion,
@@ -277,8 +279,6 @@ export default function ServicioPage({ params }: Props) {
 
   return (
     <>
-      {/* Breadcrumb Schema */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} suppressHydrationWarning />
       {/* Service Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} suppressHydrationWarning />
       {/* FAQ Schema */}

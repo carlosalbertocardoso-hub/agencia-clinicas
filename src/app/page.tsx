@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import HeroSection from '@/components/home/HeroSection'
@@ -11,6 +12,12 @@ import CroAuthoritySection from '@/components/home/CroAuthoritySection'
 import BlogPreviewSection from '@/components/home/BlogPreviewSection'
 import ProcesoSection from '@/components/home/ProcesoSection'
 import CtaFinal from '@/components/home/CtaFinal'
+
+const homeOgImage = buildOgUrl({
+  title: 'Marketing sanitario en Sevilla',
+  category: 'Agencia',
+  subtitle: 'Captación de pacientes privados con normativa',
+})
 
 export const metadata: Metadata = {
   title: 'Agencia de Marketing Sanitario en Sevilla | Captación de Pacientes Privados',
@@ -30,13 +37,13 @@ export const metadata: Metadata = {
     description:
       'Impulsa tu centro médico en Sevilla con estrategias de marketing sanitario. Captación de pacientes privados, SEO local y publicidad médica respetando la normativa.',
     url: 'https://www.iclinicas.es',
-    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: homeOgImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Agencia de Marketing Sanitario en Sevilla | Captación de Pacientes Privados',
     description: 'Impulsa tu centro médico en Sevilla con estrategias de marketing sanitario. Captación de pacientes privados, SEO local y publicidad médica respetando la normativa.',
-    images: ['/images/og-default.png'],
+    images: [homeOgImage],
   },
 }
 

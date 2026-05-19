@@ -36,3 +36,6 @@ yarn-error.log*
 
 # OS
 Thumbs.db
+
+# Image backups (local rollback only — no versionar)
+public/images/_originals/

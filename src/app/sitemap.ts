@@ -1,4 +1,6 @@
 import type { MetadataRoute } from 'next'
+import { blogPosts } from '@/data/blog'
+import { getAutoresList } from '@/data/autores'
 
 const BASE = 'https://www.iclinicas.es'
 const NOW  = new Date()
@@ -23,12 +25,6 @@ const especialidadesSlugs = [
   'pediatria-sevilla',
   'clinicas-cirugia-sevilla',
   'ia-para-clinicas',
-]
-
-const blogSlugs = [
-  'errores-seo-dentistas',
-  'google-ads-psicologos',
-  'diseno-web-clinicas',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -57,12 +53,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  const blog: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
-    url: `${BASE}/blog/${slug}`,
-    lastModified: NOW,
-    changeFrequency: 'weekly',
+  const blog: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: new Date(post.fechaModificacion),
+    changeFrequency: 'monthly',
     priority: 0.7,
   }))
 
-  return [...statics, ...servicios, ...especialidades, ...blog]
+  const autores: MetadataRoute.Sitemap = getAutoresList().map((autor) => ({
+    url: `${BASE}/autores/${autor.slug}`,
+    lastModified: NOW,
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  }))
+
+  return [...statics, ...servicios, ...especialidades, ...blog, ...autores]
 }

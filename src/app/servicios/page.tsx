@@ -4,6 +4,13 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ServiciosSection from '@/components/home/ServiciosSection'
 import CtaFinal from '@/components/home/CtaFinal'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
+
+const ogImage = buildOgUrl({
+  title: 'Servicios de marketing para clínicas',
+  category: 'Servicios',
+  subtitle: 'SEO, Google Ads, web y redes en Sevilla',
+})
 
 export const metadata: Metadata = {
   title: 'Servicios de marketing para clínicas en Sevilla | iclinicas',
@@ -16,13 +23,13 @@ export const metadata: Metadata = {
     title: 'Servicios de marketing para clínicas en Sevilla | iclinicas',
     description: 'SEO local, Google Ads, diseño web, redes, reputación y medición para clínicas privadas y profesionales sanitarios en Sevilla.',
     url: 'https://www.iclinicas.es/servicios',
-    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Servicios de marketing para clínicas en Sevilla | iclinicas',
     description: 'SEO local, Google Ads, diseño web, redes, reputación y medición para clínicas privadas y profesionales sanitarios en Sevilla.',
-    images: ['/images/og-default.png'],
+    images: [ogImage],
   },
 }
 

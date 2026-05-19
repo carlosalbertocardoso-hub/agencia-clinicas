@@ -4,6 +4,13 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
+
+const ogImage = buildOgUrl({
+  title: 'Solicita una auditoría gratuita',
+  category: 'Contacto',
+  subtitle: 'Revisamos Google, web y conversión de tu clínica',
+})
 
 export const metadata: Metadata = {
   title: 'Solicitar auditoría gratuita | iclinicas',
@@ -16,13 +23,13 @@ export const metadata: Metadata = {
     title: 'Solicita una auditoría gratuita - iclinicas',
     description: 'Revisamos Google, web y puntos de conversión de tu clínica en Sevilla.',
     url: 'https://www.iclinicas.es/contacto',
-    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Solicita una auditoría gratuita - iclinicas',
     description: 'Revisamos Google, web y puntos de conversión de tu clínica en Sevilla.',
-    images: ['/images/og-default.png'],
+    images: [ogImage],
   },
 }
 

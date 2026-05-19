@@ -4,7 +4,9 @@ export interface BlogPost {
   slug: string
   excerpt: string
   contenido: string
-  fecha: string
+  fechaPublicacion: string
+  fechaModificacion: string
+  autorSlug: string
   categoria: string
   tiempoLectura: string
   imagen?: string
@@ -64,7 +66,9 @@ Revisa tu ficha de Google, tus páginas de tratamiento, tus reseñas, tu web mó
 
 ¿Quieres aplicar esto a tu clínica dental en Sevilla? Solicita una auditoría gratuita para revisar el SEO de tu clínica dental.
     `,
-    fecha: '2 de mayo, 2026',
+    fechaPublicacion: '2026-05-02T08:00:00+02:00',
+    fechaModificacion: '2026-05-02T08:00:00+02:00',
+    autorSlug: 'carlos-cardoso',
     categoria: 'SEO local',
     tiempoLectura: '8 min',
   },
@@ -109,7 +113,9 @@ Google Ads puede ser útil para psicólogos si se trabaja con sensibilidad, filt
 
 ¿Quieres revisar tus campañas de psicología o valorar si Ads tiene sentido para tu consulta? Solicita una auditoría gratuita.
     `,
-    fecha: '3 de mayo, 2026',
+    fechaPublicacion: '2026-05-03T08:00:00+02:00',
+    fechaModificacion: '2026-05-03T08:00:00+02:00',
+    autorSlug: 'carlos-cardoso',
     categoria: 'Google Ads',
     tiempoLectura: '9 min',
   },
@@ -174,7 +180,9 @@ El objetivo no es tener una web bonita sin más. El objetivo es que la web traba
 
 ¿Quieres revisar mi web de clínica y saber si está frenando solicitudes? Solicita una auditoría gratuita y analizamos los puntos principales.
     `,
-    fecha: '5 de mayo, 2026',
+    fechaPublicacion: '2026-05-05T08:00:00+02:00',
+    fechaModificacion: '2026-05-05T08:00:00+02:00',
+    autorSlug: 'carlos-cardoso',
     categoria: 'Diseño web',
     tiempoLectura: '10 min',
   },

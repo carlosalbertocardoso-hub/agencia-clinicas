@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { blogPosts } from '@/data/blog'
+import { formatDateES } from '@/lib/utils/dates'
 
 export default function BlogPreviewSection() {
   const articulosRecientes = blogPosts.slice(0, 3)
@@ -44,7 +45,7 @@ export default function BlogPreviewSection() {
                   <p className="text-text-muted text-sm mb-4 line-clamp-2">{articulo.excerpt}</p>
 
                   <div className="flex justify-between items-center text-xs text-text-muted">
-                    <span>{articulo.fecha}</span>
+                    <time dateTime={articulo.fechaPublicacion}>{formatDateES(articulo.fechaPublicacion)}</time>
                     <span className="text-primary font-semibold inline-flex items-center gap-1">
                       Leer <ArrowRight size={14} strokeWidth={1.8} />
                     </span>

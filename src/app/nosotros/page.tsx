@@ -1,9 +1,17 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { Lightbulb, ShieldCheck, Target, ExternalLink } from 'lucide-react'
+import Link from 'next/link'
+import { Lightbulb, ShieldCheck, Target, ExternalLink, ArrowRight } from 'lucide-react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
+
+const ogImage = buildOgUrl({
+  title: 'Quién está detrás de iclinicas',
+  category: 'Sobre nosotros',
+  subtitle: 'Carlos Cardoso · Marketing sanitario en Sevilla',
+})
 
 export const metadata: Metadata = {
   title: 'Sobre iclinicas | Agencia de marketing sanitario en Sevilla',
@@ -16,37 +24,24 @@ export const metadata: Metadata = {
     title: 'Sobre iclinicas | Carlos Cardoso',
     description: 'Quién hay detrás de iclinicas, cómo trabajamos y por qué nos especializamos en marketing para clínicas privadas en Sevilla.',
     url: 'https://www.iclinicas.es/nosotros',
-    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sobre iclinicas | Carlos Cardoso',
     description: 'Quién hay detrás de iclinicas, cómo trabajamos y por qué nos especializamos en marketing para clínicas privadas en Sevilla.',
-    images: ['/images/og-default.png'],
+    images: [ogImage],
   },
 }
 
-const personSchema = {
+const personReference = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  '@id': 'https://www.iclinicas.es/#founder',
+  '@id': 'https://www.iclinicas.es/autores/carlos-cardoso#person',
   name: 'Carlos Cardoso',
-  jobTitle: 'Consultor de Marketing Sanitario',
-  description:
-    'Consultor con más de 15 años de experiencia en marketing digital y ecommerce. Especializado en captación online para clínicas privadas y profesionales sanitarios en Sevilla desde 2018.',
-  url: 'https://www.iclinicas.es/nosotros',
-  sameAs: ['https://www.linkedin.com/in/carlos-cardoso-75025721/'],
-  worksFor: {
-    '@id': 'https://www.iclinicas.es/#organization',
-  },
-  knowsAbout: [
-    'Marketing digital sanitario',
-    'SEO local para clínicas',
-    'Google Ads médico',
-    'Captación de pacientes privados',
-    'Normativa de publicidad sanitaria',
-    'CRO para webs de clínicas',
-  ],
+  url: 'https://www.iclinicas.es/autores/carlos-cardoso',
+  mainEntityOfPage: 'https://www.iclinicas.es/autores/carlos-cardoso',
+  worksFor: { '@id': 'https://www.iclinicas.es/#organization' },
 }
 
 const criterios = [
@@ -88,7 +83,7 @@ export default function NosotrosPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personReference) }}
         suppressHydrationWarning
       />
 
@@ -137,15 +132,24 @@ export default function NosotrosPage() {
                 <p className="text-base text-text-muted leading-relaxed mb-6">
                   La especialización no fue una decisión de nicho de mercado: fue el resultado de comprobar que el sector sanitario tiene lógicas de decisión, normativa y sensibilidad propias que una agencia generalista no suele entender bien.
                 </p>
-                <a
-                  href="https://www.linkedin.com/in/carlos-cardoso-75025721/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary/30 rounded-full px-4 py-2 hover:bg-primary hover:text-white transition"
-                >
-                  Ver perfil en LinkedIn
-                  <ExternalLink size={14} strokeWidth={2} />
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href="/autores/carlos-cardoso"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-white bg-primary rounded-full px-4 py-2 hover:bg-primary-dark transition"
+                  >
+                    Ver perfil de autor
+                    <ArrowRight size={14} strokeWidth={2} />
+                  </Link>
+                  <a
+                    href="https://www.linkedin.com/in/carlos-cardoso-75025721/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary/30 rounded-full px-4 py-2 hover:bg-primary hover:text-white transition"
+                  >
+                    Ver perfil en LinkedIn
+                    <ExternalLink size={14} strokeWidth={2} />
+                  </a>
+                </div>
               </div>
 
               <div className="space-y-4">

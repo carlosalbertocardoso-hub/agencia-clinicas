@@ -5,6 +5,13 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import { blogPosts } from '@/data/blog'
+import { buildOgUrl } from '@/lib/og/buildOgUrl'
+
+const ogImage = buildOgUrl({
+  title: 'Recursos de marketing sanitario',
+  category: 'Recursos',
+  subtitle: 'Captación online para clínicas privadas en Sevilla',
+})
 
 export const metadata: Metadata = {
   title: 'Recursos de marketing sanitario para clínicas en Sevilla | iclinicas',
@@ -17,13 +24,13 @@ export const metadata: Metadata = {
     title: 'Recursos de marketing sanitario para clínicas en Sevilla',
     description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
     url: 'https://www.iclinicas.es/recursos',
-    images: [{ url: '/images/og-default.png', width: 1200, height: 630 }],
+    images: [{ url: ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Recursos de marketing sanitario para clínicas en Sevilla',
     description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
-    images: ['/images/og-default.png'],
+    images: [ogImage],
   },
 }
 
