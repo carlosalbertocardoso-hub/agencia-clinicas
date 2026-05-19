@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import JsonLd from '@/components/seo/JsonLd'
-import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
-import WebVitalsReporter from '@/components/analytics/WebVitalsReporter'
+import {
+  GoogleTagManagerHead,
+  GoogleTagManagerNoScript,
+} from '@/components/analytics/GoogleTagManager'
 import ConsentBanner from '@/components/analytics/ConsentBanner'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import {
@@ -86,12 +88,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={websiteSchema} />
         <JsonLd data={organizationSchema} />
         <JsonLd data={localBusinessSchema} />
-        <GoogleAnalytics />
+        <GoogleTagManagerHead />
       </head>
       <body className="font-body text-text bg-neutral">
+        <GoogleTagManagerNoScript />
         {children}
         <ConsentBanner />
-        <WebVitalsReporter />
       </body>
     </html>
   )
