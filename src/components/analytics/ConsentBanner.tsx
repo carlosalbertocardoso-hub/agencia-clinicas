@@ -3,15 +3,33 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { grantConsent, denyConsent } from '@/lib/analytics/gtag'
 
-const STORAGE_KEY = 'iclinicas_consent_v1'
+const COOKIE_NAME = 'iclinicas_consent'
+const COOKIE_MAX_AGE = 60 * 60 * 24 * 365 // 1 año en segundos
 
 type ConsentValue = 'granted' | 'denied'
+
+function readConsentCookie(): ConsentValue | null {
+  if (typeof document === 'undefined') return null
+  const match = document.cookie.match(
+    new RegExp('(?:^|; )' + COOKIE_NAME + '=([^;]+)')
+  )
+  if (!match) return null
+  const value = decodeURIComponent(match[1])
+  return value === 'granted' || value === 'denied' ? value : null
+}
+
+function writeConsentCookie(value: ConsentValue) {
+  if (typeof document === 'undefined') return
+  const secure = window.location.protocol === 'https:' ? '; Secure' : ''
+  document.cookie =
+    `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}`
+}
 
 export default function ConsentBanner() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const stored = typeof window !== 'undefined' ? window.localStorage.getItem(STORAGE_KEY) : null
+    const stored = readConsentCookie()
     if (stored === 'granted') {
       grantConsent()
       return
@@ -24,11 +42,7 @@ export default function ConsentBanner() {
   }, [])
 
   function persist(value: ConsentValue) {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, value)
-    } catch {
-      // ignore — usuario con storage deshabilitado
-    }
+    writeConsentCookie(value)
   }
 
   function handleAccept() {
