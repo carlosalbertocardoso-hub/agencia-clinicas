@@ -22,6 +22,23 @@ export function GoogleTagManagerHead() {
           });
           gtag('set', 'ads_data_redaction', true);
           gtag('set', 'url_passthrough', true);
+
+          try {
+            var c = document.cookie.match(/(?:^|; )iclinicas_consent=([^;]+)/);
+            if (c) {
+              var v = decodeURIComponent(c[1]);
+              if (v === 'granted' || v === 'denied') {
+                gtag('consent', 'update', {
+                  'ad_storage': v,
+                  'ad_user_data': v,
+                  'ad_personalization': v,
+                  'analytics_storage': v,
+                  'functionality_storage': 'granted',
+                  'security_storage': 'granted'
+                });
+              }
+            }
+          } catch(e) {}
         `}
       </Script>
       <Script id="gtm-loader" strategy="afterInteractive">
