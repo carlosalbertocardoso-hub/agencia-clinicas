@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
+import { buildLocalBusinessSchema } from '@/lib/schemas'
 
 const ogImage = buildOgUrl({
   title: 'Solicita una auditoría gratuita',
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
 }
 
 export default function ContactoPage() {
+  const localBusinessSchema = buildLocalBusinessSchema()
   const puntos = [
     'Visibilidad en Google y Google Maps.',
     'Web y mensajes principales.',
@@ -45,7 +47,13 @@ export default function ContactoPage() {
   ]
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        suppressHydrationWarning
+      />
+      <div className="min-h-screen flex flex-col">
       <Header />
 
       <main className="flex-grow">
@@ -131,6 +139,7 @@ export default function ContactoPage() {
       </main>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }

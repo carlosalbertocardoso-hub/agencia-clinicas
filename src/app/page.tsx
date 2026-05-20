@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
+import { buildWebSiteSchema, buildLocalBusinessSchema } from '@/lib/schemas'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import HeroSection from '@/components/home/HeroSection'
@@ -95,8 +96,21 @@ const homeFaqSchema = {
 }
 
 export default function Home() {
+  const websiteSchema = buildWebSiteSchema()
+  const localBusinessSchema = buildLocalBusinessSchema()
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        suppressHydrationWarning
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        suppressHydrationWarning
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}

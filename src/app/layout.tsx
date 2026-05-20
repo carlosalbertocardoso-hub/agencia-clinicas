@@ -7,11 +7,7 @@ import {
 } from '@/components/analytics/GoogleTagManager'
 import ConsentBanner from '@/components/analytics/ConsentBanner'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
-import {
-  buildOrganizationSchema,
-  buildWebSiteSchema,
-  buildLocalBusinessSchema,
-} from '@/lib/schemas'
+import { buildOrganizationSchema } from '@/lib/schemas'
 
 const defaultOgImage = buildOgUrl({
   title: 'Marketing digital para clínicas',
@@ -57,6 +53,7 @@ export const metadata: Metadata = {
   alternates: {
     languages: {
       'es': 'https://www.iclinicas.es',
+      'x-default': 'https://www.iclinicas.es',
     },
   },
   icons: {
@@ -73,9 +70,7 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const websiteSchema = buildWebSiteSchema()
   const organizationSchema = buildOrganizationSchema()
-  const localBusinessSchema = buildLocalBusinessSchema()
 
   return (
     <html lang="es">
@@ -85,9 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="alternate" type="application/rss+xml" title="iclinicas - Blog" href="/rss.xml" />
-        <JsonLd data={websiteSchema} />
         <JsonLd data={organizationSchema} />
-        <JsonLd data={localBusinessSchema} />
         <GoogleTagManagerHead />
       </head>
       <body className="font-body text-text bg-neutral">
