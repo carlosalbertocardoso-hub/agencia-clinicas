@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { CheckCircle2 } from 'lucide-react'
 import { sendContactEmail } from '@/app/actions/sendEmail'
+import { generateLead, getEspecialidadFromPath } from '@/lib/analytics/gtag'
 
 interface ContactFormProps {
   especialidad?: string
@@ -41,6 +42,10 @@ export default function ContactForm({
       const result = await sendContactEmail(data)
 
       if (result.success) {
+        generateLead({
+          lead_type: buttonText.toLowerCase().includes('audit') ? 'auditoria' : 'contacto',
+          especialidad: especialidad ?? getEspecialidadFromPath(),
+        })
         setSubmitted(true)
         reset()
         setTimeout(() => setSubmitted(false), 5000)

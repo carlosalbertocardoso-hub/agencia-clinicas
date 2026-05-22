@@ -11,6 +11,12 @@ export function GoogleTagManagerHead() {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+
+          // traffic_type: descomenta y adapta la detección de IP interna si procede
+          // var internalIPs = ['192.168.1.', '10.0.'];
+          // var isInternal = internalIPs.some(function(range){ return (window.__clientIP||'').startsWith(range); });
+          // if (isInternal) { gtag('set', { traffic_type: 'internal' }); }
+
           gtag('consent', 'default', {
             'ad_storage': 'denied',
             'ad_user_data': 'denied',

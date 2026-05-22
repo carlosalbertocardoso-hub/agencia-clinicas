@@ -12,8 +12,22 @@ function dataLayer(): unknown[] {
   return window.dataLayer
 }
 
+// Extrae el slug de especialidad de rutas como /especialidades/clinicas-dentales-sevilla
+export function getEspecialidadFromPath(path?: string): string {
+  const p = path ?? (typeof window !== 'undefined' ? window.location.pathname : '')
+  const match = p.match(/\/especialidades\/([^/]+)/)
+  if (!match) return ''
+  // Quita el sufijo geográfico (-sevilla, -en-sevilla, etc.)
+  return match[1].replace(/-(?:en-)?sevilla$/, '')
+}
+
 export function pageview(url: string) {
-  dataLayer().push({ event: 'page_view', page_path: url })
+  dataLayer().push({
+    event: 'page_view',
+    page_path: url,
+    especialidad: getEspecialidadFromPath(url),
+    lead_source: 'web',
+  })
 }
 
 export function event({
@@ -32,6 +46,25 @@ export function event({
     event_category: category,
     event_label: label,
     value,
+  })
+}
+
+// Evento clave GA4 — marcar como conversión en GA4 > Eventos > generate_lead
+export function generateLead({
+  lead_type,
+  especialidad,
+  page_title,
+}: {
+  lead_type: 'contacto' | 'auditoria'
+  especialidad?: string
+  page_title?: string
+}) {
+  dataLayer().push({
+    event: 'generate_lead',
+    lead_type,
+    especialidad: especialidad ?? getEspecialidadFromPath(),
+    lead_source: 'web',
+    page_title: page_title ?? (typeof document !== 'undefined' ? document.title : ''),
   })
 }
 
