@@ -33,17 +33,33 @@ export default function AuthorBox({ autor }: { autor: Autor }) {
           >
             Ver perfil completo
           </Link>
-          {autor.sameAs.map((url) => (
-            <a
-              key={url}
-              href={url}
-              target="_blank"
-              rel="author noopener noreferrer me"
-              className="text-sm font-semibold text-primary hover:underline"
-            >
-              LinkedIn
-            </a>
-          ))}
+          {autor.sameAs.map((url) => {
+            const label = (() => {
+              try {
+                const host = new URL(url).hostname.replace('www.', '')
+                const known: Record<string, string> = {
+                  'linkedin.com': 'LinkedIn',
+                  'twitter.com': 'Twitter',
+                  'x.com': 'X',
+                  'instagram.com': 'Instagram',
+                }
+                return known[host] ?? host
+              } catch {
+                return url
+              }
+            })()
+            return (
+              <a
+                key={url}
+                href={url}
+                target="_blank"
+                rel="author noopener noreferrer me"
+                className="text-sm font-semibold text-primary hover:underline"
+              >
+                {label}
+              </a>
+            )
+          })}
         </div>
       </div>
     </aside>

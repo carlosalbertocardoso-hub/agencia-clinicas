@@ -15,10 +15,11 @@ export default function GoogleBusinessMap() {
 
         <div className="overflow-hidden rounded-lg border border-slate-200 bg-white aspect-[16/10] md:aspect-[16/7]">
           <iframe
-            title="Ubicación de iClínicas en Avenida Reina Mercedes 1, Sevilla"
-            src="https://www.google.com/maps?q=Avd.%20Reina%20Mercedes%201%2C%2041012%20Sevilla&output=embed"
+            title="Ubicación oficial de iClínicas en Sevilla"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1224442688776!2d-5.9884034246700315!3d37.36327953575811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126de0e91ced67%3A0x82c90f13fb84e05d!2sIclinicas!5e0!3m2!1ses!2ses!4v1779785624714!5m2!1ses!2ses"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
             className="h-full w-full"
           />
         </div>

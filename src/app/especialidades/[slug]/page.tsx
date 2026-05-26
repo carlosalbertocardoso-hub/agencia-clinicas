@@ -661,10 +661,14 @@ export default function EspecialidadPage({ params }: Props) {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start my-6">
               <div>
                 <p className="text-label text-accent mb-4">Especialistas en clínicas de Sevilla</p>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{content.h1}</h1>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">
+                  {content.h1 || `Marketing para clínicas de ${especialidad.nombre} en Sevilla`}
+                </h1>
                 <p className="text-base sm:text-lg text-text-muted mb-6">{content.hero}</p>
                 <div className="bg-surface border border-slate-200 rounded-lg p-6 mb-6">
-                  <h2 className="font-heading text-2xl font-semibold text-text mb-3">El reto real</h2>
+                  <h2 className="font-heading text-2xl font-semibold text-text mb-3">
+                    El reto real de las clínicas de {especialidad.nombre.toLowerCase()} en Sevilla
+                  </h2>
                   <p className="text-text-muted leading-relaxed">{content.pain}</p>
                 </div>
                 <p className="text-text leading-relaxed font-medium">{content.keyText}</p>
@@ -720,7 +724,7 @@ export default function EspecialidadPage({ params }: Props) {
         <section id="servicios-prioritarios" className="section-padding">
           <div className="container-custom max-w-4xl">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-8 text-center">
-              Servicios que suelen tener más sentido
+              Servicios de marketing con mayor retorno para {especialidad.nombre.toLowerCase()}
             </h2>
             <div className="space-y-4">
               {relatedServices.map((servicio) => (
@@ -749,7 +753,7 @@ export default function EspecialidadPage({ params }: Props) {
           </div>
         </section>
 
-        <FaqSection faqs={content.faqs} title={`Preguntas sobre marketing para ${especialidad.nombre.toLowerCase()}`} />
+        <FaqSection faqs={content.faqs} title={`Preguntas frecuentes sobre marketing digital para ${especialidad.nombre.toLowerCase()} en Sevilla`} />
 
         <GoogleBusinessMap />
 
