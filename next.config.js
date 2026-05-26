@@ -32,8 +32,8 @@ const nextConfig = {
             value: 'nosniff',
           },
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
+            key: 'Content-Security-Policy',
+            value: "frame-src 'self' https://www.google.com https://maps.google.com;",
           },
           {
             key: 'X-XSS-Protection',
