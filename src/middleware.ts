@@ -30,11 +30,10 @@ export function middleware(request: NextRequest) {
       "img-src 'self' data: https: https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com",
       "font-src 'self' https://fonts.gstatic.com",
       "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.googletagmanager.com https://*.googletagmanager.com https://stats.g.doubleclick.net",
-      "frame-src 'self' https://www.googletagmanager.com",
+      "frame-src 'self' https://www.googletagmanager.com https://www.google.com https://maps.google.com",
     ].join('; ') + ';'
   )
   response.headers.set('X-Content-Type-Options', 'nosniff')
-  response.headers.set('X-Frame-Options', 'SAMEORIGIN')
   response.headers.set('X-XSS-Protection', '1; mode=block')
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()')
 
