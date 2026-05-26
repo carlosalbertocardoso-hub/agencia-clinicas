@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
+import GoogleBusinessMap from '@/components/shared/GoogleBusinessMap'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import HeroSection from '@/components/home/HeroSection'
@@ -167,6 +168,7 @@ export default function Home() {
           <CroAuthoritySection />
           <BlogPreviewSection />
           <ProcesoSection />
+          <GoogleBusinessMap />
           <CtaFinal />
         </main>
 

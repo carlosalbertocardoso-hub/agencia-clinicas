@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
+import GoogleBusinessMap from '@/components/shared/GoogleBusinessMap'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import { buildLocalBusinessSchema } from '@/lib/schemas'
 
@@ -136,6 +137,7 @@ export default function ContactoPage() {
             </div>
           </div>
         </section>
+        <GoogleBusinessMap />
       </main>
 
       <Footer />

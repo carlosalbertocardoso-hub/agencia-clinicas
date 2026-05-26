@@ -10,6 +10,7 @@ import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
 import FaqSection from '@/components/shared/FaqSection'
+import GoogleBusinessMap from '@/components/shared/GoogleBusinessMap'
 
 interface Props {
   params: {
@@ -319,11 +320,15 @@ export default function ServicioPage({ params }: Props) {
                 )}
 
                 <p className="text-label text-accent mb-4">Servicio especializado para clínicas</p>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">{servicio.nombre}</h1>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold text-primary mb-4">
+                  {`${servicio.nombre} para clínicas en Sevilla`}
+                </h1>
                 <p className="text-base sm:text-lg text-text-muted mb-6">{servicio.descripcion}</p>
 
                 <div className="bg-surface border border-slate-200 rounded-lg p-6 mb-6">
-                  <p className="font-semibold text-text mb-2">Problema que resuelve</p>
+                  <h2 className="font-heading text-2xl font-semibold text-text mb-3">
+                    El reto real de la captación online para clínicas en Sevilla
+                  </h2>
                   <p className="text-text-muted leading-relaxed">{content.problem}</p>
                 </div>
 
@@ -373,7 +378,7 @@ export default function ServicioPage({ params }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 lg:gap-8">
               <div className="md:col-span-2">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6">
-                  Qué resultados medimos
+                  Estrategias de {servicio.nombre.toLowerCase()} con mayor retorno para el sector salud
                 </h2>
                 <p className="text-text-muted mb-6">
                   Los resultados dependen del punto de partida, especialidad, zona, inversión y capacidad de seguimiento de cada clínica. Por eso medimos contactos reales y calidad, no solo métricas de marketing.
@@ -395,12 +400,14 @@ export default function ServicioPage({ params }: Props) {
           </div>
         </section>
 
-        {faqs.length > 0 && <FaqSection faqs={faqs} title={`Preguntas sobre ${servicio.nombre.toLowerCase()}`} />}
+        {faqs.length > 0 && <FaqSection faqs={faqs} title={`Preguntas frecuentes sobre ${servicio.nombre.toLowerCase()} médico en Sevilla`} />}
+
+        <GoogleBusinessMap />
 
         <section className="section-padding">
           <div className="container-custom max-w-3xl text-center">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-6">
-              También puede interesarte
+              Servicios de marketing sanitario relacionados con {servicio.nombre.toLowerCase()}
             </h2>
             <div className="flex flex-wrap gap-3 justify-center">
               {(relatedLinks[servicio.slug] || []).map((item) => (
