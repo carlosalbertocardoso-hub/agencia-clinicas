@@ -34,10 +34,7 @@ export default function LocalTestimonials() {
           <h2 id="testimonios-locales" className="text-3xl md:text-4xl font-heading font-semibold mb-4">
             Testimonios locales representativos
           </h2>
-          <p className="text-sm text-text-muted">
-            Ejemplos ilustrativos de situaciones habituales en clínicas privadas de Sevilla. No son
-            reseñas verificadas ni resultados garantizados.
-          </p>
+
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
