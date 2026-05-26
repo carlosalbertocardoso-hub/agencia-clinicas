@@ -6,6 +6,7 @@ import {
   GoogleTagManagerNoScript,
 } from '@/components/analytics/GoogleTagManager'
 import ConsentBanner from '@/components/analytics/ConsentBanner'
+import MobileStickyCta from '@/components/layout/MobileStickyCta'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import { buildOrganizationSchema } from '@/lib/schemas'
 
@@ -86,6 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-body text-text bg-neutral">
         <GoogleTagManagerNoScript />
         {children}
+        <MobileStickyCta />
         <ConsentBanner />
       </body>
     </html>

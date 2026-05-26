@@ -2,23 +2,32 @@ export function buildServiceSchema({
   name,
   description,
   url,
+  serviceType,
 }: {
   name: string
   description: string
   url: string
+  serviceType?: string | string[]
 }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': `${url}#service`,
     name,
     description,
     url,
+    ...(serviceType ? { serviceType } : {}),
     provider: {
-      '@id': 'https://www.iclinicas.es',
+      '@id': 'https://www.iclinicas.es/#localbusiness',
     },
     areaServed: {
       '@type': 'City',
       name: 'Sevilla',
+    },
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: 'https://www.iclinicas.es/contacto',
+      servicePhone: '+34600258938',
     },
   }
 }
@@ -96,15 +105,18 @@ export function buildOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': 'https://www.iclinicas.es/#organization',
-    name: 'iclinicas - Agencia de Marketing Sanitario',
-    url: 'https://www.iclinicas.es/',
+    name: 'iClínicas - Agencia de Marketing Sanitario',
+    url: 'https://www.iclinicas.es',
     logo: 'https://www.iclinicas.es/logo.svg',
     email: 'info@iclinicas.es',
+    telephone: '+34600258938',
     foundingDate: '2018',
     description:
       'Agencia de marketing digital especializada en clínicas privadas y profesionales sanitarios en Sevilla.',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Avd. Reina Mercedes 1',
+      postalCode: '41012',
       addressLocality: 'Sevilla',
       addressRegion: 'Andalucía',
       addressCountry: 'ES',
@@ -112,12 +124,14 @@ export function buildOrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
+      telephone: '+34600258938',
       email: 'info@iclinicas.es',
       availableLanguage: ['Spanish'],
       url: 'https://www.iclinicas.es/contacto',
     },
     sameAs: [
-      'https://www.linkedin.com/company/iclinicas',
+      'https://www.linkedin.com/in/carlos-cardoso-75025721/',
+      'https://share.google/aTLb8JdGqAn5xqyT9',
     ],
   }
 }
@@ -149,31 +163,39 @@ export function buildWebSiteSchema() {
 export function buildLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'ProfessionalService',
     '@id': 'https://www.iclinicas.es/#localbusiness',
-    name: 'iclinicas',
+    name: 'iClínicas',
     description:
       'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla.',
-    url: 'https://www.iclinicas.es/',
+    url: 'https://www.iclinicas.es',
+    telephone: '+34600258938',
     email: 'info@iclinicas.es',
     logo: 'https://www.iclinicas.es/logo.svg',
     image: 'https://www.iclinicas.es/images/og-default.png',
+    priceRange: '$$',
+    openingHours: 'Mo-Fr 09:00-17:00',
     foundingDate: '2018',
     inLanguage: 'es-ES',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Avd. Reina Mercedes 1',
+      postalCode: '41012',
       addressLocality: 'Sevilla',
       addressRegion: 'Andalucía',
       addressCountry: 'ES',
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 37.3633324,
+      longitude: -5.9858553,
+    },
     areaServed: [
       { '@type': 'City', name: 'Sevilla' },
-      { '@type': 'City', name: 'Dos Hermanas' },
-      'Nervión',
-      'Los Remedios',
-      'Triana',
-      'Sevilla Este',
-      'Aljarafe',
+      { '@type': 'Place', name: 'Nervión' },
+      { '@type': 'Place', name: 'Triana' },
+      { '@type': 'Place', name: 'Los Remedios' },
+      { '@type': 'Place', name: 'Aljarafe' },
     ],
     serviceType: [
       'Marketing Médico',
@@ -181,6 +203,10 @@ export function buildLocalBusinessSchema() {
       'Google Ads para Clínicas',
       'Diseño Web Sanitario',
       'Gestión de Redes Sociales Sanitarias',
+    ],
+    sameAs: [
+      'https://www.linkedin.com/in/carlos-cardoso-75025721/',
+      'https://share.google/aTLb8JdGqAn5xqyT9',
     ],
     parentOrganization: {
       '@id': 'https://www.iclinicas.es/#organization',

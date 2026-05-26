@@ -7,7 +7,7 @@ export function GoogleTagManagerHead() {
   if (!GTM_ID) return null
   return (
     <>
-      <Script id="gtm-consent" strategy="beforeInteractive">
+      <Script id="gtm-consent" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

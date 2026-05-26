@@ -4,13 +4,15 @@ import { CheckCircle2, MapPin, MessageCircle, Search, ShieldCheck, Target } from
 import { especialidades, getEspecialidadBySlug } from '@/data/especialidades'
 import { servicios } from '@/data/servicios'
 import { specialtyRelatedServices } from '@/data/crossLinks'
-import { buildServiceSchema } from '@/lib/schemas'
+import { buildFAQSchema, buildServiceSchema } from '@/lib/schemas'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
 import FaqSection from '@/components/shared/FaqSection'
+import GoogleBusinessMap from '@/components/shared/GoogleBusinessMap'
+import LocalTestimonials from '@/components/shared/LocalTestimonials'
 
 interface Props {
   params: {
@@ -613,25 +615,35 @@ export default function EspecialidadPage({ params }: Props) {
     name: content.h1,
     description: content.hero,
     url: `https://www.iclinicas.es/especialidades/${especialidad.slug}`,
+    serviceType: [
+      `Marketing sanitario para ${especialidad.nombre}`,
+      'SEO local sanitario',
+      'Google Ads para clínicas',
+      'Diseño web sanitario',
+    ],
   })
+  const faqSchema = {
+    ...buildFAQSchema(
+      content.faqs.map((faq) => ({
+        question: faq.pregunta,
+        answer: faq.respuesta,
+      }))
+    ),
+    '@id': `https://www.iclinicas.es/especialidades/${especialidad.slug}#faq`,
+  }
+  const serviceSchemaWithFaq = {
+    ...serviceSchema,
+    subjectOf: {
+      '@id': faqSchema['@id'],
+    },
+  }
 
   return (
     <>
       {/* Service Schema */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} suppressHydrationWarning />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemaWithFaq) }} suppressHydrationWarning />
       {/* FAQ Schema */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: content.faqs.map((faq) => ({
-          '@type': 'Question',
-          name: faq.pregunta,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.respuesta,
-          },
-        })),
-      }) }} suppressHydrationWarning />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} suppressHydrationWarning />
       <div className="min-h-screen flex flex-col">
         <Header />
 
@@ -738,6 +750,10 @@ export default function EspecialidadPage({ params }: Props) {
         </section>
 
         <FaqSection faqs={content.faqs} title={`Preguntas sobre marketing para ${especialidad.nombre.toLowerCase()}`} />
+
+        <GoogleBusinessMap />
+
+        <LocalTestimonials />
 
         {(() => {
           const related = specialtyRelatedServices[params.slug] || []

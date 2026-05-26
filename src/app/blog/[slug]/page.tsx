@@ -11,6 +11,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BreadcrumbNav from '@/components/shared/BreadcrumbNav'
 import ContactForm from '@/components/shared/ContactForm'
+import AuthorBox from '@/components/shared/AuthorBox'
 
 interface Props {
   params: {
@@ -240,30 +241,7 @@ export default function BlogPostPage({ params }: Props) {
               {renderMarkdown(post.contenido)}
             </article>
 
-            {autor && (
-              <aside className="mb-12 bg-white border border-slate-200 rounded-lg p-6 flex gap-5 items-start">
-                <Image
-                  src={autor.foto}
-                  alt={`${autor.nombre} — ${autor.rol}`}
-                  width={72}
-                  height={72}
-                  className="rounded-full border border-primary/20 object-cover flex-shrink-0"
-                />
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-accent font-semibold mb-1">
-                    Sobre el autor
-                  </p>
-                  <p className="font-heading text-lg font-semibold text-text mb-1">{autor.nombre}</p>
-                  <p className="text-sm text-text-muted leading-relaxed mb-3">{autor.bioCorta}</p>
-                  <Link
-                    href={`/autores/${autor.slug}`}
-                    className="text-sm font-semibold text-primary hover:underline"
-                  >
-                    Ver perfil completo →
-                  </Link>
-                </div>
-              </aside>
-            )}
+            {autor && <AuthorBox autor={autor} />}
 
             <div className="bg-surface p-6 rounded-lg border border-slate-200 mb-12">
               <h2 className="text-2xl md:text-3xl font-heading font-semibold text-text mb-4">
@@ -327,7 +305,13 @@ export default function BlogPostPage({ params }: Props) {
                     <article className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition h-full group">
                       <div className="h-40 bg-surface relative overflow-hidden">
                         {relPost.imagen && (
-                          <img src={relPost.imagen} alt={relPost.imagenAlt || relPost.titulo} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                          <Image
+                            src={relPost.imagen}
+                            alt={relPost.imagenAlt || relPost.titulo}
+                            fill
+                            sizes="(min-width: 768px) 33vw, 100vw"
+                            className="object-cover transition duration-300 group-hover:scale-105"
+                          />
                         )}
                       </div>
                       <div className="p-6">

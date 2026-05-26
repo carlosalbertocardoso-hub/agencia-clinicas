@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRef, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { especialidades } from '@/data/especialidades'
@@ -27,11 +28,12 @@ export default function Header() {
     <header className="sticky top-0 z-[100] bg-white/90 backdrop-blur-sm border-b border-slate-100">
       <div className="container-custom flex items-center justify-between py-4">
         <Link href="/" className="flex items-center">
-          <img
+          <Image
             src="/brand-logo.svg"
             alt="iclinicas"
-            width="172"
-            height="44"
+            width={172}
+            height={44}
+            priority
             className="h-9 w-auto sm:h-10"
           />
         </Link>

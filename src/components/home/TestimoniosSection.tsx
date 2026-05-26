@@ -21,7 +21,7 @@ export default function TestimoniosSection() {
                 ))}
               </div>
 
-              <p className="text-text mb-6 leading-relaxed italic">"{testimonio.texto}"</p>
+              <p className="text-text mb-6 leading-relaxed italic">&ldquo;{testimonio.texto}&rdquo;</p>
 
               <div className="flex items-center gap-3 mt-6">
                 <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold flex-shrink-0">
