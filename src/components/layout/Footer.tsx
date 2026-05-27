@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Send, UsersRound } from 'lucide-react'
 
 export default function Footer() {
@@ -17,7 +18,48 @@ export default function Footer() {
               Los resultados dependen del punto de partida, especialidad, zona, inversión y capacidad de seguimiento de cada clínica.
             </p>
 
-            <div className="flex gap-3 mt-6">
+            <div className="mt-6 mb-5 flex flex-col gap-2">
+              <a
+                href="https://www.credential.net/76aa0ca2-3862-4dca-8737-f1f2a18a82d2"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Certificación de Google Analytics - verificar credencial"
+                className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/15 border border-white/20 rounded-lg px-3 py-2 transition-colors duration-200"
+              >
+                <Image
+                  src="/images/google-analytics-certification-badge.png"
+                  alt="Google Analytics Certification badge"
+                  width={28}
+                  height={28}
+                  className="rounded w-7 h-7"
+                />
+                <span className="text-xs text-gray-300 leading-tight">
+                  Certificación<br />
+                  <span className="text-white font-medium">Google Analytics</span>
+                </span>
+              </a>
+              <a
+                href="https://www.credential.net/869e1785-e5a9-4d6f-9a67-39314c927342"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Certificación en Display de Google Ads - verificar credencial"
+                className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/15 border border-white/20 rounded-lg px-3 py-2 transition-colors duration-200"
+              >
+                <Image
+                  src="/images/google-ads-display-certification.png"
+                  alt="Google Ads Display Certification badge"
+                  width={28}
+                  height={28}
+                  className="rounded w-7 h-7"
+                />
+                <span className="text-xs text-gray-300 leading-tight">
+                  Certificación<br />
+                  <span className="text-white font-medium">Google Ads Display</span>
+                </span>
+              </a>
+            </div>
+
+            <div className="flex gap-3">
               <Link href="/contacto" className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center hover:bg-accent transition-colors duration-200" aria-label="Contactar con iclinicas">
                 <Send size={18} strokeWidth={1.6} className="text-white" />
               </Link>
