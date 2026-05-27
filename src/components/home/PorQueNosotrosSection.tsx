@@ -1,7 +1,6 @@
 import { BarChart3, CircleDollarSign, Clock, MapPin, MessageCircle, Target } from 'lucide-react'
 
-export default function PorQueNosotrosSection() {
-  const razones = [
+const razones = [
     {
       icono: Target,
       titulo: 'Te ahorramos tiempo',
@@ -38,8 +37,9 @@ export default function PorQueNosotrosSection() {
       descripcion:
         'Conocemos los barrios, la competencia local y cómo busca un paciente en Sevilla. No somos una agencia nacional con plantilla. Somos de aquí y trabajamos para clínicas de aquí.',
     },
-  ]
+]
 
+export default function PorQueNosotrosSection() {
   return (
     <section className="section-padding">
       <div className="container-custom">

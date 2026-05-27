@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, type SubmitHandler } from 'react-hook-form'
 import { CheckCircle2 } from 'lucide-react'
 import { sendContactEmail } from '@/app/actions/sendEmail'
 import { generateLead, getEspecialidadFromPath } from '@/lib/analytics/gtag'
@@ -18,7 +18,22 @@ export default function ContactForm({
   variant = 'full',
 }: ContactFormProps) {
   const isCompact = variant === 'compact' || variant === 'inline'
-  const { register, handleSubmit, formState: { isSubmitting }, reset } = useForm({
+
+  type FormValues = {
+    nombre: string
+    email: string
+    telefono: string
+    clinica: string
+    especialidad: string
+    zona: string
+    web: string
+    objetivo: string
+    mensaje: string
+    privacidad: boolean
+    comunicaciones: boolean
+  }
+
+  const { register, handleSubmit, formState: { isSubmitting }, reset } = useForm<FormValues>({
     defaultValues: {
       nombre: '',
       email: '',
@@ -36,7 +51,7 @@ export default function ContactForm({
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  async function onSubmit(data: any) {
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
       setError(null)
       const result = await sendContactEmail(data)
