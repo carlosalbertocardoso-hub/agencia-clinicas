@@ -176,29 +176,46 @@ No inventes otros CTAs. No pongas precios. No ofrezcas consultas gratuitas ilimi
 
 Usa siempre esta estructura. Adapta la profundidad de cada sección al tema, pero no te saltes ninguna.
 
+**REGLA CRÍTICA — El artículo NO es un tutorial.** El objetivo no es que el lector aprenda a hacer algo por su cuenta. El objetivo es que el lector entienda el problema con profundidad, reconozca por qué es más complejo de lo que parece, y llegue al CTA pensando "esto lo necesito, pero no lo voy a hacer solo". Nunca des los pasos de ejecución. Da el criterio para entender cuándo algo funciona y cuándo no.
+
 ```md
 # [Título principal — directo, con keyword local si aplica]
 *Categoría · X min lectura · Fecha*
 
 [Párrafo de apertura: el problema real del lector en 2-3 frases. Sin introducción genérica.]
 
-## [Sección 1: El contexto / por qué importa ahora]
-[Dato o cifra que justifique leer el artículo. Fuente citada.]
+## [Sección 1: Por qué este problema es más común de lo que parece]
+[Contexto concreto. Dato o cifra que justifique leer el artículo. Fuente citada.
+El lector debe reconocerse: "esto me está pasando a mí".]
 
-## [Sección 2: El error más común que cometen las clínicas en este tema]
-[Específico, reconocible, sin sermón.]
+## [Sección 2: Los errores que cometen la mayoría de clínicas]
+[Errores específicos y reconocibles. Sin sermón. El objetivo es que el lector
+vea que lo que ha hecho hasta ahora no es suficiente, y que hay matices que
+no había considerado. NO expliques la solución aquí.]
 
-## [Sección 3: Cómo funciona realmente / Qué hacer en su lugar]
-[El grueso del artículo. Concreto, con ejemplos de Sevilla si aplica.]
+## [Sección 3: Por qué parece fácil y no lo es]
+[Muestra la complejidad real del tema. Variables que hay que considerar,
+decisiones que dependen del contexto de cada clínica, tradeoffs que no
+son obvios. El lector debe salir de esta sección pensando "hay más de lo
+que creía". NO des instrucciones de implementación.]
 
-## [Sección 4: Ejemplo práctico o caso orientativo]
-[Puede ser anónimo: "Una clínica de fisioterapia en Dos Hermanas..." No inventar datos falsos. Si no hay caso real disponible, usa un escenario hipotético claramente marcado como tal.]
+## [Sección 4: Qué separa a las clínicas que lo hacen bien de las que no]
+[Criterios de calidad, señales de alerta, preguntas que debería hacerse.
+Puede ser anónimo: "Una clínica de fisioterapia en Dos Hermanas que gestionamos..."
+No inventar datos falsos. Si no hay caso real disponible, usa un escenario
+hipotético claramente marcado como tal. El lector ve que hay un nivel al
+que llegar, y que no está ahí solo.]
 
-## [Sección 5: Lo que deberías hacer esta semana]
-[3-5 acciones concretas. No más de una frase cada una.]
+## [Sección 5: Qué deberías analizar antes de hacer nada]
+[3-5 preguntas o factores que el lector debe evaluar en su propia clínica
+ANTES de actuar. No son pasos de ejecución — son diagnóstico. El objetivo
+es que el lector llegue al CTA con la sensación de que necesita ayuda para
+responderlas correctamente.]
 
 ---
-[CTA final conectado al servicio más relevante del artículo]
+[CTA final: conectado al servicio más relevante. El tono es de consulta,
+no de venta. "Si no tienes claro cómo responder a estas preguntas en tu
+clínica, es exactamente lo que analizamos en la auditoría gratuita."]
 ```
 
 **Longitud objetivo:** 1.200–2.000 palabras. Nunca menos de 900, nunca más de 2.500 salvo que el tema lo exija con justificación.
@@ -278,6 +295,13 @@ Consulta estas fuentes al investigar cada artículo. No las copies: extrae datos
 ## 12. CHECKLIST ANTES DE ENTREGAR UN ARTÍCULO
 
 Antes de dar por terminado cada borrador, verifica:
+
+**Captación (regla crítica):**
+
+- [ ] ¿El artículo da pasos de ejecución que el lector puede aplicar solo? Si es así, reescríbelo: el artículo da criterio y diagnóstico, no instrucciones.
+- [ ] ¿El lector puede terminar de leer el artículo y resolver su problema sin contratar a nadie? Si puede, el artículo está mal enfocado.
+- [ ] ¿La sección 5 pide al lector que evalúe su situación, no que ejecute pasos?
+- [ ] ¿El CTA conecta con la sensación de "esto es más complejo de lo que pensaba y necesito ayuda para analizarlo"?
 
 **Estructura y SEO:**
 
