@@ -129,12 +129,23 @@ schemaFiles.forEach(f => {
 
 // ── 7. FECHAS BLOG ───────────────────────────────────────────────────────────
 header('7. FECHAS DE POSTS DEL BLOG');
-const blog = readFile('src/data/blog.ts');
-if (!blog) fail('src/data/blog.ts no encontrado');
+const blogDir = 'content/blog';
+if (!fs.existsSync(blogDir)) fail('content/blog no encontrado');
 else {
-  const fechas = [...blog.matchAll(/fecha:\s*['"]([^'"]+)['"]/g)].map(m => m[1]);
-  const slugs  = [...blog.matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map(m => m[1]);
-  if (fechas.length === 0) { fail('No se encontraron campos "fecha" en blog.ts'); }
+  const posts = fs.readdirSync(blogDir)
+    .filter(fileName => fileName.endsWith('.mdx'))
+    .map(fileName => readFile(path.join(blogDir, fileName)))
+    .filter(Boolean)
+    .filter(fileContent => !fileContent.includes('status: "draft"'));
+  const fechas = posts.map(post => {
+    const match = post.match(/fechaPublicacion:\s*['"]([^'"]+)['"]/);
+    return match ? match[1] : null;
+  }).filter(Boolean);
+  const slugs = posts.map(post => {
+    const match = post.match(/slug:\s*['"]([^'"]+)['"]/);
+    return match ? match[1] : null;
+  }).filter(Boolean);
+  if (fechas.length === 0) { fail('No se encontraron campos "fechaPublicacion" en content/blog/*.mdx'); }
   else {
     fechas.forEach((f, i) => console.log('  📅', slugs[i] || i, '→', f));
     const unique = new Set(fechas);

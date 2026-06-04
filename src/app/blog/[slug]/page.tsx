@@ -19,6 +19,32 @@ interface Props {
   }
 }
 
+function renderInlineMarkdown(text: string) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g)
+
+  return parts.map((part, index) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+
+    if (!match) {
+      return part
+    }
+
+    const [, label, href] = match
+    const isExternal = href.startsWith('http')
+
+    return (
+      <Link
+        key={`${href}-${index}`}
+        href={href}
+        className="font-semibold text-primary hover:underline"
+        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
+        {label}
+      </Link>
+    )
+  })
+}
+
 function renderMarkdown(content: string) {
   let visibleBlocks = 0
   let ctaInserted = false
@@ -60,7 +86,7 @@ function renderMarkdown(content: string) {
           <Fragment key={index}>
             {maybeInsertCta()}
             <h2 className="text-3xl md:text-4xl font-heading font-semibold text-primary mt-10 mb-4">
-              {trimmed.replace('# ', '')}
+              {renderInlineMarkdown(trimmed.replace('# ', ''))}
             </h2>
           </Fragment>
         )
@@ -71,7 +97,7 @@ function renderMarkdown(content: string) {
           <Fragment key={index}>
             {maybeInsertCta()}
             <h3 className="text-2xl md:text-3xl font-heading font-semibold text-text mt-8 mb-3">
-              {trimmed.replace('## ', '')}
+              {renderInlineMarkdown(trimmed.replace('## ', ''))}
             </h3>
           </Fragment>
         )
@@ -80,19 +106,19 @@ function renderMarkdown(content: string) {
       if (trimmed.startsWith('- ')) {
         return (
           <Fragment key={index}>
-            {maybeInsertCta()}
-            <li className="ml-5 list-disc text-text-muted leading-relaxed">
-              {trimmed.replace('- ', '')}
-            </li>
-          </Fragment>
-        )
+          {maybeInsertCta()}
+          <li className="ml-5 list-disc text-text-muted leading-relaxed">
+              {renderInlineMarkdown(trimmed.replace('- ', ''))}
+          </li>
+        </Fragment>
+      )
       }
 
       return (
         <Fragment key={index}>
           {maybeInsertCta()}
           <p className="text-text-muted leading-relaxed mb-4">
-            {trimmed}
+            {renderInlineMarkdown(trimmed)}
           </p>
         </Fragment>
       )

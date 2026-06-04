@@ -1,6 +1,7 @@
 'use server'
 
 import { Resend } from 'resend'
+import { supabaseAdmin } from '@/lib/supabase/admin'
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 const contactToEmail = process.env.CONTACT_TO_EMAIL || 'info@iclinicas.es'
@@ -122,6 +123,29 @@ export async function sendContactEmail(data: ContactFormData) {
 
     if (confirmationEmail.error) {
       console.error('Confirmation email failed, but admin email was sent:', confirmationEmail.error)
+    }
+
+    // Insertar lead en Supabase via RPC
+    try {
+      const { error: supabaseError } = await supabaseAdmin.rpc('insert_lead_from_web', {
+        p_nombre: data.nombre,
+        p_email: data.email,
+        p_telefono: data.telefono,
+        p_clinica: data.clinica || null,
+        p_especialidad: data.especialidad || null,
+        p_zona: data.zona || null,
+        p_web: data.web || null,
+        p_objetivo: data.objetivo || null,
+        p_mensaje: data.mensaje || null,
+      })
+
+      if (supabaseError) {
+        console.error('Error inserting lead into Supabase:', supabaseError)
+      } else {
+        console.info('Lead inserted into Supabase successfully')
+      }
+    } catch (supabaseError) {
+      console.error('Error calling Supabase RPC:', supabaseError)
     }
 
     return { success: true }

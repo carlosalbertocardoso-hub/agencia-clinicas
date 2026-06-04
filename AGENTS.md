@@ -1,4 +1,4 @@
-# CLAUDE.md — iclinicas
+# AGENTS.md — iclinicas
 
 Guía operativa del proyecto para mantener el código, el copy y el SEO alineados con la web actual.
 
@@ -41,11 +41,6 @@ src/
   data/
   lib/
   types/
-content/
-  blog/
-    drafts/
-agents/
-  blog-publisher/
 public/
 docs/
 README.md
@@ -129,29 +124,6 @@ La navegación pública se organiza en:
 - Blog y guías.
 - Diagnósticos representativos.
 - Artículos por problema de captación: SEO local, Google Ads, web/CRO.
-
-### Blog y agente editorial
-
-Los artículos del blog se guardan como MDX:
-
-- `content/blog/*.mdx`: artículos publicados.
-- `content/blog/drafts/*.mdx`: borradores.
-
-`src/data/blog.ts` lee los archivos MDX, parsea el frontmatter y expone `blogPosts` a las páginas `/blog`, `/blog/[slug]`, `/recursos`, home, autores y sitemap. Solo se muestran posts con `status: "published"`.
-
-El agente editorial está en `agents/blog-publisher`:
-
-- `prompts/system-editorial.md`: instrucciones de redacción, tono, SEO, normativa sanitaria, fuentes y checklist.
-- `topics.json`: briefs preaprobados.
-- `index.mjs`: generación de borradores en `content/blog/drafts`.
-
-El workflow `.github/workflows/blog-agent.yml` se ejecuta los lunes a las 07:00 UTC y puede lanzarse manualmente. Requiere `ANTHROPIC_API_KEY` en GitHub. Usa `claude-3-5-haiku-20241022` por defecto, configurable con `ANTHROPIC_MODEL`. El agente debe abrir PR con borradores, nunca publicar directo.
-
-Para publicar un borrador revisado:
-
-```bash
-npm run blog:publish -- "slug-del-borrador"
-```
 
 La sección "A quién ayudamos" usa cards con:
 
@@ -251,9 +223,6 @@ npm run dev
 npm run build
 npm run start
 npm run lint
-npm run blog:new -- "Título del artículo"
-npm run blog:agent
-npm run blog:publish -- "slug-del-borrador"
 npm run sitemap
 ```
 

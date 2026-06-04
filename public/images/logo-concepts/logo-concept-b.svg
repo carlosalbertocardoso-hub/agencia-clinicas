@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-label="iclinicas logo concept B">
+  <title>iclinicas concept B</title>
+  <desc>Logo for iclinicas with a monogram i, medical cross, and growth signal.</desc>
+  <defs>
+    <linearGradient id="bMark" x1="20" y1="18" x2="158" y2="158" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B7467"/>
+      <stop offset="1" stop-color="#083E39"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="18" width="140" height="140" rx="38" fill="url(#bMark)"/>
+  <circle cx="90" cy="54" r="13" fill="#FFFFFF"/>
+  <path d="M90 82v51" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+  <path d="M56 111h68" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+  <path d="M58 130c15 0 25-6 33-18 8-13 19-20 35-20" fill="none" stroke="#C7A23B" stroke-width="8" stroke-linecap="round"/>
+  <text x="205" y="116" fill="#0A6B5E" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="700">iclinicas</text>
+  <path d="M206 134h138" stroke="#C7A23B" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/blog`,           lastModified: NOW, changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE}/recursos`,       lastModified: NOW, changeFrequency: 'weekly',  priority: 0.7 },
     { url: `${BASE}/casos-de-exito`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/marketing-clinicas-premium-sevilla`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/nosotros`,       lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/contacto`,       lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 },
   ]

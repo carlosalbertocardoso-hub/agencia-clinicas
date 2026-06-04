@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 180" role="img" aria-label="iclinicas logo concept A">
+  <title>iclinicas concept A</title>
+  <desc>Logo for iclinicas with a clinical shield, patient pathway, and refined wordmark.</desc>
+  <defs>
+    <linearGradient id="aMark" x1="20" y1="20" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F8D7D"/>
+      <stop offset="1" stop-color="#075247"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 16c33 18 59 21 80 20v50c0 43-24 72-80 91-56-19-80-48-80-91V36c21 1 47-2 80-20Z" fill="url(#aMark)"/>
+  <path d="M92 48v84" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round"/>
+  <path d="M50 90h84" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round"/>
+  <path d="M46 124c21 4 39-2 54-17 14-15 30-22 50-18" fill="none" stroke="#C7A23B" stroke-width="9" stroke-linecap="round"/>
+  <text x="215" y="112" fill="#0A6B5E" font-family="Newsreader, Georgia, serif" font-size="82" font-weight="600">iclinicas</text>
+  <text x="220" y="147" fill="#5A5A5A" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="2">MARKETING SANITARIO</text>
+</svg>

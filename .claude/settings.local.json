@@ -17,7 +17,19 @@
       "Bash(git push *)",
       "Read(//c/Users/ccard/.claude/skills/ui-ux-pro-max/**)",
       "Bash(python3 scripts/search.py \"medical clinic healthcare agency professional elegant service\" --design-system -p \"PacientesSevilla\" -f markdown)",
-      "WebFetch(domain:agencia-clinicas-pqzrjbb6a-carlosalbertocardoso-hubs-projects.vercel.app)"
+      "WebFetch(domain:agencia-clinicas-pqzrjbb6a-carlosalbertocardoso-hubs-projects.vercel.app)",
+      "Bash(node -e \"try{require\\('canvas'\\);console.log\\('canvas'\\)}catch{try{require\\('sharp'\\);console.log\\('sharp'\\)}catch{console.log\\('ninguno'\\)}}\")",
+      "Bash(node -e \"require\\('sharp'\\); console.log\\('sharp OK'\\)\")",
+      "Bash(node scripts/generate-og.js)",
+      "Bash(node -e ' *)",
+      "Bash(grep -v \"^$\")",
+      "Bash(node -e \"const fs=require\\('fs'\\),path=require\\('path'\\);function fp\\(d\\){const r=[];for\\(const i of fs.readdirSync\\(d\\)\\){const f=path.join\\(d,i\\);fs.statSync\\(f\\).isDirectory\\(\\)?r.push\\(...fp\\(f\\)\\):i==='page.tsx'&&r.push\\(f\\);}return r;}fp\\('src/app'\\).forEach\\(p=>{const rel=p.split\\('app'\\)[1].split\\('page.tsx'\\)[0].replace\\(/\\\\\\\\\\\\\\\\/g,'/'\\);const c=fs.readFileSync\\(p,'utf8'\\);const miss=[];if\\(!c.includes\\('title:'\\)\\)miss.push\\('title'\\);if\\(!c.includes\\('description:'\\)\\)miss.push\\('desc'\\);if\\(!c.includes\\('canonical'\\)\\)miss.push\\('canonical'\\);if\\(!c.includes\\('openGraph'\\)\\)miss.push\\('og'\\);if\\(!c.includes\\('twitter'\\)\\)miss.push\\('twitter'\\);if\\(c.includes\\('og-default.svg'\\)\\)miss.push\\('SVG!'\\);console.log\\(\\(miss.length?'⚠ ':'✅'\\),rel.padEnd\\(40\\),miss.join\\(' | '\\)\\);}\\);\")",
+      "Bash(node scripts/qa-predeploy.js)",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(npm install web-vitals@^4.2.4 2>&1)",
+      "PowerShell(New-Item -ItemType Directory -Path \"public\\\\images\\\\_originals\" -Force | Out-Null; Copy-Item \"public\\\\images\\\\hero-clinica-marketing.png\" \"public\\\\images\\\\_originals\\\\hero-clinica-marketing.png\"; Copy-Item \"public\\\\images\\\\blog-diseno-web-clinicas-real.jpg\" \"public\\\\images\\\\_originals\\\\blog-diseno-web-clinicas-real.jpg\"; Copy-Item \"public\\\\images\\\\blog-google-ads-psicologos-real.jpg\" \"public\\\\images\\\\_originals\\\\blog-google-ads-psicologos-real.jpg\"; Copy-Item \"public\\\\images\\\\blog-seo-dental-real.jpg\" \"public\\\\images\\\\_originals\\\\blog-seo-dental-real.jpg\"; Get-ChildItem \"public\\\\images\\\\_originals\" | Select-Object Name, @{N=\"KB\";E={[math]::Round\\($_.Length/1KB,1\\)}} | Format-Table -AutoSize)",
+      "PowerShell(node scripts/optimize-images.js 2>&1)",
+      "PowerShell($proc = Start-Process -FilePath \"npm\" -ArgumentList \"run\",\"start\" -PassThru -RedirectStandardOutput \"$env:TEMP\\\\next-start.log\" -RedirectStandardError \"$env:TEMP\\\\next-start.err\" -WindowStyle Hidden; Start-Sleep -Seconds 6; try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/api/og?title=Prueba&category=Test&subtitle=Hola\" -OutFile \"$env:TEMP\\\\og-test.png\" -PassThru -TimeoutSec 20; $size = \\(Get-Item \"$env:TEMP\\\\og-test.png\"\\).Length; Write-Host \"Status: $\\($r.StatusCode\\) | Content-Type: $\\($r.Headers['Content-Type']\\) | Bytes: $size | Cache-Control: $\\($r.Headers['Cache-Control']\\)\" } catch { Write-Host \"ERROR: $_\" } finally { Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue })"
     ]
   }
 }

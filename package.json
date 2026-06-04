@@ -7,11 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "firebase:contacts:dry-run": "node scripts/import-contacts-to-firestore.js --dry-run",
+    "firebase:contacts:import": "node scripts/import-contacts-to-firestore.js",
+    "blog:new": "node scripts/blog-new.mjs",
+    "blog:agent": "node agents/blog-publisher/index.mjs",
+    "blog:publish": "node scripts/blog-publish.mjs",
     "qa:interactions": "node scripts/qa-interactions.js",
     "sitemap": "next-sitemap"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.107.0",
     "autoprefixer": "^10.4.16",
+    "firebase-admin": "^13.10.0",
     "lucide-react": "^1.14.0",
     "next": "^14.0.0",
     "next-sitemap": "^4.1.3",

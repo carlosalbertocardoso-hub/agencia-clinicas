@@ -36,6 +36,9 @@ npm run dev       # Servidor local
 npm run build     # Build de producción
 npm run start     # Servir build de producción
 npm run lint      # Lint de Next/ESLint
+npm run blog:new -- "Título"       # Crear borrador MDX manual
+npm run blog:agent                 # Generar borrador con el agente editorial
+npm run blog:publish -- "slug"     # Publicar un borrador revisado
 npm run qa:interactions # QA real con Playwright sobre rutas, header, móvil y formulario
 npm run sitemap   # Generar sitemap con next-sitemap
 ```
@@ -78,6 +81,11 @@ src/
   data/
   lib/
   types/
+content/
+  blog/
+    drafts/
+agents/
+  blog-publisher/
 public/
 docs/
 design.md
@@ -149,6 +157,29 @@ El hub de recursos, blog y diagnósticos sigue publicado, pero no se muestra en 
 - `/recursos`: hub principal de contenidos.
 - `/blog`: artículos y guías.
 - `/casos-de-exito`: diagnósticos representativos y escenarios de mejora.
+
+## Blog y agente editorial
+
+Los artículos del blog se gestionan como archivos MDX en:
+
+- `content/blog/*.mdx`: artículos publicados.
+- `content/blog/drafts/*.mdx`: borradores pendientes de revisión.
+
+La fuente de datos de la web está en `src/data/blog.ts`, que lee esos archivos y solo publica los que tienen `status: "published"`.
+
+El agente editorial vive en `agents/blog-publisher`:
+
+- `prompts/system-editorial.md`: instrucciones de redacción, SEO, tono y normativa sanitaria.
+- `topics.json`: briefs preaprobados que el agente puede convertir en borradores.
+- `index.mjs`: script que genera un borrador MDX usando la API de Anthropic.
+
+Automatización:
+
+- `.github/workflows/blog-agent.yml` se ejecuta cada lunes a las 07:00 UTC.
+- Requiere el secret `ANTHROPIC_API_KEY` en GitHub.
+- Usa `claude-3-5-haiku-20241022` por defecto, configurable con la variable `ANTHROPIC_MODEL`.
+- Crea una Pull Request con un borrador en `content/blog/drafts`.
+- No publica directo: el artículo se revisa, se publica con `npm run blog:publish -- "slug"` y se despliega tras el merge.
 
 ## Diseño
 
