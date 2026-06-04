@@ -1,0 +1,66 @@
+# CLÍNICAS DE OFTALMOLOGÍA ENCONTRADAS EN GOOGLE MAPS (búsqueda: "oftalmólogo Sevilla")
+# Fuente: https://www.google.com/maps/search/oftalmologo+Sevilla
+# Fecha: 2026-06-02
+# Formato: Nombre | Teléfono | Web | Dirección | Nota
+# NOTA: Se marcan con "[YA EN CSV]" las que ya estaban en contactos-clinicas-unificado.csv
+# Las demás son NUEVAS (no están en el CSV).
+
+===== CLÍNICAS NUEVAS (NO están en el CSV) =====
+
+Miranza Virgen de Luján - Oftalmología en Sevilla | 954 28 00 00 | https://miranza.es/nuestras-clinicas/miranza-virgen-de-lujan/ | Gta. de las Cigarreras, 1 | 4,4★ (155 reseñas)
+
+Clínicas Tecnovisión | Oftalmólogos en Viamed Fátima Sevilla | 606 94 14 60 | https://www.clinicastecnovision.es/ | Av. de la Palmera, 2 | 5,0★ (6 reseñas)
+
+Área Salud Ocular | 954 28 38 75 | http://saludocular.com/ | Av. Pdte. Adolfo Suárez, 2 | 4,1★ (88 reseñas)
+
+Clínica Oftalmológica Dr. Lorenzo Trujillo | 954 53 03 05 | http://www.clinicatrujillo.com/ | Virgen de Lujan, 6 | 4,7★ (28 reseñas)
+
+Unidad de Oftalmología Tecnoláser | 954 61 33 00 | http://www.hospitalfatima.es/ | Gta. de Méjico, 1 | Sin reseñas
+
+Aguayo Canela Alberto | 954 28 38 75 | (sin web) | Av. Pdte. Adolfo Suárez, 2 | 4,0★ (4 reseñas)
+
+Clinica Doctor Sixto Carrillo Sevilla | 954 28 38 75 | http://www.drsixtocarrillo.com/ | Av. Pdte. Adolfo Suárez, 6 | 5,0★ (3 reseñas)
+
+Clínica Oftalvist (Buhaira) | 954 93 39 30 | https://www.oftalvist.es/clinicas/oftalvist-sevilla | Av. de la Buhaira, 31 | 4,8★ (1002 reseñas)
+
+Doctor Juan Luis García Madrona | 954 28 38 75 | http://www.drmadrona.es/contacto/ | Av. Pdte. Adolfo Suárez, 2 | 4,2★ (13 reseñas)
+
+Clínica Oftalmológica en Sevilla Dr. Martín | 954 63 22 33 | http://www.clinicadoctormartin.com/ | Av. Ramón y Cajal 41, Edif. Capitol Portal 2, 1ºA | 4,9★ (318 reseñas)
+
+Quirófanos Área Salud Ocular | 954 99 07 99 | http://saludocular.com/ | Av. Pdte. Adolfo Suárez, 6, 8 | Sin reseñas
+
+CLÍNICA OFTALMOLÓGICA SAN BERNARDO - DRA. MERCHANTE | 954 53 76 53 | https://sanbernardoclinica.com/ | Edif. Maestranza, C. Clara Campoamor s/n, C. Jazmineras, Esquina | 4,4★ (32 reseñas)
+
+Dr. Adrián Hernández Martínez OFTALVIST SEVILLA | 901 01 01 90 | https://dradrianhernandez.es/ | Av. de la Buhaira, 31 | 4,9★ (9 reseñas)
+
+Baviera (Av. de la Palmera, 37) | 954 29 67 44 | https://www.clinicabaviera.com/clinica-oftalmologica/sevilla | Av. de la Palmera, 37 | 4,7★ (503 reseñas)
+
+Dra. Maria Gessa Sorroche | 955 25 07 94 | https://www.topdoctors.es/doctor/maria-gessa-sorroche | Gta. de las Cigarreras, 1 | Sin nota visible
+
+Instituto Oftalmológico Andaluz | 954 45 93 00 | http://www.ioftalmologicoandaluz.es/ | Av. de la República Argentina, 31 | Sin nota visible
+
+Clínica Oftalvist (Ramón y Cajal) | 955 11 16 11 | https://www.oftalvist.es/ | Av. de Ramón y Cajal, 35, 3ª Planta | Sin nota visible
+
+Miranza Tecnolaser - Oftalmología en Sevilla | 954 98 84 60 | https://miranza.es/nuestras-clinicas/miranza-tecnolaser/ | C. Juan Antonio Cavestany, 14 | Sin nota visible
+
+Centro Avanzado de Oftalmología | 954 93 76 76 | https://www.centroavanzadodeoftalmologia.es/ | Av. de la Palmera, 53 | Sin nota visible
+
+Baviera (C. Enramadilla, 3) | 954 29 67 44 | https://www.clinicabaviera.com/clinica-oftalmologica/sevilla-enramadilla | Cl. Enramadilla, 3 | Sin nota visible
+
+Dr. Francisco Trujillo Berraquero | 955 01 16 78 | https://www.topdoctors.es/doctor/francisco-trujillo-berraquero | Cardenal Bueno Monreal, 56 | Sin nota visible
+
+Dra. Maria Isabel Relimpio Lopez, Oftalmólogo | 954 27 36 07 | https://amirasclinica.es/ | C/ Asunción, 3, 1ª | Sin nota visible
+
+
+===== CLÍNICAS QUE YA ESTÁN EN EL CSV =====
+
+Miranza CIMO - Oftalmología en Sevilla (corresponde a "Clínica Oftalmológica CIMO" en CSV) | 954 23 03 03 | https://miranza.es/nuestras-clinicas/miranza-cimo/ | Av. Manuel Siurot, 43E | 4,8★ (431 reseñas) [YA EN CSV]
+
+Clínica Oftalmológica - Sevilla Láser Clinic (corresponde a "Sevilla Laser Clinic" en CSV) | 622 87 58 04 | https://sevillalaserclinic.es/ | C. Condes de Bustillo, 34 | Sin nota visible [YA EN CSV]
+
+
+===== CLÍNICAS DEL CSV NO ENCONTRADAS EN ESTA BÚSQUEDA GBP =====
+
+- Hospital San Juan de Dios Oftalmología (CSV: Oftalmología, General)
+- Clínica Oftalmológica Macarena (León XIII) (CSV: OFTAL)
+- Clínica Piñero Oftalmología (CSV: Oftalmología)

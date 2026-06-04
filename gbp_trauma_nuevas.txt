@@ -1,0 +1,52 @@
+# CLÍNICAS DE TRAUMATOLOGÍA EN GBP - traumatólogo Sevilla
+# Generado: 2026-06-02
+# [NEW] = No están en contactos-clinicas-unificado.csv
+# [CSV] = Ya están en el CSV
+
+======================================================================
+# [NEW] CLÍNICAS NUEVAS - NO ESTÁN EN EL CSV (15 encontradas)
+======================================================================
+
+1. Dr. Damián Rial Valverde, Traumatólogo | 955 04 03 63 | https://www.drrialvalverde.com/ | Gta. de Méjico, 1 | 4,6 (127 reseñas)
+2. Unidad de Traumatología Viamed Fátima | 956 61 33 00 | https://www.viamedsalud.com/hospital-fatima/especialidad/traumatologia-y-cirugia-ortopedica_903/ | Gta. de Méjico, 1 | Sin reseñas
+3. Clínica COT | 954 27 47 62 | https://www.clinicacot.com/ | Juan Ramon Jimenez, 29 | 4,3 (115 reseñas)
+4. Unidad de Traumatología y Medicina Deportiva | 954 61 33 00 | - | Av. de la Palmera, 2B | 2,0 (4 reseñas)
+5. Dr. Cecilio Neila Matas | 954 28 26 36 | https://www.topdoctors.es/doctor/cecilio-neila-matas | C. Monte Carmelo, 71 | 5,0 (6 reseñas)
+6. Dr. José Cárdenas Clemente | 955 01 16 77 | https://www.topdoctors.es/doctor/jose-cardenas-clemente | C. Virgen del Valle, 31 | 3,0 (4 reseñas)
+7. Rafael Muela Velasco | 954 27 47 62 | - | Juan Ramon Jimenez, 29 | 4,0 (22 reseñas)
+8. Dra. Ángela Tatay Díaz | 955 01 16 62 | https://www.topdoctors.es/doctor/angela-tatay-diaz | C. Progreso, 39 | 4,0 (4 reseñas)
+9. Clínica Beiman Sevilla | 954 08 97 03 | https://www.clinicabeiman.es/sevilla/ | Gta. de las Cigarreras, 1, Local 3 | 3,9 (265 reseñas)
+10. Ripoll y de Prado Traumatología y Cirugía Ortopédica Sevilla | 954 23 61 19 | https://www.ripollydeprado.com/ | Av. de Ramón y Cajal, 31-35 | 5,0 (43 reseñas)
+11. Dr. Miguel Ángel Román Cañada – Cirugía de pie y tobillo | 619 31 23 78 | https://www.drromancirugiapieytobillo.com/ | C. Diego de Riaño, 4, 1ºA | - (sin reseñas visibles)
+12. Dr. Francisco Javier Martín Ramos | 648 45 66 61 | https://traumaspine.com/ | Ramón Carande, 5 | Sin reseñas
+13. Hospital Virgen del Rocío Traumatología | 955 01 20 00 | http://www.hospitaluvrocio.es/ | Av. Manuel Siurot, s/n | - (público)
+14. Dr. Manuel Rovira | 651 60 72 38 | https://manuelrovira.com/ | Av. Virgen de Luján, 31 | - (sin reseñas visibles)
+15. Traumatologo Ponce deLeon | 954 27 47 79 | - | Av. Flota de Indias, 6 | Sin reseñas
+
+======================================================================
+# [CSV] CLÍNICAS QUE YA ESTÁN EN EL CSV (6 entradas en GBP)
+======================================================================
+
+1. Dr Pedro Bernáldez Dominguez | 954 28 01 98 | http://www.clinicabernaldez.com/ | C. Tabladilla, 2 | 4,7 (151 reseñas)
+   → En CSV como: SportMe Medical Center (Clínica Bernáldez)
+
+2. SportMe Medical Center Traumatólogo Clínica Bernaldez Traumatología Deportiva | 954 28 01 98 | https://clinicabernaldez.com/ | C. Tabladilla, 2 | 4,4 (203 reseñas)
+   → En CSV como: SportMe Medical Center (Clínica Bernáldez)
+
+3. Traumatologia Sevilla Doctor Lara | 620 84 11 07 | https://traumamodern.es/ | C. Pagés del Corro, 188 | 5,0 (214 reseñas)
+   → En CSV como: TRAUMAMODERN Dr. Lara
+
+4. Traumatologiasevilla | 620 84 11 07 | https://traumatologiasevilla.es/ | C. Pagés del Corro, 188 | 5,0 (1 reseña)
+   → En CSV como: TRAUMAMODERN Dr. Lara (segundo perfil GBP)
+
+5. Advansur Traumatólogos | 687 09 22 77 | https://advansur.es/ | C. Condes de Bustillo, 11 | 5,0 (16 reseñas)
+   → En CSV como: Advansur Traumatología Avanzada
+
+6. Clínica Leal Graciani. Traumatología y Rehabilitación en Sevilla | 954 65 55 06 | http://www.clinicalealgraciani.es/ | C. Beatriz de Suabia, 100 | - (sin reseñas visibles)
+   → En CSV como: Clínica Leal Graciani (Legramed)
+
+======================================================================
+# OTRAS CLÍNICAS EN CSV QUE NO APARECIERON EN ESTA BÚSQUEDA GBP
+======================================================================
+- Dr. José Quintana Cruz (Traumatología/Columna)
+- Clínica Osten (Traumatología) - 4,7 - 639 649 288 - osten.es

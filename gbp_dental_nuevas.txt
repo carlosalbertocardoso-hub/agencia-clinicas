@@ -1,0 +1,37 @@
+# Clínicas Dentales en Sevilla (Google Maps) NO presentes en contactos-clinicas-unificado.csv
+# Generado: 2026-06-02
+# Formato: Nombre | Teléfono | Web | Dirección | Nota
+
+1. Clínica Dental Beatriz Mendoza | 954 10 19 81 | bmclinicadental.es | 26 Calle Cantillana | 4,9⭐ (339 reseñas) - Patrocinado
+2. Viladent - Clínica Dental Montequinto | 955 04 85 53 | viladent.es | 34 Calle Mesina | 4,9⭐ (41 reseñas) - Patrocinado
+3. Clínica Dental Cárabe | 954 27 51 96 | dentalcarabe.com | C/ Asunción, 78 | 4,9⭐ (184 reseñas)
+4. Clínica dental De Castro - Periodoncia e Implantes en Sevilla | 665 34 61 94 | dentaldecastro.com | Cardenal Bueno Monreal, 33, Local 2 | 5,0⭐ (212 reseñas)
+5. Consulta Dental María del Carmen Palacios Rodríguez | 954 24 05 06 | - | Av. de las Razas, 3 | 5,0⭐ (1 reseña)
+6. Clínica Dental Jiménez Vallejo (Gestoma) | 954 27 62 96 | gestoma.com | C/ Asunción, 77 | Sin nota visible
+7. Clínica dental MAEX Bernabeu | 954 53 10 22 | maexdental.com | Av. de la Borbolla, 61 | Sin nota visible
+8. Clinica Dental Clident María Salas | 954 28 60 06 | clident.es | Juan Ramon Jimenez, 27 | Sin nota visible
+9. Clínica DENTAL SEVILLA - Dr I. Gómez Mendo | 954 28 31 17 | dentalsevilla.com | Virgen de Lujan, 15, 1ºA | Sin nota visible
+10. Clínica Dental El Porvenir, Sevilla | 955 52 47 24 | clinicadentalelporvenir.com | C. Bogotá, 25, local 4 | Sin nota visible
+11. Clínica Dental Arpón - El Porvenir | 954 24 06 66 | dentista-sevilla.es | Av. de la Borbolla, 85 | Sin nota visible
+12. Clínica Dental Helident | 640 70 48 64 | clinicadentalhelident.es | C. Monzón, 32 | Sin nota visible
+13. Clínica dental Gómez de la Mata | 954 27 18 68 | clinicagomezdelamata.com | C. Virgen de la Fuensanta, 1 | Sin nota visible
+14. Fatou Dental | 655 56 80 21 | fatoudental.com | Av. de la Reina Mercedes, 19A, Escalera B, 1º | Sin nota visible
+15. Septima Dental - Sevilla | 954 23 14 62 | septimadental.com | C. Gaspar Alonso, 4 | Sin nota visible
+16. Clínica Dental Sevilla • Gallego Experiencia Dental | 954 00 58 58 | clinicagallego.net | Av. de la República Argentina, 24, Planta Baja | Sin nota visible
+17. Clínica Dental San Bernardo | 954 41 73 10 | clinicadentalsanbernardo.com | Av. de Cádiz, 25 | Sin nota visible
+18. Clínica Dental Dra. Catalina Zaragoza Rascón | 954 27 30 88 | - | C. Virgen de las Montañas, 9 A | Sin nota visible
+19. Clínica Dental Yñiguez | 954 27 35 28 | artedentalsevilla.es | C. Virgen de Regla, 1 | Sin nota visible
+20. ORTODONCIA SEVILLA | 954 28 31 17 | ortodonciasevilla.com | Virgen de Lujan, 15, 1ºA | Sin nota visible
+21. Clínica dental García De Diego Salmerón Vicente | 624 12 22 28 | centrodentalgarciadediego.com | C/ Asunción, 28 | Sin nota visible
+22. Dental Med | Clínica Dental y de Medicina Estética Sevilla | 954 04 00 66 | dentalmed.com.es | C. Jose Saramago, 21 | Sin nota visible
+23. IMOS Clínica (antigua Maxilosur) | 954 57 18 00 | imosclinica.com | Calle Fernando IV, 40 | Sin nota visible
+24. Clínica Dental Avante | 954 98 78 25 | clinicadentalavante.es | Calle Dr. Losada Villasante | Sin nota visible
+25. Centro de Implantologia Oral de Sevilla | 954 22 22 60 | ciossevilla.es | Virgen de Lujan, 26 | Sin nota visible
+26. AC DENTAL, Clínica Dental | 655 76 76 36 | dentistasensevilla.com.es | Av. de la República Argentina, 28, Local | Sin nota visible
+27. Clínica Dental J. Queraltó | 954 62 67 06 | clinicaqueralto.com | Ramón Carande, 15 | Sin nota visible
+28. CENTRO DENTAL Gª DE DIEGO | 624 12 22 28 | centrodentalgarciadediego.com | C/ Asunción, 28 | Sin nota visible
+29. Clínica ASISA Dental | 954 92 65 64 | asisadental.es | C. Espinosa y Cárcel, 19 | Sin nota visible
+30. Koresdent - Clínica Dental María Victoria Alfonso | 954 64 58 18 | koresdent.es | C. Vermondo Resta, 10, Manz. 2 Loc. 8 | Sin nota visible
+31. Clínica dental Manuel Domínguez Andújar | 954 45 25 39 | clinicadentaldominguezandujar.com | Av. Flota de Indias, 24, 2ºB | Sin nota visible
+32. Clinica Dental Caser Sevilla | 954 59 61 20 | clinicasdentalescaser.es | Av. San Francisco Javier, 15 | Sin nota visible
+33. DEIMPLANT | 955 44 39 72 | deimplant.com | 29 Avenida de Cristobal Colón | Patrocinado - Primera visita gratuita

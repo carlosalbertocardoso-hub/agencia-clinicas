@@ -1,0 +1,12 @@
+# Clínicas de Urología en GBP (Google Maps) - NO ENCONTRADAS en CSV
+# Buscadas: "urólogo Sevilla" en Google Maps
+# Fecha: 2026-06-02
+# Formato: Nombre | Teléfono | Web | Dirección | Nota
+
+Dr. Javier Sánchez de la Vega. Urologo Privado (no compañías) | 617 56 02 67 | http://sanchezdelavega.es/ | Av. de la Palmera, 2 | 4,4★ (29 reseñas) - Urólogo
+Unidad de Urología Viamed Fátima | 956 61 33 00 | https://www.viamedsalud.com/hospital-fatima/especialidad/urologia_904/ | Gta. de Méjico, 1 | Sin reseñas - Urólogo
+Dr. Antonio Medina González | 854 61 24 97 | https://www.topdoctors.es/doctor/antonio-medina-gonzalez | C. Virgen de Robledo, 3 | 3,5★ (12 reseñas) - Médico (urólogo)
+Dr. Alberto García Escuder | 854 61 10 61 | https://www.topdoctors.es/doctor/alberto-garcia-escuder | Gta. de Méjico, 1 | 3,3★ (7 reseñas) - Centro médico (urólogo)
+Dr. Rubén Campanario Pérez | 854 61 24 97 | https://www.topdoctors.es/doctor/ruben-campanario-perez | C. Virgen de Robledo, 3 | Sin reseñas - Médico (urólogo)
+Dr. Francisco Rivera Muñoz | 854 61 26 17 | https://www.topdoctors.es/doctor/francisco-rivera-munoz | C. Rafael Salgado, 3 | 4,5★ (8 reseñas) - Médico (urólogo)
+Dr. Daniel Pérez Fuentes | 602 62 68 53 | https://www.viamedsalud.com/hospital-santa-angela-de-la-cruz/ficha-medica/daniel-perez-fuentes_4701/ | Av. de Jerez, 59 | 5,0★ (27 reseñas) - Urólogo

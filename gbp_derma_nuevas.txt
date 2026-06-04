@@ -1,0 +1,39 @@
+Clínicas de dermatología en Sevilla encontradas en GBP que NO están en el CSV
+Fecha: 2026-06-02
+Fuente: Google Maps - búsqueda "dermatologo Sevilla"
+===============================================================================================
+
+1. Consulta Dr. Julián Conejo-Mir | 954 27 47 37 | http://www.julianconejomir.es | Av. de la República Argentina, 32, bajo | 3,8★ (111 reseñas)
+
+2. Clínica Cantalejo | 666 01 47 13 | http://www.clinicacantalejo.es | C. San Bernardo, 52, B-2-1 | 4,7★ (78 reseñas)
+
+3. Francisco Camacho Martínez | 954 27 18 51 | (sin web) | Av. de la República Argentina, 22 | 3,7★ (18 reseñas)
+
+4. Dermofit - Dra. García Hernández | 954 45 17 07 | http://www.dermofit.es | C. Evangelista, 69-71, portal 13, bajo | 4,2★ (85 reseñas)
+
+5. Bueno Montés José | 954 27 00 25 | (sin web) | C. Virgen del Valle, 83 | Sin reseñas
+
+6. Dra. Lara Pérez Naranjo, Dermatólogo | 669 98 69 50 | https://www.doctoralia.es/lara-perez-naranjo/dermatologo/sevilla | C/ Marqués del Nervión, 72 | 5,0★ (3 reseñas)
+
+7. Dr. Miguel Ángel Muñoz Pérez | 955 10 43 11 | https://www.doctoralia.es/miguel-angel-munoz-perez/dermatologo/sevilla | C. Balbino Marrón, 8, 5º Planta, Modulo 12 | 3,6★ (40 reseñas)
+
+8. Dra Isabel Gata Gata | 954 23 99 53 | (sin web) | C. Fernando Villalón, 3, 3 E | 3,6★ (23 reseñas)
+
+9. Sevilladerm, Clínica Dermatológica | 954 57 14 68 | https://www.sevilladerm.com | C. Luis Montoto, 130C | 3,9★ (31 reseñas)
+
+10. Rodríguez Pichardo Antonio | 954 27 49 86 | (sin web) | Ardilla, 11, bajo | (sin nota visible)
+
+11. Centro Médico Quirónsalud Los Remedios (Unidad Dermatología) | 954 33 01 00 | https://www.quironsalud.es/infanta-luisa/es/centro/centros-medicos/centro-medico-quironsalud-remedios | Virgen de Lujan, 3 | (sin nota visible)
+
+===============================================================================================
+NOTAS:
+- Clínica Bernabeu / Dermavit Salud: ya está en CSV como "Dermavit Salud" (Dermatología, 62 pts)
+- Clínica Dra. Sara López Martín-Prieto: ya está en CSV como "Clínica Dermatológica Dra. Sara López" (Dermatología, 72 pts)
+- Clínica Bonaderma: ya está en CSV como "Bonaderma" (Dermatología, 76 pts)
+- Demax Clinic: ya está en CSV como "Demax Clinic" y "Demax Clinic Sevilla" (Dermatología/DERMA)
+- Clínica Novaderma: ya está en CSV (DERMA)
+- Gesderma (Quirónsalud): ya está en CSV (Dermatología)
+- Clínica Doctor Ortiz: categorizado como "Centro de estética", no como dermatología
+- DERMAGROUP,SL: misma dirección/teléfono que Consulta Dr. Julián Conejo-Mir (misma práctica)
+- Luis Ortega: mismo centro que Clínica Dra. Sara López (ya en CSV)
+===============================================================================================

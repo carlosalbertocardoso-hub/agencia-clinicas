@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{email_title}}</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #FCF9F2;
+    color: #1A1A1A;
+    font-family: Inter, Segoe UI, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img {
+    border: 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .page {
+    width: 100%;
+    padding: 28px 12px;
+    background: #FCF9F2;
+  }
+
+  .email-wrapper {
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #E5E1D8;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-shadow: 0 18px 40px rgba(8, 82, 73, 0.10);
+  }
+
+  .hero {
+    background: #0A6B5E;
+  }
+
+  .hero-visual {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .hero-visual-cell {
+    height: 176px;
+    padding: 18px 22px;
+    background-color: #085249;
+    background-image: url('https://www.iclinicas.es/images/hero-clinica-marketing.jpg');
+    background-position: center;
+    background-size: cover;
+    vertical-align: top;
+  }
+
+  .hero-logo-card {
+    display: inline-block;
+    padding: 9px 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 8px 20px rgba(8, 82, 73, 0.16);
+  }
+
+  .hero-logo {
+    height: 36px;
+    width: auto;
+  }
+
+  .hero-content {
+    padding: 28px 34px 30px;
+    background: #0A6B5E;
+    background-image: linear-gradient(135deg, #073F38 0%, #0A6B5E 72%, #0E8C7A 100%);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    margin: 0 0 12px;
+    padding: 6px 11px;
+    border: 1px solid rgba(255, 209, 102, 0.44);
+    border-radius: 999px;
+    color: #FFD166;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .hero-title {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: Georgia, Times New Roman, serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.08;
+  }
+
+  .hero-copy {
+    margin: 14px 0 0;
+    max-width: 540px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .trust-strip {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    margin-top: 24px;
+    padding-top: 18px;
+  }
+
+  .trust-item {
+    display: table-cell;
+    padding-right: 12px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .trust-item strong {
+    display: block;
+    margin-bottom: 2px;
+    color: #FFD166;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .email-body {
+    padding: 34px;
+    color: #1A1A1A;
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .email-body p {
+    margin: 0 0 16px;
+  }
+
+  .greeting {
+    margin: 0 0 12px !important;
+    color: #085249;
+    font-family: Georgia, Times New Roman, serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.18;
+  }
+
+  .intro-line {
+    color: #5A5A5A;
+  }
+
+  .proof-line {
+    margin: 22px 0;
+    padding: 18px 20px;
+    border: 1px solid #E5E1D8;
+    border-radius: 8px;
+    background: #FCF9F2;
+    color: #1A1A1A;
+  }
+
+  .proof-line strong {
+    color: #085249;
+  }
+
+  .section-label {
+    margin: 0 0 13px;
+    color: #8B6D11;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .opportunity-card {
+    margin: 10px 0;
+    padding: 16px 17px;
+    border: 1px solid #E5E1D8;
+    border-radius: 8px;
+    background: #FFFFFF;
+  }
+
+  .opportunity-number {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 9px;
+    border-radius: 999px;
+    background: #0A6B5E;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .opportunity-text {
+    display: inline-block;
+    width: calc(100% - 44px);
+    color: #5A5A5A;
+    font-size: 14px;
+    line-height: 1.58;
+    vertical-align: top;
+  }
+
+  .opportunity-text strong {
+    color: #1A1A1A;
+  }
+
+  .diagnosis-panel {
+    margin: 24px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #F4F1EA;
+    border: 1px solid #E5E1D8;
+  }
+
+  .diagnosis-head {
+    padding: 22px 22px 18px;
+    background: #0A3F38;
+    color: #FFFFFF;
+  }
+
+  .diagnosis-head .highlight {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 11px;
+    border: 1px solid rgba(255, 209, 102, 0.44);
+    border-radius: 999px;
+    color: #FFD166;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .diagnosis-head h3 {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: Georgia, Times New Roman, serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.18;
+  }
+
+  .diagnosis-body {
+    padding: 20px 22px 22px;
+  }
+
+  .diagnosis-body p {
+    color: #5A5A5A;
+    font-size: 14px;
+  }
+
+  .deliverables {
+    margin: 0 0 18px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .deliverables li {
+    margin: 0 0 9px;
+    color: #5A5A5A;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .deliverables span {
+    color: #0A6B5E;
+    font-weight: 800;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 7px;
+    background: #8B6D11;
+    color: #FFFFFF !important;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  .cta-note {
+    margin: 12px 0 0 !important;
+    color: #5A5A5A;
+    font-size: 12px !important;
+  }
+
+  .signature {
+    margin-top: 22px !important;
+    padding-top: 18px;
+    border-top: 1px solid #E5E1D8;
+  }
+
+  .signature strong {
+    color: #085249;
+  }
+
+  .email-footer {
+    padding: 26px 34px 30px;
+    background: #073F38;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .email-footer strong {
+    color: #FFFFFF;
+    font-family: Georgia, Times New Roman, serif;
+    font-size: 18px;
+  }
+
+  .email-footer a {
+    color: #FFD166;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  @media (max-width: 520px) {
+    .page {
+      padding: 14px 8px;
+    }
+
+    .hero-content,
+    .email-body,
+    .email-footer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .hero-visual-cell {
+      height: 132px;
+      padding: 14px 16px;
+    }
+
+    .hero-logo-card {
+      padding: 8px 10px;
+    }
+
+    .hero-logo {
+      height: 32px;
+    }
+
+    .hero-title {
+      font-size: 28px;
+    }
+
+    .greeting {
+      font-size: 23px;
+    }
+
+    .trust-strip,
+    .trust-item {
+      display: block;
+      width: 100%;
+    }
+
+    .trust-item {
+      padding: 0 0 10px;
+    }
+
+    .opportunity-text {
+      width: calc(100% - 42px);
+    }
+
+    .cta-button {
+      display: block;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="email-wrapper">
+    <!-- CABECERA COMUN -->
+    <div class="hero">
+      <table class="hero-visual" role="presentation" cellpadding="0" cellspacing="0">
+        <tr>
+          <td
+            class="hero-visual-cell"
+            background="https://www.iclinicas.es/images/hero-clinica-marketing.jpg"
+            aria-label="Equipo de marketing sanitario analizando métricas de una clínica"
+          >
+            <span class="hero-logo-card">
+              <img class="hero-logo" src="https://www.iclinicas.es/brand-logo.svg" alt="iClínicas">
+            </span>
+          </td>
+        </tr>
+      </table>
+      <div class="hero-content">
+        <span class="eyebrow">Marketing sanitario para clínicas privadas en Sevilla</span>
+        <h1 class="hero-title">{{hero_title}}</h1>
+        <p class="hero-copy">{{hero_copy}}</p>
+        <div class="trust-strip">
+          <div class="trust-item"><strong>48h</strong>Diagnóstico inicial</div>
+          <div class="trust-item"><strong>15 min</strong>Validación semanal</div>
+          <div class="trust-item"><strong>Sevilla</strong>Captación local</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUERPO PERSONALIZADO -->
+    <div class="email-body">
+      <p class="greeting">{{saludo}}</p>
+
+      <p class="intro-line">{{intro}}</p>
+
+      <div class="proof-line">
+        {{observacion_personalizada}}
+      </div>
+
+      <p class="section-label">{{titulo_oportunidades}}</p>
+
+      <div class="opportunity-card">
+        <span class="opportunity-number">01</span>
+        <span class="opportunity-text"><strong>{{oportunidad_1_titulo}}</strong> {{oportunidad_1_texto}}</span>
+      </div>
+
+      <div class="opportunity-card">
+        <span class="opportunity-number">02</span>
+        <span class="opportunity-text"><strong>{{oportunidad_2_titulo}}</strong> {{oportunidad_2_texto}}</span>
+      </div>
+
+      <div class="opportunity-card">
+        <span class="opportunity-number">03</span>
+        <span class="opportunity-text"><strong>{{oportunidad_3_titulo}}</strong> {{oportunidad_3_texto}}</span>
+      </div>
+
+      <div class="diagnosis-panel">
+        <div class="diagnosis-head">
+          <span class="highlight">{{cta_badge}}</span>
+          <h3>{{diagnostico_titulo}}</h3>
+        </div>
+        <div class="diagnosis-body">
+          <p>{{diagnostico_texto}}</p>
+          <ul class="deliverables">
+            <li><span>✓</span> {{entregable_1}}</li>
+            <li><span>✓</span> {{entregable_2}}</li>
+            <li><span>✓</span> {{entregable_3}}</li>
+          </ul>
+          <a href="{{cta_url}}" class="cta-button">{{cta_texto}}</a>
+          <p class="cta-note">{{cta_nota}}</p>
+        </div>
+      </div>
+
+      <p>{{cierre}}</p>
+
+      <p class="signature">Un saludo,<br><strong>{{firma_nombre}}</strong></p>
+    </div>
+
+    <!-- FOOTER COMUN -->
+    <div class="email-footer">
+      <strong>iClínicas</strong><br>
+      Captación medible de pacientes privados para clínicas en Sevilla<br>
+      <a href="https://www.iclinicas.es">www.iclinicas.es</a><br><br>
+      Si prefieres no recibir más comunicaciones, puedes <a href="{{unsubscribe_url}}" style="color:#FFD166;text-decoration:underline;">darte de baja aquí</a>.
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# CLÍNICAS DE MEDICINA ESTÉTICA EN SEVILLA (NO en el CSV)
+# Extraídas de Google Maps - 2 junio 2026
+# Formato: Nombre | Teléfono | Web | Dirección
+
+1. Clínica Londres | Cirugía y Medicina Estética | 954 91 17 68 | http://clinicalondres.es | Av. Pdte. Adolfo Suárez, 20, Local Bajo (Los Remedios)
+   *Nota: En CSV está solo la sucursal de Nervión (Clínica Londres Nervión). Esta es la principal en Los Remedios.*
+
+2. Virelle Medicina Estética - Longevity & Preventive Medicine | 680 34 53 16 | (sin web visible) | Cardenal Bueno Monreal, 56
+
+3. Clínica Doctor Ortiz | 954 28 60 18 | https://clinicadoctorortiz.es | Av. Pdte. Adolfo Suárez, 26
+
+4. Clinica Imedic | Medicina Estética en Sevilla | 660 22 86 15 | http://clinicaimedic.es | C. Virgen de la Consolación, 18
+
+5. Clínica Medicina Estética Sevilla | AesthetiClinic | 669 13 64 71 | https://clinicamedicinaesteticasevilla.es | Av. de la República Argentina, 46
+
+6. CLINICAS ATHENEA | Medicina Estética y Dermoestética Sevilla | 647 73 36 15 | http://www.clinicasathenea.com | Policlínica Los Remedios, Virgen de Lujan, 31
+
+7. Clinica Doctora Garcia Medicina Estetica y Antienvejecimiento | 954 61 87 80 | https://clinicadoctoragarcia.es | Cardenal Bueno Monreal, 8
+
+8. Dr. Pérez - Cerezal. Cirugía Plástica y Estética. | 955 13 14 01 | http://www.drperezcerezal.es | Av. Pdte. Adolfo Suárez, 10
+
+9. Centro Médico Estético Sevilla Los Remedios | 954 04 50 82 | http://www.centromedicoesteticosevillalosremedios.es | Av. de la República Argentina, 1, Local 2
+
+10. Dra Isabel Durbán (Cirujano plástico) | 696 87 20 67 | https://doctoradurban.es | Hospital Viamed Fátima, Gta. de Méjico, 1
+
+11. Clínica de Medicina Estética Vitaluz | 955 51 52 25 | http://clinicavluz.com | Av. de la República Argentina, 20
+
+12. Clínica ANTIAGING María Jesús Márquez Estética Avanzada | 657 22 27 65 | (sin web) | Virgen de Lujan, 26, Local 3
+
+13. Clínica EGOS & Bloome Sevilla - Cirugía y medicina estética | 637 09 83 99 | https://www.clinicaegos.com | Edif LA PERGOLA, Virgen de Lujan, 30, A
+
+14. Clínicas Love Sevilla | Cirugía y Medicina estética | 628 69 39 26 | https://www.clinicaslove.com | Virgen de Lujan, 22
+
+15. CLÍNICA EMME ® - Marpemedical | 634 72 71 12 | https://clinicaemme.com | Calle Fernando IV, 27
+
+16. Medicina Estética Facial METODORAIL | 607 87 21 05 | http://www.metodorail.com | C. Sta. Rosa, 7
+
+17. Clínica Reina Mercedes - Dra Julia Chabrera | 954 61 26 40 | https://clinicareinamercedes.com | Av. de la Reina Mercedes, 29
+
+18. Meye Los Remedios -Clínica Estética | 854 88 20 48 | http://meye.es | C. Virgen del Valle, 61
+
+19. Clínica Cifuentes - Medicina y Cirugía Estética | 673 04 29 40 | https://clinicacifuentes.com | CCViapol Center, C. Pirotecnia, sn, Local 5
+
+20. Dr David medina Varo (Cirujano plástico) | 954 61 33 00 | http://www.doctormedinavaro.com | Centro de Especialidades, Paseo de la Palmera 2b (Clínica de Fátima)
