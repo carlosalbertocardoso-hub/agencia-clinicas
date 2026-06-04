@@ -42,3 +42,16 @@ Thumbs.db
 
 # Image backups (local rollback only — no versionar)
 public/images/_originals/
+
+# Claude Code internals
+.agents/
+skills-lock.json
+
+# Local logs
+logs/
+
+# TypeScript build cache
+tsconfig.tsbuildinfo
+
+# Temp files
+test_write.txt
