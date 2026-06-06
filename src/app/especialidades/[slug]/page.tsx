@@ -37,11 +37,11 @@ const specialtyContent: Record<
   'clinicas-dentales-sevilla': {
     h1: 'Marketing digital para clínicas dentales en Sevilla',
     hero:
-      'Te ayudamos a competir en Google Maps, explicar tratamientos de alto valor y convertir más búsquedas locales en solicitudes de cita cualificadas.',
+      'En Sevilla hay más de 400 clínicas dentales. El paciente no llama a la mejor, llama a la que aparece primero con buenas reseñas. Trabajamos para que esa sea la tuya.',
     keyText:
-      'En dental, el paciente compara precio, cercanía, confianza, reseñas y especialización. Tu marketing debe ayudarle a entender por qué tu clínica es una opción segura antes de llamar.',
+      'Un implante o una ortodoncia es una decisión de meses, no de minutos. El paciente compara precios, lee reseñas, mira fotos del equipo y busca si la web le explica el proceso. Si no encuentra respuestas claras en tu clínica, las busca en la de enfrente.',
     pain:
-      'La competencia dental en Sevilla es alta. Si tu clínica no aparece bien por implantes, ortodoncia, estética dental, urgencias o revisiones, es probable que el paciente contacte antes con otra opción.',
+      'La competencia dental en Sevilla no se gana con la mejor técnica, se gana siendo visible cuando el paciente busca. Si tu clínica no aparece en Google Maps por urgencias, por Nervión o por ortodoncia invisible, esas búsquedas las captura otra clínica cada día.',
     searches: ['Implantes dentales en Sevilla', 'Ortodoncia invisible', 'Dentista cerca', 'Urgencias dentales', 'Estética dental'],
     trust: ['Reseñas visibles y bien gestionadas', 'Fotos reales de clínica y equipo', 'Páginas por tratamiento', 'Opciones de financiación si aplica', 'Ubicación y horarios claros'],
     serviceNotes: {
@@ -71,11 +71,11 @@ const specialtyContent: Record<
   'psicologos-sevilla': {
     h1: 'Marketing digital para psicólogos en Sevilla',
     hero:
-      'Captación ética para consultas de psicología que quieren ser encontradas por personas que necesitan ayuda y buscan un profesional de confianza.',
+      'Alguien que busca psicólogo ya ha dado el paso más difícil. Tu trabajo es que cuando llegue a tu web, sienta que está en el sitio correcto.',
     keyText:
-      'En psicología no se trata de presionar. Se trata de que una persona que necesita ayuda te encuentre, entienda tu enfoque y se sienta segura para dar el primer paso.',
+      'En psicología, el marketing no puede sonar a venta. Quien busca ayuda para ansiedad, una crisis de pareja o un problema con sus hijos necesita encontrar claridad y cercanía, no un embudo de conversión. Trabajamos para que tu consulta sea visible y para que quien llegue entienda tu enfoque antes de escribirte.',
     pain:
-      'Muchas consultas dependen de recomendaciones, Doctoralia o Instagram. El problema aparece cuando una persona busca ansiedad, terapia de pareja o psicología infantil y no encuentra una propuesta clara, cercana y profesional.',
+      'La mayoría de psicólogos en Sevilla dependen de Doctoralia o del boca a boca. Eso funciona hasta que no funciona. Si alguien busca "psicóloga infantil Triana" o "terapia de pareja online Sevilla" y tu nombre no aparece, esa persona va a otro profesional, no porque seas peor, sino porque no te encontró.',
     searches: ['Psicólogo ansiedad Sevilla', 'Terapia de pareja', 'Psicólogo infantil', 'Terapia online', 'Psicóloga cerca'],
     trust: ['Tono sensible y no agresivo', 'Privacidad y claridad', 'Enfoque terapéutico explicado', 'Primera consulta bien descrita', 'Online/presencial claro'],
     serviceNotes: {
@@ -105,11 +105,11 @@ const specialtyContent: Record<
   'medicina-estetica-sevilla': {
     h1: 'Marketing digital para clínicas de medicina estética en Sevilla',
     hero:
-      'Comunicación y captación para clínicas que necesitan explicar tratamientos, generar confianza y recibir solicitudes mejor filtradas.',
+      'En estética, el paciente no busca el precio más bajo, busca al médico que le dé más confianza. El problema es que si no apareces bien, ni siquiera llega a conocerte.',
     keyText:
-      'El paciente de medicina estética busca resultados, pero también seguridad, criterio profesional y confianza. Tu presencia digital debe vender sin parecer agresiva.',
+      'Medicina estética es uno de los sectores donde la brecha entre la calidad real del profesional y su presencia digital es más grande. Clínicas con mucho rigor y equipo excelente compiten con perfiles de Instagram de dudosa credibilidad. Una web clara y un Google bien trabajado cambian quién te llama.',
     pain:
-      'En estética hay mucha oferta y mucho ruido. Si tu web, anuncios o redes no transmiten rigor, naturalidad y seguridad, el paciente puede elegir por precio o por impulsos poco cualificados.',
+      'En Sevilla hay mucha oferta estética y mucho ruido barato. Si tu presencia digital no transmite criterio médico real, recibes consultas de personas que buscan el precio más bajo y comparan cinco sitios antes de decidir. Eso no es el paciente que quieres, y tampoco es el que se queda.',
     searches: ['Medicina estética Sevilla', 'Ácido hialurónico', 'Botox Sevilla', 'Tratamientos faciales', 'Rejuvenecimiento facial'],
     trust: ['Profesionales visibles', 'Seguridad y proceso', 'Antes/después con prudencia legal', 'FAQs por tratamiento', 'Solicitudes filtradas por interés real'],
     serviceNotes: {
@@ -139,11 +139,11 @@ const specialtyContent: Record<
   'fisioterapia-sevilla': {
     h1: 'Marketing digital para clínicas de fisioterapia en Sevilla',
     hero:
-      'SEO local, web y campañas para captar búsquedas de dolor, rehabilitación, lesiones y fisioterapia cercana.',
+      'Alguien con dolor de espalda no planifica. Busca en Google, mira las reseñas de los que están cerca y llama al primero que le da confianza y tiene hueco.',
     keyText:
-      'Cuando una persona busca fisioterapia suele tener una necesidad concreta y cercana. Si tu clínica aparece bien, explica bien el servicio y permite contactar rápido, tienes más opciones de convertir esa búsqueda en cita.',
+      'En fisioterapia, la proximidad decide más que en cualquier otra especialidad. El paciente busca "fisio cerca" o "dolor lumbar Sevilla Este" y llama al primero que aparece con buena ficha, horario claro y forma de contacto rápida. Si tu clínica no está ahí, no te descarta, es que directamente no te ve.',
     pain:
-      'Muchos pacientes buscan por proximidad, horario o problema concreto. Si tu ficha de Google, web y contacto móvil no están preparados, pierdes oportunidades de personas con intención inmediata.',
+      'El mayor problema de muchas clínicas de fisio en Sevilla es invisible: tienen pacientes fijos pero no saben cuántas personas con dolor buscan cerca de ellos cada semana y acaban llamando a otro sitio. La ficha de Google sin actualizar, sin fotos recientes o con horarios incorrectos cuesta citas todos los días.',
     searches: ['Fisioterapia cerca', 'Fisio deportiva Sevilla', 'Dolor lumbar', 'Rehabilitación', 'Lesiones deportivas'],
     trust: ['Ubicación y horarios visibles', 'Especialidades claras', 'Equipo y formación', 'Proceso de primera visita', 'Llamada y WhatsApp rápidos'],
     serviceNotes: {
@@ -173,11 +173,11 @@ const specialtyContent: Record<
   'clinicas-reproduccion-asistida-sevilla': {
     h1: 'Marketing digital para clínicas de reproducción asistida en Sevilla',
     hero:
-      'Presencia digital para clínicas de fertilidad que necesitan transmitir rigor médico, privacidad y confianza antes de la primera valoración.',
+      'Las parejas que buscan fertilidad no deciden en un día. Pasan semanas comparando clínicas, leyendo sobre equipos médicos y buscando señales de que van a estar bien tratadas.',
     keyText:
-      'En reproducción asistida, la decisión es íntima, sensible y de alta consideración. El marketing debe informar con prudencia, explicar el proceso y facilitar que la persona o pareja contacte sin sentirse presionada.',
+      'En reproducción asistida, la primera consulta no es el principio del proceso: es el final de semanas de investigación. La web debe responder preguntas antes de que las hagan, el equipo médico debe ser visible y el proceso debe estar explicado con honestidad. No para vender más rápido, sino para que quien llegue ya haya decidido que quiere trabajar contigo.',
     pain:
-      'Muchas pacientes comparan clínicas, tratamientos, equipo, tiempos, privacidad y sensaciones de confianza antes de pedir cita. Si la web o Google no responden esas dudas, la oportunidad se desplaza a otra clínica.',
+      'Las clínicas de fertilidad en Sevilla que no tienen web clara, equipo médico visible y FAQs específicas por tratamiento pierden comparaciones a favor de clínicas de Madrid o Barcelona que simplemente tienen mejor presencia digital. La distancia ya no es un freno si la confianza digital no está.',
     searches: ['Clínica fertilidad Sevilla', 'Reproducción asistida Sevilla', 'FIV Sevilla', 'Preservación fertilidad', 'Primera valoración fertilidad'],
     trust: ['Privacidad y tono sensible', 'Equipo médico visible', 'Procesos explicados con claridad', 'FAQs prudentes', 'Formulario discreto y fácil'],
     serviceNotes: {
@@ -207,11 +207,11 @@ const specialtyContent: Record<
   'pedagogos-sevilla': {
     h1: 'Marketing digital para pedagogos en Sevilla',
     hero:
-      'Ayudamos a pedagogos y gabinetes psicopedagógicos a ser encontrados por familias que buscan apoyo educativo, orientación y confianza profesional.',
+      'Una familia que busca ayuda para su hijo no sabe si necesita un pedagogo, un psicólogo o un profesor particular. Quien aparece primero con una respuesta clara es quien recibe la llamada.',
     keyText:
-      'En pedagogía, la decisión la suele tomar una familia que necesita claridad, cercanía y seguridad. Tu presencia digital debe explicar cómo trabajas y qué tipo de acompañamiento ofreces.',
+      'En pedagogía, el reto del marketing no es competir con otros pedagogos. Es aparecer cuando una familia escribe "mi hijo tiene problemas en el cole" o "dificultades de lectura Sevilla" y no sabe bien a quién llamar. Una web que explica qué haces, para quién y cómo es la primera valoración resuelve esa duda antes de que busquen en otro sitio.',
     pain:
-      'Muchas familias buscan ayuda por dificultades de aprendizaje, orientación, conducta o apoyo escolar y encuentran mensajes poco claros. Si tu web no explica especialización, proceso y forma de contacto, compararán otra opción.',
+      'La mayoría de pedagogos en Sevilla trabajan por recomendación y tienen lista de espera en algunos momentos del año. Pero entre septiembre y octubre, cuando los colegios detectan dificultades, hay familias buscando ayuda urgente que no saben tu nombre. Si no apareces en esas búsquedas, no entras en su lista.',
     searches: ['Pedagogo Sevilla', 'Gabinete psicopedagógico Sevilla', 'Dificultades de aprendizaje', 'Apoyo educativo Sevilla', 'Orientación familiar'],
     trust: ['Método de trabajo explicado', 'Tono familiar y profesional', 'Especialización visible', 'Proceso de primera valoración', 'Privacidad de menores'],
     serviceNotes: {
@@ -241,11 +241,11 @@ const specialtyContent: Record<
   'dermatologos-sevilla': {
     h1: 'Marketing digital para dermatólogos en Sevilla',
     hero:
-      'SEO local, web y campañas para dermatología privada: revisión de lunares, acné, manchas, alopecia, dermatología estética y consultas especializadas.',
+      'Dermatología tiene un problema específico: la mitad de las búsquedas son informativas y la otra mitad son personas que ya quieren consulta privada. Captar solo la segunda mitad es el trabajo.',
     keyText:
-      'En dermatología, el paciente combina necesidad médica, preocupación estética y confianza profesional. Tu marketing debe explicar cuándo pedir valoración y por qué tu consulta es una opción rigurosa.',
+      'En dermatología conviven pacientes que buscan "¿qué es este lunar?" con pacientes que buscan "dermatólogo privado Sevilla revisión". El primero lee un artículo y se va. El segundo quiere cita. Una buena estrategia digital no intenta captar a los dos de la misma manera: tiene páginas informativas que dan confianza y páginas de servicio que convierten.',
     pain:
-      'Las búsquedas dermatológicas mezclan dudas informativas, urgencia, estética y consulta privada. Sin páginas claras y medición, es fácil atraer contactos poco cualificados o perder búsquedas con intención real.',
+      'Muchos dermatólogos privados en Sevilla reciben consultas de personas que solo tienen dudas genéricas que no llegan a convertirse en cita. Eso no es un problema de volumen, es un problema de segmentación. Con páginas por patología, formularios breves y campañas bien ajustadas, se reduce el ruido y mejora la calidad de lo que llega.',
     searches: ['Dermatólogo Sevilla', 'Revisión lunares Sevilla', 'Acné dermatólogo', 'Manchas piel Sevilla', 'Alopecia dermatólogo'],
     trust: ['Autoridad médica', 'Indicaciones claras', 'Equipo y tecnología', 'Fotos prudentes si proceden', 'FAQs por motivo de consulta'],
     serviceNotes: {
@@ -275,11 +275,11 @@ const specialtyContent: Record<
   'nutricionistas-sevilla': {
     h1: 'Marketing digital para nutricionistas en Sevilla',
     hero:
-      'Construimos una presencia profesional que explica tu método, diferencia tu consulta y convierte interés en solicitudes.',
+      'Internet está lleno de dietas gratis, influencers con batidos y coaches sin titulación. Tu consulta necesita diferenciarse de todo eso, no mezclarse con ello.',
     keyText:
-      'El reto no es publicar más consejos. Es construir una presencia profesional que explique tu método, genere confianza y convierta interés en consultas.',
+      'El mayor problema de los nutricionistas en Sevilla no es la competencia entre ellos. Es que compiten con contenido gratuito de redes que suena igual de autoritario. Una web que explica tu método real, para qué tipo de paciente trabajas mejor y cómo es el seguimiento diferencia tu consulta de un blog de recetas con formulario de contacto.',
     pain:
-      'El paciente ve consejos contradictorios en redes y no siempre distingue entre contenido general y asesoramiento profesional. Tu web y Google deben explicar por qué tu consulta es distinta.',
+      'Muchos nutricionistas en Sevilla publican contenido educativo pero reciben consultas de personas que quieren un plan de dieta rápido o que no entienden qué diferencia a un dietista-nutricionista titulado de cualquier otra opción online. La web y el SEO pueden filtrar eso antes de que llegue al formulario.',
     searches: ['Nutricionista Sevilla', 'Pérdida de peso', 'Nutrición deportiva', 'Salud digestiva', 'Consulta nutrición online'],
     trust: ['Método explicado', 'Especialización visible', 'Consulta online/presencial', 'Autoridad profesional', 'FAQs sobre proceso y seguimiento'],
     serviceNotes: {
@@ -309,11 +309,11 @@ const specialtyContent: Record<
   'oftalmologos-sevilla': {
     h1: 'Marketing digital para oftalmólogos en Sevilla',
     hero:
-      'Captación online para clínicas oftalmológicas que necesitan explicar revisiones, cirugía refractiva, cataratas, retina y consultas privadas con claridad.',
+      'Quien busca cirugía de cataratas o una revisión privada en Sevilla no hace clic en el primero que aparece. Compara. Tu clínica tiene que aparecer y convencer.',
     keyText:
-      'En oftalmología, el paciente busca seguridad, tecnología, experiencia y una explicación clara del proceso. La web y Google deben transmitir confianza antes de pedir cita.',
+      'En oftalmología, las búsquedas de alta intención son concretas: cirugía refractiva en Sevilla, cataratas operación precio, segunda opinión oftalmólogo. Son pocas pero valen mucho. Tener páginas específicas por procedimiento con el equipo visible, el proceso explicado y el contacto claro marca la diferencia entre ser una opción real o no aparecer en la comparación.',
     pain:
-      'Las búsquedas oftalmológicas suelen mezclar revisiones, síntomas, cirugía y segunda opinión. Si tu clínica no tiene páginas específicas y contacto claro, pierdes pacientes que ya están comparando opciones privadas.',
+      'Muchas clínicas oftalmológicas en Sevilla tienen una web con un listado de servicios y poco más. El paciente que investiga durante días antes de pedir cita de cirugía refractiva necesita más que eso: quiere saber quién le va a operar, qué pruebas hacen antes, qué pasa si hay complicaciones. Si tu web no responde esas preguntas, las responde la de otra clínica.',
     searches: ['Oftalmólogo Sevilla', 'Clínica oftalmológica Sevilla', 'Cirugía refractiva Sevilla', 'Cataratas Sevilla', 'Revisión vista privada'],
     trust: ['Equipo médico visible', 'Tecnología y pruebas explicadas', 'Procedimientos claros', 'Segunda opinión', 'Contacto y ubicación visibles'],
     serviceNotes: {
@@ -343,11 +343,11 @@ const specialtyContent: Record<
   'pediatria-sevilla': {
     h1: 'Marketing digital para pediatras en Sevilla',
     hero:
-      'Presencia digital para pediatras y clínicas pediátricas que necesitan transmitir confianza, cercanía, disponibilidad y trato claro.',
+      'Una familia que busca pediatra privado en Sevilla a las 9 de la noche lo hace desde el móvil, en dos minutos, comparando reseñas. Tu ficha de Google y tu web son tu primera consulta.',
     keyText:
-      'Cuando una familia busca pediatra privado, la decisión combina confianza, rapidez, cercanía y trato. La web y Google deben transmitir todo eso en segundos.',
+      'En pediatría, la confianza se lee en segundos. Los padres miran las fotos del equipo, las reseñas de otras familias, si hay pediatras con subespecialidad y si existe forma de contactar rápido cuando hay urgencia leve. Una web que responde eso de forma clara convierte visitas en llamadas sin que la familia necesite buscar más.',
     pain:
-      'Las familias comparan rápido: ubicación, opiniones, disponibilidad, equipo, trato y facilidad de contacto. Si esa información no aparece clara, la decisión se desplaza a otra clínica.',
+      'Muchos pediatras privados en Sevilla tienen llenas las agendas de pacientes de siempre pero no saben que cada semana nuevas familias en su zona buscan pediatra y acaban llamando a otro porque la ficha de Google estaba incompleta o la web tardaba demasiado en cargar desde el móvil.',
     searches: ['Pediatra privado Sevilla', 'Pediatra cerca', 'Revisión pediátrica', 'Urgencias leves pediatría', 'Clínica infantil'],
     trust: ['Equipo visible', 'Opiniones y trato', 'Disponibilidad y horarios', 'Ubicación clara', 'Información para familias'],
     serviceNotes: {
@@ -377,11 +377,11 @@ const specialtyContent: Record<
   'clinicas-cirugia-sevilla': {
     h1: 'Marketing digital para clínicas quirúrgicas y especialistas en Sevilla',
     hero:
-      'Comunicación rigurosa para procedimientos especializados, segunda opinión y consultas de alta consideración.',
+      'Quien busca un cirujano privado en Sevilla no toma esa decisión en tres minutos. Lee el currículum del médico, busca reseñas de casos parecidos al suyo, mira si la web explica el proceso. Tu presencia digital tiene que estar a la altura de esa investigación.',
     keyText:
-      'En cirugía, el paciente no decide en una visita rápida. Investiga, compara, busca seguridad y necesita entender con claridad quién le atiende, qué experiencia tiene y cómo será el proceso.',
+      'En cirugía y procedimientos especializados, el paciente llega informado. Ha buscado el nombre del cirujano en Google, ha leído si hay casos similares documentados, ha comparado la información de varias clínicas. Si tu web tiene solo un listado de servicios sin contexto, sin equipo visible, sin proceso explicado, lo que proyecta es falta de transparencia, no sencillez.',
     pain:
-      'Los procedimientos de alta consideración requieren más confianza, más información y más claridad. Una web superficial o una campaña genérica no suele ser suficiente.',
+      'Muchos especialistas quirúrgicos en Sevilla tienen una reputación clínica excelente que su web no refleja en absoluto. El resultado es que pacientes que podrían haber elegido su clínica acaban llamando a otra porque la otra aparecía antes en Google y explicaba mejor qué esperar del procedimiento.',
     searches: ['Especialista Sevilla', 'Segunda opinión médica', 'Cirugía privada Sevilla', 'Procedimiento específico', 'Consulta quirúrgica'],
     trust: ['Autoridad médica', 'Experiencia y equipo', 'Proceso explicado', 'Confidencialidad', 'Información clara sin banalizar'],
     serviceNotes: {
@@ -411,11 +411,11 @@ const specialtyContent: Record<
     'ia-para-clinicas': {
     h1: 'Marketing con IA para tu clínica en Sevilla',
     hero:
-      'Automatizamos las tareas que más tiempo te quitan y analizamos los datos que más importan para que tu clínica capte pacientes sin perder el control.',
+      'Tienes Google Ads, una web, redes sociales y reseñas. El problema no es qué falta, es que gestionar todo eso bien requiere más horas de las que tienes. Aquí es donde entra la automatización.',
     keyText:
-      'Probablemente ya usas Google Ads, tienes web, redes sociales y reseñas. El problema es que gestionar todo bien te lleva horas que no tienes. Nosotros aplicamos tecnología para que puedas dedicarte a tu clínica mientras nosotros nos encargamos de que las campañas funcionen, el contenido se actualice y los datos se analicen.',
+      'La mayoría de clínicas en Sevilla no tienen un problema de herramientas, tienen un problema de tiempo y de interpretación. Las campañas están activas pero nadie analiza qué palabras traen pacientes reales. El contenido web existe pero no se actualiza. Las reseñas se acumulan sin respuesta. Aplicamos IA y automatización donde hay fricción real: seguimiento de campañas, generación de contenido SEO, cualificación de leads antes de que lleguen a recepción.',
     pain:
-      'El día a día de una clínica ya es bastante complejo como para añadir encima gestionar campañas, responder reseñas, revisar estadísticas y analizar llamadas. Muchos gestores saben que deberían hacer más marketing digital, pero el tiempo no llega. La tecnología existe para que dejes de preocuparte por la ejecución y puedas centrarte en lo que importa: tu clínica y tus pacientes.',
+      'Hemos visto clínicas con presupuesto de Google Ads razonable que perdían la mitad en búsquedas irrelevantes porque nadie revisaba las palabras negativas. O clínicas con 40 reseñas de 5 estrellas que no aparecían en el top 3 de Maps porque la ficha tenía datos incompletos. Son problemas solucionables, no con más herramientas, sino con alguien que revise los datos y actúe.',
     searches: ['ahorrar tiempo marketing clínica', 'automatizar captación pacientes', 'optimizar campañas sin esfuerzo', 'informes automáticos clínica', 'delegar marketing digital'],
     trust: ['Menos tiempo gestionando, más tiempo para tu clínica', 'Decisiones basadas en datos, no en corazonadas', 'Sin necesidad de conocimientos técnicos', 'Informes claros, sin tecnicismos', 'Probamos y ajustamos, no prometemos milagros'],
     serviceNotes: {
@@ -457,59 +457,64 @@ const specialtyContent: Record<
 
 const specialtyMeta: Record<string, { title: string; description: string }> = {
   'clinicas-dentales-sevilla': {
-    title: 'Marketing para clínicas dentales en Sevilla | iclinicas',
+    title: 'Clínicas dentales en Sevilla que no aparecen en Google: por qué ocurre y cómo cambiarlo | iclinicas',
     description:
-      'Captación online para clínicas dentales en Sevilla. SEO local, Google Ads, web y contenidos para atraer pacientes de implantes, ortodoncia, estética dental y urgencias.',
+      'En Sevilla hay más de 400 clínicas dentales. El paciente hace clic en la que aparece primero con buenas reseñas. Si la tuya no está ahí para implantes, ortodoncia o urgencias, te explicamos qué está fallando.',
   },
   'psicologos-sevilla': {
-    title: 'Marketing para psicólogos en Sevilla | Captación ética',
+    title: 'Cómo llegan pacientes a una consulta de psicología en Sevilla sin depender de Doctoralia | iclinicas',
     description:
-      'Marketing digital para psicólogos en Sevilla. SEO local, Google Ads y web profesional para consultas de ansiedad, pareja, infantil, terapia online y presencial.',
+      'La mayoría de psicólogos en Sevilla dependen de recomendaciones o plataformas externas. El SEO local y una web clara permiten que alguien que busca ayuda te encuentre directamente, sin intermediarios.',
   },
   'medicina-estetica-sevilla': {
-    title: 'Marketing para medicina estética en Sevilla | iclinicas',
+    title: 'Medicina estética en Sevilla: cómo atraer pacientes que no buscan solo el precio más bajo | iclinicas',
     description:
-      'Captación online para clínicas de medicina estética en Sevilla. Web, SEO, Google Ads y contenidos para transmitir confianza, seguridad y profesionalidad.',
+      'Muchas clínicas estéticas en Sevilla compiten por precio en lugar de por criterio. Con una web y campañas bien enfocadas, puedes llegar a pacientes que valoran la seguridad y la profesionalidad por encima del descuento.',
   },
   'fisioterapia-sevilla': {
-    title: 'Marketing para fisioterapeutas en Sevilla | Captación local',
+    title: 'Fisioterapia en Sevilla: captar pacientes de zona cuando buscan en Google Maps | iclinicas',
     description:
-      'Marketing digital para clínicas de fisioterapia en Sevilla. SEO local, Google Ads y web para captar pacientes de dolor, lesiones, rehabilitación y fisioterapia deportiva.',
+      'En fisioterapia, la cercanía lo decide casi todo. Si tu ficha de Google no aparece cuando alguien busca fisio en tu barrio o zona, estás perdiendo citas a personas que ya quieren reservar.',
   },
   'clinicas-reproduccion-asistida-sevilla': {
-    title: 'Marketing para reproducción asistida en Sevilla | iclinicas',
+    title: 'Reproducción asistida en Sevilla: presencia digital para una decisión que no se toma a la ligera | iclinicas',
     description:
-      'Marketing digital para clínicas de reproducción asistida en Sevilla. SEO local, Google Ads y web para fertilidad, FIV, preservación y primera valoración.',
+      'Los pacientes de fertilidad comparan clínicas durante semanas antes de llamar. Tu web, equipo médico visible y FAQs claras son lo que marca la diferencia entre ser una opción y no serlo.',
   },
   'pedagogos-sevilla': {
-    title: 'Marketing para pedagogos en Sevilla | iclinicas',
+    title: 'Pedagogos en Sevilla: llegar a familias que buscan ayuda sin saber bien dónde buscar | iclinicas',
     description:
-      'Marketing digital para pedagogos y gabinetes psicopedagógicos en Sevilla. SEO local, web y contenido para llegar a familias con confianza.',
+      'Las familias que necesitan apoyo educativo no siempre saben que buscan un pedagogo. Una buena web y SEO local te ponen delante de ellas cuando buscan dificultades de aprendizaje, apoyo escolar o psicopedagogía.',
   },
   'dermatologos-sevilla': {
-    title: 'Marketing para dermatólogos en Sevilla | iclinicas',
+    title: 'Dermatólogos en Sevilla: separar búsquedas con intención real de consultas informativas sin valor | iclinicas',
     description:
-      'Marketing digital para dermatólogos en Sevilla. SEO local, Google Ads y diseño web para consultas privadas de piel, acné, manchas, alopecia y revisión.',
+      'En dermatología, muchas búsquedas son informativas y pocas tienen intención privada clara. Con páginas por patología y campañas bien segmentadas, captas la parte que sí convierte sin gastar en el resto.',
   },
   'nutricionistas-sevilla': {
-    title: 'Marketing para nutricionistas en Sevilla | iclinicas',
+    title: 'Nutricionistas en Sevilla: diferenciarse cuando internet está lleno de consejos gratis | iclinicas',
     description:
-      'Marketing digital para nutricionistas en Sevilla. SEO, web, contenido y campañas para consultas de pérdida de peso, salud digestiva, nutrición deportiva y educación alimentaria.',
+      'El mayor problema de los nutricionistas no es la competencia entre ellos, es competir con el contenido gratuito de redes. Una web que explica tu método y tus resultados reales cambia cómo el paciente te percibe.',
   },
   'oftalmologos-sevilla': {
-    title: 'Marketing para oftalmólogos en Sevilla | iclinicas',
+    title: 'Oftalmólogos en Sevilla: captar consultas privadas de cirugía y revisión con web y SEO | iclinicas',
     description:
-      'Marketing digital para oftalmólogos y clínicas oftalmológicas en Sevilla. SEO, Google Ads y web para revisiones, cirugía refractiva, cataratas y retina.',
+      'Las búsquedas de cirugía refractiva, cataratas o revisión privada en Sevilla tienen intención alta. Si tu clínica no aparece con páginas específicas y un equipo visible, esas consultas van a otro sitio.',
   },
   'pediatria-sevilla': {
-    title: 'Marketing para pediatras en Sevilla | Captación privada',
+    title: 'Pediatras privados en Sevilla: por qué las familias eligen por Google Maps más que por recomendación | iclinicas',
     description:
-      'Marketing digital para pediatras y clínicas pediátricas en Sevilla. Presencia online para transmitir confianza, cercanía y facilitar el contacto de familias.',
+      'Una familia que busca pediatra privado en Sevilla mira la ficha de Google, las reseñas y si hay sitio esta semana. Si tu perfil está incompleto o tarda en cargarse desde el móvil, la cita va a otro pediatra.',
   },
   'clinicas-cirugia-sevilla': {
-    title: 'Marketing para clínicas quirúrgicas en Sevilla | iclinicas',
+    title: 'Cirugía privada en Sevilla: captar pacientes que investigan antes de decidir | iclinicas',
     description:
-      'Marketing digital para clínicas quirúrgicas y especialistas en Sevilla. Web, SEO y campañas para consultas de alta consideración, segunda opinión y procedimientos especializados.',
+      'Quien busca un cirujano privado en Sevilla no hace clic en el primero que aparece. Compara credenciales, lee experiencia y busca que le expliquen el proceso. Tu web debe estar a la altura de esa búsqueda.',
+  },
+  'ia-para-clinicas': {
+    title: 'IA y automatización para clínicas en Sevilla: menos horas gestionando, más pacientes captando | iclinicas',
+    description:
+      'La mayoría de clínicas no tienen un problema de herramientas, tienen un problema de tiempo. Aplicamos automatización donde hay fricción real: campañas, contenido SEO y cualificación de leads antes de que lleguen a recepción.',
   },
 }
 
