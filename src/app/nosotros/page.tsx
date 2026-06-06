@@ -39,9 +39,23 @@ const personReference = {
   '@type': 'Person',
   '@id': 'https://www.iclinicas.es/autores/carlos-cardoso#person',
   name: 'Carlos Cardoso',
+  jobTitle: 'Consultor de Marketing Sanitario',
+  description:
+    'Consultor de marketing digital con más de 15 años de experiencia. Especializado en captación online para clínicas privadas en Sevilla desde 2018.',
   url: 'https://www.iclinicas.es/autores/carlos-cardoso',
-  mainEntityOfPage: 'https://www.iclinicas.es/autores/carlos-cardoso',
+  mainEntityOfPage: 'https://www.iclinicas.es/nosotros',
   worksFor: { '@id': 'https://www.iclinicas.es/#organization' },
+  knowsAbout: [
+    'Marketing digital para clínicas privadas',
+    'SEO local médico',
+    'Google Ads sanitario',
+    'Ley de Publicidad Sanitaria en España',
+    'Captación de pacientes online',
+    'Diseño web para clínicas',
+  ],
+  sameAs: [
+    'https://www.linkedin.com/in/carlos-cardoso-75025721/',
+  ],
 }
 
 const criterios = [

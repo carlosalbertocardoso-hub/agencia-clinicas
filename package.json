@@ -13,7 +13,9 @@
     "blog:agent": "node agents/blog-publisher/index.mjs",
     "blog:publish": "node scripts/blog-publish.mjs",
     "qa:interactions": "node scripts/qa-interactions.js",
-    "sitemap": "next-sitemap"
+    "sitemap": "next-sitemap",
+    "seo:check": "node scripts/seo-check.mjs",
+    "seo:check:local": "node scripts/seo-check.mjs http://localhost:3000"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.107.0",

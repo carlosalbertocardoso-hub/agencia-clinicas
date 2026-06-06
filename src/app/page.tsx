@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
+import { buildWebSiteSchema, buildLocalBusinessSchema } from '@/lib/schemas'
 import GoogleBusinessMap from '@/components/shared/GoogleBusinessMap'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -48,59 +49,27 @@ export const metadata: Metadata = {
   },
 }
 
+const websiteSchema = buildWebSiteSchema()
+const localBusinessSchema = buildLocalBusinessSchema()
+
 const homeGraphSchema = {
   '@context': 'https://schema.org',
   '@graph': [
+    { ...websiteSchema, '@context': undefined },
+    { ...localBusinessSchema, '@context': undefined },
     {
-      '@type': 'ProfessionalService',
-      '@id': 'https://www.iclinicas.es/#agent',
-      name: 'iClínicas',
+      '@type': 'WebPage',
+      '@id': 'https://www.iclinicas.es/#webpage',
       url: 'https://www.iclinicas.es',
-      logo: 'https://www.iclinicas.es/logo.svg',
-      image: 'https://www.iclinicas.es/images/og-default.png',
-      telephone: '+34600258938',
-      email: 'info@iclinicas.es',
-      priceRange: '$$',
-      openingHours: 'Mo-Fr 09:00-17:00',
-      foundingDate: '2018',
-      description:
-        'Agencia especializada en captación online para clínicas privadas y profesionales sanitarios en Sevilla.',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Avd. Reina Mercedes 1',
-        postalCode: '41012',
-        addressLocality: 'Sevilla',
-        addressRegion: 'Andalucía',
-        addressCountry: 'ES',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 37.3633324,
-        longitude: -5.9858553,
-      },
-      areaServed: [
-        { '@type': 'City', name: 'Sevilla' },
-        { '@type': 'Place', name: 'Nervión' },
-        { '@type': 'Place', name: 'Triana' },
-        { '@type': 'Place', name: 'Los Remedios' },
-        { '@type': 'Place', name: 'Aljarafe' },
-      ],
-      serviceType: [
-        'Marketing Médico',
-        'SEO Local para Clínicas',
-        'Google Ads para Clínicas',
-        'Diseño Web Sanitario',
-        'Gestión de Redes Sociales Sanitarias',
-      ],
-      sameAs: [
-        'https://www.linkedin.com/in/carlos-cardoso-75025721/',
-        'https://share.google/aTLb8JdGqAn5xqyT9',
-      ],
+      name: 'Agencia de Marketing Sanitario en Sevilla | Captación de Pacientes Privados',
+      isPartOf: { '@id': 'https://www.iclinicas.es/#website' },
+      about: { '@id': 'https://www.iclinicas.es/#organization' },
+      inLanguage: 'es-ES',
     },
     {
       '@type': 'FAQPage',
       '@id': 'https://www.iclinicas.es/#faq',
-      isPartOf: { '@id': 'https://www.iclinicas.es/#agent' },
+      isPartOf: { '@id': 'https://www.iclinicas.es/#webpage' },
       mainEntity: [
         {
           '@type': 'Question',

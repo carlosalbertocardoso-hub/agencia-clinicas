@@ -103,7 +103,7 @@ export function buildArticleSchema(article: {
 export function buildOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': ['Organization', 'MarketingAgency'],
     '@id': 'https://www.iclinicas.es/#organization',
     name: 'iClínicas - Agencia de Marketing Sanitario',
     url: 'https://www.iclinicas.es',
@@ -174,7 +174,14 @@ export function buildLocalBusinessSchema() {
     logo: 'https://www.iclinicas.es/logo.svg',
     image: 'https://www.iclinicas.es/images/og-default.png',
     priceRange: '$$',
-    openingHours: 'Mo-Fr 09:00-17:00',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '17:00',
+      },
+    ],
     foundingDate: '2018',
     inLanguage: 'es-ES',
     address: {
