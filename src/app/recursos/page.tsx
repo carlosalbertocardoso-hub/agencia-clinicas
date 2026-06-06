@@ -14,7 +14,7 @@ const ogImage = buildOgUrl({
 })
 
 export const metadata: Metadata = {
-  title: 'Recursos de marketing sanitario para clínicas en Sevilla | iclinicas',
+  title: 'Recursos de marketing sanitario en Sevilla | iclinicas',
   description:
     'Guías, diagnósticos y contenidos prácticos sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes privados en Sevilla.',
   alternates: {

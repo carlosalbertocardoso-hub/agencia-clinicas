@@ -39,8 +39,8 @@ const defaultOgImage = buildOgUrl({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iclinicas.es'),
   title: {
-    default: 'Marketing digital para clínicas en Sevilla | iclinicas',
-    template: '%s | iclinicas',
+    default: 'Marketing Sanitario en Sevilla | iclinicas',
+    template: '%s',
   },
   description:
     'Agencia de marketing digital para clínicas privadas en Sevilla. SEO local, Google Ads, diseño web, reputación y captación de pacientes.',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_ES',
     url: 'https://www.iclinicas.es',
-    title: 'Marketing digital para clínicas en Sevilla | iclinicas',
+    title: 'Marketing Sanitario en Sevilla | iclinicas',
     description:
       'SEO local, Google Ads, diseño web, reputación y captación medible para clínicas privadas en Sevilla.',
     images: [{ url: defaultOgImage, width: 1200, height: 630, alt: 'iclinicas - Marketing para clínicas' }],
