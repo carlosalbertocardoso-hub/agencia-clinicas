@@ -31,6 +31,9 @@ src/
     especialidades/
     recursos/
     servicios/
+    marketing-clinicas-premium-sevilla/  ← 301 → /servicios/marketing-para-clinicas
+    nosotros/
+    casos-de-exito/
     layout.tsx
     page.tsx
     globals.css
@@ -42,11 +45,14 @@ src/
   lib/
   types/
 content/
-  blog/
+  blog/       ← 14 posts publicados
     drafts/
 agents/
   blog-publisher/
 public/
+  llms.txt
+  llms-full.txt
+  robots.txt
 docs/
 README.md
 design.md
@@ -63,7 +69,9 @@ DEPLOYMENT.md
 - Copy en español de España.
 - Mantener un único H1 por página.
 - No prometer pacientes garantizados, resultados clínicos ni métricas no verificadas.
-- No inventar testimonios, casos reales o cifras.
+- No inventar testimonios, casos reales o cifras. Los testimonios en `src/data/testimonios.ts` y `LocalTestimonials.tsx` son escenarios ilustrativos sin métricas específicas. No añadir porcentajes, multiplicadores ni cifras de resultado.
+- Títulos de página: services nacionales sin "Sevilla", specialties locales con "Sevilla". Ver sección Capas de URL.
+- Blog title suffix: `| iclinicas` (no `| iclinicas Blog`). Máximo ~68 chars en el title tag.
 
 ## Diseño
 
@@ -108,36 +116,105 @@ La home incluye:
 - `ServiciosSection`
 - `PorQueNosotrosSection`
 - `CroAuthoritySection`
+- `TestimoniosSection` ← escenarios ilustrativos, sin métricas inventadas
 - `BlogPreviewSection`
 - `ProcesoSection`
 - `CtaFinal`
 
 ## Arquitectura actual
 
-La navegación pública se organiza en:
+La navegación del header se organiza en:
 
 - `Inicio`
 - `Servicios`
 - `A quién ayudamos`
-- `Recursos`
 - `Contacto`
 
-`A quién ayudamos` agrupa las páginas por tipo de clínica o especialidad sanitaria. La URL sigue siendo `/especialidades` para conservar estructura SEO existente, pero el lenguaje de navegación es más orientado al cliente.
+`Recursos` **no está en el header**. El hub editorial `/recursos` existe y está en el sitemap pero no como enlace de navegación principal.
 
-`Recursos` es el hub editorial en `/recursos` y agrupa:
+`A quién ayudamos` agrupa las páginas por tipo de clínica o especialidad sanitaria. La URL sigue siendo `/especialidades` para conservar estructura SEO existente.
 
-- Blog y guías.
-- Diagnósticos representativos.
-- Artículos por problema de captación: SEO local, Google Ads, web/CRO.
+El footer incluye: Servicios (5), A quién ayudamos (11), Navegación (con nosotros y casos-de-exito).
+
+### Páginas de servicios
+
+```txt
+/servicios/marketing-para-clinicas   ← kernel/hub principal (nuevo)
+/servicios/seo-medico
+/servicios/google-ads
+/servicios/diseno-web
+/servicios/redes-sociales
+```
+
+### Especialidades (12)
+
+```txt
+/especialidades/clinicas-dentales-sevilla
+/especialidades/psicologos-sevilla
+/especialidades/medicina-estetica-sevilla
+/especialidades/fisioterapia-sevilla
+/especialidades/clinicas-reproduccion-asistida-sevilla
+/especialidades/pedagogos-sevilla
+/especialidades/dermatologos-sevilla
+/especialidades/nutricionistas-sevilla
+/especialidades/oftalmologos-sevilla
+/especialidades/pediatria-sevilla
+/especialidades/clinicas-cirugia-sevilla
+/especialidades/ia-para-clinicas
+```
+
+### Capas de URL y titles (clave para SEO)
+
+- `/servicios/*`: sin "Sevilla" en el title → alcance nacional.
+- `/especialidades/*`: con "Sevilla" en el title → señal local de conversión.
+- H2 template en especialidades: `El reto real para {nombre} en Sevilla` (no "de las clínicas de").
+
+### Páginas huérfanas gestionadas
+
+- `/marketing-clinicas-premium-sevilla` → **301 redirect** a `/servicios/marketing-para-clinicas` (en `next.config.js`). La página sigue construyéndose (estática) pero todas las visitas se redirigen.
+- `/nosotros` y `/casos-de-exito` están en el sitemap y en el footer, no en el header.
 
 ### Blog y agente editorial
 
 Los artículos del blog se guardan como MDX:
 
-- `content/blog/*.mdx`: artículos publicados.
+- `content/blog/*.mdx`: artículos publicados (14 posts activos).
 - `content/blog/drafts/*.mdx`: borradores.
 
 `src/data/blog.ts` lee los archivos MDX, parsea el frontmatter y expone `blogPosts` a las páginas `/blog`, `/blog/[slug]`, `/recursos`, home, autores y sitemap. Solo se muestran posts con `status: "published"`.
+
+Posts publicados (por cluster):
+
+**Pillar y clusters:**
+
+- `seo-para-clinicas-guia` — pillar hub
+- `seo-vs-google-ads-clinicas` — cluster estrategia
+- `cuanto-cuesta-marketing-clinica` — cluster presupuesto
+- `captacion-pacientes-privados` — cluster estrategia
+- `medir-roi-marketing-clinica` — cluster medición
+
+**SEO local y GBP:**
+
+- `google-business-profile-clinicas`
+- `conseguir-resenas-google-clinica`
+- `palabras-clave-clinicas-privadas`
+
+**CRO y web:**
+
+- `landing-pages-clinicas`
+- `diseno-web-clinicas`
+
+**Legal y normativa (E-E-A-T):**
+
+- `lopd-marketing-sanitario`
+
+**Especialidades:**
+
+- `marketing-psicologos-sevilla`
+- `errores-seo-dentistas`
+- `google-ads-psicologos`
+
+El enlazado interno entre posts se gestiona en `src/data/crossLinks.ts` (`blogRelatedServices`) y en `src/app/blog/[slug]/page.tsx` (`contextualLinks`). Al añadir un post nuevo, actualizar ambos.
 
 El agente editorial está en `agents/blog-publisher`:
 
@@ -165,8 +242,8 @@ La sección "A quién ayudamos" usa cards con:
 Reglas:
 
 - Metadata por página usando `metadata` o `generateMetadata`, según convenga.
-- Title único por página.
-- Meta description única por página.
+- Title único por página. Máximo ~68 chars.
+- Meta description única por página. 150-165 chars.
 - Canonical cuando la ruta lo soporte.
 - Open Graph configurado.
 - H1 único.
@@ -183,11 +260,24 @@ Home actual:
   - `publicidad clinicas dentales sevilla`
   - `captacion pacientes privados`
 
+## GEO (Generative Engine Optimization)
+
+Infraestructura para que motores de IA (ChatGPT, Perplexity, Gemini) citen iclinicas:
+
+- `public/llms.txt`: índice ligero de URLs y descripciones para AI crawlers.
+- `public/llms-full.txt`: versión densa con descripciones largas por sección, servicios, especialidades, proceso, normativa y posts.
+- `public/robots.txt`: permite explícitamente ~30 bots IA (GPTBot, anthropic-ai, claude-web, Google-Extended, etc.).
+- Schema `Person` en layout con `knowsAbout` y `sameAs` para Carlos Cardoso.
+- FAQs estructuradas en todas las páginas principales.
+- Tablas comparativas en posts (SEO vs Ads, etc.) — formato citable.
+
+Al añadir contenido nuevo actualizar `llms.txt` y `llms-full.txt`.
+
 ## JSON-LD
 
 Actualmente hay un schema global en `src/app/layout.tsx`:
 
-- `@type`: `ProfessionalService`
+- `Organization` + `LocalBusiness` (`ProfessionalService`) con `@id` cross-referenciable.
 - Nombre: `iclinicas - Agencia de Marketing Sanitario`
 - Localidad: Sevilla, Andalucía, ES
 - Servicios: Marketing Médico, SEO Local, Google Ads para Clínicas
@@ -198,7 +288,8 @@ También existen schemas específicos en:
 - **Breadcrumbs**: en cada página de especialidades y servicios
 - **Service**: en cada página de especialidades y servicios
 - **FAQPage**: generado a nivel de página (no en componentes compartidos) para evitar duplicados
-- Artículos de blog.
+- **Article**: en artículos de blog con autor, datePublished, dateModified
+- **Person**: en `layout.tsx` para Carlos Cardoso
 
 ### Nota sobre FAQPage
 
