@@ -31,6 +31,15 @@ const nextConfig = {
     tsconfigPath: './tsconfig.json',
   },
   swcMinify: true,
+  redirects: async () => {
+    return [
+      {
+        source: '/marketing-clinicas-premium-sevilla',
+        destination: '/servicios/marketing-para-clinicas',
+        permanent: true,
+      },
+    ]
+  },
   headers: async () => {
     return [
       {

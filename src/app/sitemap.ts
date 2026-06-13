@@ -15,6 +15,7 @@ const hreflang = (path: string) => ({
 })
 
 const serviciosSlugs = [
+  'marketing-para-clinicas',
   'seo-medico',
   'google-ads',
   'diseno-web',

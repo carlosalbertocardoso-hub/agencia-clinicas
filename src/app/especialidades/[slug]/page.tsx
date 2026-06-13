@@ -672,7 +672,7 @@ export default function EspecialidadPage({ params }: Props) {
                 <p className="text-base sm:text-lg text-text-muted mb-6">{content.hero}</p>
                 <div className="bg-surface border border-slate-200 rounded-lg p-6 mb-6">
                   <h2 className="font-heading text-2xl font-semibold text-text mb-3">
-                    El reto real de las clínicas de {especialidad.nombre.toLowerCase()} en Sevilla
+                    El reto real para {especialidad.nombre.toLowerCase()} en Sevilla
                   </h2>
                   <p className="text-text-muted leading-relaxed">{content.pain}</p>
                 </div>

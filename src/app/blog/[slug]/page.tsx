@@ -136,7 +136,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const autorUrl = autor ? `https://www.iclinicas.es/autores/${autor.slug}` : undefined
 
   return {
-    title: `${post.titulo} | iclinicas Blog`,
+    title: `${post.titulo} | iclinicas`,
     description: post.excerpt,
     alternates: {
       canonical: `/blog/${params.slug}`,

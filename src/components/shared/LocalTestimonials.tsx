@@ -31,9 +31,12 @@ export default function LocalTestimonials() {
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-8">
           <p className="text-label text-accent mb-3">Confianza local</p>
-          <h2 id="testimonios-locales" className="text-3xl md:text-4xl font-heading font-semibold mb-4">
-            Testimonios locales representativos
+          <h2 id="testimonios-locales" className="text-3xl md:text-4xl font-heading font-semibold mb-3">
+            Lo que suelen decir los clientes
           </h2>
+          <p className="text-sm text-text-muted">
+            Escenarios ilustrativos basados en diagnósticos habituales. Los nombres son ejemplos, no personas identificables.
+          </p>
 
         </div>
 
