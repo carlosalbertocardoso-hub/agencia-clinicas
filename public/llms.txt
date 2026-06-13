@@ -12,6 +12,7 @@ Somos una agencia especializada exclusivamente en marketing sanitario para clín
 
 ## Servicios
 
+- [Marketing para clínicas](https://www.iclinicas.es/servicios/marketing-para-clinicas): Página principal de la agencia. Auditoría, estrategia y ejecución de captación para clínicas privadas en Sevilla y España.
 - [SEO Médico](https://www.iclinicas.es/servicios/seo-medico): SEO local para clínicas, optimización de Google Business Profile, contenido médico especializado y estrategia de palabras clave sanitarias.
 - [Google Ads para Clínicas](https://www.iclinicas.es/servicios/google-ads): Campañas de publicidad segmentadas por especialidad médica, con landing pages optimizadas y medición por cita.
 - [Diseño Web Sanitario](https://www.iclinicas.es/servicios/diseno-web): Webs rápidas, orientadas a conversión, con cumplimiento LOPD/GDPR para clínicas.
@@ -33,6 +34,9 @@ Ayudamos a estas especialidades en Sevilla:
 
 ## Recursos y blog
 
+- [SEO para clínicas: guía completa para gerentes en 2026](https://www.iclinicas.es/blog/seo-para-clinicas-guia) — Guía pilar: qué es el SEO sanitario, cómo decide Google qué clínica mostrar, SEO vs Google Ads, resultados esperables y normativa
+- [SEO vs Google Ads para clínicas: cuál elegir y cuándo combinarlos](https://www.iclinicas.es/blog/seo-vs-google-ads-clinicas) — Comparativa con tabla de diferencias, cuándo priorizar cada canal y por qué la mayoría de clínicas acaban combinando los dos
+- [Cuánto cuesta el marketing digital para una clínica en 2026](https://www.iclinicas.es/blog/cuanto-cuesta-marketing-clinica) — Rangos orientativos de mercado por canal (SEO, Ads, web, redes), factores que mueven el coste y cómo evaluar si la inversión tiene retorno
 - [Errores SEO que cometen los dentistas en Sevilla](https://www.iclinicas.es/blog/errores-seo-dentistas)
 - [Google Ads para psicólogos: cómo captar pacientes sin desperdiciar presupuesto](https://www.iclinicas.es/blog/google-ads-psicologos)
 - [Diseño web para clínicas: lo que funciona en 2026](https://www.iclinicas.es/blog/diseno-web-clinicas)

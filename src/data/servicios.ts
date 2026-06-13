@@ -53,6 +53,23 @@ export const servicios: Servicio[] = [
     especialidades: ['clinicas-dentales-sevilla', 'psicologos-sevilla', 'medicina-estetica-sevilla'],
   },
   {
+    id: '5',
+    nombre: 'Marketing sanitario',
+    slug: 'marketing-para-clinicas',
+    descripcion:
+      'Captación de pacientes privados para clínicas en Sevilla y España. Auditoría, estrategia y ejecución en SEO, Google Ads, web y medición de contactos cualificados.',
+    imagen: '/images/hero-clinica-marketing.jpg',
+    caracteristicas: [
+      'Auditoría inicial de Google, web, campañas, reputación y puntos de contacto',
+      'Estrategia de captación adaptada a la especialidad, zona y tipo de paciente',
+      'SEO local y Google Business Profile para búsquedas con intención real',
+      'Google Ads sin desperdiciar presupuesto en clics sin intención de cita',
+      'Web o landing orientada a conversión, velocidad y contacto desde móvil',
+      'Medición de llamadas, WhatsApp y formularios para saber qué funciona',
+    ],
+    especialidades: ['clinicas-dentales-sevilla', 'psicologos-sevilla', 'medicina-estetica-sevilla', 'fisioterapia-sevilla'],
+  },
+  {
     id: '4',
     nombre: 'Redes sociales para clínicas: contenido que genera confianza',
     slug: 'redes-sociales',
@@ -174,6 +191,38 @@ export const faqsPorServicio: Record<string, Array<{ id: string; pregunta: strin
       pregunta: '¿Cómo sé si la web convierte?',
       respuesta:
         'Configuramos medición de clics a teléfono, WhatsApp, formularios y páginas clave. Después analizamos qué visitas terminan en contacto y dónde se pierden oportunidades.',
+    },
+  ],
+  'marketing-para-clinicas': [
+    {
+      id: '1',
+      pregunta: '¿Qué diferencia a iclinicas de una agencia de marketing generalista?',
+      respuesta:
+        'Trabajamos exclusivamente con clínicas privadas y profesionales sanitarios. Conocemos las búsquedas del paciente, la normativa de publicidad sanitaria y los ciclos de decisión de cada especialidad. No aplicamos estrategias de ecommerce a un entorno con sus propias reglas.',
+    },
+    {
+      id: '2',
+      pregunta: '¿Por dónde empieza el trabajo de captación?',
+      respuesta:
+        'Siempre por una auditoría: cómo aparece la clínica en Google, qué transmite la web, si las campañas están midiendo bien y dónde se pierden oportunidades de contacto. Sin ese diagnóstico, cualquier acción puede ir en la dirección equivocada.',
+    },
+    {
+      id: '3',
+      pregunta: '¿Cuánto tiempo tarda en verse resultado?',
+      respuesta:
+        'Depende del canal. Google Ads puede generar contactos en días si la demanda existe. El SEO local muestra mejoras progresivas en semanas o meses. La combinación acorta la espera mientras se construye la visibilidad orgánica.',
+    },
+    {
+      id: '4',
+      pregunta: '¿Trabajáis solo en Sevilla?',
+      respuesta:
+        'Estamos especializados en Sevilla y Andalucía, donde conocemos la competencia local, los barrios y el comportamiento del paciente privado. También trabajamos con clínicas de otras ciudades cuando el proyecto encaja con nuestra especialización.',
+    },
+    {
+      id: '5',
+      pregunta: '¿Qué no hace iclinicas?',
+      respuesta:
+        'No garantizamos posiciones ni un número de pacientes. No inventamos testimonios ni cifras. No trabajamos con clínicas que quieran comunicar resultados clínicos no verificables. Captamos pacientes dentro de la normativa de publicidad sanitaria española.',
     },
   ],
   'redes-sociales': [

@@ -13,7 +13,7 @@ const ConsentBanner = dynamic(() => import('@/components/analytics/ConsentBanner
   ssr: false,
 })
 import { buildOgUrl } from '@/lib/og/buildOgUrl'
-import { buildOrganizationSchema } from '@/lib/schemas'
+import { buildOrganizationSchema, buildLocalBusinessSchema } from '@/lib/schemas'
 
 const newsreader = Newsreader({
   subsets: ['latin'],
@@ -101,6 +101,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const organizationSchema = buildOrganizationSchema()
+  const localBusinessSchema = buildLocalBusinessSchema()
 
   return (
     <html lang="es" className={`${newsreader.variable} ${inter.variable}`}>
@@ -109,6 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="alternate" type="application/rss+xml" title="iclinicas - Blog" href="/rss.xml" />
         <JsonLd data={organizationSchema} />
+        <JsonLd data={localBusinessSchema} />
         <GoogleTagManagerHead />
       </head>
       <body className="font-body text-text bg-neutral">

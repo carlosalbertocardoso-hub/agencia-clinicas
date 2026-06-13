@@ -184,6 +184,24 @@ export default function BlogPostPage({ params }: Props) {
       { href: '/servicios/seo-medico', label: 'SEO local para clínicas' },
       { href: '/contacto', label: 'auditoría gratuita' },
     ],
+    'seo-para-clinicas-guia': [
+      { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+      { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+      { href: '/servicios/diseno-web', label: 'diseño web sanitario' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'seo-vs-google-ads-clinicas': [
+      { href: '/servicios/seo-medico', label: 'SEO para clínicas' },
+      { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+      { href: '/blog/seo-para-clinicas-guia', label: 'guía de SEO para clínicas' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'cuanto-cuesta-marketing-clinica': [
+      { href: '/servicios/marketing-para-clinicas', label: 'marketing para clínicas' },
+      { href: '/servicios/seo-medico', label: 'SEO para clínicas' },
+      { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
   }
 
   if (!post) {

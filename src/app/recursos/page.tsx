@@ -14,22 +14,22 @@ const ogImage = buildOgUrl({
 })
 
 export const metadata: Metadata = {
-  title: 'Recursos de marketing sanitario en Sevilla | iclinicas',
+  title: 'Guías de marketing para clínicas en Sevilla | iclinicas',
   description:
     'Guías, diagnósticos y contenidos prácticos sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes privados en Sevilla.',
   alternates: {
     canonical: '/recursos',
   },
   openGraph: {
-    title: 'Recursos de marketing sanitario para clínicas en Sevilla',
-    description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
+    title: 'Guías de marketing para clínicas en Sevilla | iclinicas',
+    description: 'Guías, diagnósticos y contenidos prácticos sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes privados en Sevilla.',
     url: 'https://www.iclinicas.es/recursos',
     images: [{ url: ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recursos de marketing sanitario para clínicas en Sevilla',
-    description: 'Contenido práctico para mejorar la captación online de clínicas privadas en Sevilla.',
+    title: 'Guías de marketing para clínicas en Sevilla | iclinicas',
+    description: 'Guías, diagnósticos y contenidos prácticos sobre SEO local, Google Ads, diseño web, reputación y captación de pacientes privados en Sevilla.',
     images: [ogImage],
   },
 }

@@ -467,9 +467,9 @@ const specialtyMeta: Record<string, { title: string; description: string }> = {
       'La mayoría de psicólogos en Sevilla dependen de recomendaciones o plataformas externas. El SEO local y una web clara permiten que alguien que busca ayuda te encuentre directamente, sin intermediarios.',
   },
   'medicina-estetica-sevilla': {
-    title: 'Medicina estética en Sevilla: cómo atraer pacientes que no buscan solo el precio más bajo | iclinicas',
+    title: 'Marketing para clínicas de medicina estética en Sevilla | iclinicas',
     description:
-      'Muchas clínicas estéticas en Sevilla compiten por precio en lugar de por criterio. Con una web y campañas bien enfocadas, puedes llegar a pacientes que valoran la seguridad y la profesionalidad por encima del descuento.',
+      'Captación de pacientes para clínicas de medicina estética en Sevilla. SEO, Google Ads y web orientados a pacientes que valoran el criterio médico, no solo el precio.',
   },
   'fisioterapia-sevilla': {
     title: 'Fisioterapia en Sevilla: captar pacientes de zona cuando buscan en Google Maps | iclinicas',
@@ -507,9 +507,9 @@ const specialtyMeta: Record<string, { title: string; description: string }> = {
       'Una familia que busca pediatra privado en Sevilla mira la ficha de Google, las reseñas y si hay sitio esta semana. Si tu perfil está incompleto o tarda en cargarse desde el móvil, la cita va a otro pediatra.',
   },
   'clinicas-cirugia-sevilla': {
-    title: 'Cirugía privada en Sevilla: captar pacientes que investigan antes de decidir | iclinicas',
+    title: 'Marketing para clínicas quirúrgicas en Sevilla | iclinicas',
     description:
-      'Quien busca un cirujano privado en Sevilla no hace clic en el primero que aparece. Compara credenciales, lee experiencia y busca que le expliquen el proceso. Tu web debe estar a la altura de esa búsqueda.',
+      'Captación para clínicas quirúrgicas y especialistas en Sevilla. Web, SEO y Ads que responden al paciente que investiga y compara antes de pedir cita.',
   },
   'ia-para-clinicas': {
     title: 'IA y automatización para clínicas en Sevilla: menos horas gestionando, más pacientes captando | iclinicas',

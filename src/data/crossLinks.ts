@@ -8,26 +8,60 @@ export interface CrossLink {
 
 export const blogRelatedServices: Record<string, CrossLink[]> = {
   'errores-seo-dentistas': [
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
     { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
     { href: '/especialidades/clinicas-dentales-sevilla', label: 'Marketing para clínicas dentales' },
     { href: '/servicios/diseno-web', label: 'Diseño web sanitario' },
-    { href: '/blog/diseno-web-clinicas', label: 'Guía de diseño web para clínicas' },
   ],
   'google-ads-psicologos': [
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
     { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
     { href: '/especialidades/psicologos-sevilla', label: 'Marketing para psicólogos' },
     { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
-    { href: '/especialidades/dermatologos-sevilla', label: 'Marketing para dermatólogos' },
   ],
   'diseno-web-clinicas': [
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
     { href: '/servicios/diseno-web', label: 'Diseño web sanitario' },
     { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
-    { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
     { href: '/blog/errores-seo-dentistas', label: 'Errores SEO en clínicas dentales' },
+  ],
+  'seo-para-clinicas-guia': [
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+    { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+    { href: '/servicios/diseno-web', label: 'Diseño web sanitario' },
+    { href: '/blog/seo-vs-google-ads-clinicas', label: 'SEO vs Google Ads para clínicas' },
+    { href: '/blog/cuanto-cuesta-marketing-clinica', label: 'Cuánto cuesta el marketing de una clínica' },
+    { href: '/blog/errores-seo-dentistas', label: 'Errores SEO en clínicas dentales' },
+  ],
+  'seo-vs-google-ads-clinicas': [
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+    { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+    { href: '/blog/cuanto-cuesta-marketing-clinica', label: 'Cuánto cuesta el marketing de una clínica' },
+    { href: '/especialidades/clinicas-dentales-sevilla', label: 'Marketing para clínicas dentales' },
+  ],
+  'cuanto-cuesta-marketing-clinica': [
+    { href: '/servicios/marketing-para-clinicas', label: 'Marketing para clínicas' },
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+    { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+    { href: '/blog/seo-vs-google-ads-clinicas', label: 'SEO vs Google Ads para clínicas' },
   ],
 }
 
 export const serviceRelatedSpecialties: Record<string, CrossLink[]> = {
+  'marketing-para-clinicas': [
+    { href: '/especialidades/clinicas-dentales-sevilla', label: 'Clínicas dentales' },
+    { href: '/especialidades/psicologos-sevilla', label: 'Psicólogos' },
+    { href: '/especialidades/medicina-estetica-sevilla', label: 'Medicina estética' },
+    { href: '/especialidades/fisioterapia-sevilla', label: 'Fisioterapia' },
+    { href: '/especialidades/dermatologos-sevilla', label: 'Dermatólogos' },
+    { href: '/especialidades/nutricionistas-sevilla', label: 'Nutricionistas' },
+    { href: '/especialidades/oftalmologos-sevilla', label: 'Oftalmólogos' },
+    { href: '/especialidades/pediatria-sevilla', label: 'Pediatría' },
+    { href: '/especialidades/clinicas-reproduccion-asistida-sevilla', label: 'Reproducción asistida' },
+    { href: '/especialidades/clinicas-cirugia-sevilla', label: 'Clínicas quirúrgicas' },
+  ],
   'seo-medico': [
     { href: '/especialidades/clinicas-dentales-sevilla', label: 'Clínicas dentales' },
     { href: '/especialidades/psicologos-sevilla', label: 'Psicólogos' },

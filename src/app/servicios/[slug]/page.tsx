@@ -20,24 +20,29 @@ interface Props {
 
 const metadataBySlug: Record<string, { title: string; description: string }> = {
   'seo-medico': {
-    title: 'SEO local para clínicas en Sevilla | iclinicas',
+    title: 'SEO para clínicas privadas en Sevilla — aparecer donde busca el paciente | iclinicas',
     description:
-      'Mejora la visibilidad de tu clínica en Google y Google Maps. SEO local para clínicas privadas en Sevilla: tratamientos, reseñas, web, contenido y medición.',
+      'Tu clínica puede no aparecer en Google aunque seas bueno. Trabajamos SEO local real: ficha de Google, páginas por tratamiento, reseñas y medición de contactos. Sin atajos.',
   },
   'google-ads': {
-    title: 'Google Ads para clínicas en Sevilla | Captación de pacientes',
+    title: 'Google Ads para clínicas en Sevilla — sin gastar en clics que no convierten | iclinicas',
     description:
-      'Campañas de Google Ads para clínicas privadas en Sevilla. Captamos búsquedas con intención real y medimos llamadas, formularios, WhatsApp y calidad del contacto.',
+      'Muchas clínicas pagan anuncios y no saben qué citas generan. Configuramos campañas con negativas, tracking de llamadas y lectura de calidad del contacto. Solo búsquedas con intención real.',
   },
   'diseno-web': {
-    title: 'Diseño web para clínicas en Sevilla | Webs que convierten citas',
+    title: 'Diseño web para clínicas en Sevilla — webs que piden cita, no solo que gustan | iclinicas',
     description:
-      'Diseñamos y optimizamos webs para clínicas privadas en Sevilla. Webs claras, rápidas y orientadas a convertir visitas en llamadas, WhatsApp y solicitudes de cita.',
+      'Una web bonita que no convierte no sirve. Diseñamos webs para clínicas donde el paciente entiende qué haces, confía y contacta desde el móvil en menos de un minuto.',
+  },
+  'marketing-para-clinicas': {
+    title: 'Agencia de marketing para clínicas | iclinicas',
+    description:
+      'Captación de pacientes para clínicas privadas: auditoría, SEO local, Google Ads, web y medición de contactos cualificados. Exclusivamente sector sanitario.',
   },
   'redes-sociales': {
-    title: 'Redes sociales para clínicas en Sevilla | Contenido sanitario',
+    title: 'Redes sociales para clínicas en Sevilla — contenido que genera confianza, no likes | iclinicas',
     description:
-      'Gestión de redes sociales para clínicas privadas en Sevilla. Contenido sanitario profesional para generar confianza, explicar tratamientos y apoyar la captación de pacientes.',
+      'En salud, las redes no son para viralizarse. Son para que el paciente te conozca antes de llamar. Planificamos contenido sanitario que explica, tranquiliza y deriva a contacto.',
   },
 }
 
@@ -45,6 +50,7 @@ const longTailKeywordsServicios: Record<string, string[]> = {
   'seo-medico': ['SEO médico Sevilla', 'posicionamiento web clínicas', 'Google Maps clínicas Sevilla', 'auditoría SEO sanitario'],
   'google-ads': ['Google Ads pacientes', 'anuncios clínicas Sevilla', 'PPC sanitario', 'campañas ads médicas'],
   'diseno-web': ['diseño web sanitario', 'landing page clínica', 'web conversión pacientes', 'página web médico Sevilla'],
+  'marketing-para-clinicas': ['agencia marketing clínicas', 'captación pacientes privados', 'marketing sanitario España', 'consultoría marketing clínicas'],
   'redes-sociales': ['redes sociales clínicas', 'Instagram psicólogos Sevilla', 'contenido sanitario', 'marketing contenido médico'],
 }
 
@@ -58,121 +64,150 @@ const serviceContent: Record<
     fit: string
   }
 > = {
-  'seo-medico': {
+  'marketing-para-clinicas': {
     problem:
-      'Tu clínica puede ser buena, tener pacientes satisfechos y aun así no aparecer cuando alguien busca en Google tu especialidad, tu tratamiento o una clínica cercana. En Sevilla la competencia local pesa mucho: ficha de Google, reseñas, web, contenidos y ubicación deben contar la misma historia.',
+      'La mayoría de clínicas en España invierten en marketing sin saber qué genera pacientes. Tienen una web, quizás anuncios activos, un perfil en Instagram que se actualiza cuando hay tiempo, y al final del mes no saben qué canal trajo cada cita. Eso no es un problema de presupuesto: es un problema de estrategia y medición.',
     keyCopy:
-      'No trabajamos SEO como una lista técnica. Lo enfocamos a una pregunta: qué busca un paciente antes de elegir una clínica como la tuya y por qué debería contactar contigo.',
+      'Antes de proponer nada, revisamos cómo aparece tu clínica en Google, qué transmite tu web y si tu inversión actual está generando contactos cualificados. La auditoría es el punto de partida, no el cierre de una venta.',
     sections: [
       {
-        title: 'Qué revisamos',
+        title: 'Cómo revisamos la captación',
         items: [
-          'Google Business Profile, categorías, servicios, fotos, reseñas y publicaciones.',
-          'Web, arquitectura, páginas de tratamientos, enlazado interno y velocidad.',
-          'Búsquedas locales por especialidad, barrio, zona y competencia directa.',
-          'Search Console, páginas con impresiones, clics y oportunidades de mejora.',
+          'Google Business Profile: categorías, servicios, reseñas, fotos, horarios y coherencia con la web.',
+          'Web: velocidad en móvil, claridad del mensaje, facilidad de contacto y páginas por tratamiento.',
+          'Campañas activas: búsquedas, negativas, landing y medición real de contactos por canal.',
+          'Competencia local: qué clínicas aparecen por delante y qué hacen diferente.',
         ],
       },
       {
-        title: 'Qué optimizamos',
+        title: 'Qué construimos juntos',
         items: [
-          'Titles, metas, encabezados y contenido de servicios con intención sanitaria real.',
-          'Páginas por tratamiento, ubicación o necesidad cuando aportan valor.',
-          'Schema local/sanitario cuando procede y señales de confianza visibles.',
-          'Reseñas, FAQs, fotos reales y mensajes que ayudan a decidir.',
+          'Plan de captación priorizando los canales con mayor retorno para tu especialidad y zona.',
+          'SEO local para aparecer cuando el paciente busca tu especialidad cerca o en Sevilla.',
+          'Google Ads si necesitas resultados antes de que el SEO madure o al lanzar un tratamiento.',
+          'Web o landing orientada a convertir visitas en llamadas, formularios y WhatsApp.',
+        ],
+      },
+    ],
+    metrics: ['Llamadas', 'Formularios', 'WhatsApp', 'Coste por contacto', 'Calidad de solicitudes', 'Retorno por canal'],
+    fit:
+      'Tiene sentido si gestionas una clínica privada y no sabes qué canal de marketing genera más citas, si has invertido en una agencia generalista sin ver resultados claros, o si quieres revisar la captación antes de escalar inversión.',
+  },
+  'seo-medico': {
+    problem:
+      'En Sevilla hay cientos de clínicas buenas que nadie encuentra. El paciente busca "dentista Nervión" o "psicólogo ansiedad Sevilla" y hace clic en lo que aparece primero, con mejores reseñas y una ficha completa. Si tu clínica no está ahí, estás perdiendo contactos a favor de competidores que no son necesariamente mejores.',
+    keyCopy:
+      'Antes de tocar una sola línea de código o cambiar un título, miramos qué busca realmente un paciente de tu especialidad en Sevilla. Luego decidimos qué conviene hacer primero.',
+    sections: [
+      {
+        title: 'Por dónde empezamos',
+        items: [
+          'Tu ficha de Google: categorías, servicios, horarios, fotos recientes y gestión de reseñas.',
+          'Web: velocidad, páginas por tratamiento, enlazado entre servicios y facilidad de contacto desde móvil.',
+          'Búsquedas reales de tu especialidad en Sevilla: qué buscan, cómo buscan y quién está por delante de ti.',
+          'Search Console: qué páginas ya reciben visitas y cuáles están a un ajuste de subir.',
+        ],
+      },
+      {
+        title: 'Qué cambia en la práctica',
+        items: [
+          'Titles, metas y encabezados escritos para lo que busca el paciente, no para lo que suena bien en despacho.',
+          'Páginas de tratamientos específicos cuando aportan más que una página genérica de servicios.',
+          'Datos estructurados sanitarios y señales de confianza visibles donde el paciente las necesita.',
+          'Gestión activa de reseñas, FAQs y fotos reales que ayudan a decidir antes de llamar.',
         ],
       },
     ],
     metrics: ['Visibilidad local', 'Clics orgánicos', 'Llamadas', 'WhatsApp', 'Formularios', 'Calidad de solicitudes'],
     fit:
-      'Tiene sentido para clínicas que dependen demasiado del boca a boca, aparecen por debajo de competidores o tienen una web con servicios importantes poco visibles.',
+      'Encaja sobre todo si dependes demasiado del boca a boca, si competidores menos buenos que tú aparecen antes en Google, o si tienes tratamientos de valor que nadie encuentra en tu web.',
   },
   'google-ads': {
     problem:
-      'Pagar anuncios no es una estrategia si no sabes qué búsquedas activan los clics, qué contactos llegan y cuáles se convierten en citas rentables. En salud privada importa tanto atraer demanda como filtrar consultas poco cualificadas.',
+      'La mayoría de clínicas que han probado Google Ads y lo han dejado cometieron el mismo error: anuncios sin negativas, sin landing específica y sin saber si las llamadas que llegaban valían algo. El dinero se fue en clics de personas que buscaban trabajo, precios de hace diez años o información que no tenía intención de compra.',
     keyCopy:
-      'Google Ads no consiste en poner anuncios. Consiste en controlar inversión, captar intención real y medir si las llamadas, WhatsApp y formularios tienen calidad para tu clínica.',
+      'El objetivo de Ads no es tener impresiones. Es saber qué búsquedas generan citas, cuánto cuesta cada contacto y si ese contacto tiene sentido para tu clínica. Lo demás es ruido.',
     sections: [
       {
-        title: 'Qué configuramos',
+        title: 'Cómo lo montamos',
         items: [
-          'Campañas Search por especialidad, tratamiento, zona y urgencia de búsqueda.',
-          'Segmentación local en Sevilla capital, provincia, barrios o radios concretos.',
-          'Palabras clave negativas para evitar gasto en empleo, formación, barato o consultas no rentables.',
-          'Anuncios con mensajes prudentes, claros y alineados con normativa sanitaria.',
+          'Campañas por especialidad, tratamiento y zona, no una campaña genérica para todo.',
+          'Segmentación en Sevilla capital, barrios concretos o radio desde tu clínica según lo que funcione.',
+          'Listado extenso de negativas: empleo, formación, "gratis", precios de hace años y búsquedas sin intención privada.',
+          'Anuncios con mensajes claros, sin promesas clínicas y dentro de la normativa sanitaria.',
         ],
       },
       {
-        title: 'Qué optimizamos',
+        title: 'Qué medimos mientras corre',
         items: [
-          'Landing pages específicas para cada servicio o tratamiento prioritario.',
-          'Tracking de llamadas, formularios, WhatsApp y eventos clave.',
-          'Coste por contacto, tasa de conversión y lectura cualitativa de solicitudes.',
-          'Presupuesto según servicios con mayor margen, capacidad de agenda y estacionalidad.',
+          'Landings por servicio o tratamiento, no la home genérica de la clínica.',
+          'Tracking de llamadas, formularios y WhatsApp con atribución real por campaña.',
+          'Coste por contacto, conversión por landing y lectura cualitativa de solicitudes recibidas.',
+          'Reparto de presupuesto según margen del tratamiento, disponibilidad de agenda y temporada.',
         ],
       },
     ],
-    metrics: ['Coste por contacto', 'Solicitudes por canal', 'Calidad del lead', 'Tasa de conversión', 'Gasto inútil evitado'],
+    metrics: ['Coste por contacto', 'Solicitudes por canal', 'Calidad del lead', 'Tasa de conversión', 'Gasto evitado en clics sin intención'],
     fit:
-      'Tiene sentido si necesitas activar demanda más rápido, lanzar un tratamiento, cubrir huecos de agenda o comprobar qué servicios generan contactos privados de más valor.',
+      'Tiene más sentido cuando necesitas resultados antes de que el SEO madure, al lanzar un tratamiento nuevo, o cuando tienes huecos de agenda que cubrir en un plazo concreto.',
   },
   'diseno-web': {
     problem:
-      'Una web sanitaria no puede limitarse a ser bonita. Debe explicar qué haces, por qué confiar, dónde estás y cómo contactar sin fricción, especialmente desde móvil. Si no lo consigue, las visitas se van a otra clínica.',
+      'Una web médica atractiva que no convierte es solo un gasto de diseño. El problema suele estar en el móvil: el 70% del tráfico de las clínicas en Sevilla llega desde teléfono, y muchas webs tardan cinco segundos en cargar, tienen el botón de llamada enterrado o no explican qué hace exactamente esa clínica en las primeras tres líneas.',
     keyCopy:
-      'Tratamos la web como un activo comercial de la clínica: confianza, claridad, contacto y medición. El diseño importa, pero la conversión importa más.',
+      'La web es el único activo digital que controlas completamente. Vale la pena que trabaje para ti: que explique bien, que genere confianza y que permita contactar en diez segundos.',
     sections: [
       {
-        title: 'Qué debe incluir',
+        title: 'Lo que no puede faltar',
         items: [
-          'Home clara con especialidad, ubicación, equipo y vías de contacto visibles.',
-          'Páginas de tratamientos con dudas frecuentes, proceso, confianza y CTA.',
-          'Fotos reales, reseñas, instalaciones, ubicación, horarios y equipo.',
-          'Formularios simples, botón de llamada y WhatsApp accesibles desde móvil.',
+          'Home que deja claro en segundos: qué especialidad, dónde estás y cómo contactar.',
+          'Páginas por tratamiento con proceso, dudas frecuentes, fotos reales y CTA visible.',
+          'Equipo, instalaciones y reseñas donde el paciente las busca, no solo en el footer.',
+          'Formulario corto, botón de llamada y acceso a WhatsApp accesibles desde el primer scroll en móvil.',
         ],
       },
       {
-        title: 'Qué cuidamos',
+        title: 'En lo que nos fijamos',
         items: [
-          'UX móvil, velocidad, estructura SEO básica y legibilidad del contenido.',
-          'Landings para campañas con mensajes concretos por tratamiento.',
-          'Conexión con WhatsApp, formularios o sistemas de cita si procede.',
-          'Analítica para saber qué páginas generan contactos y dónde se pierde gente.',
+          'Velocidad y UX móvil primero. Una web bonita que carga lento pierde al paciente antes de que la vea.',
+          'Landings específicas para campañas, separadas de la web principal si hace falta.',
+          'Conexión con WhatsApp Business, formularios o sistemas de cita según cómo trabaje la clínica.',
+          'Analítica que diga qué páginas generan contactos reales y dónde abandona la gente.',
         ],
       },
     ],
-    metrics: ['Clics a llamada', 'WhatsApp', 'Formularios', 'Conversión por página', 'Velocidad', 'Rendimiento móvil'],
+    metrics: ['Clics a llamada', 'WhatsApp', 'Formularios', 'Conversión por página', 'Velocidad de carga', 'Rendimiento en móvil'],
     fit:
-      'Tiene sentido si tu web no refleja el nivel real de la clínica, recibe visitas pero pocos contactos o no permite medir qué está pasando.',
+      'Tiene sentido cuando la web no refleja el nivel real de la clínica, cuando llegan visitas pero pocos contactos, o cuando nadie sabe por qué los formularios no funcionan.',
   },
   'redes-sociales': {
     problem:
-      'Las redes de una clínica no deberían perseguir likes vacíos. Deben reforzar confianza, resolver dudas, mostrar criterio profesional y acompañar al paciente antes de buscar la web, llamar o pedir cita.',
+      'Muchas clínicas publican en Instagram sin saber si eso genera algo. El problema no es publicar poco. Es publicar sin propósito: consejos genéricos que cualquiera puede encontrar en Google, fotos de stock y felicitaciones de festivos. El paciente lo ve y no aprende nada sobre ti ni sobre por qué debería llamarte.',
     keyCopy:
-      'Trabajamos contenido sanitario con intención: educar, tranquilizar, explicar y derivar a un siguiente paso claro sin sonar agresivos.',
+      'En salud, las redes no son para crecer rápido. Son para que alguien que ya te ha buscado en Google confirme que eres de confianza antes de llamar. Ese es el trabajo.',
     sections: [
       {
-        title: 'Qué planificamos',
+        title: 'Lo que planificamos contigo',
         items: [
-          'Calendario editorial por especialidad, dudas frecuentes y momentos de decisión.',
-          'Posts, reels y piezas informativas con tono profesional y comprensible.',
-          'Contenido sobre equipo, instalaciones, proceso de primera visita y FAQs.',
-          'Piezas reutilizables para campañas, landings y comunicación de recepción.',
+          'Calendario editorial anclado en tus especialidades, las dudas reales de tus pacientes y los momentos del año en que más buscan.',
+          'Piezas informativas, explicativas y de equipo con tono profesional, no de gabinete de comunicación.',
+          'Contenido sobre cómo es la primera visita, qué esperar, proceso y qué diferencia tu consulta.',
+          'Piezas que tienen vida fuera de redes: para campañas, para la web y para recepción.',
         ],
       },
       {
-        title: 'Qué optimizamos',
+        title: 'Lo que medimos',
         items: [
-          'Coherencia visual para que la presencia digital esté al nivel de la clínica.',
-          'Derivación a WhatsApp, llamada, web o formulario según objetivo.',
-          'Mensajes que evitan presión comercial y respetan la sensibilidad sanitaria.',
-          'Medición de consultas, tráfico, mensajes y apoyo a campañas.',
+          'Coherencia visual con el nivel real de la clínica, no un perfil que parece de otra empresa.',
+          'Derivación a WhatsApp, llamada o web cuando el contenido genera interés concreto.',
+          'Mensajes que no suenan a venta y no prometen resultados que no se pueden garantizar.',
+          'Contactos, mensajes directos, clics y apoyo medible a campañas de pago.',
         ],
       },
     ],
-    metrics: ['Mensajes', 'Clics a web', 'WhatsApp', 'Contenido con más respuesta', 'Apoyo a campañas', 'Consultas atribuidas'],
+    metrics: ['Mensajes directos', 'Clics a web', 'WhatsApp', 'Publicaciones con más respuesta', 'Apoyo a campañas', 'Consultas atribuidas a redes'],
     fit:
-      'Tiene sentido si tu clínica necesita generar confianza antes de la cita, explicar tratamientos complejos o dar coherencia a una presencia social irregular.',
+      'Encaja cuando la clínica necesita generar confianza antes de la primera cita, cuando explica tratamientos complejos que necesitan contexto o cuando el perfil actual no refleja el nivel real del equipo.',
   },
 }
 
@@ -254,6 +289,13 @@ export default function ServicioPage({ params }: Props) {
   })
 
   const relatedLinks: Record<string, Array<{ href: string; label: string }>> = {
+    'marketing-para-clinicas': [
+      { href: '/servicios/seo-medico', label: 'SEO para clínicas' },
+      { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+      { href: '/servicios/diseno-web', label: 'diseño web sanitario' },
+      { href: '/blog/seo-para-clinicas-guia', label: 'guía de SEO para clínicas' },
+      { href: '/especialidades/clinicas-dentales-sevilla', label: 'marketing para clínicas dentales' },
+    ],
     'seo-medico': [
       { href: '/servicios/google-ads', label: 'Google Ads para clínicas privadas' },
       { href: '/servicios/diseno-web', label: 'diseño web para clínicas' },
