@@ -72,6 +72,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">Servicios</h4>
             <ul className="space-y-2">
+              <li><a href="/servicios/marketing-para-clinicas" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Marketing para clínicas</a></li>
               <li><a href="/servicios/seo-medico" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">SEO local sanitario</a></li>
               <li><a href="/servicios/google-ads" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Google Ads para clínicas</a></li>
               <li><a href="/servicios/diseno-web" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Diseño web para clínicas</a></li>
@@ -103,6 +104,8 @@ export default function Footer() {
               <li><a href="/servicios" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Servicios</a></li>
               <li><a href="/especialidades" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">A quién ayudamos</a></li>
               <li><a href="/contacto" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Contacto</a></li>
+              <li><a href="/nosotros" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Sobre iclinicas</a></li>
+              <li><a href="/casos-de-exito" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Casos de éxito</a></li>
               <li><a href="/politica-privacidad" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Política de privacidad</a></li>
               <li><a href="/terminos-legales" className="text-sm text-gray-300 hover:text-accent transition-colors duration-200">Términos legales</a></li>
             </ul>

@@ -47,6 +47,54 @@ export const blogRelatedServices: Record<string, CrossLink[]> = {
     { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
     { href: '/blog/seo-vs-google-ads-clinicas', label: 'SEO vs Google Ads para clínicas' },
   ],
+  'google-business-profile-clinicas': [
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+    { href: '/blog/conseguir-resenas-google-clinica', label: 'Cómo conseguir reseñas en Google' },
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+    { href: '/servicios/marketing-para-clinicas', label: 'Marketing para clínicas' },
+  ],
+  'lopd-marketing-sanitario': [
+    { href: '/servicios/marketing-para-clinicas', label: 'Marketing para clínicas' },
+    { href: '/blog/captacion-pacientes-privados', label: 'Captación de pacientes privados' },
+    { href: '/servicios/diseno-web', label: 'Diseño web sanitario' },
+  ],
+  'captacion-pacientes-privados': [
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+    { href: '/blog/seo-vs-google-ads-clinicas', label: 'SEO vs Google Ads para clínicas' },
+    { href: '/blog/cuanto-cuesta-marketing-clinica', label: 'Cuánto cuesta el marketing' },
+    { href: '/servicios/marketing-para-clinicas', label: 'Marketing para clínicas' },
+    { href: '/blog/google-business-profile-clinicas', label: 'Google Business Profile para clínicas' },
+  ],
+  'medir-roi-marketing-clinica': [
+    { href: '/blog/captacion-pacientes-privados', label: 'Captación de pacientes privados' },
+    { href: '/blog/cuanto-cuesta-marketing-clinica', label: 'Cuánto cuesta el marketing' },
+    { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+  ],
+  'landing-pages-clinicas': [
+    { href: '/servicios/diseno-web', label: 'Diseño web sanitario' },
+    { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+    { href: '/blog/captacion-pacientes-privados', label: 'Captación de pacientes privados' },
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+  ],
+  'conseguir-resenas-google-clinica': [
+    { href: '/blog/google-business-profile-clinicas', label: 'Google Business Profile para clínicas' },
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+  ],
+  'marketing-psicologos-sevilla': [
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+    { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+    { href: '/especialidades/psicologos-sevilla', label: 'Marketing para psicólogos' },
+    { href: '/blog/lopd-marketing-sanitario', label: 'LOPD y marketing sanitario' },
+  ],
+  'palabras-clave-clinicas-privadas': [
+    { href: '/blog/seo-para-clinicas-guia', label: 'Guía de SEO para clínicas' },
+    { href: '/blog/seo-vs-google-ads-clinicas', label: 'SEO vs Google Ads para clínicas' },
+    { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+    { href: '/servicios/marketing-para-clinicas', label: 'Marketing para clínicas' },
+  ],
 }
 
 export const serviceRelatedSpecialties: Record<string, CrossLink[]> = {

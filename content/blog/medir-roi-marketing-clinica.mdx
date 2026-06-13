@@ -1,0 +1,120 @@
+---
+id: "10"
+titulo: "Cómo medir el retorno del marketing en una clínica privada"
+slug: "medir-roi-marketing-clinica"
+excerpt: "Qué métricas importan realmente en marketing para clínicas, cómo configurar el seguimiento de contactos por canal y cómo calcular si la inversión en marketing tiene sentido para tu especialidad."
+fechaPublicacion: "2026-06-13T10:00:00+02:00"
+fechaModificacion: "2026-06-13T10:00:00+02:00"
+autorSlug: "carlos-cardoso"
+categoria: "Medición"
+tiempoLectura: "9 min"
+imagen: "/images/og-default.png"
+imagenAlt: "Análisis de métricas de marketing para clínica privada en ordenador"
+status: "published"
+---
+
+El problema más habitual en el marketing de clínicas no es falta de inversión: es falta de medición. Sin datos sobre qué canal genera cada contacto, es imposible saber si el presupuesto está trabajando o si se está invirtiendo en el canal equivocado.
+
+Esta guía explica qué medir, cómo configurarlo y qué hacer con los datos.
+
+# Por qué las métricas de vanidad no ayudan a tomar decisiones
+
+Muchas clínicas reciben informes mensuales con seguidores ganados, impresiones de anuncios, porcentaje de apertura de emails o posición media en Google. Esos números son útiles para seguimiento de canales, pero no responden la pregunta que importa: ¿cuántos pacientes nuevos llegaron y de dónde?
+
+Las métricas útiles para tomar decisiones son:
+- Número de contactos cualificados por canal
+- Coste por contacto cualificado
+- Tasa de conversión de contacto a primera visita
+- Valor medio de un paciente nuevo según especialidad
+
+Con esos cuatro números puedes calcular si un canal tiene retorno y cuánto escalar.
+
+# Los tres canales de contacto que debes medir
+
+## Llamadas telefónicas
+
+El canal principal en muchas clínicas, especialmente para primeras consultas. El problema: sin seguimiento, no sabes qué generó cada llamada.
+
+Opciones de medición:
+
+- **Google Business Profile**: el panel de GBP muestra llamadas atribuidas a la ficha. No es perfecto pero da una base.
+- **Google Ads**: activa el seguimiento de llamadas en campañas. Google asigna un número temporal a cada visitante que llama desde el anuncio.
+- **Número exclusivo por canal**: si usas un número diferente en la web, en los anuncios y en el directorio médico, puedes segmentar el origen de cada llamada. Es la solución más precisa pero requiere gestión.
+
+## Formularios web
+
+Cada envío de formulario debe registrarse en Google Analytics 4 como evento de conversión. No es una configuración automática: hay que implementarla.
+
+Cómo hacerlo sin programación: si el formulario redirige a una página de "gracias" tras el envío, puedes configurar el tráfico a esa URL como conversión en GA4. Si no hay redirección, necesitas el evento del formulario configurado en Google Tag Manager.
+
+Sin esto, GA4 te dirá cuántas visitas llegaron pero no cuántas convirtieron.
+
+## WhatsApp
+
+Si usas WhatsApp para captar contactos, el seguimiento es más manual. Un campo "¿cómo nos conociste?" en la primera visita da información que las herramientas no capturan. Otras opciones:
+
+- Enlace de WhatsApp diferente en cada canal (la URL puede tener parámetros UTM que registran el origen en GA4)
+- CRM básico donde el recepcionista anota el canal de origen al crear el registro del paciente
+
+# Cómo calcular el coste por contacto
+
+Fórmula básica:
+
+> **Coste por contacto = Inversión total en marketing ese mes / Contactos cualificados generados ese mes**
+
+Si inviertes 800€ en Google Ads más 300€ de gestión y eso genera 22 formularios y llamadas cualificadas: coste por contacto = 1.100 / 22 = 50€.
+
+Ese número solo es útil si lo comparas con el valor del paciente para tu especialidad. 50€ de coste por contacto puede tener mucho sentido para una consulta de implantes dentales y ninguno para una revisión básica.
+
+# El valor del paciente: cómo estimarlo
+
+El valor del paciente depende de:
+
+- **Ticket medio del tratamiento inicial**: lo que factura la clínica en la primera consulta o tratamiento
+- **Recurrencia**: algunos pacientes vuelven varias veces al año (fisioterapia, psicología, nutrición), otros hacen un tratamiento único (ortodoncia, cirugía)
+- **Derivaciones**: un paciente satisfecho que refiere a otros tiene un valor mayor que su facturación directa
+
+Para calcular si el marketing tiene retorno, compara el coste de adquisición con el valor esperado de ese paciente a 12 meses. Si el coste de adquisición es menor que el margen esperado, el canal es rentable y se puede escalar.
+
+# Informe mínimo útil para una clínica
+
+Un informe mensual que sirva para tomar decisiones no necesita ser largo. Con esto es suficiente:
+
+| Canal | Inversión | Contactos | Coste / contacto | Primeras visitas |
+|-------|-----------|-----------|-----------------|-----------------|
+| Google Ads | X€ | X | X€ | X |
+| SEO / web orgánico | X€ | X | X€ | X |
+| GBP / Maps | 0€ | X | 0€ | X |
+| Otros | X€ | X | X€ | X |
+
+Si tienes esa tabla actualizada cada mes, puedes ver qué canal está mejorando, cuál se está encareciendo y dónde tiene sentido aumentar o reducir la inversión.
+
+# Los errores de medición más comunes en clínicas
+
+**Atribuir todo a Google sin saber qué parte de Google**: SEO orgánico, Maps, Ads y tráfico de marca son cuatro canales distintos. GA4 los puede separar si está bien configurado.
+
+**Contar visitas a la web como contactos**: una visita es interés; un contacto es intención. Confundirlos infla los números y lleva a decisiones equivocadas.
+
+**No registrar el origen del paciente en la recepción**: las herramientas de analítica tienen límites, especialmente para llamadas. Preguntar "¿cómo nos conoció?" y registrarlo en el sistema es información que no se consigue de otra forma.
+
+**Comparar meses sin contexto**: diciembre y enero son meses atípicos en muchas especialidades. Comparar con el mismo mes del año anterior da más información que comparar mes a mes.
+
+# Preguntas frecuentes sobre medición de marketing en clínicas
+
+## ¿Es necesario un CRM para hacer un seguimiento básico?
+
+No para empezar. Una hoja de cálculo con los campos correctos puede servir en las fases iniciales. Un CRM añade valor cuando el volumen de contactos supera lo gestionable manualmente o cuando quieres automatizar seguimientos.
+
+## ¿Google Analytics 4 cumple el RGPD?
+
+Con la configuración correcta (anonimización de IP, retención de datos ajustada, banner de cookies conforme) sí. Pero la configuración por defecto no es suficiente para cumplir RGPD en todos los mercados europeos. Consulta con un especialista si tienes dudas específicas.
+
+## ¿Cómo sé si mis anuncios de Google Ads están convirtiendo si el contacto es por llamada?
+
+Necesitas activar el seguimiento de llamadas en Google Ads. Google asigna un número de desvío temporal a cada visitante. Cuando ese visitante llama, la llamada queda registrada como conversión en la campaña que la generó. Es una funcionalidad gratuita dentro de Google Ads.
+
+## ¿Qué tasa de conversión de contacto a primera visita es normal para una clínica?
+
+Varía mucho por especialidad y por cómo se gestiona el contacto. En términos generales, una clínica que responde rápido y bien puede convertir el 50-70% de contactos cualificados en primera visita. Tasas menores suelen indicar problemas en el proceso de respuesta o en la calidad del contacto captado.
+
+Para entender cómo se configura la estrategia que genera estos contactos, la [guía de captación de pacientes privados](/blog/captacion-pacientes-privados) y el artículo sobre [cuánto cuesta el marketing para una clínica](/blog/cuanto-cuesta-marketing-clinica).

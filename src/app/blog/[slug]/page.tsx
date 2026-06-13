@@ -202,6 +202,48 @@ export default function BlogPostPage({ params }: Props) {
       { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
       { href: '/contacto', label: 'auditoría gratuita' },
     ],
+    'google-business-profile-clinicas': [
+      { href: '/servicios/seo-medico', label: 'SEO médico para clínicas' },
+      { href: '/blog/conseguir-resenas-google-clinica', label: 'cómo conseguir reseñas en Google' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'lopd-marketing-sanitario': [
+      { href: '/servicios/marketing-para-clinicas', label: 'marketing para clínicas' },
+      { href: '/servicios/diseno-web', label: 'diseño web sanitario' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'captacion-pacientes-privados': [
+      { href: '/servicios/marketing-para-clinicas', label: 'marketing para clínicas' },
+      { href: '/blog/google-business-profile-clinicas', label: 'Google Business Profile para clínicas' },
+      { href: '/blog/cuanto-cuesta-marketing-clinica', label: 'cuánto cuesta el marketing' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'medir-roi-marketing-clinica': [
+      { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+      { href: '/blog/captacion-pacientes-privados', label: 'captación de pacientes privados' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'landing-pages-clinicas': [
+      { href: '/servicios/diseno-web', label: 'diseño web sanitario' },
+      { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'conseguir-resenas-google-clinica': [
+      { href: '/blog/google-business-profile-clinicas', label: 'Google Business Profile para clínicas' },
+      { href: '/servicios/seo-medico', label: 'SEO para clínicas' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'marketing-psicologos-sevilla': [
+      { href: '/especialidades/psicologos-sevilla', label: 'marketing para psicólogos en Sevilla' },
+      { href: '/servicios/google-ads', label: 'Google Ads para clínicas' },
+      { href: '/blog/lopd-marketing-sanitario', label: 'LOPD y marketing sanitario' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
+    'palabras-clave-clinicas-privadas': [
+      { href: '/servicios/seo-medico', label: 'SEO para clínicas' },
+      { href: '/blog/seo-para-clinicas-guia', label: 'guía de SEO para clínicas' },
+      { href: '/contacto', label: 'auditoría gratuita' },
+    ],
   }
 
   if (!post) {
