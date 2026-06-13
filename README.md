@@ -71,6 +71,9 @@ src/
     especialidades/
     recursos/
     servicios/
+    marketing-clinicas-premium-sevilla/
+    nosotros/
+    casos-de-exito/
     layout.tsx
     page.tsx
     globals.css
@@ -87,6 +90,9 @@ content/
 agents/
   blog-publisher/
 public/
+  llms.txt
+  llms-full.txt
+  robots.txt
 docs/
 design.md
 DEPLOYMENT.md
@@ -94,35 +100,53 @@ DEPLOYMENT.md
 
 ## Páginas principales
 
-- `/`
-- `/contacto`
-- `/recursos`
-- `/blog`
-- `/blog/errores-seo-dentistas`
-- `/blog/google-ads-psicologos`
-- `/blog/diseno-web-clinicas`
-- `/servicios`
-- `/servicios/seo-medico`
-- `/servicios/google-ads`
-- `/servicios/diseno-web`
-- `/servicios/redes-sociales`
-- `/especialidades`
-- `/especialidades/clinicas-dentales-sevilla`
-- `/especialidades/psicologos-sevilla`
-- `/especialidades/medicina-estetica-sevilla`
-- `/especialidades/fisioterapia-sevilla`
-- `/especialidades/clinicas-reproduccion-asistida-sevilla`
-- `/especialidades/pedagogos-sevilla`
-- `/especialidades/dermatologos-sevilla`
-- `/especialidades/nutricionistas-sevilla`
-- `/especialidades/oftalmologos-sevilla`
-- `/especialidades/pediatria-sevilla`
-- `/especialidades/clinicas-cirugia-sevilla`
-- `/politica-privacidad`
-- `/terminos-legales`
+```txt
+/
+/contacto
+/recursos
+/blog
+/nosotros
+/casos-de-exito
+/servicios
+/servicios/marketing-para-clinicas
+/servicios/seo-medico
+/servicios/google-ads
+/servicios/diseno-web
+/servicios/redes-sociales
+/especialidades
+/especialidades/clinicas-dentales-sevilla
+/especialidades/psicologos-sevilla
+/especialidades/medicina-estetica-sevilla
+/especialidades/fisioterapia-sevilla
+/especialidades/clinicas-reproduccion-asistida-sevilla
+/especialidades/pedagogos-sevilla
+/especialidades/dermatologos-sevilla
+/especialidades/nutricionistas-sevilla
+/especialidades/oftalmologos-sevilla
+/especialidades/pediatria-sevilla
+/especialidades/clinicas-cirugia-sevilla
+/especialidades/ia-para-clinicas
+/blog/seo-para-clinicas-guia
+/blog/seo-vs-google-ads-clinicas
+/blog/cuanto-cuesta-marketing-clinica
+/blog/captacion-pacientes-privados
+/blog/medir-roi-marketing-clinica
+/blog/google-business-profile-clinicas
+/blog/conseguir-resenas-google-clinica
+/blog/palabras-clave-clinicas-privadas
+/blog/landing-pages-clinicas
+/blog/lopd-marketing-sanitario
+/blog/marketing-psicologos-sevilla
+/blog/errores-seo-dentistas
+/blog/google-ads-psicologos
+/blog/diseno-web-clinicas
+/politica-privacidad
+/terminos-legales
+```
 
 ## Servicios
 
+- Marketing para clínicas (hub principal de captación)
 - SEO local para clínicas en Sevilla
 - Google Ads para clínicas privadas
 - Diseño web para clínicas orientado a captar citas
@@ -130,13 +154,15 @@ DEPLOYMENT.md
 
 ## Arquitectura de contenido
 
-La navegación principal se organiza en:
+La navegación principal del header:
 
-- **A quién ayudamos:** páginas por tipo de clínica o profesional sanitario.
 - **Servicios:** páginas por canal o solución de captación.
+- **A quién ayudamos:** páginas por tipo de clínica o profesional sanitario (`/especialidades`).
 - **Contacto:** auditoría gratuita de captación online.
 
-El hub de recursos, blog y diagnósticos sigue publicado, pero no se muestra en el header principal hasta que aporte suficiente valor como ruta prioritaria.
+El hub `/recursos` y el blog existen y están en el sitemap y footer, pero no en el header principal.
+
+`/marketing-clinicas-premium-sevilla` tiene un 301 redirect permanente hacia `/servicios/marketing-para-clinicas` (configurado en `next.config.js`).
 
 ## A quién ayudamos
 
@@ -151,11 +177,12 @@ El hub de recursos, blog y diagnósticos sigue publicado, pero no se muestra en 
 - Oftalmólogos
 - Pediatras
 - Clínicas quirúrgicas y especialistas
+- IA para clínicas
 
 ## Recursos
 
 - `/recursos`: hub principal de contenidos.
-- `/blog`: artículos y guías.
+- `/blog`: artículos y guías (14 posts publicados).
 - `/casos-de-exito`: diagnósticos representativos y escenarios de mejora.
 
 ## Blog y agente editorial
@@ -196,12 +223,15 @@ El proyecto incluye:
 - Metadata por página.
 - Canonicals.
 - Open Graph.
-- JSON-LD global `ProfessionalService`.
+- JSON-LD global `Organization` + `LocalBusiness` (`ProfessionalService`).
+- `Person` schema para Carlos Cardoso con `knowsAbout` y `sameAs`.
 - Breadcrumb schema en páginas internas.
 - FAQ schema en FAQs (generado a nivel de página para evitar duplicados).
 - Article schema en artículos del blog.
 
-**Nota sobre FAQPage schema:** Se generan a nivel de página en `src/app/especialidades/[slug]/page.tsx` y `src/app/servicios/[slug]/page.tsx` usando etiquetas `<script>` directas. Esto previene duplicados que causaban errores en Google Search Console. El componente `FaqSection` solo renderiza el HTML visual, sin generar schema.
+**Nota sobre FAQPage schema:** Se generan a nivel de página en `src/app/especialidades/[slug]/page.tsx` y `src/app/servicios/[slug]/page.tsx` usando etiquetas `<script>` directas. El componente `FaqSection` solo renderiza el HTML visual, sin generar schema.
+
+**GEO (motores de IA):** `public/llms.txt` y `public/llms-full.txt` indexan el contenido para ChatGPT, Perplexity y otros AI crawlers. `public/robots.txt` los permite explícitamente.
 
 La home usa keywords locales como:
 
@@ -286,18 +316,9 @@ También se puede apuntar a otro entorno:
 QA_BASE_URL=https://www.iclinicas.es npm run qa:interactions
 ```
 
-Incidencias corregidas en la última revisión:
-
-- Enlaces placeholder del footer sustituidos por rutas reales.
-- WhatsApp ficticio oculto hasta disponer de número real.
-- Microcopy de error del formulario actualizado para no dirigir a WhatsApp sin dato válido.
-- Header mejorado con atributos ARIA y cierre de menú móvil al navegar.
-- Hero corregido para que imagen y overlays no intercepten clics del header en móvil.
-- Textos de navegación y recursos revisados para evitar codificación rota.
-
 ## Documentación adicional
 
-- [`Claude.md`](./Claude.md): convenciones internas originales del proyecto.
+- [`CLAUDE.md`](./CLAUDE.md): convenciones operativas del proyecto (código, SEO, GEO, arquitectura).
 - [`design.md`](./design.md): sistema visual y reglas UI/CRO.
 - [`DEPLOYMENT.md`](./DEPLOYMENT.md): despliegue y troubleshooting del hosting/Resend.
 
